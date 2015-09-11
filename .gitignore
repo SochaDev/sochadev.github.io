@@ -1,0 +1,11 @@
+# Build cruft.
+.DS_Store
+nbproject
+node_modules
+
+# Jekyll stuff.
+_site
+.jekyll-metadata
+Gemfile.lock
+_site
+
