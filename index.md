@@ -1,5 +1,5 @@
 ---
-title: Hello, world we are Socha Dev
+title: Hello, world; we are Socha Dev
 ---
 
 Socha Dev is a web development team built to help your company succeed. We 
@@ -31,5 +31,6 @@ projects have annoying bugs in them. Socha Dev will figure it out.
 We build; we build well. Here are some highlights. You can click 'em for more 
 info.
 
-contact
+## contact
 Looking for support on your next project? We’d love to learn more about it.
+
