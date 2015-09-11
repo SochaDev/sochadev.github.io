@@ -1,8 +1,7 @@
 ---
-title: Hello, world
+title: Hello, world we are Socha Dev
 ---
 
-# Socha Dev 
 Socha Dev is a web development team built to help your company succeed. We 
 specialize in overflow, triage and problem solving services. We invite you to 
 learn more about our past projects or to contact us to discuss your needs.
