@@ -35,7 +35,7 @@
       $('a[href*=#]', context)
         .click(function(evt) {
           evt.preventDefault();
-          settings.theme.top = $(this.hash).offset().top;
+          settings.theme.top = $(this.hash).offset().top - ($header.height() + 24);
           theme.scrollMain(context, settings);
         });
 
