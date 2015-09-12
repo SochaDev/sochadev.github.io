@@ -18,6 +18,7 @@ $gray-light: #bbb;
 $gray-lighter: #e4e4e4;
 $red: #cb3736;
 $blue: #285b76;
+$orange: #f60;
 
 // layout variables
 $base: 16px; // our base font-size;
@@ -26,5 +27,5 @@ $hmrg: ($mrg * 0.50);
 $dmrg: ($mrg * 2.0);
 $qmrg: ($mrg * 0.25);
 
-$text: $gray-darker;
-$bg: $white;
+$text: $gray-lighter;
+$bg: $gray-darker;

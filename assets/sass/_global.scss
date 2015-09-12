@@ -1,24 +1,30 @@
 // main layout sass for overall html element styling and top level layout.
 
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 body {
 	font-size: $base;
 	line-height: 1.4;
-	font-family: sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	color: $text;
 	background-color: $bg;
 	margin: $dmrg;
 }
 
-h1, h2, h3, p { margin-bottom: $mrg }
-
-h1 {
-  font-size: $base * 3;
-  font-weight: 700;
+h1, h2, h3, p {
+  margin-bottom: $mrg;
 }
-h2 { font-size: $base * 2.5 }
-h3 { font-size: $base * 2 }
-h4 { font-size: $base * 1.5 }
-h5 { font-size: $base }
+h1, h2, h3, h4, h5 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+
+h1 { font-size: $base * 3; margin-top: $mrg; }
+h2 { font-size: $base * 2.5; }
+h3 { font-size: $base * 2; }
+h4 { font-size: $base * 1.5; }
+h5 { font-size: $base; }
 
 b, strong, h4 { font-weight: 700; }
 h5 { font-weight: 300; }
@@ -33,65 +39,15 @@ pre {
 small { font-size: $base * 0.8 }
 big { font-size: $base * 1.2 }
 
-section { margin-bottom: $dmrg; }
-
 a {
   text-decoration: none;
-  color: $blue;
+  color: $orange;
   @include transition(all 0.3s);
 
   &:hover {
     text-decoration: underline;
-    color: lighten($blue, 20%);
+    color: lighten($orange, 20%);
   }
-}
-
-.indent { margin-left: $mrg; }
-
-.list {
-	margin: 0 0 0 $mrg;
-	padding: 0;
-
-	li {
-		list-style-type: disc;
-		margin-left: $mrg;
-		margin-bottom: $mrg;
-	}
-}
-
-.list.square li { list-style-type: square; }
-.list.number li { list-style-type: decimal; }
-
-.panel {
-	display: block;
-	padding: $mrg;
-	margin-bottom: $mrg;
-	background-color: $gray-lighter;
-	border-radius: $hmrg;
-	border: 1px solid $gray-light;
-}
-
-.columns-3 {
-	// neat grid: set on the row containing columns
-	@include outer-container();
-
-	> .column {
-		// neat grid: to set column widths.
-		@include span-columns(4);
-		@include omega(3n);
-
-		// include-media: to change column widths at different breakpoints
-		@include media("<=sm") {
-			@include span-columns(6);
-			@include omega(2n);
-		}
-
-		@include media("<=xs") {
-			@include span-columns(12);
-			@include omega();
-
-		}
-	}
 }
 
 .sprite {
@@ -102,4 +58,22 @@ a {
 	&.dragon { @include sprite($dragon); }
 	&.deflect { @include sprite($deflect); }
 	&.sun { @include sprite($sun); }
+}
+
+header,
+main,
+footer {
+  @include outer-container(780px);
+}
+header > div,
+footer > div {
+  @include span-columns(12);
+}
+section {
+  @include span-columns(12);
+  margin-bottom: $dmrg;
+
+  article {
+    font-size: $base * 1.5;
+  }
 }

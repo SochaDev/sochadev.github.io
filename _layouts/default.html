@@ -2,13 +2,29 @@
 <html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
   {% include meta.html %}{% include favicon.html %}  <link rel="canonical" href="{{ site.baseurl }}{{ page.url }}" />
-  <link rel="stylesheet" href="/assets/css/production/all.css" type="text/css" />
+  <link rel="stylesheet" href="/assets/css/screen.css" type="text/css" />
 </head>
 <body>
+  <header>
+    <div>
+      I am a header and I am beautiful.
+    </div>
+  </header>
+  <main>
+    <section>
+      <article>
 
   <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
   {{ content }}
 
+      </article>
+    </section>
+  </main>
+  <footer>
+    <div>
+      Like this site? That's cool, <a href="https://github.com/SochaDev/sochadev.github.io" target="_blank">you can have it for free</a> &mdash; might have to charge you for the next one, though.
+    </div>
+  </footer>
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript">
   var settings = {
@@ -23,7 +39,7 @@
     theme: { }
   };
   </script>
-  <script type="text/javascript" src="/assets/js/production/all.js"></script>
+  <script type="text/javascript" src="/assets/js/app.js"></script>
   <script type="text/javascript">
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
