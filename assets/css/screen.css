@@ -2210,6 +2210,7 @@ big {
 
 a {
   text-decoration: none;
+  outline: none;
   color: #f93;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -2217,6 +2218,10 @@ a {
   a:hover {
     text-decoration: underline;
     color: #ffcc99; }
+  a:visited,
+  a:focus {
+    text-decoration: none;
+    outline: none; }
 
 a.blue, span.blue {
   color: #8dcad9; }

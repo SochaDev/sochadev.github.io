@@ -52,12 +52,18 @@
 
   a {
     text-decoration: none;
+    outline: none;
     color: $orange;
     @include transition(all 0.3s);
 
     &:hover {
       text-decoration: underline;
       color: lighten($orange, 20%);
+    }
+    &:visited,
+    &:focus {
+      text-decoration: none;
+      outline: none;
     }
   }
 
