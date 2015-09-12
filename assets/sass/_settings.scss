@@ -5,19 +5,21 @@ $breakpoints: (xs: 750px, sm: 970px, lg: 1170px);
 
 // neat grid settings
 $grid-columns: 12 !global;
-$max-width: 100% !global;
+$max-width: 750px !global;
 $border-box-sizing: true !global;
 
 // colors
 $black: #000;
 $white: #fff;
-$gray-darker: #222;
-$gray-dark: #555;
+$gray-darker: #2b2b2b;
+$gray-dark: #333;
 $gray: #888;
 $gray-light: #bbb;
 $gray-lighter: #e4e4e4;
-$red: #cb3736;
-$blue: #285b76;
+
+$blue: #41a7bf;
+$red: #b20b23;
+$green: #6b7e28;
 $orange: #f93;
 
 // layout variables

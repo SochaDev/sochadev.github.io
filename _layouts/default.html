@@ -17,38 +17,48 @@
 </head>
 <body>
   <header>
-    <div>
-      I am a header and I am beautiful.
+    <div class="stripe first">
+      <div class="container">
+        <div class="columns-12">
+          <a href="/" class="top">{{ site.title }}</a>
+        </div>
+      </div>
     </div>
   </header>
   <main>
-    <section>
-      <article>
-
-<h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+    <div class="stripe first">
+      <div class="container">
+        <div class="columns-12">
+          <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+        </div>
+      </div>
+    </div>
 
 {{ content }}
 
-      </article>
-    </section>
   </main>
   <footer>
-    <div>
-      Like this site? That's cool, <a href="https://github.com/SochaDev/sochadev.github.io" target="_blank">you can have it for free</a> &mdash; might have to charge you for the next one, though.
+    <div class="stripe first">
+      <div class="container">
+        <div class="columns-12">
+          Like this site? That's cool, <a href="https://github.com/SochaDev/sochadev.github.io" target="_blank">you can have this one for free</a> ;)
+        </div>
+      </div>
     </div>
   </footer>
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript">
   var settings = {
-    site: {
-      title: "{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}",
+    page: {
+      url: "{{ site.baseurl }}{{ page.url }}",
+      title: "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
       description: "{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"
     },
-    page: {
-      title: "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
-      url: "{{ site.baseurl }}{{ page.url }}"
-    },
-    theme: { }
+    theme: {
+      animation: {
+        speed: 200
+      }
+    }
   };
   </script>
   <script type="text/javascript" src="/assets/js/app.js"></script>

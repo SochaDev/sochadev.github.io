@@ -2042,23 +2042,31 @@ At the bottom of this section, we provide information about the spritesheet itse
 $spritesheet: width height image $spritesheet-sprites;
 */
 body {
-  font-size: 16px;
+  font-size: 24px;
   line-height: 1.4;
   font-family: 'Open Sans', sans-serif;
-  color: #e4e4e4;
-  background-color: #222;
-  margin: 24px; }
+  color: #fff;
+  background-color: #2b2b2b;
+  margin: 24px 0;
+  padding: 0; }
 
-h1, h2, h3, p {
-  margin-bottom: 12px; }
+p {
+  margin-bottom: 12px;
+  margin-top: 0; }
+
+h1 {
+  margin: 0; }
+
+h2, h3 {
+  margin-bottom: 6px;
+  margin-top: 0; }
 
 h1, h2, h3, h4, h5 {
   font-family: 'Ubuntu', sans-serif;
-  font-weight: 400; }
+  font-weight: 500; }
 
 h1 {
-  font-size: 48px;
-  margin-top: 12px; }
+  font-size: 48px; }
 
 h2 {
   font-size: 40px;
@@ -2086,7 +2094,12 @@ em, i {
 code,
 pre {
   font-family: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace;
-  color: #cb3736; }
+  color: #b20b23; }
+
+hr {
+  margin: 48px 0;
+  height: 1px;
+  border: solid 2px #333; }
 
 small {
   font-size: 12.8px; }
@@ -2103,61 +2116,63 @@ a {
   a:hover {
     text-decoration: underline;
     color: #ffcc99; }
+  a.blue {
+    color: #8dcad9; }
+  a.red {
+    color: #f56176; }
+  a.green {
+    color: #bbd16e; }
+  a.gray {
+    color: #b3b3b3; }
+  a.orange {
+    color: #ffcc99; }
 
-.sprite {
-  display: inline-block;
-  margin: 12px; }
-  .sprite.bear {
-    background-image: url("../images/sprites.png");
-    background-position: -171px 0px;
-    width: 109px;
-    height: 106px; }
-  .sprite.dragon {
-    background-image: url("../images/sprites.png");
-    background-position: 0px 0px;
-    width: 161px;
-    height: 184px; }
-  .sprite.deflect {
-    background-image: url("../images/sprites.png");
-    background-position: -171px -116px;
-    width: 46px;
-    height: 46px; }
-  .sprite.sun {
-    background-image: url("../images/sprites.png");
-    background-position: 0px -194px;
-    width: 85px;
-    height: 85px; }
+.stripe {
+  padding: 24px; }
+  .stripe.blue {
+    background: #41a7bf; }
+  .stripe.red {
+    background: #b20b23; }
+  .stripe.green {
+    background: #6b7e28; }
+  .stripe.gray {
+    background: #333; }
 
-header,
-main,
-footer {
-  max-width: 780px;
+.container {
+  max-width: 750px;
   margin-left: auto;
   margin-right: auto; }
-  header::after,
-  main::after,
-  footer::after {
+  .container::after {
     clear: both;
     content: "";
     display: table; }
+  .container .columns-12 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .container .columns-12:last-child {
+      margin-right: 0; }
 
-header > div,
-footer > div {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
+header {
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  height: 72px;
+  position: fixed;
+  top: 0;
   width: 100%; }
-  header > div:last-child,
-  footer > div:last-child {
-    margin-right: 0; }
+  header a.top {
+    color: #fff;
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1;
+    margin-top: -12px;
+    text-decoration: none; }
 
-section {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  margin-bottom: 24px; }
-  section:last-child {
-    margin-right: 0; }
-  section article {
-    font-size: 24px; }
+main {
+  margin-top: 72px; }
+
+footer {
+  margin-bottom: 72px; }

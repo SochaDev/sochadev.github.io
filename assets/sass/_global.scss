@@ -4,22 +4,31 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 body {
-	font-size: $base;
+	font-size: $base * 1.5;
 	line-height: 1.4;
 	font-family: 'Open Sans', sans-serif;
-	color: $text;
+	color: $white;
 	background-color: $bg;
-	margin: $dmrg;
+	margin: $dmrg 0;
+ padding: 0;
 }
 
-h1, h2, h3, p {
+p {
   margin-bottom: $mrg;
+  margin-top: 0;
+}
+h1 {
+  margin: 0;
+}
+h2, h3 {
+  margin-bottom: $hmrg;
+  margin-top: 0;
 }
 h1, h2, h3, h4, h5 {
   font-family: 'Ubuntu', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
 }
-h1 { font-size: $base * 3; margin-top: $mrg; }
+h1 { font-size: $base * 3; }
 h2 { font-size: $base * 2.5; text-transform: lowercase; }
 h3 { font-size: $base * 2; text-transform: lowercase; }
 h4 { font-size: $base * 1.5; }
@@ -35,6 +44,7 @@ pre {
 	color: $red;
 }
 
+hr { margin: ($dmrg * 2) 0; height: 1px; border: solid 2px $gray-dark; }
 small { font-size: $base * 0.8 }
 big { font-size: $base * 1.2 }
 
@@ -47,32 +57,54 @@ a {
     text-decoration: underline;
     color: lighten($orange, 20%);
   }
+
+  &.blue { color: lighten($blue, 20); }
+  &.red { color: lighten($red, 30); }
+  &.green { color: lighten($green, 30); }
+  &.gray { color: lighten($gray-dark, 50); }
+  &.orange { color: lighten($orange, 20); }
 }
 
-.sprite {
-	display: inline-block;
-	margin: $mrg;
+.stripe {
+  padding: $dmrg;
 
-	&.bear { @include sprite($bear); }
-	&.dragon { @include sprite($dragon); }
-	&.deflect { @include sprite($deflect); }
-	&.sun { @include sprite($sun); }
+  &.blue { background: $blue; }
+  &.red { background: $red; }
+  &.green { background: $green; }
+  &.gray { background: $gray-dark; }
 }
-
-header,
-main,
-footer {
-  @include outer-container(780px);
-}
-header > div,
-footer > div {
-  @include span-columns(12);
-}
-section {
-  @include span-columns(12);
-  margin-bottom: $dmrg;
-
-  article {
-    font-size: $base * 1.5;
+.container {
+  @include outer-container($max-width);
+  .columns-12 {
+    @include span-columns($grid-columns);
   }
+}
+
+$header-height: $dmrg * 3;
+
+header {
+  background: rgba($black, 0.6);
+  display: none;
+  height: $header-height;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  a.top {
+    color: $white;
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: $base * 3;
+    font-weight: 500;
+    line-height: 1;
+    margin-top: -12px;
+    text-decoration: none;
+  }
+}
+main {
+  margin-top: $header-height;
+}
+
+footer {
+  margin-bottom: $header-height;
 }
