@@ -1,5 +1,5 @@
 ---
-title: Hello, world; we are Socha Dev
+title: Hello, world. We are Socha Dev.
 ---
 
 Socha Dev is a web development team built to help your company succeed. We 
