@@ -3,6 +3,7 @@ baseurl: http://sochadev.github.io
 title: Socha Dev
 description: Socha Dev is a web development team built to help your company succeed. We specialize in overflow, triage and problem solving services.
 author: jeffeoff, natemow
+rest_api: http://wintermute.sochadev.com/api
 ga_code: UA-66386274-1
 defaults:
   -

@@ -3,108 +3,169 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-body {
-	font-size: $base * 1.5;
-	line-height: 1.4;
-	font-family: 'Open Sans', sans-serif;
-	color: $white;
-	background-color: $bg;
-	margin: $dmrg 0;
- padding: 0;
-}
+// Typography stuff.
+  p {
+    margin-bottom: $mrg;
+    margin-top: 0;
 
-p {
-  margin-bottom: $mrg;
-  margin-top: 0;
-}
-h1 {
-  margin: 0;
-}
-h2, h3 {
-  margin-bottom: $hmrg;
-  margin-top: 0;
-}
-h1, h2, h3, h4, h5 {
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 500;
-}
-h1 { font-size: $base * 3; }
-h2 { font-size: $base * 2.5; text-transform: lowercase; }
-h3 { font-size: $base * 2; text-transform: lowercase; }
-h4 { font-size: $base * 1.5; }
-h5 { font-size: $base; }
-
-b, strong, h4 { font-weight: 700; }
-h5 { font-weight: 300; }
-em, i { font-style: italic; }
-
-code,
-pre {
-	font-family: $monospace;
-	color: $red;
-}
-
-hr { margin: ($dmrg * 2) 0; height: 1px; border: solid 2px $gray-dark; }
-small { font-size: $base * 0.8 }
-big { font-size: $base * 1.2 }
-
-a {
-  text-decoration: none;
-  color: $orange;
-  @include transition(all 0.3s);
-
-  &:hover {
-    text-decoration: underline;
-    color: lighten($orange, 20%);
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
-
-  &.blue { color: lighten($blue, 20); }
-  &.red { color: lighten($red, 30); }
-  &.green { color: lighten($green, 30); }
-  &.gray { color: lighten($gray-dark, 50); }
-  &.orange { color: lighten($orange, 20); }
-}
-
-.stripe {
-  padding: $dmrg;
-
-  &.blue { background: $blue; }
-  &.red { background: $red; }
-  &.green { background: $green; }
-  &.gray { background: $gray-dark; }
-}
-.container {
-  @include outer-container($max-width);
-  .columns-12 {
-    @include span-columns($grid-columns);
+  h1 {
+    margin: 0;
   }
-}
-
-$header-height: $dmrg * 3;
-
-header {
-  background: rgba($black, 0.6);
-  display: none;
-  height: $header-height;
-  position: fixed;
-  top: 0;
-  width: 100%;
-
-  a.top {
-    color: $white;
-    display: block;
+  h2, h3 {
+    margin-bottom: $hmrg;
+    margin-top: 0;
+  }
+  h1, h2, h3, h4, h5 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: $base * 3;
     font-weight: 500;
-    line-height: 1;
-    margin-top: -12px;
-    text-decoration: none;
   }
-}
-main {
-  margin-top: $header-height;
-}
+  h1 { font-size: $base * 3; }
+  h2 { font-size: $base * 2.5; text-transform: lowercase; }
+  h3 { font-size: $base * 2; text-transform: lowercase; }
+  h4 { font-size: $base * 1.5; }
+  h5 { font-size: $base; }
 
-footer {
-  margin-bottom: $header-height;
-}
+  b, strong, h4 { font-weight: 700; }
+  h5 { font-weight: 300; }
+  em, i { font-style: italic; }
+
+  code,
+  pre {
+   font-family: $monospace;
+   color: $red;
+  }
+
+  hr { margin: ($dmrg * 2) 0; height: 1px; border: solid 2px $gray-dark; }
+  small { font-size: $base * 0.8 }
+  big { font-size: $base * 1.2 }
+
+  a {
+    text-decoration: none;
+    color: $orange;
+    @include transition(all 0.3s);
+
+    &:hover {
+      text-decoration: underline;
+      color: lighten($orange, 20%);
+    }
+
+    &.blue { color: lighten($blue, 20); }
+    &.red { color: lighten($red, 30); }
+    &.green { color: lighten($green, 30); }
+    &.gray { color: lighten($gray-dark, 50); }
+    &.orange { color: lighten($orange, 20); }
+  }
+
+  .messages {
+    @include border-top-radius(3px);
+    @include border-right-radius(3px);
+    @include border-bottom-radius(3px);
+    @include border-left-radius(3px);
+
+    margin-bottom: $dmrg;
+    padding: $dmrg;
+
+    &.error { background: lighten($red, 60); color: $red; }
+    &.success { background: lighten($green, 50); color: $green; }
+  }
+
+
+// Layout stuff.
+  body {
+    font-size: $base * 1.5;
+    line-height: 1.4;
+    font-family: 'Open Sans', sans-serif;
+    color: $white;
+    background-color: $bg;
+    margin: $dmrg 0;
+    padding: 0;
+  }
+
+  .stripe {
+    padding: $dmrg;
+
+    &.blue { background: $blue; }
+    &.red { background: $red; }
+    &.green { background: $green; }
+    &.gray { background: $gray-dark; }
+  }
+  .container {
+    @include outer-container($max-width);
+    .columns-12 {
+      @include span-columns($grid-columns);
+    }
+    .columns-6 {
+      @include span-columns($grid-columns / 2);
+    }
+  }
+
+  $header-height: $dmrg * 3;
+
+  header {
+    background: rgba($black, 0.6);
+    display: none;
+    height: $header-height;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    a.top {
+      color: $white;
+      display: block;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: $base * 3;
+      font-weight: 500;
+      line-height: 1;
+      margin-top: -12px;
+      text-decoration: none;
+    }
+  }
+  main {
+    margin-top: $header-height;
+  }
+
+  footer {
+    margin-bottom: $header-height;
+  }
+
+// Forms stuff.
+  label {
+    font-weight: normal;
+  }
+  fieldset {
+    border: 0;
+    margin: $dmrg 0;
+    padding: 0;
+
+    %offset {
+      @include span-columns(8);
+      @include shift(2);
+    }
+
+    &.contact {
+      .messages {
+        @extend %offset;
+        display: none;
+      }
+      p.form-item {
+        @include outer-container($max-width);
+      }
+      label {
+        display: none;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="submit"],
+      textarea {
+        @extend %offset;
+      }
+      input[type="submit"] {
+        text-transform: lowercase;
+      }
+    }
+  }

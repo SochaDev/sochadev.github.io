@@ -55,14 +55,16 @@ tags: web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP, P
     <div class="columns-12">
       <h2 id="projects">Projects</h2>
       <p>We build; we build well. Here are some highlights. You can click 'em for more info.</p>
+      {% include projects.html %}
     </div>
   </div>
 </div>
 <div class="stripe last">
   <div class="container">
     <div class="columns-12">
-      <h2 id="contact">Contact</h2>
-      <p>Looking for support on your next project? We’d love to learn more about it.</p>
+      <h2 id="contact">Contact us</h2>
+      <p>Looking for support on your next project?<br>We'd love to learn more about it.</p>
+      {% include contact.html %}
     </div>
   </div>
 </div>
