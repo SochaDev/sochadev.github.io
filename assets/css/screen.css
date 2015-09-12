@@ -2061,10 +2061,12 @@ h1 {
   margin-top: 12px; }
 
 h2 {
-  font-size: 40px; }
+  font-size: 40px;
+  text-transform: lowercase; }
 
 h3 {
-  font-size: 32px; }
+  font-size: 32px;
+  text-transform: lowercase; }
 
 h4 {
   font-size: 24px; }

@@ -19,10 +19,9 @@ h1, h2, h3, h4, h5 {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
 }
-
 h1 { font-size: $base * 3; margin-top: $mrg; }
-h2 { font-size: $base * 2.5; }
-h3 { font-size: $base * 2; }
+h2 { font-size: $base * 2.5; text-transform: lowercase; }
+h3 { font-size: $base * 2; text-transform: lowercase; }
 h4 { font-size: $base * 1.5; }
 h5 { font-size: $base; }
 

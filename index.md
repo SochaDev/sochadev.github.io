@@ -3,34 +3,35 @@ title: Hello, world. We are Socha Dev.
 tags: web development, PHP, Drupal, AngularJS, Node.js, Meteor
 ---
 
-Socha Dev is a web development team built to help your company succeed. We
-specialize in [overflow](/#overflow), [triage](/#triage) and [problem solving](/#problem-solving) services. We invite you to
-learn more about our [past projects](/#projects) or to [contact us](/#contact) to discuss your needs.
+Socha Dev is a white label web development team built to help your company
+succeed. We specialize in [overflow](/#overflow), [triage](/#triage) and
+[problem solving](/#problem-solving) services. We invite you to learn more about
+our [past projects](/#projects) or to [contact us](/#contact) to discuss your needs.
 
 Socha Dev specializes in the development phase of web apps & sites, with
 particular expertise in PHP and Drupal. We also provide full-stack development
-expertise in JavaScript with special loves for Node & Angular, as well as general
-system administration, high-availability server architecture, and general
+expertise in JavaScript with special loves for Node.js & AngularJS, as well as
+general system administration, high-availability server architecture, and general
 maintenance.
 
-## overflow
+## Overflow
 Sometimes you just have more work than you can handle. Sometimes a great
 contract comes along, but you're not sure if it warrants bringing on a new
 full-time developer. Socha Dev has you covered.
 
-## triage
+## Triage
 Projects go off the rails. The freelancer or new developer you hired isn't
 working out, the project is due in two weeks, and it doesn't work. We will
 assess your situation and make it happen.
 
-## problem solving
+## Problem Solving
 Making great projects happen can be a tricky business. Some projects are a slam
 dunk; some projects require careful thinking and experienced engineering. Some
 projects have annoying bugs in them. Socha Dev will figure it out.
 
-## projects
+## Projects
 We build; we build well. Here are some highlights. You can click 'em for more
 info.
 
-## contact
+## Contact
 Looking for support on your next project? We’d love to learn more about it.
