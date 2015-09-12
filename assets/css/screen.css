@@ -2094,13 +2094,13 @@ big {
 
 a {
   text-decoration: none;
-  color: #f60;
+  color: #f93;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s; }
   a:hover {
     text-decoration: underline;
-    color: #ffa366; }
+    color: #ffcc99; }
 
 .sprite {
   display: inline-block;

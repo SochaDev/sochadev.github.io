@@ -1,5 +1,6 @@
 ---
 title: Hello, world. We are Socha Dev.
+tags: web development, PHP, Drupal, AngularJS, Node.js, Meteor
 ---
 
 Socha Dev is a web development team built to help your company succeed. We
