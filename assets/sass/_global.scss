@@ -5,7 +5,7 @@
 
 // Typography stuff.
   p {
-    margin-bottom: $mrg;
+    margin-bottom: $dmrg;
     margin-top: 0;
 
     &:last-child {
@@ -39,7 +39,14 @@
    color: $red;
   }
 
-  hr { margin: ($dmrg * 2) 0; height: 1px; border: solid 2px $gray-dark; }
+  hr {
+    border: solid 2px $gray-dark;
+    clear: both;
+    float: left;
+    height: 1px;
+    margin: $dmrg 0;
+    width: 100%;
+  }
   small { font-size: $base * 0.8 }
   big { font-size: $base * 1.2 }
 
@@ -52,12 +59,16 @@
       text-decoration: underline;
       color: lighten($orange, 20%);
     }
+  }
 
+  // Text highlighting.
+  a, span {
     &.blue { color: lighten($blue, 20); }
     &.red { color: lighten($red, 30); }
     &.green { color: lighten($green, 30); }
     &.gray { color: lighten($gray-dark, 50); }
     &.orange { color: lighten($orange, 20); }
+    &.purple { color: lighten($purple, 20); }
   }
 
   .messages {
@@ -88,10 +99,40 @@
   .stripe {
     padding: $dmrg;
 
-    &.blue { background: $blue; }
-    &.red { background: $red; }
-    &.green { background: $green; }
-    &.gray { background: $gray-dark; }
+    &.second {
+      .alpha { @include span-columns(8); }
+      .beta { @include span-columns(4); @include omega(); }
+      .columns-12 {
+        p:last-child { margin-bottom: $dmrg; }
+      }
+    }
+    &.blue {
+      background: $blue;
+      .alpha { @include span-columns(2); }
+      .beta { @include span-columns(10); @include omega(); }
+    }
+    &.red {
+      background: $red;
+      .alpha { @include span-columns(4); }
+      .beta { @include span-columns(8); @include omega(); }
+    }
+    &.green {
+      background: $green;
+      .alpha { @include span-columns(3); }
+      .beta { @include span-columns(9); @include omega(); }
+    }
+    &.gray {
+      background: $gray-dark;
+    }
+    &.last {
+      h2 {
+        text-align: center;
+      }
+      .columns-12 {
+        @include span-columns(8);
+        @include shift(2);
+      }
+    }
   }
   .container {
     @include outer-container($max-width);
@@ -103,8 +144,7 @@
     }
   }
 
-  $header-height: $dmrg * 3;
-
+  $header-height: ($dmrg * 3);
   header {
     background: rgba($black, 0.6);
     display: none;
@@ -141,31 +181,22 @@
     margin: $dmrg 0;
     padding: 0;
 
-    %offset {
-      @include span-columns(8);
-      @include shift(2);
-    }
-
     &.contact {
       .messages {
-        @extend %offset;
         display: none;
       }
-      p.form-item {
+      .form-item {
         @include outer-container($max-width);
       }
       label {
         display: none;
       }
-      input[type="text"],
-      input[type="email"],
-      input[type="tel"],
-      input[type="submit"],
-      textarea {
-        @extend %offset;
+      input, select, textarea {
+        margin-bottom: 0;
       }
       input[type="submit"] {
         text-transform: lowercase;
+        width: 100%;
       }
     }
   }

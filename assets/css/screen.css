@@ -2147,7 +2147,7 @@ At the bottom of this section, we provide information about the spritesheet itse
 $spritesheet: width height image $spritesheet-sprites;
 */
 p {
-  margin-bottom: 12px;
+  margin-bottom: 24px;
   margin-top: 0; }
   p:last-child {
     margin-bottom: 0; }
@@ -2195,9 +2195,12 @@ pre {
   color: #b20b23; }
 
 hr {
-  margin: 48px 0;
+  border: solid 2px #333;
+  clear: both;
+  float: left;
   height: 1px;
-  border: solid 2px #333; }
+  margin: 24px 0;
+  width: 100%; }
 
 small {
   font-size: 12.8px; }
@@ -2214,16 +2217,24 @@ a {
   a:hover {
     text-decoration: underline;
     color: #ffcc99; }
-  a.blue {
-    color: #8dcad9; }
-  a.red {
-    color: #f56176; }
-  a.green {
-    color: #bbd16e; }
-  a.gray {
-    color: #b3b3b3; }
-  a.orange {
-    color: #ffcc99; }
+
+a.blue, span.blue {
+  color: #8dcad9; }
+
+a.red, span.red {
+  color: #f56176; }
+
+a.green, span.green {
+  color: #bbd16e; }
+
+a.gray, span.gray {
+  color: #b3b3b3; }
+
+a.orange, span.orange {
+  color: #ffcc99; }
+
+a.purple, span.purple {
+  color: #a491c2; }
 
 .messages {
   border-top-left-radius: 3px;
@@ -2254,14 +2265,86 @@ body {
 
 .stripe {
   padding: 24px; }
+  .stripe.second .alpha {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    .stripe.second .alpha:last-child {
+      margin-right: 0; }
+  .stripe.second .beta {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-right: 0; }
+    .stripe.second .beta:last-child {
+      margin-right: 0; }
+  .stripe.second .columns-12 p:last-child {
+    margin-bottom: 24px; }
   .stripe.blue {
     background: #41a7bf; }
+    .stripe.blue .alpha {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 14.70196%; }
+      .stripe.blue .alpha:last-child {
+        margin-right: 0; }
+    .stripe.blue .beta {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      margin-right: 0; }
+      .stripe.blue .beta:last-child {
+        margin-right: 0; }
   .stripe.red {
     background: #b20b23; }
+    .stripe.red .alpha {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      .stripe.red .alpha:last-child {
+        margin-right: 0; }
+    .stripe.red .beta {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-right: 0; }
+      .stripe.red .beta:last-child {
+        margin-right: 0; }
   .stripe.green {
     background: #6b7e28; }
+    .stripe.green .alpha {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      .stripe.green .alpha:last-child {
+        margin-right: 0; }
+    .stripe.green .beta {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 74.41059%;
+      margin-right: 0; }
+      .stripe.green .beta:last-child {
+        margin-right: 0; }
   .stripe.gray {
     background: #333; }
+  .stripe.last h2 {
+    text-align: center; }
+  .stripe.last .columns-12 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 17.05961%; }
+    .stripe.last .columns-12:last-child {
+      margin-right: 0; }
 
 .container {
   max-width: 750px;
@@ -2316,33 +2399,20 @@ fieldset {
   border: 0;
   margin: 24px 0;
   padding: 0; }
-  fieldset.contact .messages, fieldset.contact input[type="text"],
-  fieldset.contact input[type="email"],
-  fieldset.contact input[type="tel"],
-  fieldset.contact input[type="submit"],
-  fieldset.contact textarea {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-left: 17.05961%; }
-    fieldset.contact .messages:last-child, fieldset.contact input[type="text"]:last-child,
-    fieldset.contact input[type="email"]:last-child,
-    fieldset.contact input[type="tel"]:last-child,
-    fieldset.contact input[type="submit"]:last-child,
-    fieldset.contact textarea:last-child {
-      margin-right: 0; }
   fieldset.contact .messages {
     display: none; }
-  fieldset.contact p.form-item {
+  fieldset.contact .form-item {
     max-width: 750px;
     margin-left: auto;
     margin-right: auto; }
-    fieldset.contact p.form-item::after {
+    fieldset.contact .form-item::after {
       clear: both;
       content: "";
       display: table; }
   fieldset.contact label {
     display: none; }
+  fieldset.contact input, fieldset.contact select, fieldset.contact textarea {
+    margin-bottom: 0; }
   fieldset.contact input[type="submit"] {
-    text-transform: lowercase; }
+    text-transform: lowercase;
+    width: 100%; }
