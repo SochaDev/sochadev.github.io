@@ -12,15 +12,12 @@ tags: web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP, P
       services. We invite you to check out our <a href="#projects">past projects</a>
       or <a href="#contact">contact us</a> to discuss your needs.</p>
     </div>
-    <div class="beta">
-      4
-    </div>
+    <div class="beta">4</div>
     <hr>
     <div class="columns-12">
       <p>We work in the development phase of projects &mdash; you give us your
       strategy, designs, requirements and API docs, etc. and we turn it all in
       to a fully functioning application.</p>
-
       <p>We use <span class="purple">PHP frameworks</span> (Phalcon and Slim are
       current favorites), <span class="blue">Drupal</span>,
       <span class="green">TDD and BDD suites</span>, <span class="orange">continuous
