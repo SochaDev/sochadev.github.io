@@ -1,6 +1,6 @@
 ---
 title: Hello, world. We are Socha Dev.
-tags: web development, full-stack Javascript, AngularJS, Node.js, Meteor, PHP, Phalcon, Drupal
+tags: web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP, Phalcon, Drupal
 ---
 
 Socha Dev is a white label web development team built to help your company
