@@ -55,7 +55,7 @@ tags: web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP, P
     <div class="columns-12">
       <h2 id="projects">Projects</h2>
       <p>We build; we build well. Here are some highlights. You can click 'em for more info.</p>
-{% include projects.html %}
+      {% include projects.html %}
     </div>
   </div>
 </div>
@@ -64,25 +64,7 @@ tags: web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP, P
     <div class="columns-12">
       <h2 id="contact">Contact us</h2>
       <p>Looking for support on your next project?<br>We'd love to learn more about it.</p>
-      <fieldset class="contact">
-        <div class="messages"></div>
-        <form action="{{ page.url }}" method="post">
-          <p class="form-item"><label for="name">Name *</label><input type="text" id="name" name="name" placeholder="Name *" maxlength="255" required></p>
-          <p class="form-item"><label for="email">Email *</label><input type="email" id="email" name="email" placeholder="Email *" maxlength="255" required></p>
-          <p class="form-item"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" placeholder="Phone" maxlength="255"></p>
-          <p class="form-item"><label for="title">Title</label><input type="text" id="title" name="title" placeholder="Title" maxlength="255"></p>
-          <p class="form-item"><label for="company">Company / Org</label><input type="text" id="company" name="company" placeholder="Company / Org" maxlength="255"></p>
-          <p class="form-item">
-            <label for="human">Human check *</label>
-            <input type="text" id="human" name="human" required placeholder="Human check *" maxlength="6">
-            <input type="hidden" id="human-valid" name="human_valid">
-            <input type="hidden" id="human-valid-input1" name="human_valid_input1">
-            <input type="hidden" id="human-valid-input2" name="human_valid_input2">
-          </p>
-          <p class="form-item"><label for="details">Project details *</label><textarea id="details" name="details" rows="5" required placeholder="Project details *"></textarea></p>
-          <p class="form-item"><label for="submit">Submit</label><input type="submit" value="Send it"></p>
-        </form>
-      </fieldset>
+      {% include contact.html %}
     </div>
   </div>
 </div>
