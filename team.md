@@ -6,29 +6,29 @@ tags: web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP, P
 
 We're small, but we don't mind &mdash; we're pretty large and mighty when it comes to the business of developing effective and awesome websites and apps.
 
-## Jason Socha (gnosis)
+## Jason Socha
 
-TODO
+_gnosis_ &mdash; TODO
 
-## Matt West (mattdanger)
+## Matt West
 
-TODO
+_mattdanger_ &mdash; TODO
 
-## Drew Deering (spacepope)
+## Drew Deering
 
-TODO
+_spacepope_ &mdash; TODO
 
-## Nate Mow (natemow)
+## Nate Mow
 
-TODO
+_natemow_ &mdash; TODO
 
 ## Jeff Eoff (jeffeoff)
 
-TODO
+_jeffeoff_ &mdash; TODO
 
-## Tory Gobat (tea.time)
+## Tory Gobat
 
-TODO
+_tea.time_ &mdash; TODO
 
 ## TODO: add your name here
 
