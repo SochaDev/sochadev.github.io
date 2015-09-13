@@ -41,4 +41,8 @@ for hosting, so we ported the whole thing over here to GitHub Pages. Enjoy!
 
 * `@jeffeoff` - ^ process alla that in to something that makes us hip and rad and human-like and makes people want to come work with our rad group, or just hire us becaue we are so rad and `with it`. Also: audit everything ever because you are way more `in touch` than `@natemoo` is and you know what's actually cool these days.
 
-* `@jasonsocha` - Apply seal-of-approval to above and CNAME the `sochadev.com` domain.
+* `@jasonsocha` - Apply seal-of-approval to above and point the `sochadev.com` domain. To do that we'll need this stuff:
+
+  * Add a `CNAME` file to repo root with 1 line in it: `sochadev.com`. Confirm this is acknowledged under project settings (you should see "Your site is published at http://sochadev.com" in a minute or so).
+  * Add DNS `A` records for `192.30.252.153`, `192.30.252.154`, remove existing record.
+  * Add DNS `CNAME` record for `www.sochadev.com` pointing to `sochadev.github.io`.
