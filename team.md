@@ -36,4 +36,4 @@ _tea.time_ &mdash; TODO
 
 \# TODO: Add your name here.
 
-If you think you might be a good fit here at Socha Dev &mdash; please <a href="/#contact" class="blue">contact us!</a> You should probably include a link to your GitHub account if you're a dev ;)
+If you think you might be a good fit here at Socha Dev &mdash; please <a href="/#contact" class="blue">contact us!</a> Pro tip: You should probably include a link to your GitHub account if you're a dev ;)
