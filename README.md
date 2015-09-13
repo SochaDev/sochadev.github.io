@@ -34,3 +34,5 @@ for hosting, so we ported the whole thing over here to GitHub Pages. Enjoy!
 * `@channel` - We _might_ already have yours -- but if not, write a 1 para bio for the `/team` page; give Jeff your current preferred avatar, GH + d.o. homepage, etc. so he can do something sweet with it all (e.g. Simpsons characters or something...don't really care).
 
 * `@jeffeoff` - ^ process alla that in to something that makes us hip and rad and human-like and makes people want to come work with our rad group, or just hire us becaue we are so rad and `with it`. Also: audit everything ever because you are way more `in touch` than `@natemoo` is and you know what's actually cool these days.
+
+* `@jasonsocha` - Apply seal-of-approval to above and CNAME the `sochadev.com` domain.
