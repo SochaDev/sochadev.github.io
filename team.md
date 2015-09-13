@@ -22,13 +22,15 @@ _spacepope_ &mdash; TODO
 
 _natemow_ &mdash; TODO
 
-## Jeff Eoff (jeffeoff)
+## Jeff Eoff
 
 _jeffeoff_ &mdash; TODO
 
 ## Tory Gobat
 
 _tea.time_ &mdash; TODO
+
+<hr>
 
 ## TODO: add your name here
 
