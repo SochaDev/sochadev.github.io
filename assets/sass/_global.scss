@@ -159,7 +159,7 @@
 
       &.default {
         padding-bottom: ($mrg * 6);
-        hr { border-color: #444; }
+        hr { border-color: #444; margin-top: 0; }
       }
     }
     &.purple {

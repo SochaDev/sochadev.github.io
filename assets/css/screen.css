@@ -2382,7 +2382,8 @@ body {
     .stripe.gray.default {
       padding-bottom: 72px; }
       .stripe.gray.default hr {
-        border-color: #444; }
+        border-color: #444;
+        margin-top: 0; }
   .stripe.purple {
     background: #6f5499; }
     .stripe.purple .alpha {
