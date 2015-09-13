@@ -47,6 +47,7 @@
     margin: $dmrg 0;
     width: 100%;
   }
+  img { display: block; float: left; }
   small { font-size: $base * 0.8 }
   big { font-size: $base * 1.2 }
 
@@ -58,7 +59,7 @@
 
     &:hover {
       text-decoration: underline;
-      color: lighten($orange, 20%);
+      color: lighten($orange, 10%);
     }
     &:visited,
     &:focus {
@@ -69,14 +70,35 @@
 
   // Text highlighting.
   a, span {
-    &.blue { color: lighten($blue, 20); }
-    &.red { color: lighten($red, 30); }
-    &.green { color: lighten($green, 30); }
-    &.gray { color: lighten($gray-dark, 50); }
-    &.orange { color: lighten($orange, 20); }
-    &.purple { color: lighten($purple, 20); }
+    &.dotted { border-bottom: dotted 2px $gray; }
+    &.blue {
+      color: lighten($blue, 20%);
+      &:hover { color: lighten($blue, 35%); }
+    }
+    &.red {
+      color: lighten($red, 30%);
+      &:hover { color: lighten($red, 40%); }
+    }
+    &.green {
+      color: lighten($green, 30%);
+      &:hover { color: lighten($green, 50%); }
+    }
+    &.gray {
+      color: lighten($gray-dark, 20%);
+      &:hover { color: lighten($gray-dark, 30%); }
+    }
+    &.orange {
+      color: $orange;
+      &:hover { color: lighten($orange, 10%); }
+    }
+    &.purple {
+      color: lighten($purple, 20%);
+      &:hover { color: lighten($purple, 35%); }
+    }
   }
-
+  .breadcrumb {
+    text-transform: lowercase;
+  }
   .messages {
     @include border-top-radius(3px);
     @include border-right-radius(3px);
@@ -115,7 +137,7 @@
     &.blue {
       background: $blue;
       .alpha { @include span-columns(2); }
-      .beta { @include span-columns(10); @include omega(); }
+      .beta { @include span-columns(8); @include omega(); }
     }
     &.red {
       background: $red;
@@ -129,15 +151,29 @@
     }
     &.gray {
       background: $gray-dark;
+      .alpha { @include span-columns(8); }
+      .beta { @include span-columns(4); @include omega(); }
+    }
+    &.purple {
+      background: $purple;
+      .alpha { @include span-columns(4); }
+      .beta { @include span-columns(8); @include omega(); }
     }
     &.last {
-      h2 {
-        text-align: center;
-      }
+      background: $gray-darker;
+
       .columns-12 {
         @include span-columns(8);
         @include shift(2);
       }
+    }
+    &.team {
+      .alpha { @include span-columns(3); }
+      .beta {
+        @include span-columns(9); @include omega();
+        p:last-child { margin-bottom: $dmrg; }
+      }
+
     }
   }
   .container {
@@ -145,14 +181,26 @@
     .columns-12 {
       @include span-columns($grid-columns);
     }
+    .columns-10 {
+      @include span-columns(10);
+    }
+    .columns-8 {
+      @include span-columns(8);
+    }
     .columns-6 {
       @include span-columns($grid-columns / 2);
     }
+    .columns-4 {
+      @include span-columns($grid-columns / 3);
+    }
+    .columns-2 {
+      @include span-columns(2);
+    }
   }
 
-  $header-height: ($dmrg * 3);
+  $header-height: ($dmrg * 3.5);
   header {
-    background: rgba($black, 0.6);
+    background: rgba($black, 0.7);
     display: none;
     height: $header-height;
     position: fixed;
@@ -162,12 +210,24 @@
     a.top {
       color: $white;
       display: block;
+      float: left;
       font-family: 'Ubuntu', sans-serif;
       font-size: $base * 3;
       font-weight: 500;
       line-height: 1;
       margin-top: -12px;
       text-decoration: none;
+      width: 100%;
+    }
+    a.home {
+      display: block;
+      margin-top: 0;
+      width: 100%;
+    }
+    .right {
+      display: block;
+      float: right;
+      text-transform: lowercase;
     }
   }
   main {
@@ -201,8 +261,11 @@
         margin-bottom: 0;
       }
       input[type="submit"] {
+        font-weight: normal;
         text-transform: lowercase;
         width: 100%;
+
+        &:hover { background-color: lighten($blue, 10%); }
       }
     }
   }

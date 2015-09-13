@@ -6,27 +6,21 @@ tags: web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP, P
 <div class="stripe second">
   <div class="container">
     <div class="alpha">
-      <p>Socha Dev is a white-label web and app development team built to help
-      your company succeed. We specialize in <a href="#overflow" class="blue">overflow</a>,
-      <a href="#triage" class="red">triage</a> and <a href="#problem-solving" class="green">problem solving</a>
-      services. We invite you to check out our <a href="#projects">past projects</a>
-      or <a href="#contact">contact us</a> to discuss your needs.</p>
+      <p>Socha Dev is a white-label web and app development shop built to help
+      your team succeed. We specialize in <a href="#overflow" class="blue">overflow</a>,
+      <a href="#triage" class="red">triage</a> and
+      <a href="#problem-solving" class="green">problem solving</a> services.
+      We invite you to check out our <a href="#projects">past projects</a>,
+      learn more about <a href="#about" class="purple">our team</a>
+      <a href="#open-source" class="blue">and their tools</a> &mdash; then
+      <a href="#contact" class="green">contact us</a> to discuss your next project.</p>
     </div>
     <div class="beta">4</div>
     <hr>
     <div class="columns-12">
       <p>We work in the development phase of projects &mdash; you give us your
-      strategy, designs, requirements and API docs, etc. and we turn it all in
-      to a fully functioning application.</p>
-      <p>We use <span class="purple">PHP frameworks</span> (Phalcon and Slim are
-      current favorites), <span class="blue">Drupal</span>,
-      <span class="green">TDD and BDD suites</span>, <span class="orange">continuous
-      integration services</span> (TravisCI, CircleCI) and a slew of front-end
-      tools to complete your project, end-to-end. We also offer
-      <span class="orange">full-stack JavaScript development</span> expertise
-      using many tools such as <span class="green">Node.js</span>,
-      <span class="blue">Express</span>, <span class="red">AngularJS</span>,
-      <span class="orange">Meteor</span> and NoSQL databases.</p>
+      strategy, designs, requirements, API docs and any other pertinents &mdash;
+      we turn it all in to a fully functioning application.</p>
     </div>
   </div>
 </div>
@@ -65,9 +59,12 @@ tags: web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP, P
 </div>
 <div class="stripe gray">
   <div class="container">
-    <div class="columns-12">
+    <div class="alpha">
       <h2 id="projects">Projects</h2>
-      <p>We build; we build well. Here are some highlights &mdash; you can click 'em for more info.</p>
+      <p>We build; we build well. Here are some highlights &mdash; click 'em for more info.</p>
+    </div>
+    <div class="beta">4</div>
+    <div class="columns-12">
       {% include projects.html %}
     </div>
   </div>
@@ -76,10 +73,28 @@ tags: web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP, P
   <div class="container">
     <div class="columns-12">
       <h2 id="contact">Contact us</h2>
-      <p>Looking for support on your next project? We'd love to learn more about it.</p>
+      <p>Ready to get started? We'd love to learn more about your project.</p>
     </div>
     <div class="columns-12">
       {% include contact.html %}
+    </div>
+  </div>
+</div>
+<div class="stripe team">
+  <div class="container">
+    <hr>
+    <div class="alpha">4</div>
+    <div class="beta">
+      <h2 id="about">Our team</h2>
+      <p><a href="/team">Our team members</a> live and work happily all over the
+      US &mdash; we use some neat apps to keep us connected to each other and to
+      our clients. Socha Dev's workflow is designed to incorporate our clients'
+      feedback throughout a project's life cycle.</p>
+    </div>
+    <div class="columns-12">
+      <p>If you're a developer and think you might be a good fit here &mdash;
+      by all means, <a href="#contact" class="blue">contact us</a> and be sure
+      include a link to your GitHub account!</p>
     </div>
   </div>
 </div>

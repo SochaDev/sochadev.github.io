@@ -19,8 +19,12 @@
   <header>
     <div class="stripe first">
       <div class="container">
-        <div class="columns-12">
+        <div class="columns-8">
           <a href="/" class="top">{{ site.title }}</a>
+        </div>
+        <div class="columns-4">
+          <a href="/" class="top">
+            <a href="/" class="home{% if page.url == '/' %} top{% endif %}"><img src="https://avatars2.githubusercontent.com/u/1489168?v=3&s=36" alt="Home" title="Home" class="right"></a>
         </div>
       </div>
     </div>
@@ -29,21 +33,48 @@
     <div class="stripe first">
       <div class="container">
         <div class="columns-12">
-          <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+          <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>{% if page.url != '/' %}
+          <p class="breadcrumb"><a href="/" class="blue">Home</a>{% endif %}</p>
         </div>
       </div>
-    </div>
+    </div>{% if page.url == '/' %}
 
 {{ content }}
 
+    {% else %}<div class="stripe gray">
+      <div class="container">
+        <div class="columns-12">
+
+{{ content }}
+
+        </div>
+      </div>
+    </div>{% endif %}
   </main>
   <footer>
     <div class="stripe first">
       <div class="container">
         <div class="columns-12">
-          <hr>
-          <p>Like this site? That's cool, <a href="https://github.com/SochaDev/sochadev.github.io" target="_blank">you can have this one for free</a> ;)</p>
-          <p>We love and use a LOT of <span class="green">open source software</span> and try to give back to our community whenever we can &mdash; please help yourself to any of <a href="https://github.com/SochaDev" target="_blank">our stuff</a>, and pay it forward if you can.</p>
+          <h2 id="open-source">Open Source</h2>
+          <p>Like this site? That's cool, <a href="https://github.com/SochaDev/sochadev.github.io"
+           accesskey=""target="_blank" class="blue">you can have this one for free</a> ;)
+          Its a custom <span class="orange dotted">Jekyll</span> theme <a href="/team" class="green">we</a>
+          built that has lots of great <span class="red dotted">Gulp</span>
+          and <span class="purple dotted">SASS</span> stuff baked in &mdash;
+          all hosted courtesy of <span class="blue dotted">GitHub Pages</span>.</p>
+          <p>Socha Dev uses <span class="purple dotted">PHP frameworks</span>
+          (Phalcon and Slim are current favorites), <span class="blue dotted">Drupal</span>,
+          <span class="green dotted">TDD and BDD suites</span>,
+          <span class="orange dotted">continuous integration services</span>
+          (TravisCI, CircleCI) and a slew of front-end tools to complete projects,
+          end-to-end. We also offer <span class="orange dotted">full-stack JavaScript development</span>
+          expertise using many tools such as <span class="green dotted">Node.js</span>,
+          <span class="blue dotted">Express</span>, <span class="red dotted">AngularJS</span>,
+          <span class="orange dotted">Meteor</span>, RESTful APIs and NoSQL databases.</p>
+          <p>We love and use a LOT of <span class="green dotted">open source software</span>
+          and try to give back to our community whenever we can &mdash; please
+          help yourself to any of <a href="https://github.com/SochaDev" target="_blank" class="orange">our stuff</a>,
+          and pay it forward if you can.</p>
         </div>
       </div>
     </div>
@@ -55,7 +86,7 @@
       baseUri: "{{ site.rest_api }}"
     },
     page: {
-      url: "{{ site.baseurl }}{{ page.url }}",
+      url: "{{ page.url }}",
       title: "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
       description: "{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"
     },

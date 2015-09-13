@@ -55,12 +55,14 @@
         });
 
       // Magical scroll-to-target.
-      $('a[href*=#]', context)
-        .click(function(evt) {
-          evt.preventDefault();
-          settings.theme.top = ($(this.hash).offset().top - theme.headerScrollOffset);
-          theme.scrollMain(context, settings);
-        });
+      if (settings.page.url == '/') {
+        $('a[href*=#]', context)
+          .click(function(evt) {
+            evt.preventDefault();
+            settings.theme.top = ($(this.hash).offset().top - theme.headerScrollOffset);
+            theme.scrollMain(context, settings);
+          });
+      }
     },
     contactForm: function(context, settings) {
 
