@@ -2228,7 +2228,7 @@ a {
     outline: none; }
 
 a.dotted, span.dotted {
-  border-bottom: dotted 2px #888; }
+  border-bottom: dotted 2px #666; }
 
 a.blue, span.blue {
   color: #8dcad9; }
@@ -2378,7 +2378,7 @@ body {
       .stripe.gray .beta:last-child {
         margin-right: 0; }
     .stripe.gray hr {
-      border-color: #888; }
+      border-color: #666; }
   .stripe.purple {
     background: #6f5499; }
     .stripe.purple .alpha {
