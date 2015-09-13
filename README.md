@@ -23,7 +23,7 @@ for hosting, so we ported the whole thing over here to GitHub Pages. Enjoy!
 
 ### TODO
 
-* `@mistressofdrupal` - Build a micro RESTful API using either Slim or Phalcon (private SD repo plz), make sure a base path of `https://wintermute.sochadev.com/api-www` exists and can handle POST and GET, reject all other verbs with a 403. Ping `@natemow` for SSL or alias setup or whatever on `wintermute` as needed. API should also make sure that cross-origin requests are handled from `sochadev.github.io`, `sochadev.com` and `local.sochadev`; all other domains should throw a 403. We need `status` (HTTP response int) and `messages` (array) included in all API responses. Update `assets/js/app.js::theme.contactForm` jQuery `$.post` and/or `.respond` handler to reflect API responses.
+* `@mistressofdrupal` - Build a micro RESTful API using either Slim or Phalcon (private SD repo plz), make sure a base path of `https://wintermute.sochadev.com/api-www` exists and can handle POST and GET, reject all other verbs with a 403. Ping `@natemow` for SSL or alias setup or whatever on `wintermute` as needed. API should also make sure that cross-origin requests are handled from `sochadev.github.io`, `sochadev.com` and `local.sochadev`; all other domains should throw a 403. We need `status` (HTTP response int) and `messages` (array) included in all API responses. Update `assets/js/app.js::theme.contactForm` jQuery `$.post` and/or `.respond` handler to reflect API JSON responses.
 
 * `@mistressofdrupal` - Would be nice if we had some basic JS validation + scrollTo for contact form fields with `required` attr (i.e. outside of built-in browser handling).
 
