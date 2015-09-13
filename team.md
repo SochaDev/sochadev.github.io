@@ -6,6 +6,8 @@ tags: web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP, P
 
 We're small, but we don't mind &mdash; we're pretty large and mighty when it comes to the business of developing effective and awesome websites and apps.
 
+* * *
+
 ## Jason Socha
 
 _gnosis_ &mdash; TODO

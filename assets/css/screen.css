@@ -2292,6 +2292,8 @@ body {
 
 .stripe {
   padding: 24px; }
+  .stripe.default {
+    border-bottom: solid 1px #666; }
   .stripe.second .alpha {
     float: left;
     display: block;
@@ -2377,8 +2379,10 @@ body {
       margin-right: 0; }
       .stripe.gray .beta:last-child {
         margin-right: 0; }
-    .stripe.gray hr {
-      border-color: #666; }
+    .stripe.gray.default {
+      padding-bottom: 72px; }
+      .stripe.gray.default hr {
+        border-color: #444; }
   .stripe.purple {
     background: #6f5499; }
     .stripe.purple .alpha {

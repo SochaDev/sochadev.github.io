@@ -29,7 +29,7 @@
     </div>
   </header>
   <main>
-    <div class="stripe first">
+    <div class="stripe first{% if page.url != '/' %} default{% endif %}">
       <div class="container">
         <div class="columns-12">
           <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>{% if page.url != '/' %}
@@ -40,7 +40,7 @@
 
 {{ content }}
 
-    {% else %}<div class="stripe gray">
+    {% else %}<div class="stripe gray default">
       <div class="container">
         <div class="columns-12">
 

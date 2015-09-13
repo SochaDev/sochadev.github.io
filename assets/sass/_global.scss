@@ -127,6 +127,9 @@
   .stripe {
     padding: $dmrg;
 
+    &.default {
+      border-bottom: solid 1px $gray;
+    }
     &.second {
       .alpha { @include span-columns(8); }
       .beta { @include span-columns(4); @include omega(); }
@@ -154,7 +157,10 @@
       .alpha { @include span-columns(8); }
       .beta { @include span-columns(4); @include omega(); }
 
-      hr { border-color: $gray; }
+      &.default {
+        padding-bottom: ($mrg * 6);
+        hr { border-color: #444; }
+      }
     }
     &.purple {
       background: $purple;
