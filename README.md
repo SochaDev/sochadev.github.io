@@ -2,8 +2,8 @@
 
 [![Build Status](https://travis-ci.org/SochaDev/sochadev.github.io.svg?branch=master)](https://travis-ci.org/SochaDev/sochadev.github.io)
 
-Welcome to the new [Socha Dev](http://sochadev.github.io) site! We got tired of paying 
-for hosting, so we ported the whole thing over here to GitHub pages. Enjoy!
+Welcome to the new [Socha Dev](http://sochadev.github.io) site! We got tired of paying
+for hosting, so we ported the whole thing over here to GitHub Pages. Enjoy!
 
 ## Development and Building
 
