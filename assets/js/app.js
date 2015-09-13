@@ -147,7 +147,7 @@
           .toString();
 
         if (srand !== data.human || arand !== data.human_valid) {
-          respond(false, ["Sorry " + data.name + ", you don't seem to have a human project to discuss with us."]);
+          respond(false, ["Sorry " + data.name + ", you don't seem to have a human thing to discuss with us."]);
           return false;
         }
 
