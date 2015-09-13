@@ -98,7 +98,7 @@
     }
     &.gray {
       color: $gray-lighter;
-      &:hover { color: darken($gray-lighter, 8%); }
+      &:hover { color: lighten($gray-lighter, 100%); }
     }
     &.orange {
       color: $orange;

@@ -2263,7 +2263,7 @@ a.green, span.green {
 a.gray, span.gray {
   color: #e4e4e4; }
   a.gray:hover, span.gray:hover {
-    color: #d0d0d0; }
+    color: white; }
 
 a.orange, span.orange {
   color: #ffb366; }
