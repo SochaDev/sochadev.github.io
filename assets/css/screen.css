@@ -2261,9 +2261,9 @@ a.green, span.green {
     color: #dfeabb; }
 
 a.gray, span.gray {
-  color: #666666; }
+  color: #e4e4e4; }
   a.gray:hover, span.gray:hover {
-    color: gray; }
+    color: #d0d0d0; }
 
 a.orange, span.orange {
   color: #ffb366; }

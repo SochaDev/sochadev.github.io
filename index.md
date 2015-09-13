@@ -6,7 +6,7 @@ tags: web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP, P
 <div class="stripe second">
   <div class="container">
     <div class="alpha">
-      <p>Socha Dev is a white-label web and app development shop built to help
+      <p>Socha Dev is a <span class="gray dotted">white-label</span> web and app development shop built to help
       your team succeed. We specialize in <a href="#overflow" class="blue">overflow</a>,
       <a href="#triage" class="red">triage</a> and
       <a href="#problem-solving" class="green">problem solving</a> services.
