@@ -75,8 +75,7 @@ tags: web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP, P
       <h2 id="contact">Contact us</h2>
       <p>Ready to get started? We'd love to learn more about your project.</p>
     </div>
-    <div class="columns-12">
-      {% include contact.html %}
+    <div class="columns-12">{% include contact.html %}
     </div>
   </div>
 </div>
