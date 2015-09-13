@@ -35,8 +35,17 @@
 
   code,
   pre {
-   font-family: $monospace;
-   color: $red;
+    @include border-top-radius(3px);
+    @include border-right-radius(3px);
+    @include border-bottom-radius(3px);
+    @include border-left-radius(3px);
+    background: $gray-4;
+    clear: both;
+    color: $text;
+    font-family: $monospace;
+    padding: $mrg;
+    width: 100%;
+
   }
 
   hr {
@@ -159,7 +168,7 @@
 
       &.default {
         padding-bottom: ($mrg * 6);
-        hr { border-color: #444; margin-top: 0; }
+        hr { border-color: $gray-4; margin-top: 0; }
       }
     }
     &.purple {

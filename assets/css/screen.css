@@ -2191,8 +2191,20 @@ em, i {
 
 code,
 pre {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  background: #444;
+  clear: both;
+  color: #e4e4e4;
   font-family: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace;
-  color: #b20b23; }
+  padding: 12px;
+  width: 100%; }
 
 hr {
   border: solid 2px #333;
