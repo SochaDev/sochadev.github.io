@@ -83,7 +83,7 @@ tags: web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP, P
 <div class="stripe team">
   <div class="container">
     <hr>
-    <div class="alpha">4</div>
+    <div class="alpha">3</div>
     <div class="beta">
       <h2 id="about">Our team</h2>
       <p><a href="/team">Our team members</a> live and work happily all over the
