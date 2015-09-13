@@ -2206,7 +2206,7 @@ pre {
   clear: both;
   color: #e4e4e4;
   font-family: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace;
-  padding: 12px;
+  padding: 24px 12px;
   width: 100%; }
 
 hr {
