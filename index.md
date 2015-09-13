@@ -92,9 +92,8 @@ tags: web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP, P
       feedback throughout a project's life cycle.</p>
     </div>
     <div class="columns-12">
-      <p>If you're a developer and think you might be a good fit here &mdash;
-      by all means, <a href="#contact" class="blue">contact us</a> and be sure
-      include a link to your GitHub account!</p>
+      <p>Want to work here? By all means, <a href="#contact" class="blue">contact us</a>
+      and be sure to include a link to your GitHub account if you're a developer!</p>
     </div>
   </div>
 </div>
