@@ -2377,6 +2377,8 @@ body {
       margin-right: 0; }
       .stripe.gray .beta:last-child {
         margin-right: 0; }
+    .stripe.gray hr {
+      border-color: #888; }
   .stripe.purple {
     background: #6f5499; }
     .stripe.purple .alpha {

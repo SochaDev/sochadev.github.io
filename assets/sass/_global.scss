@@ -153,6 +153,8 @@
       background: $gray-dark;
       .alpha { @include span-columns(8); }
       .beta { @include span-columns(4); @include omega(); }
+
+      hr { border-color: $gray; }
     }
     &.purple {
       background: $purple;
