@@ -27,6 +27,8 @@ are more, but as a white-label dev shop, it's sometimes against the rules to
 tell you about them! Check out our teams' bios below for a few more examples of
 the trenches we've been in.
 
+* * *
+
 ## Team Members
 
 {% include bios.html %}
