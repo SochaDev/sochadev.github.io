@@ -35,5 +35,5 @@ tell you about them!
 
 * * *
 
-_References available upon request \-- call or email any time. (t) 608-213-9838 (e) socha dot jason at sochadev dot com._
+_References available upon request \-- call or email any time (t) 608-213-9838 (e) socha dot jason at sochadev dot com._
 

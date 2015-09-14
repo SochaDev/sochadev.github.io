@@ -1,5 +1,5 @@
 // Typography stuff.
-  @import url(https://fonts.googleapis.com/css?family=Ubuntu);
+  @import url(https://fonts.googleapis.com/css?family=Ubuntu:400);
   @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
   p {
@@ -16,7 +16,7 @@
   }
   h1, h2, h3, h4, h5 {
     font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
+    font-weight: normal;
   }
   h1 {
     font-size: $base * 3;
@@ -86,7 +86,6 @@
     }
     &:visited,
     &:focus {
-      text-decoration: none;
       outline: none;
     }
   }
@@ -122,20 +121,12 @@
   .breadcrumb {
     text-transform: lowercase;
   }
-  .messages {
-    @extend %border-radius;
-    margin-bottom: $dmrg;
-    padding: $dmrg;
-
-    &.error { background: lighten($red, 60); color: $red; }
-    &.success { background: lighten($green, 50); color: $green; }
-  }
 
 
 // Layout stuff.
   body {
-    font-size: $base * 1.5;
-    line-height: 1.4;
+    font-size: $base * 1.4;
+    line-height: 1.3;
     font-family: 'Open Sans', sans-serif;
     color: $white;
     background-color: $bg;
@@ -210,24 +201,12 @@
   }
   .container {
     @include outer-container($max-width);
-    .columns-12 {
-      @include span-columns($grid-columns);
-    }
-    .columns-10 {
-      @include span-columns(10);
-    }
-    .columns-8 {
-      @include span-columns(8);
-    }
-    .columns-6 {
-      @include span-columns($grid-columns / 2);
-    }
-    .columns-4 {
-      @include span-columns($grid-columns / 3);
-    }
-    .columns-2 {
-      @include span-columns(2);
-    }
+    .columns-12 { @include span-columns($grid-columns); }
+    .columns-10 { @include span-columns(10); }
+    .columns-8 { @include span-columns(8); }
+    .columns-6 { @include span-columns($grid-columns / 2); }
+    .columns-4 { @include span-columns($grid-columns / 3); }
+    .columns-2 { @include span-columns(2); }
   }
 
   $header-height: ($dmrg * 3.5);
@@ -245,7 +224,7 @@
       float: left;
       font-family: 'Ubuntu', sans-serif;
       font-size: $base * 3;
-      font-weight: 500;
+      font-weight: normal;
       line-height: 1;
       margin-top: -12px;
       text-decoration: none;
@@ -269,12 +248,19 @@
   main {
     margin-top: $header-height;
   }
-
   footer {
     margin-bottom: $header-height;
   }
 
 // Forms stuff.
+  .messages {
+    @extend %border-radius;
+    margin-bottom: $dmrg;
+    padding: $dmrg;
+
+    &.error { background: lighten($red, 60); color: $red; }
+    &.success { background: lighten($green, 50); color: $green; }
+  }
   label {
     font-weight: normal;
   }
