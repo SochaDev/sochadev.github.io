@@ -8,7 +8,7 @@ We're small, but we don't mind &mdash; we're pretty large and mighty when it com
 
 * * *
 
-## Jason Socha _gnosis_
+## Jason Socha
 
 With 20+ years of experience in coding, most of that web-related, Jason is
 proficient in many of the major (and several of the minor) languages and
@@ -19,7 +19,7 @@ side of things mostly these days, but still gets his hands dirty often enough.
 Recent work includes leading development on such larger projects as fcc.gov and
 press.org (The Nat'l Press Club) (both Drupal), among many others.
 
-## Matt West _mattdanger_
+## Matt West
 
 Matt lives in Rochester, NY and has been developing for the web for almost 15
 years. He has a B.S. in IT and a M.S. in International Business from D'Youville
@@ -33,7 +33,7 @@ a small web development company that develops and hosts websites for newspapers
 from all over the U.S. Matt led the company's migration of 200 customer sites
 to Drupal.
 
-## Drew Deering _spacepope_
+## Drew Deering
 
 As a kid, Drew always loved computers. A hacker at heart, he wrote his first
 computer program at the age of 12: a simple text-based dungeon crawler, complete
@@ -46,7 +46,7 @@ held positions with National Journal, NPR, and Triple Canopy before coming to
 Socha Dev in May of 2013, where he has been wowing everyone with his skills in
 hybrid app development using technologies such as Node.js and Meteor.
 
-## Nate Mow _natemow_
+## Nate Mow
 
 Nate serves as the Development Foreman at Socha Dev, guiding the team and making
 sure functional deliverables are completed according to spec. Nate is a senior
@@ -59,11 +59,11 @@ clients or cracking his fiery foreman whip (and sometimes in parallel), Nate
 also enjoys tinkering with front-end stack du jour and giving back to the open
 source community however possible.
 
-## Jeff Eoff _jeffeoff_
+## Jeff Eoff
 
 TODO
 
-## Tory Gobat _tea.time_
+## Tory Gobat
 
 TODO
 
