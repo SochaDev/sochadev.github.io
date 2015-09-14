@@ -2550,14 +2550,16 @@ label {
 
 fieldset {
   border: 0;
-  margin: 24px 0;
+  margin: 24px 0 0 0;
   padding: 0; }
   fieldset.contact .messages {
     display: none; }
   fieldset.contact .form-item {
     max-width: 1170px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    line-height: 1;
+    margin-bottom: 12px; }
     fieldset.contact .form-item::after {
       clear: both;
       content: "";
