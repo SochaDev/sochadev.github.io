@@ -6,11 +6,11 @@ tags: [ Jason Socha, Matt West, Drew Deering, Nate Mow, Jeff Eoff, Tory Gobat, t
 
 We're small, but we don't mind &mdash; we're pretty large and mighty when it comes to the business of developing effective and awesome websites and apps.
 
-If you need material for the boss or board or whatever, [here's a PDF](https://gitprint.com/SochaDev/sochadev.github.io/master/assets/downloads/socha-dev-rap-sheet.md){:target="_blank"} of the rap sheet.
+If you need material for the boss or board or whatever, [here's an executive summary](/assets/downloads/socha-dev-executive-summary){:target="_blank"} of the team.
 
 * * *
 
-{% markdown bios.md %}
+{% include bios.md %}
 
 ### Ro
 

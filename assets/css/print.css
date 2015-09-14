@@ -1,0 +1,20 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body {
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: 'Open Sans', sans-serif;
+  color: #2b2b2b;
+  background-color: #fff;
+  margin: 24px; }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  margin-bottom: 12px; }
+
+p {
+  margin-bottom: 24px;
+  margin-top: 0; }
+
+/*# sourceMappingURL=print.css.map */

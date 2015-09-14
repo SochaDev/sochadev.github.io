@@ -1,3 +1,6 @@
+[//]: # This file is included on the /team page as well
+[//]: # as /assets/downloads/socha-dev-executive-summary.
+
 ### Jason Socha
 
 With 20+ years of experience in coding, most of that web-related, Jason is
@@ -7,12 +10,12 @@ and development and tends to focus on server-side application development. He
 also loves JavaScript, both client and server-side. Jason lives on the business
 side of things mostly these days, but still gets his hands dirty often enough.
 Recent work includes leading development on such larger projects as fcc.gov and
-press.org (The Nat'l Press Club) (both Drupal), among many others.
+press.org (The Nat\'l Press Club) (both Drupal), among many others.
 
 ### Matt West
 
 Matt lives in Rochester, NY and has been developing for the web for almost 15
-years. He has a B.S. in IT and a M.S. in International Business from D'Youville
+years. He has a B.S. in IT and a M.S. in International Business from D\'Youville
 College in Buffalo, NY. While in school Matt was one of 900 students to
 participate in the Google Summer of Code program. He worked with Geeklog CMS
 and developed an installation UI that made the CMS more friendly to install and
@@ -20,7 +23,7 @@ even supported 3rd party plugins and migrations from older versions. In later
 years Matt participated in the Summer of Code program as a student mentor. After
 spending a few years working in the academic world, Matt joined Our Hometown,
 a small web development company that develops and hosts websites for newspapers
-from all over the U.S. Matt led the company's migration of 200 customer sites
+from all over the U.S. Matt led the company\'s migration of 200 customer sites
 to Drupal.
 
 ### Drew Deering
