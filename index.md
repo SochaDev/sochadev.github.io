@@ -1,5 +1,5 @@
 ---
-title: Hello, world. We are Socha Dev.
+title: Hello, world.<br /> We are Socha Dev.
 tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP, Phalcon, Drupal, front ]
 ---
 
