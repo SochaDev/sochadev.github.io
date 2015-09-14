@@ -86,10 +86,10 @@ tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP,
     <div class="alpha">3</div>
     <div class="beta">
       <h2 id="about">Our team</h2>
-      <p><a href="/team">Our team members</a> live and work happily all over the
-      US &mdash; we use some neat apps to keep us connected to each other and to
-      our clients. Socha Dev's workflow is designed to incorporate our clients'
-      feedback throughout a project's life cycle.</p>
+      <p><a href="/team" class="purple">Our team members</a> live and work happily
+      all over the US &mdash; we use some neat apps to keep us connected to each
+      other and to our clients. Socha Dev's workflow is designed to incorporate
+      our clients' feedback throughout a project's life cycle.</p>
     </div>
     <div class="columns-12">
       <p>Want to work here? By all means, <a href="#contact" class="blue">contact us</a>
