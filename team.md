@@ -12,7 +12,7 @@ If you need material for the boss or board, [here's an executive summary](/asset
 
 If you think you might be a good fit here at Socha Dev &mdash; please <a href="/#contact" class="green">contact us!</a> Contenders will have a couple of <span class="blue dotted">Google Hangouts</span> with us, then may be invited to spend a day observing our <span class="purple dotted">Slack</span> activity to get a sense of what the day-to-day here feels like. Pro tip: You should probably include a link to your GitHub account if you're a dev ;)
 
-<br>
+<br />
 
 {% include bios.md %}
 
