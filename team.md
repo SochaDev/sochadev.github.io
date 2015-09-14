@@ -10,7 +10,7 @@ If you need material for the boss or board or whatever, [here's a PDF](https://g
 
 * * *
 
-{% include bios.html %}
+{% markdown bios.md %}
 
 ### Ro
 

@@ -1,6 +1,6 @@
 ---
 description: Here are the humans at Socha Dev that will do all that awesome dev work for your team. They are all quite great.
-tags: [ team, download ]
+tags: [ Socha Dev, download ]
 ---
 
 ## Executive Summary
@@ -31,4 +31,4 @@ the trenches we've been in.
 
 ## Team Members
 
-{% include bios.html %}
+{% markdown bios.md %}
