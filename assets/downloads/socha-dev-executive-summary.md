@@ -1,5 +1,4 @@
 ---
-title: Socha Dev
 layout: print
 ---
 
@@ -36,3 +35,4 @@ tell you about them!
 * * *
 
 _References available upon request._
+
