@@ -2303,6 +2303,8 @@ body {
   background-color: #2b2b2b;
   margin: 24px 0;
   padding: 0; }
+  body.front .container {
+    max-width: 750px; }
 
 .stripe {
   padding: 24px;
@@ -2445,7 +2447,7 @@ body {
       margin-bottom: 24px; }
 
 .container {
-  max-width: 750px;
+  max-width: 1170px;
   margin-left: auto;
   margin-right: auto; }
   .container::after {
@@ -2538,7 +2540,7 @@ fieldset {
   fieldset.contact .messages {
     display: none; }
   fieldset.contact .form-item {
-    max-width: 750px;
+    max-width: 1170px;
     margin-left: auto;
     margin-right: auto; }
     fieldset.contact .form-item::after {

@@ -148,6 +148,10 @@
     background-color: $bg;
     margin: $dmrg 0;
     padding: 0;
+
+    &.front .container {
+      max-width: 750px;
+    }
   }
 
   .stripe {
