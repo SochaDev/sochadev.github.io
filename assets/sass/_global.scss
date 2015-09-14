@@ -34,15 +34,19 @@
   h2 {
     font-size: $base * 2.5;
     text-transform: lowercase;
-
-    body.team .stripe.default & {
-      text-transform: capitalize;
-    }
   }
   h3 {
     font-size: $base * 2;
     text-transform: lowercase;
   }
+
+  body.team .stripe.default,
+  body.download .stripe.default {
+    h2, h3 {
+      text-transform: capitalize;
+    }
+  }
+
   h4 { font-size: $base * 1.5; }
   h5 { font-size: $base; }
 

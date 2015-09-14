@@ -15,7 +15,7 @@
                     we rock so hard. you should hire us or join us.
   -->
 </head>
-<body class="{% if page.url == '/' %}front{% else %}{{ page.url | remove: '/' }}{% endif %}">
+<body{% if page.tags.size > 0 %} class="{{ page.tags.last }}"{% endif %}>
   <header>
     <div class="stripe first">
       <div class="container">
