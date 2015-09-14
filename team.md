@@ -61,11 +61,30 @@ source community however possible.
 
 ## Jeff Eoff
 
-TODO
+Jeff cut his teeth in the ANSI art scene of the BBS heyday before the popularity
+of the internet. He fondly recalls the sound of modems handshaking. He first got
+involved with programming in the BBS modification scene of the late nineties.
+Later he would go on to study software development in college, where he
+developed a love of beautiful software and intuitive interfaces. During college,
+Jeff worked in the dental software industry, supporting UNIX serial networks. In
+2006 he became a systems architect working primarily with internal, home-grown
+web apps for workforce management. In this role, Jeff developed a love for
+JavaScript and CSS, quickly becoming the go-to architect for other developers
+looking to improve their front-end designs and simplify user interactions.
 
 ## Tory Gobat
 
-TODO
+While majoring in a cross-disciplinary program called Digital Media Design Tory
+picked up a variety of experience in object-oriented programming -- and the
+realization that design was not so much her forte. Maintaining appreciation for
+the visual nonetheless, she soon found her niche in web development via a
+couple of summer internships. After graduating, Tory boarded the Drupal
+bandwagon via her first full-time position and was soon writing custom modules
+and themes alongside honing front-end development skills. Several years later,
+she has many Drupal 6 and 7 websites under her belt for clients such as the
+Smithsonian National Air and Space Museum and the American Postal Workers
+Union. Tory is known for getting intimate with the Drupal core APIs and
+writing paragraph-length code comments.
 
 * * *
 
