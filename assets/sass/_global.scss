@@ -4,10 +4,10 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 %border-radius {
-  @include border-top-radius(3px);
-  @include border-right-radius(3px);
-  @include border-bottom-radius(3px);
-  @include border-left-radius(3px);
+  @include border-top-radius($border-radius);
+  @include border-right-radius($border-radius);
+  @include border-bottom-radius($border-radius);
+  @include border-left-radius($border-radius);
 }
 
 // Typography stuff.
@@ -31,8 +31,18 @@
     font-weight: 500;
   }
   h1 { font-size: $base * 3; }
-  h2 { font-size: $base * 2.5; text-transform: lowercase; }
-  h3 { font-size: $base * 2; text-transform: lowercase; }
+  h2 {
+    font-size: $base * 2.5;
+    text-transform: lowercase;
+
+    body.team .stripe.default & {
+      text-transform: capitalize;
+    }
+  }
+  h3 {
+    font-size: $base * 2;
+    text-transform: lowercase;
+  }
   h4 { font-size: $base * 1.5; }
   h5 { font-size: $base; }
 
@@ -40,7 +50,6 @@
   h5 { font-weight: 300; }
   em, i { font-style: italic; }
 
-  code,
   pre {
     @extend %border-radius;
     background: $gray-4;
@@ -49,7 +58,11 @@
     font-family: $monospace;
     padding: $dmrg $mrg;
     width: 100%;
-
+  }
+  code {
+    @extend %border-radius;
+    background: $gray-4;
+    padding: $border-radius ($border-radius * 2);
   }
 
   hr {
@@ -135,6 +148,7 @@
 
   .stripe {
     padding: $dmrg;
+    width: 100%;
 
     &.default {
       border-bottom: solid 1px $gray;

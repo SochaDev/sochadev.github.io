@@ -2146,8 +2146,7 @@ $icon-home: x y offset_x offset_y width height total_width total_height image_pa
 At the bottom of this section, we provide information about the spritesheet itself
 $spritesheet: width height image $spritesheet-sprites;
 */
-code,
-pre, .messages, header a.home img {
+pre, code, .messages, header a.home img {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
@@ -2180,6 +2179,8 @@ h1 {
 h2 {
   font-size: 40px;
   text-transform: lowercase; }
+  body.team .stripe.default h2 {
+    text-transform: capitalize; }
 
 h3 {
   font-size: 32px;
@@ -2200,7 +2201,6 @@ h5 {
 em, i {
   font-style: italic; }
 
-code,
 pre {
   background: #444;
   clear: both;
@@ -2208,6 +2208,10 @@ pre {
   font-family: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace;
   padding: 24px 12px;
   width: 100%; }
+
+code {
+  background: #444;
+  padding: 3px 6px; }
 
 hr {
   border: solid 2px #333;
@@ -2298,7 +2302,8 @@ body {
   padding: 0; }
 
 .stripe {
-  padding: 24px; }
+  padding: 24px;
+  width: 100%; }
   .stripe.default {
     border-bottom: solid 1px #666; }
   .stripe.second .alpha {
@@ -2547,3 +2552,5 @@ fieldset {
     width: 100%; }
     fieldset.contact input[type="submit"]:hover {
       background-color: #67b9cc; }
+
+/*# sourceMappingURL=screen.css.map */

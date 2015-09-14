@@ -6,7 +6,13 @@ tags: Jason Socha, Matt West, Drew Deering, Nate Mow, Jeff Eoff, Tory Gobat
 
 We're small, but we don't mind &mdash; we're pretty large and mighty when it comes to the business of developing effective and awesome websites and apps.
 
-If you need it for the boss or board or whatever, here's [a PDF of the rap sheet](https://gitprint.com/SochaDev/sochadev.github.io/master/team.md){:target="_blank"}.
+If you need material for the boss or board or whatever, [here's a PDF](https://gitprint.com/SochaDev/sochadev.github.io/master/team.md){:target="_blank"} of the rap sheet.
+
+<!--
+Socha Dev is a white-label web and app development shop built to help your team succeed. We specialize in overflow, triage and problem solving services. We invite you to check out our past projects, learn more about our team and their tools — then contact us to discuss your next project.
+
+We work in the development phase of projects — you give us your strategy, designs, requirements, API docs and any other pertinents — we turn it all in to a fully functioning application.
+-->
 
 * * *
 
@@ -87,6 +93,13 @@ she has many Drupal 6 and 7 websites under her belt for clients such as the
 Smithsonian National Air and Space Museum and the American Postal Workers
 Union. Tory is known for getting intimate with the Drupal core APIs and
 writing paragraph-length code comments.
+
+## Ro
+
+Ro is our wonderful Slack robot...she's been with us since our Campfire days.
+The team has created a fantastic plugin system for her using the Slim PHP
+framework. Ro's job is to make the rest of the team laugh &mdash; she's capable
+of all kindsa fun stuff like `bam`, `praise @user`, `shame @user` and `play :clip:`
 
 * * *
 
