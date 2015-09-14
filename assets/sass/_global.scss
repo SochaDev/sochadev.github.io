@@ -1,16 +1,7 @@
-// main layout sass for overall html element styling and top level layout.
-
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
-%border-radius {
-  @include border-top-radius($border-radius);
-  @include border-right-radius($border-radius);
-  @include border-bottom-radius($border-radius);
-  @include border-left-radius($border-radius);
-}
-
 // Typography stuff.
+  @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500);
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
   p {
     margin-bottom: $dmrg;
     margin-top: 0;
@@ -55,7 +46,7 @@
   em, i { font-style: italic; }
 
   pre {
-    @extend %border-radius;
+    @include border-radius($border-radius * 2);
     background: $gray-4;
     clear: both;
     color: $text;
@@ -64,9 +55,10 @@
     width: 100%;
   }
   code {
-    @extend %border-radius;
+    @include border-radius($border-radius * 2);
     background: $gray-4;
     padding: $border-radius ($border-radius * 2);
+    white-space: nowrap;
   }
 
   hr {
@@ -264,7 +256,7 @@
       width: 100%;
 
       img {
-        @extend %border-radius;
+        @include border-radius();
       }
     }
     .right {

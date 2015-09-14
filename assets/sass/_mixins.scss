@@ -1,1 +1,7 @@
-// general mixins, as required go here.
+
+@mixin border-radius($radius: $border-radius) {
+  @include border-top-radius($radius);
+  @include border-right-radius($radius);
+  @include border-bottom-radius($radius);
+  @include border-left-radius($radius);
+}

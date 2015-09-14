@@ -10,6 +10,10 @@ If you need material for the boss or board, [here's an executive summary](/asset
 
 * * *
 
+If you think you might be a good fit here at Socha Dev &mdash; please <a href="/#contact" class="green">contact us!</a> Contenders will have a couple of <span class="blue dotted">Google Hangouts</span> with us, then maybe invited to spend a day observing our <span class="purple dotted">Slack</span> activity to get a sense of what the day-to-day here feels like. Pro tip: You should probably include a link to your GitHub account if you're a dev ;)
+
+<br>
+
 {% include bios.md %}
 
 ### Ro
@@ -18,9 +22,3 @@ Ro is our wonderful Slack robot...she's been with us since our Campfire days.
 The team has created a fantastic plugin system for her using the Slim PHP
 framework. Ro's job is to make the rest of the team laugh &mdash; she's capable
 of all kindsa fun stuff like `bam`, `praise @user`, `shame @user` and `play :clip:`
-
-* * *
-
-    // TODO: Add your name here.
-
-If you think you might be a good fit here at Socha Dev &mdash; please <a href="/#contact" class="green">contact us!</a> If you're a contender we'll probably have a couple of <span class="blue dotted">Google Hangouts</span> together, then maybe invite you to spend a day observing our <span class="purple dotted">Slack</span> activity to get a sense of what the day-to-day here feels like. Pro tip: You should probably include a link to your GitHub account if you're a dev ;)
