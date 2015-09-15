@@ -108,12 +108,13 @@
           .hide();
 
         // Print messages.
-        var msgs = '';
+        var msgs = '<ul>';
         for (var i=0; i < messages.length; i++) {
           if (messages[i].length > 0) {
-            msgs += '<p>' + messages[i] + '</p>';
+            msgs += '<li>' + messages[i] + '</li>';
           }
         }
+        msgs += '</li>';
 
         $messages
           .html(msgs)
@@ -126,6 +127,56 @@
         reset();
       };
 
+      var validate = function(data) {
+
+        var messages = new Array();
+        var $human = $form.find('input#human');
+        var human_check = false;
+
+        // Validate *.required fields.
+        $.each($('.required', $form), function(ix, e) {
+          var $input = $(e);
+          if (!$input.val()) {
+            var label = $input
+              .attr('required', 'required')
+              .attr('placeholder')
+              .replace('*', '')
+              .trim();
+
+            if ($input.attr('id') === $human.attr('id')) {
+              label = "Human check";
+              human_check = true;
+            }
+
+            messages.push(label + " " + (label.charAt(label.length - 1) === 's' ? "are" : "is") + " required.");
+          }
+        });
+
+        // Human check.
+        if ($human.hasClass('validate')) {
+          var rand1 = parseInt(data.human_valid_input1);
+          var rand2 = parseInt(data.human_valid_input2);
+          var srand = parseInt(rand1 + rand2).toString();
+          var arand = srand
+            .hashCode()
+            .toString();
+
+          if (srand !== data.human || arand !== data.human_valid) {
+            messages.push("Sorry" + (data.name.length ? " " + data.name : "") + ", you don't seem to have a human thing to discuss with us.");
+          }
+        }
+        if (human_check) {
+          $human.addClass('validate');
+        }
+
+        // Print messages.
+        if (messages.length) {
+          respond(false, messages);
+        }
+
+        return (messages.length === 0);
+      };
+
       // Form submit handler.
       $form.submit(function(evt) {
         evt.preventDefault();
@@ -134,20 +185,12 @@
         var data = $form
           .serializeArray()
           .reduce(function(obj, item) {
-              obj[item.name] = item.value;
+              obj[item.name] = item.value.trim();
               return obj;
             }, {});
 
-        // Human check validation.
-        var rand1 = parseInt(data.human_valid_input1);
-        var rand2 = parseInt(data.human_valid_input2);
-        var srand = parseInt(rand1 + rand2).toString();
-        var arand = srand
-          .hashCode()
-          .toString();
-
-        if (srand !== data.human || arand !== data.human_valid) {
-          respond(false, ["Sorry " + data.name + ", you don't seem to have a human thing to discuss with us."]);
+        // Do some validation.
+        if (!validate(data)) {
           return false;
         }
 

@@ -2,7 +2,7 @@
   @import url(https://fonts.googleapis.com/css?family=Ubuntu:400);
   @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-  p {
+  p, ul, ol {
     margin-bottom: $dmrg;
     margin-top: 0;
 
@@ -201,6 +201,7 @@
   }
   .container {
     @include outer-container($max-width);
+
     .columns-12 { @include span-columns($grid-columns); }
     .columns-10 { @include span-columns(10); }
     .columns-8 { @include span-columns(8); }
@@ -254,7 +255,7 @@
 
 // Forms stuff.
   .messages {
-    @extend %border-radius;
+    @include border-radius();
     margin-bottom: $dmrg;
     padding: $dmrg;
 
