@@ -137,18 +137,7 @@
         $.each($('.required', $form), function(ix, e) {
           var $input = $(e);
           if (!$input.val()) {
-            var label = $input
-              .attr('required', 'required')
-              .attr('placeholder')
-              .replace('*', '')
-              .trim();
-
-            if ($input.attr('id') === $human.attr('id')) {
-              label = "Human check";
-              human_check = true;
-            }
-
-            messages.push(label + " " + (label.charAt(label.length - 1) === 's' ? "are" : "is") + " required.");
+            messages.push($input.attr('data-msg'));
           }
         });
 

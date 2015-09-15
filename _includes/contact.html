@@ -2,19 +2,19 @@
       <fieldset class="contact">
         <div class="messages"></div>
         <form action="{{ page.url }}" method="post">
-          <p class="form-item"><label for="name">Name *</label><input type="text" id="name" name="name" placeholder="Name *" maxlength="255" class="required"></p>
-          <p class="form-item"><label for="email">Email *</label><input type="email" id="email" name="email" placeholder="Email *" maxlength="255" class="required"></p>
+          <p class="form-item"><label for="name">Name *</label><input type="text" id="name" name="name" placeholder="Name *" maxlength="255" class="required" data-msg="A name would be good."></p>
+          <p class="form-item"><label for="email">Email *</label><input type="email" id="email" name="email" placeholder="Email *" maxlength="255" class="required" data-msg="An email would be good."></p>
           <p class="form-item"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" placeholder="Phone" maxlength="255"></p>
           <p class="form-item"><label for="title">Title</label><input type="text" id="title" name="title" placeholder="Title" maxlength="255"></p>
           <p class="form-item"><label for="company">Company / Org</label><input type="text" id="company" name="company" placeholder="Company / Org" maxlength="255"></p>
           <p class="form-item">
             <label for="human">Human check *</label>
-            <input type="text" id="human" name="human" placeholder="Human check *" maxlength="6" class="required">
+            <input type="text" id="human" name="human" placeholder="Human check *" maxlength="6" class="required" data-msg="Can haz human check?">
             <input type="hidden" id="human-valid" name="human_valid">
             <input type="hidden" id="human-valid-input1" name="human_valid_input1">
             <input type="hidden" id="human-valid-input2" name="human_valid_input2">
           </p>
-          <p class="form-item"><label for="details">Details *</label><textarea id="details" name="details" rows="5" placeholder="Details *" class="required"></textarea></p>
+          <p class="form-item"><label for="details">Details *</label><textarea id="details" name="details" rows="5" placeholder="Details *" class="required" data-msg="Maybe a few details?"></textarea></p>
           <p class="form-item"><label for="submit">Submit</label><input type="submit" value="Send it"></p>
         </form>
       </fieldset>

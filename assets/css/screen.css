@@ -153,6 +153,21 @@ select {
 .fa-5x {
   font-size: 5em; }
 
+.fa-6x {
+  font-size: 6em; }
+
+.fa-7x {
+  font-size: 7em; }
+
+.fa-8x {
+  font-size: 8em; }
+
+.fa-9x {
+  font-size: 9em; }
+
+.fa-10x {
+  font-size: 10em; }
+
 .fa-fw {
   width: 1.28571em;
   text-align: center; }
@@ -2259,33 +2274,39 @@ a.dotted, span.dotted {
 
 a.blue, span.blue {
   color: #8dcad9; }
-  a.blue:hover, span.blue:hover {
-    color: #c7e5ec; }
+
+a.blue:hover, span.blue:hover {
+  color: #c7e5ec; }
 
 a.red, span.red {
   color: #f56176; }
-  a.red:hover, span.red:hover {
-    color: #f891a0; }
+
+a.red:hover, span.red:hover {
+  color: #f891a0; }
 
 a.green, span.green {
   color: #bbd16e; }
-  a.green:hover, span.green:hover {
-    color: #dfeabb; }
+
+a.green:hover, span.green:hover {
+  color: #dfeabb; }
 
 a.gray, span.gray {
   color: #e4e4e4; }
-  a.gray:hover, span.gray:hover {
-    color: white; }
+
+a.gray:hover, span.gray:hover {
+  color: white; }
 
 a.orange, span.orange {
   color: #ffb366; }
-  a.orange:hover, span.orange:hover {
-    color: #ffcc99; }
+
+a.orange:hover, span.orange:hover {
+  color: #ffcc99; }
 
 a.purple, span.purple {
   color: #a491c2; }
-  a.purple:hover, span.purple:hover {
-    color: #cdc2de; }
+
+a.purple:hover, span.purple:hover {
+  color: #cdc2de; }
 
 .breadcrumb {
   text-transform: lowercase; }
@@ -2306,30 +2327,35 @@ body {
   width: 100%; }
   .stripe.default {
     border-bottom: solid 1px #666; }
+  body.front .stripe.first {
+    padding-bottom: 0; }
+    body.front .stripe.first .columns-12 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      margin-left: 8.5298%; }
+      body.front .stripe.first .columns-12:last-child {
+        margin-right: 0; }
   .stripe.second .alpha {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 65.88078%; }
+    width: 82.94039%;
+    margin-left: 8.5298%; }
     .stripe.second .alpha:last-child {
       margin-right: 0; }
-  .stripe.second .beta {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
-    margin-right: 0; }
-    .stripe.second .beta:last-child {
-      margin-right: 0; }
-  .stripe.second .columns-12 p:last-child {
-    margin-bottom: 24px; }
+    .stripe.second .alpha hr {
+      margin-top: 0; }
+    .stripe.second .alpha p:last-child {
+      margin-bottom: 24px; }
   .stripe.blue {
     background: #41a7bf; }
     .stripe.blue .alpha {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 14.70196%; }
+      width: 23.23176%; }
       .stripe.blue .alpha:last-child {
         margin-right: 0; }
     .stripe.blue .beta {
@@ -2340,47 +2366,54 @@ body {
       margin-right: 0; }
       .stripe.blue .beta:last-child {
         margin-right: 0; }
+    .stripe.blue .fa {
+      margin: 19px 0 0 -36px; }
   .stripe.red {
     background: #b20b23; }
     .stripe.red .alpha {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 31.76157%; }
+      width: 57.35098%;
+      margin-left: 17.05961%; }
       .stripe.red .alpha:last-child {
         margin-right: 0; }
     .stripe.red .beta {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 65.88078%;
+      width: 23.23176%;
       margin-right: 0; }
       .stripe.red .beta:last-child {
         margin-right: 0; }
+    .stripe.red .fa {
+      margin: 19px 0 0 36px; }
   .stripe.green {
     background: #6b7e28; }
     .stripe.green .alpha {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 23.23176%; }
+      width: 31.76157%; }
       .stripe.green .alpha:last-child {
         margin-right: 0; }
     .stripe.green .beta {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 74.41059%;
-      margin-right: 0; }
+      width: 65.88078%; }
       .stripe.green .beta:last-child {
         margin-right: 0; }
+    .stripe.green .fa {
+      margin: 0 0 0 24px; }
   .stripe.gray {
     background: #333; }
     .stripe.gray .alpha {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 65.88078%; }
+      width: 57.35098%;
+      margin-left: 8.5298%; }
       .stripe.gray .alpha:last-child {
         margin-right: 0; }
     .stripe.gray .beta {
@@ -2391,6 +2424,9 @@ body {
       margin-right: 0; }
       .stripe.gray .beta:last-child {
         margin-right: 0; }
+    .stripe.gray .fa {
+      color: #444;
+      margin: 24px 0 0 0; }
     .stripe.gray.default {
       padding-bottom: 72px; }
       .stripe.gray.default hr {
@@ -2498,7 +2534,8 @@ header {
   height: 84px;
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 100; }
   header a.top {
     color: #fff;
     display: block;

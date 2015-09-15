@@ -6,9 +6,7 @@
     margin-bottom: $dmrg;
     margin-top: 0;
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+    &:last-child { margin-bottom: 0; }
   }
   h2, h3 {
     margin-bottom: $hmrg;
@@ -91,32 +89,31 @@
   }
 
   // Text highlighting.
+  %text-highlight {
+    &.dotted {
+      border-bottom: dotted 2px $gray; }
+
+    &.blue { color: lighten($blue, 20%); }
+    &.blue:hover { color: lighten($blue, 35%); }
+
+    &.red { color: lighten($red, 30%); }
+    &.red:hover { color: lighten($red, 40%); }
+
+    &.green { color: lighten($green, 30%); }
+    &.green:hover { color: lighten($green, 50%); }
+
+    &.gray { color: $gray-lighter; }
+    &.gray:hover { color: lighten($gray-lighter, 100%); }
+
+    &.orange { color: $orange; }
+    &.orange:hover { color: lighten($orange, 10%); }
+
+    &.purple { color: lighten($purple, 20%); }
+    &.purple:hover { color: lighten($purple, 35%); }
+  }
+
   a, span {
-    &.dotted { border-bottom: dotted 2px $gray; }
-    &.blue {
-      color: lighten($blue, 20%);
-      &:hover { color: lighten($blue, 35%); }
-    }
-    &.red {
-      color: lighten($red, 30%);
-      &:hover { color: lighten($red, 40%); }
-    }
-    &.green {
-      color: lighten($green, 30%);
-      &:hover { color: lighten($green, 50%); }
-    }
-    &.gray {
-      color: $gray-lighter;
-      &:hover { color: lighten($gray-lighter, 100%); }
-    }
-    &.orange {
-      color: $orange;
-      &:hover { color: lighten($orange, 10%); }
-    }
-    &.purple {
-      color: lighten($purple, 20%);
-      &:hover { color: lighten($purple, 35%); }
-    }
+    @extend %text-highlight;
   }
   .breadcrumb {
     text-transform: lowercase;
@@ -145,32 +142,55 @@
     &.default {
       border-bottom: solid 1px $gray;
     }
+
+  body.front &.first {
+    padding-bottom: 0;
+    .columns-12 {
+      @include span-columns(10); @include shift(1);
+    }
+  }
+
     &.second {
-      .alpha { @include span-columns(8); }
-      .beta { @include span-columns(4); @include omega(); }
-      .columns-12 {
+      .alpha { @include span-columns(10); @include shift(1);
+        hr { margin-top: 0; }
         p:last-child { margin-bottom: $dmrg; }
       }
     }
     &.blue {
       background: $blue;
-      .alpha { @include span-columns(2); }
+      .alpha { @include span-columns(3); }
       .beta { @include span-columns(8); @include omega(); }
+
+      .fa {
+        //color: lighten($blue, 35%);
+        margin: ($dmrg - 5) 0 0 (-$dmrg * 1.5); }
     }
     &.red {
       background: $red;
-      .alpha { @include span-columns(4); }
-      .beta { @include span-columns(8); @include omega(); }
+      .alpha { @include span-columns(7); @include shift(2); }
+      .beta { @include span-columns(3); @include omega(); }
+
+      .fa {
+        //color: lighten($red, 50%);
+        margin: ($dmrg - 5) 0 0 ($dmrg * 1.5); }
     }
     &.green {
       background: $green;
-      .alpha { @include span-columns(3); }
-      .beta { @include span-columns(9); @include omega(); }
+      .alpha { @include span-columns(4); }
+      .beta { @include span-columns(8); }
+
+      .fa {
+        //color: lighten($green, 40%);
+        margin: 0 0 0 $dmrg; }
     }
     &.gray {
       background: $gray-dark;
-      .alpha { @include span-columns(8); }
+      .alpha { @include span-columns(7); @include shift(1); }
       .beta { @include span-columns(4); @include omega(); }
+
+      .fa {
+        color: $gray-4;
+        margin: $dmrg 0 0 0; }
 
       &.default {
         padding-bottom: ($mrg * 6);
@@ -218,6 +238,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 100;
 
     a.top {
       color: $white;
