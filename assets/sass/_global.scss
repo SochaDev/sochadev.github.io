@@ -240,12 +240,12 @@
   .container {
     @include outer-container($max-width);
 
-    .columns-12 { @include span-columns($grid-columns); }
-    .columns-10 { @include span-columns(10); }
-    .columns-8 { @include span-columns(8); }
+    .columns-12 { @include span-columns($grid-columns); @include omega(0); }
+    .columns-10 { @include span-columns(10); @include shift(0); }
+    .columns-8 { @include span-columns(8); @include shift(2); }
     .columns-6 { @include span-columns($grid-columns / 2); }
-    .columns-4 { @include span-columns($grid-columns / 3); }
-    .columns-2 { @include span-columns(2); }
+    .columns-4 { @include span-columns($grid-columns / 3); @include shift(4); }
+    .columns-2 { @include span-columns(2); @include omega(0); }
   }
 
   $header-height: ($dmrg * 3.5);
