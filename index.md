@@ -68,12 +68,12 @@ tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP,
 </div>
 <div class="stripe last">
   <div class="container">
-    <div class="columns-12">
+    <div class="columns-8">
       <h2 id="contact">Contact us</h2>
       <p>Ready to get started? We'd love to learn more about your project or
       hear all about what an awesome dev you are.</p>
     </div>
-    <div class="columns-12">{% include contact.html %}
+    <div class="columns-8">{% include contact.html %}
     </div>
   </div>
 </div>

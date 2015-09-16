@@ -5,3 +5,25 @@
   @include border-bottom-radius($radius);
   @include border-left-radius($radius);
 }
+
+@mixin full-width() {
+  @include media("<=md") {
+    %full-width {
+      @include span-columns($grid-columns);
+      @include shift(0);
+      @include omega(0);
+    }
+
+    .alpha, .beta,
+    .columns-2, .columns-4, .columns-6, .columns-8, .columns-10, .columns-12 {
+      @extend %full-width;
+
+      p:last-child { margin-bottom: 0; }
+    }
+
+    body.front & {
+      .sprite,
+      .fa { display: none; }
+    }
+  }
+}

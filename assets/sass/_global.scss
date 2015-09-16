@@ -1,134 +1,10 @@
-// Typography stuff.
-  @import url(https://fonts.googleapis.com/css?family=Ubuntu:400);
-  @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
-  p, ul, ol {
-    margin-bottom: $dmrg;
-    margin-top: 0;
-
-    &:last-child { margin-bottom: 0; }
-  }
-  h2, h3 {
-    margin-bottom: $hmrg;
-    margin-top: 0;
-  }
-  h1, h2, h3, h4, h5 {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
-  }
-  h1 {
-    font-size: $base * 3;
-    line-height: 1;
-    margin: 0;
-  }
-  h2 {
-    font-size: $base * 2.5;
-    text-transform: lowercase;
-  }
-  h3 {
-    font-size: $base * 2;
-    text-transform: lowercase;
-  }
-
-  body.team .stripe.default,
-  body.download .stripe.default {
-    h2, h3 {
-      text-transform: capitalize;
-    }
-  }
-
-  h4 { font-size: $base * 1.5; }
-  h5 { font-size: $base; }
-
-  b, strong, h4 { font-weight: 700; }
-  h5 { font-weight: 300; }
-  em, i { font-style: italic; }
-
-  pre {
-    @include border-radius($border-radius * 2);
-    background: $gray-4;
-    clear: both;
-    color: $text;
-    font-family: $monospace;
-    padding: $dmrg $mrg;
-    width: 100%;
-  }
-  code {
-    @include border-radius($border-radius * 2);
-    background: $gray-4;
-    padding: $border-radius ($border-radius * 2);
-    white-space: nowrap;
-  }
-  hr {
-    border: solid 2px $gray-dark;
-    clear: both;
-    float: left;
-    height: 1px;
-    margin: $dmrg 0;
-    width: 100%;
-  }
-  img {
-    display: block; float: left;
-  }
-  small { font-size: $base * 0.8 }
-  big { font-size: $base * 1.2 }
-
-  a {
-    text-decoration: none;
-    outline: none;
-    color: $orange;
-    @include transition(all 0.3s);
-
-    &:hover {
-      text-decoration: underline;
-      color: lighten($orange, 10%);
-    }
-    &:visited,
-    &:focus {
-      outline: none;
-    }
-  }
-
-  // Text highlighting.
-  %text-highlight {
-    &.dotted {
-      border-bottom: dotted 2px $gray; }
-
-    &.blue { color: lighten($blue, 20%); }
-    &.blue:hover { color: lighten($blue, 35%); }
-
-    &.red { color: lighten($red, 30%); }
-    &.red:hover { color: lighten($red, 40%); }
-
-    &.green { color: lighten($green, 30%); }
-    &.green:hover { color: lighten($green, 50%); }
-
-    &.gray { color: $gray-lighter; }
-    &.gray:hover { color: lighten($gray-lighter, 100%); }
-
-    &.orange { color: $orange; }
-    &.orange:hover { color: lighten($orange, 10%); }
-
-    &.purple { color: lighten($purple, 20%); }
-    &.purple:hover { color: lighten($purple, 35%); }
-  }
-
-  a, span {
-    @extend %text-highlight;
-  }
-  .breadcrumb {
-    margin-top: $mrg;
-    text-transform: lowercase;
-  }
-
 
 // Layout stuff.
-
   .sprite {
     display: block;
-    margin: $mrg auto 0 auto;
+    margin: 0 auto;
 
-    &.a-team { @include sprite($a-team); }
+    &.a-team { @include sprite($a-team); margin-top: $mrg; }
   }
   img.logo {
     @include border-radius();
@@ -145,10 +21,6 @@
     background-color: $bg;
     margin: $dmrg 0;
     padding: 0;
-
-    &.front .container {
-      max-width: 750px;
-    }
   }
 
   .stripe {
@@ -162,43 +34,41 @@
 
     body.front &.first {
       padding-bottom: 0;
-      .columns-12 {
-        @include span-columns(10); @include shift(1);
-      }
-    }
+      .columns-12 { @include span-columns(10); @include shift(1); }
 
+      @include full-width();
+    }
     &.second {
       .alpha { @include span-columns(10); @include shift(1);
         hr { margin-top: 0; }
         p:last-child { margin-bottom: $dmrg; }
       }
+
+      @include full-width();
     }
     &.blue {
       background: $blue;
       .alpha { @include span-columns(3); }
       .beta { @include span-columns(8); @include omega(); }
+      .fa { margin: $mrg 0 0 ($dmrg); }
 
-      .fa {
-        //color: lighten($blue, 35%);
-        margin: $mrg 0 0 ($dmrg); }
+      @include full-width();
     }
     &.red {
       background: $red;
       .alpha { @include span-columns(7); @include shift(2); }
       .beta { @include span-columns(3); @include omega(); }
+      .fa {  margin: ($dmrg * 2) 0 0 ($dmrg * 1.5); }
 
-      .fa {
-        //color: lighten($red, 50%);
-        margin: ($dmrg * 2) 0 0 ($dmrg * 1.5); }
+      @include full-width();
     }
     &.green {
       background: $green;
       .alpha { @include span-columns(3); @include shift(1); }
       .beta { @include span-columns(7); @include shift(1); }
+      .fa { margin: $dmrg 0 0 $dmrg; }
 
-      .fa {
-        //color: lighten($green, 40%);
-        margin: $dmrg 0 0 $dmrg; }
+      @include full-width();
     }
     &.gray {
       background: $gray-dark;
@@ -206,39 +76,34 @@
 
       body.front & { padding-bottom: 0; }
 
-      .fa {
-        color: $gray-4;
-        margin: $dmrg 0 0 0; }
-
       &.default {
         padding-bottom: ($mrg * 6);
         hr { border-color: $gray-4; margin-top: 0; }
       }
-    }
-    &.purple {
-      background: $purple;
-      .alpha { @include span-columns(4); }
-      .beta { @include span-columns(8); @include omega(); }
+
+      @include full-width();
     }
     &.last {
       background: $gray-darker;
 
-      .columns-12 {
-        @include span-columns(8);
-        @include shift(2);
-      }
+      @include full-width();
     }
     &.team {
       .alpha { @include span-columns(4); }
       .beta { @include span-columns(8); @include omega();
         p:last-child { margin-bottom: $dmrg; }
       }
+
+      @include full-width();
     }
 
   }
 
   .container {
     @include outer-container($max-width);
+    body.front & {
+      max-width: 750px;
+    }
 
     .columns-12 { @include span-columns($grid-columns); @include omega(0); }
     .columns-10 { @include span-columns(10); @include shift(0); }
@@ -301,41 +166,5 @@
       overflow: hidden;
       padding: $dmrg * 2;
       text-indent: -9999px;
-    }
-  }
-
-// Forms stuff.
-  .messages {
-    @include border-radius();
-    margin-bottom: $dmrg;
-    padding: $dmrg;
-
-    &.error { background: lighten($red, 60); color: $red; }
-    &.success { background: lighten($green, 50); color: $green; }
-  }
-
-  label { font-weight: normal; }
-
-  fieldset {
-    border: 0;
-    margin: $dmrg 0 0 0;
-    padding: 0;
-
-    &.contact {
-      .messages { display: none; }
-      .form-item {
-        @include outer-container($max-width);
-        line-height: 1;
-        margin-bottom: $mrg;
-      }
-      label { display: none; }
-      input, select, textarea { margin-bottom: 0; }
-      input[type="submit"] {
-        font-weight: normal;
-        text-transform: lowercase;
-        width: 100%;
-
-        &:hover { background-color: lighten($blue, 10%); }
-      }
     }
   }

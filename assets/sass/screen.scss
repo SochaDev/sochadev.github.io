@@ -45,12 +45,9 @@
 
 // overall global styling and general layout goes in here.
 @import 'global';
-@import 'modal';
 
 // from here import other partials in a modular fashion,
 // moving from general to more specific.
-// @import 'components/header';
-// @import 'components/login';
-// @import 'components/footer';
-// etc ...
-
+@import 'components/typography';
+@import 'components/forms';
+@import 'components/modal';

@@ -1,11 +1,11 @@
 // sass settings and variables
 
 // breakpoints map for include-media.
-$breakpoints: (xs: 750px, sm: 970px, lg: 1170px);
+$breakpoints: (sm: 320px, md: 768px, lg: 1024px);
 
 // neat grid settings
 $grid-columns: 12 !global;
-$max-width: 1170px !global;
+$max-width: 1024px !global;
 $border-box-sizing: true !global;
 
 // colors

@@ -1,0 +1,36 @@
+
+// Forms stuff.
+  .messages {
+    @include border-radius();
+    margin-bottom: $dmrg;
+    padding: $dmrg;
+
+    &.error { background: lighten($red, 60); color: $red; }
+    &.success { background: lighten($green, 50); color: $green; }
+  }
+
+  label { font-weight: normal; }
+
+  fieldset {
+    border: 0;
+    margin: $dmrg 0 0 0;
+    padding: 0;
+
+    &.contact {
+      .messages { display: none; }
+      .form-item {
+        @include outer-container($max-width);
+        line-height: 1;
+        margin-bottom: $mrg;
+      }
+      label { display: none; }
+      input, select, textarea { margin-bottom: 0; }
+      input[type="submit"] {
+        font-weight: normal;
+        text-transform: lowercase;
+        width: 100%;
+
+        &:hover { background-color: lighten($blue, 10%); }
+      }
+    }
+  }
