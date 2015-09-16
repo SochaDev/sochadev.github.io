@@ -6,11 +6,11 @@ tags: [ Jason Socha, Matt West, Drew Deering, Nate Mow, Jeff Eoff, Tory Gobat, t
 
 We're small, but we don't mind &mdash; we're pretty large and mighty when it comes to the business of developing effective and awesome websites and apps.
 
-If you need material for the boss or board, [here's an executive summary](/assets/downloads/socha-dev-executive-summary){:target="_blank"} of the team.
-
 * * *
 
 If you think you might be a good fit here at Socha Dev &mdash; please <a href="/#contact" class="green">contact us!</a> Contenders will have a couple of <span class="blue dotted">Google Hangouts</span> with us, then may be invited to spend a day observing our <span class="purple dotted">Slack</span> activity to get a sense of what the day-to-day here feels like. Pro tip: You should probably include a link to your GitHub account if you're a dev ;)
+
+You might also be interested in learning more about [our workflow](/workflow).
 
 <br />
 

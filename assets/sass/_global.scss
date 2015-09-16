@@ -59,7 +59,6 @@
     padding: $border-radius ($border-radius * 2);
     white-space: nowrap;
   }
-
   hr {
     border: solid 2px $gray-dark;
     clear: both;
@@ -116,11 +115,26 @@
     @extend %text-highlight;
   }
   .breadcrumb {
+    margin-top: $mrg;
     text-transform: lowercase;
   }
 
 
 // Layout stuff.
+
+  .sprite {
+    display: block;
+    margin: $mrg auto 0 auto;
+
+    &.a-team { @include sprite($a-team); }
+  }
+  img.logo {
+    @include border-radius();
+    display: block;
+    float: right;
+    text-transform: lowercase;
+  }
+
   body {
     font-size: $base * 1.4;
     line-height: 1.3;
@@ -137,18 +151,19 @@
 
   .stripe {
     padding: $dmrg;
+    position: relative;
     width: 100%;
 
     &.default {
       border-bottom: solid 1px $gray;
     }
 
-  body.front &.first {
-    padding-bottom: 0;
-    .columns-12 {
-      @include span-columns(10); @include shift(1);
+    body.front &.first {
+      padding-bottom: 0;
+      .columns-12 {
+        @include span-columns(10); @include shift(1);
+      }
     }
-  }
 
     &.second {
       .alpha { @include span-columns(10); @include shift(1);
@@ -163,7 +178,7 @@
 
       .fa {
         //color: lighten($blue, 35%);
-        margin: ($dmrg - 5) 0 0 (-$dmrg * 1.5); }
+        margin: $mrg 0 0 ($dmrg); }
     }
     &.red {
       background: $red;
@@ -172,21 +187,22 @@
 
       .fa {
         //color: lighten($red, 50%);
-        margin: ($dmrg - 5) 0 0 ($dmrg * 1.5); }
+        margin: ($dmrg * 2) 0 0 ($dmrg * 1.5); }
     }
     &.green {
       background: $green;
-      .alpha { @include span-columns(4); }
-      .beta { @include span-columns(8); }
+      .alpha { @include span-columns(3); @include shift(1); }
+      .beta { @include span-columns(7); @include shift(1); }
 
       .fa {
         //color: lighten($green, 40%);
-        margin: 0 0 0 $dmrg; }
+        margin: $dmrg 0 0 $dmrg; }
     }
     &.gray {
       background: $gray-dark;
-      .alpha { @include span-columns(7); @include shift(1); }
-      .beta { @include span-columns(4); @include omega(); }
+      .alpha { @include span-columns(10); @include shift(1); }
+
+      body.front & { padding-bottom: 0; }
 
       .fa {
         color: $gray-4;
@@ -211,14 +227,14 @@
       }
     }
     &.team {
-      .alpha { @include span-columns(3); }
-      .beta {
-        @include span-columns(9); @include omega();
+      .alpha { @include span-columns(4); }
+      .beta { @include span-columns(8); @include omega();
         p:last-child { margin-bottom: $dmrg; }
       }
-
     }
+
   }
+
   .container {
     @include outer-container($max-width);
 
@@ -256,15 +272,6 @@
       display: block;
       margin-top: 0;
       width: 100%;
-
-      img {
-        @include border-radius();
-      }
-    }
-    .right {
-      display: block;
-      float: right;
-      text-transform: lowercase;
     }
   }
   main {
@@ -272,6 +279,27 @@
   }
   footer {
     margin-bottom: $header-height;
+  }
+
+  ul.projects {
+    @include clearfix();
+    margin: $dmrg 0 0 0;
+    padding: 0;
+
+    li {
+      @include span-columns(3);
+      @include omega(4n);
+      margin-bottom: $dmrg;
+    }
+
+    a {
+      background: $gray-4;
+      cursor: pointer;
+      display: block;
+      overflow: hidden;
+      padding: $dmrg * 2;
+      text-indent: -9999px;
+    }
   }
 
 // Forms stuff.
@@ -283,29 +311,23 @@
     &.error { background: lighten($red, 60); color: $red; }
     &.success { background: lighten($green, 50); color: $green; }
   }
-  label {
-    font-weight: normal;
-  }
+
+  label { font-weight: normal; }
+
   fieldset {
     border: 0;
     margin: $dmrg 0 0 0;
     padding: 0;
 
     &.contact {
-      .messages {
-        display: none;
-      }
+      .messages { display: none; }
       .form-item {
         @include outer-container($max-width);
         line-height: 1;
         margin-bottom: $mrg;
       }
-      label {
-        display: none;
-      }
-      input, select, textarea {
-        margin-bottom: 0;
-      }
+      label { display: none; }
+      input, select, textarea { margin-bottom: 0; }
       input[type="submit"] {
         font-weight: normal;
         text-transform: lowercase;

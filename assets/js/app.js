@@ -25,6 +25,7 @@
 
       this.scrollStickyStuff(context, settings);
       this.contactForm(context, settings);
+      this.projectList(context, settings);
 
     },
     scrollMain: function(context, settings) {
@@ -51,12 +52,13 @@
         .click(function(evt) {
           evt.preventDefault();
           settings.theme.top = 0;
+          $('#modal', context).fadeOut(settings.theme.animation.speed);
           theme.scrollMain(context, settings);
         });
 
       // Magical scroll-to-target.
       if (settings.page.url == '/') {
-        $('a[href*=#]', context)
+        $('p a[href*=#]', context)
           .click(function(evt) {
             evt.preventDefault();
             settings.theme.top = ($(this.hash).offset().top - theme.headerScrollOffset);
@@ -190,6 +192,20 @@
           .fail(function() {
             respond(false, ["Error occurred sending data to <i>" + settings.api.baseUri + "</i>."]);
           });
+      });
+
+    },
+    projectList: function(context, settings) {
+
+      var $modal = $('#modal', context);
+
+      $('ul.projects a', context).click(function(evt) {
+        evt.preventDefault();
+        $modal.fadeIn(settings.theme.animation.speed);
+      });
+
+      $modal.click(function(evt) {
+        $modal.fadeOut(settings.theme.animation.speed);
       });
 
     }

@@ -23,7 +23,7 @@
           <a href="/" class="top" title="Scroll up">{{ site.title }}</a>
         </div>
         <div class="columns-2">
-          <a href="/" class="home{% if page.url == '/' %} top{% endif %}"><img src="https://avatars2.githubusercontent.com/u/1489168?v=3&s=36" alt="Home" title="Home" class="right"></a>
+          <a href="/" title="Home" class="home{% if page.url == '/' %} top{% endif %}"><img src="https://avatars2.githubusercontent.com/u/1489168?v=3&s=36" alt="Home" class="logo"></a>
         </div>
       </div>
     </div>
@@ -32,7 +32,7 @@
     <div class="stripe first{% if page.url != '/' %} default{% endif %}">
       <div class="container">
         <div class="columns-12">
-          <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>{% if page.url != '/' %}
+          <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}{% if page.url != '/' %}<a href="/" title="Home"><img src="https://avatars2.githubusercontent.com/u/1489168?v=3&s=36" alt="Socha Dev" class="logo"></a>{% endif %}</h1>{% if page.url != '/' %}
           <p class="breadcrumb"><a href="/" class="blue">Home</a>{% endif %}</p>
         </div>
       </div>
@@ -69,9 +69,9 @@
           <span class="blue dotted">Express</span>, <span class="red dotted">AngularJS</span>,
           <span class="orange dotted">Meteor</span>, RESTful APIs and NoSQL databases.</p>
           <p>We love and use a LOT of <span class="green dotted">open source software</span>
-          and try to give back to our community whenever we can &mdash; please
-          help yourself to any of <a href="https://github.com/SochaDev" target="_blank" class="orange">our stuff</a>,
-          and pay it forward if you can.</p>
+          and try to give back to our community whenever we can &mdash; help yourself
+          to any of <a href="https://github.com/SochaDev" target="_blank" class="orange">our stuff</a>,
+          and pay it forward if you can!</p>
         </div>
       </div>
     </div>

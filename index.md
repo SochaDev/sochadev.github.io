@@ -23,7 +23,7 @@ tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP,
 </div>
 <div class="stripe blue">
   <div class="container">
-    <div class="alpha"><i class="fa fa-cloud-download fa-8x"></i></div>
+    <div class="alpha"><i class="fa fa-tint fa-9x"></i></div>
     <div class="beta">
       <h2 id="overflow">Overflow</h2>
       <p>Sometimes you just have more work than you can handle. Sometimes a great
@@ -40,7 +40,7 @@ tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP,
       working out, the project is due in two weeks, and it doesn't work. We will
       assess your situation and make it happen.</p>
     </div>
-    <div class="beta"><i class="fa fa-ambulance fa-flip-horizontal fa-8x"></i></div>
+    <div class="beta"><i class="fa fa-ambulance fa-flip-horizontal fa-rotate-90 fa-7x"></i></div>
   </div>
 </div>
 <div class="stripe green">
@@ -80,15 +80,16 @@ tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP,
 <div class="stripe team">
   <div class="container">
     <hr>
-    <div class="alpha">3</div>
+    <div class="alpha"><span class="sprite a-team"></span></div>
     <div class="beta">
       <h2 id="about">Our team</h2>
       <p><a href="/team" class="purple">Our team members</a> live and work happily
       all over the US &mdash; we use some neat apps to keep us connected to each
-      other and to our clients. Socha Dev's <a href="/workflow">workflow</a> is
+      other and to our clients. Socha Dev's <a href="/workflow" class="green">workflow</a> is
       designed to incorporate our clients' feedback throughout a project's life cycle.</p>
     </div>
     <div class="columns-12">
+      <p>If you need material for the boss or board, <a href="/assets/downloads/socha-dev-executive-summary" target="_blank" class="red">here's an executive summary</a> of our team.</p>
       <p>Want to work here? By all means, <a href="#contact" class="blue">contact us</a>
       and be sure to include a link to your GitHub account if you're a developer!</p>
     </div>

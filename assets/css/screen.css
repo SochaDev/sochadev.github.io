@@ -2309,6 +2309,29 @@ a.purple:hover, span.purple:hover {
   color: #cdc2de; }
 
 .breadcrumb {
+  margin-top: 12px;
+  text-transform: lowercase; }
+
+.sprite {
+  display: block;
+  margin: 12px auto 0 auto; }
+  .sprite.a-team {
+    background-image: url("../images/sprites.png");
+    background-position: 0px 0px;
+    width: 200px;
+    height: 214px; }
+
+img.logo {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  display: block;
+  float: right;
   text-transform: lowercase; }
 
 body {
@@ -2324,6 +2347,7 @@ body {
 
 .stripe {
   padding: 24px;
+  position: relative;
   width: 100%; }
   .stripe.default {
     border-bottom: solid 1px #666; }
@@ -2367,7 +2391,7 @@ body {
       .stripe.blue .beta:last-child {
         margin-right: 0; }
     .stripe.blue .fa {
-      margin: 19px 0 0 -36px; }
+      margin: 12px 0 0 24px; }
   .stripe.red {
     background: #b20b23; }
     .stripe.red .alpha {
@@ -2387,43 +2411,39 @@ body {
       .stripe.red .beta:last-child {
         margin-right: 0; }
     .stripe.red .fa {
-      margin: 19px 0 0 36px; }
+      margin: 48px 0 0 36px; }
   .stripe.green {
     background: #6b7e28; }
     .stripe.green .alpha {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 31.76157%; }
+      width: 23.23176%;
+      margin-left: 8.5298%; }
       .stripe.green .alpha:last-child {
         margin-right: 0; }
     .stripe.green .beta {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 65.88078%; }
+      width: 57.35098%;
+      margin-left: 8.5298%; }
       .stripe.green .beta:last-child {
         margin-right: 0; }
     .stripe.green .fa {
-      margin: 0 0 0 24px; }
+      margin: 24px 0 0 24px; }
   .stripe.gray {
     background: #333; }
     .stripe.gray .alpha {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 57.35098%;
+      width: 82.94039%;
       margin-left: 8.5298%; }
       .stripe.gray .alpha:last-child {
         margin-right: 0; }
-    .stripe.gray .beta {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%;
-      margin-right: 0; }
-      .stripe.gray .beta:last-child {
-        margin-right: 0; }
+    body.front .stripe.gray {
+      padding-bottom: 0; }
     .stripe.gray .fa {
       color: #444;
       margin: 24px 0 0 0; }
@@ -2463,14 +2483,14 @@ body {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 23.23176%; }
+    width: 31.76157%; }
     .stripe.team .alpha:last-child {
       margin-right: 0; }
   .stripe.team .beta {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 74.41059%;
+    width: 65.88078%;
     margin-right: 0; }
     .stripe.team .beta:last-child {
       margin-right: 0; }
@@ -2551,25 +2571,39 @@ header {
     display: block;
     margin-top: 0;
     width: 100%; }
-    header a.home img {
-      border-top-left-radius: 3px;
-      border-top-right-radius: 3px;
-      border-bottom-right-radius: 3px;
-      border-top-right-radius: 3px;
-      border-bottom-left-radius: 3px;
-      border-bottom-right-radius: 3px;
-      border-bottom-left-radius: 3px;
-      border-top-left-radius: 3px; }
-  header .right {
-    display: block;
-    float: right;
-    text-transform: lowercase; }
 
 main {
   margin-top: 84px; }
 
 footer {
   margin-bottom: 84px; }
+
+ul.projects {
+  margin: 24px 0 0 0;
+  padding: 0; }
+  ul.projects::after {
+    clear: both;
+    content: "";
+    display: table; }
+  ul.projects li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    margin-bottom: 24px; }
+    ul.projects li:last-child {
+      margin-right: 0; }
+    ul.projects li:nth-child(4n) {
+      margin-right: 0; }
+    ul.projects li:nth-child(4n+1) {
+      clear: left; }
+  ul.projects a {
+    background: #444;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    padding: 48px;
+    text-indent: -9999px; }
 
 .messages {
   border-top-left-radius: 3px;
@@ -2618,3 +2652,55 @@ fieldset {
     width: 100%; }
     fieldset.contact input[type="submit"]:hover {
       background-color: #67b9cc; }
+
+#modal {
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10; }
+  #modal .modal {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    background: #fff;
+    color: #2b2b2b;
+    font-size: 16px;
+    margin: 24px auto;
+    padding: 24px;
+    max-width: 970px; }
+    #modal .modal::after {
+      clear: both;
+      content: "";
+      display: table; }
+    #modal .modal .alpha {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-left: 0%; }
+      #modal .modal .alpha:last-child {
+        margin-right: 0; }
+    #modal .modal .beta {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      #modal .modal .beta:last-child {
+        margin-right: 0; }
+      #modal .modal .beta:nth-child(0) {
+        margin-right: 0; }
+    #modal .modal img {
+      float: left; }
+    #modal .modal h3 {
+      text-transform: none; }
+
+/*# sourceMappingURL=screen.css.map */

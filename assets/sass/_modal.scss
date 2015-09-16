@@ -1,0 +1,28 @@
+#modal {
+  display: none;
+
+  background: rgba($black, 0.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+
+  .modal {
+    @include border-radius($border-radius * 2);
+    @include clearfix();
+    background: $white;
+    color: $bg;
+    font-size: $base;
+    margin: $dmrg auto;
+    padding: $dmrg;
+    max-width: 970px;
+
+    .alpha { @include span-columns(8); @include shift(0); }
+    .beta { @include span-columns(4); @include omega(0); }
+
+    img { float: left; }
+    h3 { text-transform: none; }
+  }
+}
