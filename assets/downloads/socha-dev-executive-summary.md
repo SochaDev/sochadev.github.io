@@ -37,10 +37,9 @@ tell you about them!
 
 ## Workflow
 
-Socha Dev uses PHP frameworks (Phalcon and Slim are current favorites), Drupal,
-TDD and BDD suites, continuous integration services (TravisCI, CircleCI) and a
-slew of front-end tools to complete projects, end-to-end. We also offer
-full-stack JavaScript development expertise using many tools such as Node.js,
+Socha Dev uses PHP frameworks, Drupal, TDD and BDD suites, continuous integration
+services and a slew of front-end tools to complete projects, end-to-end. We also
+offer full-stack JavaScript development expertise using many tools such as Node.js,
 Express, AngularJS, Meteor, RESTful APIs and NoSQL databases.
 
 {% include workflow.md %}
