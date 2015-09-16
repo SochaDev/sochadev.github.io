@@ -2192,6 +2192,9 @@ body {
   background-color: #2b2b2b;
   margin: 24px 0;
   padding: 0; }
+  @media (max-width: 768px) {
+    body {
+      margin-top: 0; } }
 
 .stripe {
   padding: 24px;
@@ -2211,17 +2214,17 @@ body {
         margin-right: 0; }
     @media (max-width: 768px) {
       body.front .stripe.first .alpha, body.front .stripe.first .beta,
-      body.front .stripe.first .columns-2, body.front .stripe.first .columns-4, body.front .stripe.first .columns-6, body.front .stripe.first .columns-8, body.front .stripe.first .columns-10, body.front .stripe.first .columns-12 {
+      body.front .stripe.first .columns-2, body.front .stripe.first .columns-4, body.front .stripe.first .columns-6, body.front .stripe.first .columns-8, body.front .stripe.first .columns-10, body.front .stripe.first .columns-12, body.front .stripe.first ul.projects li, ul.projects body.front .stripe.first li {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 100%;
         margin-left: 0%; }
         body.front .stripe.first .alpha:last-child, body.front .stripe.first .beta:last-child,
-        body.front .stripe.first .columns-2:last-child, body.front .stripe.first .columns-4:last-child, body.front .stripe.first .columns-6:last-child, body.front .stripe.first .columns-8:last-child, body.front .stripe.first .columns-10:last-child, body.front .stripe.first .columns-12:last-child {
+        body.front .stripe.first .columns-2:last-child, body.front .stripe.first .columns-4:last-child, body.front .stripe.first .columns-6:last-child, body.front .stripe.first .columns-8:last-child, body.front .stripe.first .columns-10:last-child, body.front .stripe.first .columns-12:last-child, body.front .stripe.first ul.projects li:last-child, ul.projects body.front .stripe.first li:last-child {
           margin-right: 0; }
         body.front .stripe.first .alpha:nth-child(0), body.front .stripe.first .beta:nth-child(0),
-        body.front .stripe.first .columns-2:nth-child(0), body.front .stripe.first .columns-4:nth-child(0), body.front .stripe.first .columns-6:nth-child(0), body.front .stripe.first .columns-8:nth-child(0), body.front .stripe.first .columns-10:nth-child(0), body.front .stripe.first .columns-12:nth-child(0) {
+        body.front .stripe.first .columns-2:nth-child(0), body.front .stripe.first .columns-4:nth-child(0), body.front .stripe.first .columns-6:nth-child(0), body.front .stripe.first .columns-8:nth-child(0), body.front .stripe.first .columns-10:nth-child(0), body.front .stripe.first .columns-12:nth-child(0), body.front .stripe.first ul.projects li:nth-child(0), ul.projects body.front .stripe.first li:nth-child(0) {
           margin-right: 0; }
       body.front .stripe.first .alpha p:last-child, body.front .stripe.first .beta p:last-child,
       body.front .stripe.first .columns-2 p:last-child, body.front .stripe.first .columns-4 p:last-child, body.front .stripe.first .columns-6 p:last-child, body.front .stripe.first .columns-8 p:last-child, body.front .stripe.first .columns-10 p:last-child, body.front .stripe.first .columns-12 p:last-child {
@@ -2244,7 +2247,7 @@ body {
   @media (max-width: 768px) {
     .stripe.second body.front .stripe.first .alpha, body.front .stripe.first .stripe.second .alpha, .stripe.second body.front .stripe.first .beta, body.front .stripe.first .stripe.second .beta,
     .stripe.second body.front .stripe.first .columns-2, body.front .stripe.first .stripe.second .columns-2, .stripe.second body.front .stripe.first .columns-4, body.front .stripe.first .stripe.second .columns-4, .stripe.second body.front .stripe.first .columns-6, body.front .stripe.first .stripe.second .columns-6, .stripe.second body.front .stripe.first .columns-8, body.front .stripe.first .stripe.second .columns-8, .stripe.second body.front .stripe.first .columns-10, body.front .stripe.first .stripe.second .columns-10, .stripe.second body.front .stripe.first .columns-12, body.front .stripe.first .stripe.second .columns-12, .stripe.second .alpha, .stripe.second .beta,
-    .stripe.second .columns-2, .stripe.second .columns-4, .stripe.second .columns-6, .stripe.second .columns-8, .stripe.second .columns-10, .stripe.second .columns-12 {
+    .stripe.second .columns-2, .stripe.second .columns-4, .stripe.second .columns-6, .stripe.second .columns-8, .stripe.second .columns-10, .stripe.second .columns-12, .stripe.second ul.projects li, ul.projects .stripe.second li {
       float: left;
       display: block;
       margin-right: 2.35765%;
@@ -2252,11 +2255,11 @@ body {
       margin-left: 0%; }
       .stripe.second body.front .stripe.first .alpha:last-child, body.front .stripe.first .stripe.second .alpha:last-child, .stripe.second body.front .stripe.first .beta:last-child, body.front .stripe.first .stripe.second .beta:last-child,
       .stripe.second body.front .stripe.first .columns-2:last-child, body.front .stripe.first .stripe.second .columns-2:last-child, .stripe.second body.front .stripe.first .columns-4:last-child, body.front .stripe.first .stripe.second .columns-4:last-child, .stripe.second body.front .stripe.first .columns-6:last-child, body.front .stripe.first .stripe.second .columns-6:last-child, .stripe.second body.front .stripe.first .columns-8:last-child, body.front .stripe.first .stripe.second .columns-8:last-child, .stripe.second body.front .stripe.first .columns-10:last-child, body.front .stripe.first .stripe.second .columns-10:last-child, .stripe.second body.front .stripe.first .columns-12:last-child, body.front .stripe.first .stripe.second .columns-12:last-child, .stripe.second .alpha:last-child, .stripe.second .beta:last-child,
-      .stripe.second .columns-2:last-child, .stripe.second .columns-4:last-child, .stripe.second .columns-6:last-child, .stripe.second .columns-8:last-child, .stripe.second .columns-10:last-child, .stripe.second .columns-12:last-child {
+      .stripe.second .columns-2:last-child, .stripe.second .columns-4:last-child, .stripe.second .columns-6:last-child, .stripe.second .columns-8:last-child, .stripe.second .columns-10:last-child, .stripe.second .columns-12:last-child, .stripe.second ul.projects li:last-child, ul.projects .stripe.second li:last-child {
         margin-right: 0; }
       .stripe.second body.front .stripe.first .alpha:nth-child(0), body.front .stripe.first .stripe.second .alpha:nth-child(0), .stripe.second body.front .stripe.first .beta:nth-child(0), body.front .stripe.first .stripe.second .beta:nth-child(0),
       .stripe.second body.front .stripe.first .columns-2:nth-child(0), body.front .stripe.first .stripe.second .columns-2:nth-child(0), .stripe.second body.front .stripe.first .columns-4:nth-child(0), body.front .stripe.first .stripe.second .columns-4:nth-child(0), .stripe.second body.front .stripe.first .columns-6:nth-child(0), body.front .stripe.first .stripe.second .columns-6:nth-child(0), .stripe.second body.front .stripe.first .columns-8:nth-child(0), body.front .stripe.first .stripe.second .columns-8:nth-child(0), .stripe.second body.front .stripe.first .columns-10:nth-child(0), body.front .stripe.first .stripe.second .columns-10:nth-child(0), .stripe.second body.front .stripe.first .columns-12:nth-child(0), body.front .stripe.first .stripe.second .columns-12:nth-child(0), .stripe.second .alpha:nth-child(0), .stripe.second .beta:nth-child(0),
-      .stripe.second .columns-2:nth-child(0), .stripe.second .columns-4:nth-child(0), .stripe.second .columns-6:nth-child(0), .stripe.second .columns-8:nth-child(0), .stripe.second .columns-10:nth-child(0), .stripe.second .columns-12:nth-child(0) {
+      .stripe.second .columns-2:nth-child(0), .stripe.second .columns-4:nth-child(0), .stripe.second .columns-6:nth-child(0), .stripe.second .columns-8:nth-child(0), .stripe.second .columns-10:nth-child(0), .stripe.second .columns-12:nth-child(0), .stripe.second ul.projects li:nth-child(0), ul.projects .stripe.second li:nth-child(0) {
         margin-right: 0; }
     .stripe.second .alpha p:last-child, .stripe.second .beta p:last-child,
     .stripe.second .columns-2 p:last-child, .stripe.second .columns-4 p:last-child, .stripe.second .columns-6 p:last-child, .stripe.second .columns-8 p:last-child, .stripe.second .columns-10 p:last-child, .stripe.second .columns-12 p:last-child {
@@ -2286,7 +2289,7 @@ body {
     @media (max-width: 768px) {
       .stripe.blue body.front .stripe.first .alpha, body.front .stripe.first .stripe.blue .alpha, .stripe.blue body.front .stripe.first .beta, body.front .stripe.first .stripe.blue .beta,
       .stripe.blue body.front .stripe.first .columns-2, body.front .stripe.first .stripe.blue .columns-2, .stripe.blue body.front .stripe.first .columns-4, body.front .stripe.first .stripe.blue .columns-4, .stripe.blue body.front .stripe.first .columns-6, body.front .stripe.first .stripe.blue .columns-6, .stripe.blue body.front .stripe.first .columns-8, body.front .stripe.first .stripe.blue .columns-8, .stripe.blue body.front .stripe.first .columns-10, body.front .stripe.first .stripe.blue .columns-10, .stripe.blue body.front .stripe.first .columns-12, body.front .stripe.first .stripe.blue .columns-12, .stripe.blue .alpha, .stripe.blue .beta,
-      .stripe.blue .columns-2, .stripe.blue .columns-4, .stripe.blue .columns-6, .stripe.blue .columns-8, .stripe.blue .columns-10, .stripe.blue .columns-12 {
+      .stripe.blue .columns-2, .stripe.blue .columns-4, .stripe.blue .columns-6, .stripe.blue .columns-8, .stripe.blue .columns-10, .stripe.blue .columns-12, .stripe.blue ul.projects li, ul.projects .stripe.blue li {
         float: left;
         display: block;
         margin-right: 2.35765%;
@@ -2294,11 +2297,11 @@ body {
         margin-left: 0%; }
         .stripe.blue body.front .stripe.first .alpha:last-child, body.front .stripe.first .stripe.blue .alpha:last-child, .stripe.blue body.front .stripe.first .beta:last-child, body.front .stripe.first .stripe.blue .beta:last-child,
         .stripe.blue body.front .stripe.first .columns-2:last-child, body.front .stripe.first .stripe.blue .columns-2:last-child, .stripe.blue body.front .stripe.first .columns-4:last-child, body.front .stripe.first .stripe.blue .columns-4:last-child, .stripe.blue body.front .stripe.first .columns-6:last-child, body.front .stripe.first .stripe.blue .columns-6:last-child, .stripe.blue body.front .stripe.first .columns-8:last-child, body.front .stripe.first .stripe.blue .columns-8:last-child, .stripe.blue body.front .stripe.first .columns-10:last-child, body.front .stripe.first .stripe.blue .columns-10:last-child, .stripe.blue body.front .stripe.first .columns-12:last-child, body.front .stripe.first .stripe.blue .columns-12:last-child, .stripe.blue .alpha:last-child, .stripe.blue .beta:last-child,
-        .stripe.blue .columns-2:last-child, .stripe.blue .columns-4:last-child, .stripe.blue .columns-6:last-child, .stripe.blue .columns-8:last-child, .stripe.blue .columns-10:last-child, .stripe.blue .columns-12:last-child {
+        .stripe.blue .columns-2:last-child, .stripe.blue .columns-4:last-child, .stripe.blue .columns-6:last-child, .stripe.blue .columns-8:last-child, .stripe.blue .columns-10:last-child, .stripe.blue .columns-12:last-child, .stripe.blue ul.projects li:last-child, ul.projects .stripe.blue li:last-child {
           margin-right: 0; }
         .stripe.blue body.front .stripe.first .alpha:nth-child(0), body.front .stripe.first .stripe.blue .alpha:nth-child(0), .stripe.blue body.front .stripe.first .beta:nth-child(0), body.front .stripe.first .stripe.blue .beta:nth-child(0),
         .stripe.blue body.front .stripe.first .columns-2:nth-child(0), body.front .stripe.first .stripe.blue .columns-2:nth-child(0), .stripe.blue body.front .stripe.first .columns-4:nth-child(0), body.front .stripe.first .stripe.blue .columns-4:nth-child(0), .stripe.blue body.front .stripe.first .columns-6:nth-child(0), body.front .stripe.first .stripe.blue .columns-6:nth-child(0), .stripe.blue body.front .stripe.first .columns-8:nth-child(0), body.front .stripe.first .stripe.blue .columns-8:nth-child(0), .stripe.blue body.front .stripe.first .columns-10:nth-child(0), body.front .stripe.first .stripe.blue .columns-10:nth-child(0), .stripe.blue body.front .stripe.first .columns-12:nth-child(0), body.front .stripe.first .stripe.blue .columns-12:nth-child(0), .stripe.blue .alpha:nth-child(0), .stripe.blue .beta:nth-child(0),
-        .stripe.blue .columns-2:nth-child(0), .stripe.blue .columns-4:nth-child(0), .stripe.blue .columns-6:nth-child(0), .stripe.blue .columns-8:nth-child(0), .stripe.blue .columns-10:nth-child(0), .stripe.blue .columns-12:nth-child(0) {
+        .stripe.blue .columns-2:nth-child(0), .stripe.blue .columns-4:nth-child(0), .stripe.blue .columns-6:nth-child(0), .stripe.blue .columns-8:nth-child(0), .stripe.blue .columns-10:nth-child(0), .stripe.blue .columns-12:nth-child(0), .stripe.blue ul.projects li:nth-child(0), ul.projects .stripe.blue li:nth-child(0) {
           margin-right: 0; }
       .stripe.blue .alpha p:last-child, .stripe.blue .beta p:last-child,
       .stripe.blue .columns-2 p:last-child, .stripe.blue .columns-4 p:last-child, .stripe.blue .columns-6 p:last-child, .stripe.blue .columns-8 p:last-child, .stripe.blue .columns-10 p:last-child, .stripe.blue .columns-12 p:last-child {
@@ -2329,7 +2332,7 @@ body {
     @media (max-width: 768px) {
       .stripe.red body.front .stripe.first .alpha, body.front .stripe.first .stripe.red .alpha, .stripe.red body.front .stripe.first .beta, body.front .stripe.first .stripe.red .beta,
       .stripe.red body.front .stripe.first .columns-2, body.front .stripe.first .stripe.red .columns-2, .stripe.red body.front .stripe.first .columns-4, body.front .stripe.first .stripe.red .columns-4, .stripe.red body.front .stripe.first .columns-6, body.front .stripe.first .stripe.red .columns-6, .stripe.red body.front .stripe.first .columns-8, body.front .stripe.first .stripe.red .columns-8, .stripe.red body.front .stripe.first .columns-10, body.front .stripe.first .stripe.red .columns-10, .stripe.red body.front .stripe.first .columns-12, body.front .stripe.first .stripe.red .columns-12, .stripe.red .alpha, .stripe.red .beta,
-      .stripe.red .columns-2, .stripe.red .columns-4, .stripe.red .columns-6, .stripe.red .columns-8, .stripe.red .columns-10, .stripe.red .columns-12 {
+      .stripe.red .columns-2, .stripe.red .columns-4, .stripe.red .columns-6, .stripe.red .columns-8, .stripe.red .columns-10, .stripe.red .columns-12, .stripe.red ul.projects li, ul.projects .stripe.red li {
         float: left;
         display: block;
         margin-right: 2.35765%;
@@ -2337,11 +2340,11 @@ body {
         margin-left: 0%; }
         .stripe.red body.front .stripe.first .alpha:last-child, body.front .stripe.first .stripe.red .alpha:last-child, .stripe.red body.front .stripe.first .beta:last-child, body.front .stripe.first .stripe.red .beta:last-child,
         .stripe.red body.front .stripe.first .columns-2:last-child, body.front .stripe.first .stripe.red .columns-2:last-child, .stripe.red body.front .stripe.first .columns-4:last-child, body.front .stripe.first .stripe.red .columns-4:last-child, .stripe.red body.front .stripe.first .columns-6:last-child, body.front .stripe.first .stripe.red .columns-6:last-child, .stripe.red body.front .stripe.first .columns-8:last-child, body.front .stripe.first .stripe.red .columns-8:last-child, .stripe.red body.front .stripe.first .columns-10:last-child, body.front .stripe.first .stripe.red .columns-10:last-child, .stripe.red body.front .stripe.first .columns-12:last-child, body.front .stripe.first .stripe.red .columns-12:last-child, .stripe.red .alpha:last-child, .stripe.red .beta:last-child,
-        .stripe.red .columns-2:last-child, .stripe.red .columns-4:last-child, .stripe.red .columns-6:last-child, .stripe.red .columns-8:last-child, .stripe.red .columns-10:last-child, .stripe.red .columns-12:last-child {
+        .stripe.red .columns-2:last-child, .stripe.red .columns-4:last-child, .stripe.red .columns-6:last-child, .stripe.red .columns-8:last-child, .stripe.red .columns-10:last-child, .stripe.red .columns-12:last-child, .stripe.red ul.projects li:last-child, ul.projects .stripe.red li:last-child {
           margin-right: 0; }
         .stripe.red body.front .stripe.first .alpha:nth-child(0), body.front .stripe.first .stripe.red .alpha:nth-child(0), .stripe.red body.front .stripe.first .beta:nth-child(0), body.front .stripe.first .stripe.red .beta:nth-child(0),
         .stripe.red body.front .stripe.first .columns-2:nth-child(0), body.front .stripe.first .stripe.red .columns-2:nth-child(0), .stripe.red body.front .stripe.first .columns-4:nth-child(0), body.front .stripe.first .stripe.red .columns-4:nth-child(0), .stripe.red body.front .stripe.first .columns-6:nth-child(0), body.front .stripe.first .stripe.red .columns-6:nth-child(0), .stripe.red body.front .stripe.first .columns-8:nth-child(0), body.front .stripe.first .stripe.red .columns-8:nth-child(0), .stripe.red body.front .stripe.first .columns-10:nth-child(0), body.front .stripe.first .stripe.red .columns-10:nth-child(0), .stripe.red body.front .stripe.first .columns-12:nth-child(0), body.front .stripe.first .stripe.red .columns-12:nth-child(0), .stripe.red .alpha:nth-child(0), .stripe.red .beta:nth-child(0),
-        .stripe.red .columns-2:nth-child(0), .stripe.red .columns-4:nth-child(0), .stripe.red .columns-6:nth-child(0), .stripe.red .columns-8:nth-child(0), .stripe.red .columns-10:nth-child(0), .stripe.red .columns-12:nth-child(0) {
+        .stripe.red .columns-2:nth-child(0), .stripe.red .columns-4:nth-child(0), .stripe.red .columns-6:nth-child(0), .stripe.red .columns-8:nth-child(0), .stripe.red .columns-10:nth-child(0), .stripe.red .columns-12:nth-child(0), .stripe.red ul.projects li:nth-child(0), ul.projects .stripe.red li:nth-child(0) {
           margin-right: 0; }
       .stripe.red .alpha p:last-child, .stripe.red .beta p:last-child,
       .stripe.red .columns-2 p:last-child, .stripe.red .columns-4 p:last-child, .stripe.red .columns-6 p:last-child, .stripe.red .columns-8 p:last-child, .stripe.red .columns-10 p:last-child, .stripe.red .columns-12 p:last-child {
@@ -2372,7 +2375,7 @@ body {
     @media (max-width: 768px) {
       .stripe.green body.front .stripe.first .alpha, body.front .stripe.first .stripe.green .alpha, .stripe.green body.front .stripe.first .beta, body.front .stripe.first .stripe.green .beta,
       .stripe.green body.front .stripe.first .columns-2, body.front .stripe.first .stripe.green .columns-2, .stripe.green body.front .stripe.first .columns-4, body.front .stripe.first .stripe.green .columns-4, .stripe.green body.front .stripe.first .columns-6, body.front .stripe.first .stripe.green .columns-6, .stripe.green body.front .stripe.first .columns-8, body.front .stripe.first .stripe.green .columns-8, .stripe.green body.front .stripe.first .columns-10, body.front .stripe.first .stripe.green .columns-10, .stripe.green body.front .stripe.first .columns-12, body.front .stripe.first .stripe.green .columns-12, .stripe.green .alpha, .stripe.green .beta,
-      .stripe.green .columns-2, .stripe.green .columns-4, .stripe.green .columns-6, .stripe.green .columns-8, .stripe.green .columns-10, .stripe.green .columns-12 {
+      .stripe.green .columns-2, .stripe.green .columns-4, .stripe.green .columns-6, .stripe.green .columns-8, .stripe.green .columns-10, .stripe.green .columns-12, .stripe.green ul.projects li, ul.projects .stripe.green li {
         float: left;
         display: block;
         margin-right: 2.35765%;
@@ -2380,11 +2383,11 @@ body {
         margin-left: 0%; }
         .stripe.green body.front .stripe.first .alpha:last-child, body.front .stripe.first .stripe.green .alpha:last-child, .stripe.green body.front .stripe.first .beta:last-child, body.front .stripe.first .stripe.green .beta:last-child,
         .stripe.green body.front .stripe.first .columns-2:last-child, body.front .stripe.first .stripe.green .columns-2:last-child, .stripe.green body.front .stripe.first .columns-4:last-child, body.front .stripe.first .stripe.green .columns-4:last-child, .stripe.green body.front .stripe.first .columns-6:last-child, body.front .stripe.first .stripe.green .columns-6:last-child, .stripe.green body.front .stripe.first .columns-8:last-child, body.front .stripe.first .stripe.green .columns-8:last-child, .stripe.green body.front .stripe.first .columns-10:last-child, body.front .stripe.first .stripe.green .columns-10:last-child, .stripe.green body.front .stripe.first .columns-12:last-child, body.front .stripe.first .stripe.green .columns-12:last-child, .stripe.green .alpha:last-child, .stripe.green .beta:last-child,
-        .stripe.green .columns-2:last-child, .stripe.green .columns-4:last-child, .stripe.green .columns-6:last-child, .stripe.green .columns-8:last-child, .stripe.green .columns-10:last-child, .stripe.green .columns-12:last-child {
+        .stripe.green .columns-2:last-child, .stripe.green .columns-4:last-child, .stripe.green .columns-6:last-child, .stripe.green .columns-8:last-child, .stripe.green .columns-10:last-child, .stripe.green .columns-12:last-child, .stripe.green ul.projects li:last-child, ul.projects .stripe.green li:last-child {
           margin-right: 0; }
         .stripe.green body.front .stripe.first .alpha:nth-child(0), body.front .stripe.first .stripe.green .alpha:nth-child(0), .stripe.green body.front .stripe.first .beta:nth-child(0), body.front .stripe.first .stripe.green .beta:nth-child(0),
         .stripe.green body.front .stripe.first .columns-2:nth-child(0), body.front .stripe.first .stripe.green .columns-2:nth-child(0), .stripe.green body.front .stripe.first .columns-4:nth-child(0), body.front .stripe.first .stripe.green .columns-4:nth-child(0), .stripe.green body.front .stripe.first .columns-6:nth-child(0), body.front .stripe.first .stripe.green .columns-6:nth-child(0), .stripe.green body.front .stripe.first .columns-8:nth-child(0), body.front .stripe.first .stripe.green .columns-8:nth-child(0), .stripe.green body.front .stripe.first .columns-10:nth-child(0), body.front .stripe.first .stripe.green .columns-10:nth-child(0), .stripe.green body.front .stripe.first .columns-12:nth-child(0), body.front .stripe.first .stripe.green .columns-12:nth-child(0), .stripe.green .alpha:nth-child(0), .stripe.green .beta:nth-child(0),
-        .stripe.green .columns-2:nth-child(0), .stripe.green .columns-4:nth-child(0), .stripe.green .columns-6:nth-child(0), .stripe.green .columns-8:nth-child(0), .stripe.green .columns-10:nth-child(0), .stripe.green .columns-12:nth-child(0) {
+        .stripe.green .columns-2:nth-child(0), .stripe.green .columns-4:nth-child(0), .stripe.green .columns-6:nth-child(0), .stripe.green .columns-8:nth-child(0), .stripe.green .columns-10:nth-child(0), .stripe.green .columns-12:nth-child(0), .stripe.green ul.projects li:nth-child(0), ul.projects .stripe.green li:nth-child(0) {
           margin-right: 0; }
       .stripe.green .alpha p:last-child, .stripe.green .beta p:last-child,
       .stripe.green .columns-2 p:last-child, .stripe.green .columns-4 p:last-child, .stripe.green .columns-6 p:last-child, .stripe.green .columns-8 p:last-child, .stripe.green .columns-10 p:last-child, .stripe.green .columns-12 p:last-child {
@@ -2412,7 +2415,7 @@ body {
     @media (max-width: 768px) {
       .stripe.gray body.front .stripe.first .alpha, body.front .stripe.first .stripe.gray .alpha, .stripe.gray body.front .stripe.first .beta, body.front .stripe.first .stripe.gray .beta,
       .stripe.gray body.front .stripe.first .columns-2, body.front .stripe.first .stripe.gray .columns-2, .stripe.gray body.front .stripe.first .columns-4, body.front .stripe.first .stripe.gray .columns-4, .stripe.gray body.front .stripe.first .columns-6, body.front .stripe.first .stripe.gray .columns-6, .stripe.gray body.front .stripe.first .columns-8, body.front .stripe.first .stripe.gray .columns-8, .stripe.gray body.front .stripe.first .columns-10, body.front .stripe.first .stripe.gray .columns-10, .stripe.gray body.front .stripe.first .columns-12, body.front .stripe.first .stripe.gray .columns-12, .stripe.gray .alpha, .stripe.gray .beta,
-      .stripe.gray .columns-2, .stripe.gray .columns-4, .stripe.gray .columns-6, .stripe.gray .columns-8, .stripe.gray .columns-10, .stripe.gray .columns-12 {
+      .stripe.gray .columns-2, .stripe.gray .columns-4, .stripe.gray .columns-6, .stripe.gray .columns-8, .stripe.gray .columns-10, .stripe.gray .columns-12, .stripe.gray ul.projects li, ul.projects .stripe.gray li {
         float: left;
         display: block;
         margin-right: 2.35765%;
@@ -2420,11 +2423,11 @@ body {
         margin-left: 0%; }
         .stripe.gray body.front .stripe.first .alpha:last-child, body.front .stripe.first .stripe.gray .alpha:last-child, .stripe.gray body.front .stripe.first .beta:last-child, body.front .stripe.first .stripe.gray .beta:last-child,
         .stripe.gray body.front .stripe.first .columns-2:last-child, body.front .stripe.first .stripe.gray .columns-2:last-child, .stripe.gray body.front .stripe.first .columns-4:last-child, body.front .stripe.first .stripe.gray .columns-4:last-child, .stripe.gray body.front .stripe.first .columns-6:last-child, body.front .stripe.first .stripe.gray .columns-6:last-child, .stripe.gray body.front .stripe.first .columns-8:last-child, body.front .stripe.first .stripe.gray .columns-8:last-child, .stripe.gray body.front .stripe.first .columns-10:last-child, body.front .stripe.first .stripe.gray .columns-10:last-child, .stripe.gray body.front .stripe.first .columns-12:last-child, body.front .stripe.first .stripe.gray .columns-12:last-child, .stripe.gray .alpha:last-child, .stripe.gray .beta:last-child,
-        .stripe.gray .columns-2:last-child, .stripe.gray .columns-4:last-child, .stripe.gray .columns-6:last-child, .stripe.gray .columns-8:last-child, .stripe.gray .columns-10:last-child, .stripe.gray .columns-12:last-child {
+        .stripe.gray .columns-2:last-child, .stripe.gray .columns-4:last-child, .stripe.gray .columns-6:last-child, .stripe.gray .columns-8:last-child, .stripe.gray .columns-10:last-child, .stripe.gray .columns-12:last-child, .stripe.gray ul.projects li:last-child, ul.projects .stripe.gray li:last-child {
           margin-right: 0; }
         .stripe.gray body.front .stripe.first .alpha:nth-child(0), body.front .stripe.first .stripe.gray .alpha:nth-child(0), .stripe.gray body.front .stripe.first .beta:nth-child(0), body.front .stripe.first .stripe.gray .beta:nth-child(0),
         .stripe.gray body.front .stripe.first .columns-2:nth-child(0), body.front .stripe.first .stripe.gray .columns-2:nth-child(0), .stripe.gray body.front .stripe.first .columns-4:nth-child(0), body.front .stripe.first .stripe.gray .columns-4:nth-child(0), .stripe.gray body.front .stripe.first .columns-6:nth-child(0), body.front .stripe.first .stripe.gray .columns-6:nth-child(0), .stripe.gray body.front .stripe.first .columns-8:nth-child(0), body.front .stripe.first .stripe.gray .columns-8:nth-child(0), .stripe.gray body.front .stripe.first .columns-10:nth-child(0), body.front .stripe.first .stripe.gray .columns-10:nth-child(0), .stripe.gray body.front .stripe.first .columns-12:nth-child(0), body.front .stripe.first .stripe.gray .columns-12:nth-child(0), .stripe.gray .alpha:nth-child(0), .stripe.gray .beta:nth-child(0),
-        .stripe.gray .columns-2:nth-child(0), .stripe.gray .columns-4:nth-child(0), .stripe.gray .columns-6:nth-child(0), .stripe.gray .columns-8:nth-child(0), .stripe.gray .columns-10:nth-child(0), .stripe.gray .columns-12:nth-child(0) {
+        .stripe.gray .columns-2:nth-child(0), .stripe.gray .columns-4:nth-child(0), .stripe.gray .columns-6:nth-child(0), .stripe.gray .columns-8:nth-child(0), .stripe.gray .columns-10:nth-child(0), .stripe.gray .columns-12:nth-child(0), .stripe.gray ul.projects li:nth-child(0), ul.projects .stripe.gray li:nth-child(0) {
           margin-right: 0; }
       .stripe.gray .alpha p:last-child, .stripe.gray .beta p:last-child,
       .stripe.gray .columns-2 p:last-child, .stripe.gray .columns-4 p:last-child, .stripe.gray .columns-6 p:last-child, .stripe.gray .columns-8 p:last-child, .stripe.gray .columns-10 p:last-child, .stripe.gray .columns-12 p:last-child {
@@ -2433,11 +2436,12 @@ body {
       body.front .stripe.gray .fa {
         display: none; } }
   .stripe.last {
-    background: #2b2b2b; }
+    background: #2b2b2b;
+    padding-bottom: 0; }
     @media (max-width: 768px) {
       .stripe.last body.front .stripe.first .alpha, body.front .stripe.first .stripe.last .alpha, .stripe.last body.front .stripe.first .beta, body.front .stripe.first .stripe.last .beta,
       .stripe.last body.front .stripe.first .columns-2, body.front .stripe.first .stripe.last .columns-2, .stripe.last body.front .stripe.first .columns-4, body.front .stripe.first .stripe.last .columns-4, .stripe.last body.front .stripe.first .columns-6, body.front .stripe.first .stripe.last .columns-6, .stripe.last body.front .stripe.first .columns-8, body.front .stripe.first .stripe.last .columns-8, .stripe.last body.front .stripe.first .columns-10, body.front .stripe.first .stripe.last .columns-10, .stripe.last body.front .stripe.first .columns-12, body.front .stripe.first .stripe.last .columns-12, .stripe.last .alpha, .stripe.last .beta,
-      .stripe.last .columns-2, .stripe.last .columns-4, .stripe.last .columns-6, .stripe.last .columns-8, .stripe.last .columns-10, .stripe.last .columns-12 {
+      .stripe.last .columns-2, .stripe.last .columns-4, .stripe.last .columns-6, .stripe.last .columns-8, .stripe.last .columns-10, .stripe.last .columns-12, .stripe.last ul.projects li, ul.projects .stripe.last li {
         float: left;
         display: block;
         margin-right: 2.35765%;
@@ -2445,11 +2449,11 @@ body {
         margin-left: 0%; }
         .stripe.last body.front .stripe.first .alpha:last-child, body.front .stripe.first .stripe.last .alpha:last-child, .stripe.last body.front .stripe.first .beta:last-child, body.front .stripe.first .stripe.last .beta:last-child,
         .stripe.last body.front .stripe.first .columns-2:last-child, body.front .stripe.first .stripe.last .columns-2:last-child, .stripe.last body.front .stripe.first .columns-4:last-child, body.front .stripe.first .stripe.last .columns-4:last-child, .stripe.last body.front .stripe.first .columns-6:last-child, body.front .stripe.first .stripe.last .columns-6:last-child, .stripe.last body.front .stripe.first .columns-8:last-child, body.front .stripe.first .stripe.last .columns-8:last-child, .stripe.last body.front .stripe.first .columns-10:last-child, body.front .stripe.first .stripe.last .columns-10:last-child, .stripe.last body.front .stripe.first .columns-12:last-child, body.front .stripe.first .stripe.last .columns-12:last-child, .stripe.last .alpha:last-child, .stripe.last .beta:last-child,
-        .stripe.last .columns-2:last-child, .stripe.last .columns-4:last-child, .stripe.last .columns-6:last-child, .stripe.last .columns-8:last-child, .stripe.last .columns-10:last-child, .stripe.last .columns-12:last-child {
+        .stripe.last .columns-2:last-child, .stripe.last .columns-4:last-child, .stripe.last .columns-6:last-child, .stripe.last .columns-8:last-child, .stripe.last .columns-10:last-child, .stripe.last .columns-12:last-child, .stripe.last ul.projects li:last-child, ul.projects .stripe.last li:last-child {
           margin-right: 0; }
         .stripe.last body.front .stripe.first .alpha:nth-child(0), body.front .stripe.first .stripe.last .alpha:nth-child(0), .stripe.last body.front .stripe.first .beta:nth-child(0), body.front .stripe.first .stripe.last .beta:nth-child(0),
         .stripe.last body.front .stripe.first .columns-2:nth-child(0), body.front .stripe.first .stripe.last .columns-2:nth-child(0), .stripe.last body.front .stripe.first .columns-4:nth-child(0), body.front .stripe.first .stripe.last .columns-4:nth-child(0), .stripe.last body.front .stripe.first .columns-6:nth-child(0), body.front .stripe.first .stripe.last .columns-6:nth-child(0), .stripe.last body.front .stripe.first .columns-8:nth-child(0), body.front .stripe.first .stripe.last .columns-8:nth-child(0), .stripe.last body.front .stripe.first .columns-10:nth-child(0), body.front .stripe.first .stripe.last .columns-10:nth-child(0), .stripe.last body.front .stripe.first .columns-12:nth-child(0), body.front .stripe.first .stripe.last .columns-12:nth-child(0), .stripe.last .alpha:nth-child(0), .stripe.last .beta:nth-child(0),
-        .stripe.last .columns-2:nth-child(0), .stripe.last .columns-4:nth-child(0), .stripe.last .columns-6:nth-child(0), .stripe.last .columns-8:nth-child(0), .stripe.last .columns-10:nth-child(0), .stripe.last .columns-12:nth-child(0) {
+        .stripe.last .columns-2:nth-child(0), .stripe.last .columns-4:nth-child(0), .stripe.last .columns-6:nth-child(0), .stripe.last .columns-8:nth-child(0), .stripe.last .columns-10:nth-child(0), .stripe.last .columns-12:nth-child(0), .stripe.last ul.projects li:nth-child(0), ul.projects .stripe.last li:nth-child(0) {
           margin-right: 0; }
       .stripe.last .alpha p:last-child, .stripe.last .beta p:last-child,
       .stripe.last .columns-2 p:last-child, .stripe.last .columns-4 p:last-child, .stripe.last .columns-6 p:last-child, .stripe.last .columns-8 p:last-child, .stripe.last .columns-10 p:last-child, .stripe.last .columns-12 p:last-child {
@@ -2457,46 +2461,48 @@ body {
       body.front .stripe.last .sprite,
       body.front .stripe.last .fa {
         display: none; } }
-  .stripe.team .alpha {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%; }
-    .stripe.team .alpha:last-child {
-      margin-right: 0; }
-  .stripe.team .beta {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-right: 0; }
-    .stripe.team .beta:last-child {
-      margin-right: 0; }
-    .stripe.team .beta p:last-child {
-      margin-bottom: 24px; }
-  @media (max-width: 768px) {
-    .stripe.team body.front .stripe.first .alpha, body.front .stripe.first .stripe.team .alpha, .stripe.team body.front .stripe.first .beta, body.front .stripe.first .stripe.team .beta,
-    .stripe.team body.front .stripe.first .columns-2, body.front .stripe.first .stripe.team .columns-2, .stripe.team body.front .stripe.first .columns-4, body.front .stripe.first .stripe.team .columns-4, .stripe.team body.front .stripe.first .columns-6, body.front .stripe.first .stripe.team .columns-6, .stripe.team body.front .stripe.first .columns-8, body.front .stripe.first .stripe.team .columns-8, .stripe.team body.front .stripe.first .columns-10, body.front .stripe.first .stripe.team .columns-10, .stripe.team body.front .stripe.first .columns-12, body.front .stripe.first .stripe.team .columns-12, .stripe.team .alpha, .stripe.team .beta,
-    .stripe.team .columns-2, .stripe.team .columns-4, .stripe.team .columns-6, .stripe.team .columns-8, .stripe.team .columns-10, .stripe.team .columns-12 {
+  .stripe.team {
+    padding-top: 0; }
+    .stripe.team .alpha {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 100%;
-      margin-left: 0%; }
-      .stripe.team body.front .stripe.first .alpha:last-child, body.front .stripe.first .stripe.team .alpha:last-child, .stripe.team body.front .stripe.first .beta:last-child, body.front .stripe.first .stripe.team .beta:last-child,
-      .stripe.team body.front .stripe.first .columns-2:last-child, body.front .stripe.first .stripe.team .columns-2:last-child, .stripe.team body.front .stripe.first .columns-4:last-child, body.front .stripe.first .stripe.team .columns-4:last-child, .stripe.team body.front .stripe.first .columns-6:last-child, body.front .stripe.first .stripe.team .columns-6:last-child, .stripe.team body.front .stripe.first .columns-8:last-child, body.front .stripe.first .stripe.team .columns-8:last-child, .stripe.team body.front .stripe.first .columns-10:last-child, body.front .stripe.first .stripe.team .columns-10:last-child, .stripe.team body.front .stripe.first .columns-12:last-child, body.front .stripe.first .stripe.team .columns-12:last-child, .stripe.team .alpha:last-child, .stripe.team .beta:last-child,
-      .stripe.team .columns-2:last-child, .stripe.team .columns-4:last-child, .stripe.team .columns-6:last-child, .stripe.team .columns-8:last-child, .stripe.team .columns-10:last-child, .stripe.team .columns-12:last-child {
+      width: 31.76157%; }
+      .stripe.team .alpha:last-child {
         margin-right: 0; }
-      .stripe.team body.front .stripe.first .alpha:nth-child(0), body.front .stripe.first .stripe.team .alpha:nth-child(0), .stripe.team body.front .stripe.first .beta:nth-child(0), body.front .stripe.first .stripe.team .beta:nth-child(0),
-      .stripe.team body.front .stripe.first .columns-2:nth-child(0), body.front .stripe.first .stripe.team .columns-2:nth-child(0), .stripe.team body.front .stripe.first .columns-4:nth-child(0), body.front .stripe.first .stripe.team .columns-4:nth-child(0), .stripe.team body.front .stripe.first .columns-6:nth-child(0), body.front .stripe.first .stripe.team .columns-6:nth-child(0), .stripe.team body.front .stripe.first .columns-8:nth-child(0), body.front .stripe.first .stripe.team .columns-8:nth-child(0), .stripe.team body.front .stripe.first .columns-10:nth-child(0), body.front .stripe.first .stripe.team .columns-10:nth-child(0), .stripe.team body.front .stripe.first .columns-12:nth-child(0), body.front .stripe.first .stripe.team .columns-12:nth-child(0), .stripe.team .alpha:nth-child(0), .stripe.team .beta:nth-child(0),
-      .stripe.team .columns-2:nth-child(0), .stripe.team .columns-4:nth-child(0), .stripe.team .columns-6:nth-child(0), .stripe.team .columns-8:nth-child(0), .stripe.team .columns-10:nth-child(0), .stripe.team .columns-12:nth-child(0) {
+    .stripe.team .beta {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-right: 0; }
+      .stripe.team .beta:last-child {
         margin-right: 0; }
-    .stripe.team .alpha p:last-child, .stripe.team .beta p:last-child,
-    .stripe.team .columns-2 p:last-child, .stripe.team .columns-4 p:last-child, .stripe.team .columns-6 p:last-child, .stripe.team .columns-8 p:last-child, .stripe.team .columns-10 p:last-child, .stripe.team .columns-12 p:last-child {
-      margin-bottom: 0; }
-    body.front .stripe.team .sprite,
-    body.front .stripe.team .fa {
-      display: none; } }
+      .stripe.team .beta p:last-child {
+        margin-bottom: 24px; }
+    @media (max-width: 768px) {
+      .stripe.team body.front .stripe.first .alpha, body.front .stripe.first .stripe.team .alpha, .stripe.team body.front .stripe.first .beta, body.front .stripe.first .stripe.team .beta,
+      .stripe.team body.front .stripe.first .columns-2, body.front .stripe.first .stripe.team .columns-2, .stripe.team body.front .stripe.first .columns-4, body.front .stripe.first .stripe.team .columns-4, .stripe.team body.front .stripe.first .columns-6, body.front .stripe.first .stripe.team .columns-6, .stripe.team body.front .stripe.first .columns-8, body.front .stripe.first .stripe.team .columns-8, .stripe.team body.front .stripe.first .columns-10, body.front .stripe.first .stripe.team .columns-10, .stripe.team body.front .stripe.first .columns-12, body.front .stripe.first .stripe.team .columns-12, .stripe.team .alpha, .stripe.team .beta,
+      .stripe.team .columns-2, .stripe.team .columns-4, .stripe.team .columns-6, .stripe.team .columns-8, .stripe.team .columns-10, .stripe.team .columns-12, .stripe.team ul.projects li, ul.projects .stripe.team li {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin-left: 0%; }
+        .stripe.team body.front .stripe.first .alpha:last-child, body.front .stripe.first .stripe.team .alpha:last-child, .stripe.team body.front .stripe.first .beta:last-child, body.front .stripe.first .stripe.team .beta:last-child,
+        .stripe.team body.front .stripe.first .columns-2:last-child, body.front .stripe.first .stripe.team .columns-2:last-child, .stripe.team body.front .stripe.first .columns-4:last-child, body.front .stripe.first .stripe.team .columns-4:last-child, .stripe.team body.front .stripe.first .columns-6:last-child, body.front .stripe.first .stripe.team .columns-6:last-child, .stripe.team body.front .stripe.first .columns-8:last-child, body.front .stripe.first .stripe.team .columns-8:last-child, .stripe.team body.front .stripe.first .columns-10:last-child, body.front .stripe.first .stripe.team .columns-10:last-child, .stripe.team body.front .stripe.first .columns-12:last-child, body.front .stripe.first .stripe.team .columns-12:last-child, .stripe.team .alpha:last-child, .stripe.team .beta:last-child,
+        .stripe.team .columns-2:last-child, .stripe.team .columns-4:last-child, .stripe.team .columns-6:last-child, .stripe.team .columns-8:last-child, .stripe.team .columns-10:last-child, .stripe.team .columns-12:last-child, .stripe.team ul.projects li:last-child, ul.projects .stripe.team li:last-child {
+          margin-right: 0; }
+        .stripe.team body.front .stripe.first .alpha:nth-child(0), body.front .stripe.first .stripe.team .alpha:nth-child(0), .stripe.team body.front .stripe.first .beta:nth-child(0), body.front .stripe.first .stripe.team .beta:nth-child(0),
+        .stripe.team body.front .stripe.first .columns-2:nth-child(0), body.front .stripe.first .stripe.team .columns-2:nth-child(0), .stripe.team body.front .stripe.first .columns-4:nth-child(0), body.front .stripe.first .stripe.team .columns-4:nth-child(0), .stripe.team body.front .stripe.first .columns-6:nth-child(0), body.front .stripe.first .stripe.team .columns-6:nth-child(0), .stripe.team body.front .stripe.first .columns-8:nth-child(0), body.front .stripe.first .stripe.team .columns-8:nth-child(0), .stripe.team body.front .stripe.first .columns-10:nth-child(0), body.front .stripe.first .stripe.team .columns-10:nth-child(0), .stripe.team body.front .stripe.first .columns-12:nth-child(0), body.front .stripe.first .stripe.team .columns-12:nth-child(0), .stripe.team .alpha:nth-child(0), .stripe.team .beta:nth-child(0),
+        .stripe.team .columns-2:nth-child(0), .stripe.team .columns-4:nth-child(0), .stripe.team .columns-6:nth-child(0), .stripe.team .columns-8:nth-child(0), .stripe.team .columns-10:nth-child(0), .stripe.team .columns-12:nth-child(0), .stripe.team ul.projects li:nth-child(0), ul.projects .stripe.team li:nth-child(0) {
+          margin-right: 0; }
+      .stripe.team .alpha p:last-child, .stripe.team .beta p:last-child,
+      .stripe.team .columns-2 p:last-child, .stripe.team .columns-4 p:last-child, .stripe.team .columns-6 p:last-child, .stripe.team .columns-8 p:last-child, .stripe.team .columns-10 p:last-child, .stripe.team .columns-12 p:last-child {
+        margin-bottom: 0; }
+      body.front .stripe.team .sprite,
+      body.front .stripe.team .fa {
+        display: none; } }
 
 .container {
   max-width: 1024px;
@@ -2584,6 +2590,9 @@ header {
 
 main {
   margin-top: 84px; }
+  @media (max-width: 768px) {
+    main {
+      margin-top: 0; } }
 
 footer {
   margin-bottom: 84px; }

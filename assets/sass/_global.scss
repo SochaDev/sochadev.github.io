@@ -21,6 +21,8 @@
     background-color: $bg;
     margin: $dmrg 0;
     padding: 0;
+
+    @include media("<=md") { margin-top: 0; }
   }
 
   .stripe {
@@ -85,10 +87,13 @@
     }
     &.last {
       background: $gray-darker;
+      padding-bottom: 0;
 
       @include full-width();
     }
     &.team {
+      padding-top: 0;
+
       .alpha { @include span-columns(4); }
       .beta { @include span-columns(8); @include omega();
         p:last-child { margin-bottom: $dmrg; }
@@ -143,6 +148,8 @@
   }
   main {
     margin-top: $header-height;
+
+    @include media("<=md") { margin-top: 0; }
   }
   footer {
     margin-bottom: $header-height;
@@ -157,6 +164,10 @@
       @include span-columns(3);
       @include omega(4n);
       margin-bottom: $dmrg;
+
+      @include media("<=md") {
+        @extend %full-width;
+      }
     }
 
     a {
