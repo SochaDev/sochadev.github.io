@@ -67,7 +67,9 @@
     margin: $dmrg 0;
     width: 100%;
   }
-  img { display: block; float: left; }
+  img {
+    display: block; float: left;
+  }
   small { font-size: $base * 0.8 }
   big { font-size: $base * 1.2 }
 
