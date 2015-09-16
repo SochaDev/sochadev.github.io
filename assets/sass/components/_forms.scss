@@ -7,11 +7,17 @@
 
     &.error { background: lighten($red, 60); color: $red; }
     &.success { background: lighten($green, 50); color: $green; }
+
+    ul, li {
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      margin-left: $dmrg;
+    }
   }
 
   label { font-weight: normal; }
-
-  a.form-toggler {}
 
   fieldset {
     border: 0;
