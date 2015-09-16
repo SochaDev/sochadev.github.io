@@ -27,8 +27,6 @@ for hosting, so we ported the whole thing over here to GitHub Pages. Enjoy!
 
 * `@jeffeoff` - Would be great if any span with the current `dotted` class could actually just pop a Bitters tooltip instead; update `/assets/js/app.js::theme` with a new func to handle those (or just do more Bitters-esque stuff to spans if more appropriate). Update copy as needed if tooltips are a better context for highlighted buzzword.
 
-* `@jeffeoff` - Need all of `/_includes/projects.html` built out; update `/assets/js/app.js` with Bitters modal stuffs.
-
 * `@jeffeoff` - Dunno if Bourbon/Bitters/whatever has built-in stuff for 508 compliance (e.g. `.sr-only` in Bootstrap) -- but we'd also get `pro` points if we could make our HTML5 document outline have legit headings and stuff. @see [this](https://gsnedders.html5.org/outliner/)
 
 * `@jeffeoff` - Audit everything ever because you are way more `in touch` than `@natemoo` is and you know what's actually cool these days.
