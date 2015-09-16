@@ -52,7 +52,10 @@
         .click(function(evt) {
           evt.preventDefault();
           settings.theme.top = 0;
-          $('#modal', context).fadeOut(settings.theme.animation.speed);
+
+          $('#modal, .messages', context)
+            .fadeOut(settings.theme.animation.speed);
+
           theme.scrollMain(context, settings);
         });
 
