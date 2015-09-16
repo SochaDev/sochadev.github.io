@@ -2776,48 +2776,6 @@ img.logo {
     width: 200px;
     height: 214px; }
 
-ul.projects {
-  margin: 24px 0 0 0;
-  padding: 0; }
-  ul.projects::after {
-    clear: both;
-    content: "";
-    display: table; }
-  ul.projects li {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%;
-    margin-bottom: 24px; }
-    ul.projects li:last-child {
-      margin-right: 0; }
-    ul.projects li:nth-child(4n) {
-      margin-right: 0; }
-    ul.projects li:nth-child(4n+1) {
-      clear: left; }
-    @media (max-width: 480px) {
-      ul.projects li {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 48.82117%;
-        margin-bottom: 12px; }
-        ul.projects li:last-child {
-          margin-right: 0; }
-        ul.projects li:nth-child(2n) {
-          margin-right: 0; }
-        ul.projects li:nth-child(2n+1) {
-          clear: left; }
-        ul.projects li:last-child {
-          margin-bottom: 24px; } }
-  ul.projects a {
-    background: #444;
-    cursor: pointer;
-    display: block;
-    overflow: hidden;
-    padding: 48px;
-    text-indent: -9999px; }
-
 p, ul, ol {
   margin-bottom: 24px;
   margin-top: 0; }
@@ -3056,6 +3014,50 @@ fieldset {
       margin-bottom: 12px; }
       fieldset.contact input[type="submit"]:hover {
         background-color: #67b9cc; }
+
+ul.projects {
+  margin: 24px 0 0 0;
+  padding: 0; }
+  ul.projects::after {
+    clear: both;
+    content: "";
+    display: table; }
+  ul.projects li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    margin-bottom: 24px; }
+    ul.projects li:last-child {
+      margin-right: 0; }
+    ul.projects li:nth-child(4n) {
+      margin-right: 0; }
+    ul.projects li:nth-child(4n+1) {
+      clear: left; }
+    @media (max-width: 480px) {
+      ul.projects li {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        margin-bottom: 12px; }
+        ul.projects li:last-child {
+          margin-right: 0; }
+        ul.projects li:nth-child(2n) {
+          margin-right: 0; }
+        ul.projects li:nth-child(2n+1) {
+          clear: left; }
+        ul.projects li:last-child {
+          margin-bottom: 24px; } }
+  ul.projects a {
+    background: #444;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    padding: 48px;
+    text-indent: -9999px; }
+    ul.projects a:hover {
+      background: #666; }
 
 #modal {
   display: none;

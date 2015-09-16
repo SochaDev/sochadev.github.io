@@ -1,6 +1,40 @@
+
+ul.projects {
+  @include clearfix();
+  margin: $dmrg 0 0 0;
+  padding: 0;
+
+  li {
+    @include span-columns(3);
+    @include omega(4n);
+    margin-bottom: $dmrg;
+
+    @include media("<=sm") {
+      @include span-columns(6);
+      @include omega(2n);
+      margin-bottom: $mrg;
+
+      &:last-child { margin-bottom: $dmrg; }
+    }
+  }
+
+  a {
+    background: $gray-4;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    padding: $dmrg * 2;
+    text-indent: -9999px;
+
+    &:hover {
+      background: $gray;
+    }
+  }
+}
+
+
 #modal {
   display: none;
-
   background: rgba($black, 0.5);
   position: absolute;
   left: 0;

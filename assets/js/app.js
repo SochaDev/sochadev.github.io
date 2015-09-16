@@ -254,15 +254,21 @@
 
       var $modal = $('#modal', context);
 
-      $('ul.projects a', context).click(function(evt) {
-        evt.preventDefault();
-        $modal.fadeIn(settings.theme.animation.speed);
-      });
+      $('ul.projects a', context)
+        .click(function(evt) {
+          evt.preventDefault();
 
-      $modal.click(function(evt) {
-        $modal.fadeOut(settings.theme.animation.speed);
-      });
+          $modal
+            .children('.modal')
+            .height($modal.parents('.stripe').height() - 72);
 
+          $modal.fadeIn(settings.theme.animation.speed);
+        });
+
+      $modal
+        .click(function(evt) {
+          $modal.fadeOut(settings.theme.animation.speed);
+        });
     }
   };
 
