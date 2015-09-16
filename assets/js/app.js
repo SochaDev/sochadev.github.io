@@ -9,11 +9,14 @@
   String.prototype.hashCode = function() {
     var hash = 0;
     if (this.length == 0) return hash;
+
     for (var i=0; i < this.length; i++) {
       var char = this.charCodeAt(i);
       hash = ((hash<<5)-hash)+char;
-      hash = hash & hash; // Convert to 32bit integer
+      // Convert to 32bit integer.
+      hash = hash & hash;
     }
+
     return hash;
   };
 
@@ -25,6 +28,7 @@
 
       this.scrollStickyStuff(context, settings);
       this.contactForm(context, settings);
+      this.toolTips(context, settings);
       this.projectList(context, settings);
 
     },
@@ -53,7 +57,7 @@
           evt.preventDefault();
           settings.theme.top = 0;
 
-          $('#modal, .messages', context)
+          $('#modal, fieldset.contact, .messages', context)
             .fadeOut(settings.theme.animation.speed);
 
           theme.scrollMain(context, settings);
@@ -69,11 +73,61 @@
           });
       }
     },
+    toolTips: function(context, settings) {
+
+      $('.tooltip', context).click(function(evt) {
+        evt.preventDefault();
+
+        var $self = $(this);
+        var message = $self.attr('data-tip');
+        if (!message) {
+          return;
+        }
+
+        var $tip = $('.tip', $self);
+        if (!$tip.length) {
+          $tip = $(document.createElement('div'))
+            .addClass('tip')
+            .html(message.replace('\\n', '<br>'))
+            .css({ width: (message.length * 2 + $self.text().length) + 'px' })
+            .hide();
+          $self
+            .append($tip);
+        }
+
+        $('.tip', context)
+          .not($tip)
+          .hide();
+        $tip
+          .toggle();
+      });
+
+    },
     contactForm: function(context, settings) {
 
       var $form = $('fieldset.contact', context);
       if (!$form.length) {
         return;
+      }
+
+      // Show/hide form.
+      var $toggler = $('a.form-toggler', context);
+      $toggler
+        .click(function(evt) {
+          evt.preventDefault();
+
+          if ($form.is(':visible')) {
+            $form.slideUp(settings.theme.animation.speed);
+          }
+          else {
+            $('.messages', $form).hide();
+            $form.slideDown(settings.theme.animation.speed);
+          }
+        });
+
+      if (document.location.hash === '#contact') {
+        $form.hide();
+        $toggler.first().click();
       }
 
       // Reset the form.
@@ -104,7 +158,6 @@
         $humanp.find('input#human-valid-input2').val(rand2);
       };
       reset();
-
       // Submit response handler.
       var respond = function(success, messages) {
         var $messages = $form
@@ -131,12 +184,11 @@
         theme.scrollMain(context, settings);
         reset();
       };
-
-      var validate = function(data) {
+      // Submit validation.
+      var validate = function(data, pass) {
 
         var messages = new Array();
         var $human = $form.find('input#human');
-        var human_check = false;
 
         // Validate *.required fields.
         $.each($('.required', $form), function(ix, e) {
@@ -146,24 +198,20 @@
           }
         });
 
-        // Human check.
-        if ($human.hasClass('validate')) {
+        if (pass === 1) {
+          // Do human check.
           var rand1 = parseInt(data.human_valid_input1);
           var rand2 = parseInt(data.human_valid_input2);
           var srand = parseInt(rand1 + rand2).toString();
           var arand = srand
             .hashCode()
             .toString();
-
           if (srand !== data.human || arand !== data.human_valid) {
             messages.push("Sorry" + (data.name.length ? " " + data.name : "") + ", you don't seem to have a human thing to discuss with us.");
           }
         }
-        if (human_check) {
-          $human.addClass('validate');
-        }
 
-        // Print messages.
+        // Invalid, print messages.
         if (messages.length) {
           respond(false, messages);
         }
@@ -184,7 +232,11 @@
             }, {});
 
         // Do some validation.
-        if (!validate(data)) {
+        var valid = validate(data, 0);
+        if (valid) {
+          valid = validate(data, 1);
+        }
+        if (!valid) {
           return false;
         }
 

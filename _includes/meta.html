@@ -1,6 +1,6 @@
 <meta charset="utf-8" />
   <title>{% if page.title %}{{ page.title | strip_html }} | {% endif %}{{ site.title }}</title>
-  <meta name="keywords" content="{% if page.tags %}{{ page.tags | join: ', ' }}{% else %}{{ page.title }}{% endif %}, {{ site.title }}" />
+  <meta name="keywords" content="{% if page.tags %}{{ page.tags | join: ', ' }}{% else %}{{ page.title }}{% endif %}, {{ site.title }}, {{ site.tagline }}" />
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
   <meta name="application-name" content="{{ site.title }}"/>
   <meta name="viewport" content="width=device-width,initial-scale=1" />

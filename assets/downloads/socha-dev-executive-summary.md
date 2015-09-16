@@ -10,8 +10,8 @@ layout: print
 Socha Dev is a white-label web and app development shop built to help your team
 succeed. We specialize in overflow, triage and problem solving services. We work
 in the development phase of projects \-- you give us your strategy, designs,
-requirements, API docs and any other pertinents \-- we turn it all in to a fully
-functioning application.
+requirements, API docs and any other pertinents \-- we turn it all in to a
+beautiful, fully functioning application.
 
 ## History & Successes
 
@@ -36,6 +36,12 @@ tell you about them!
 * * *
 
 ## Workflow
+
+Socha Dev uses PHP frameworks (Phalcon and Slim are current favorites), Drupal,
+TDD and BDD suites, continuous integration services (TravisCI, CircleCI) and a
+slew of front-end tools to complete projects, end-to-end. We also offer
+full-stack JavaScript development expertise using many tools such as Node.js,
+Express, AngularJS, Meteor, RESTful APIs and NoSQL databases.
 
 {% include workflow.md %}
 

@@ -6,14 +6,14 @@ tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP,
 <div class="stripe second">
   <div class="container">
     <div class="alpha">
-      <p>Socha Dev is a <span class="gray dotted">white-label</span> web and app development shop built to help
-      your team succeed. We specialize in <a href="#overflow" class="blue">overflow</a>,
-      <a href="#triage" class="red">triage</a> and
-      <a href="#problem-solving" class="green">problem solving</a> services.
+      <p>Socha Dev is a <span class="gray tooltip" data-tip="White-label means that you can take credit for the work you hire us to do; we like staying behind the scenes.">white-label</span> web and app development shop built to help
+      your team succeed. We specialize in <a href="#overflow" class="blue capitalize">overflow</a>,
+      <a href="#triage" class="red capitalize">triage</a> and
+      <a href="#problem-solving" class="green capitalize">problem solving</a> services.
       We invite you to check out our <a href="#projects">past projects</a>,
       learn more about <a href="#about" class="purple">our team</a>
       <a href="#open-source" class="blue">and their tools</a> &mdash; then
-      <a href="#contact" class="green">contact us</a> to discuss your next project.</p>
+      <a href="#contact">contact us</a> to discuss your next project.</p>
       <hr>
       <p>We work in the development phase of projects &mdash; you give us your
       strategy, designs, requirements, API docs and any other pertinents &mdash;
@@ -56,22 +56,19 @@ tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP,
 </div>
 <div class="stripe gray">
   <div class="container">
-    <div class="alpha">
-      <h2 id="projects">Projects</h2>
-      <p>We build; we build well. Here are some highlights &mdash; click 'em for more info.</p>
-    </div>
-    <div class="beta"></div>
     <div class="columns-12">
+      <h2 id="projects">Projects</h2>
+      <p>We build and develop &mdash; really well. Here are some highlights.</p>
       {% include projects.html %}
     </div>
   </div>
 </div>
 <div class="stripe last">
   <div class="container">
-    <div class="columns-8">
+    <div class="columns-12">
       <h2 id="contact">Contact us</h2>
-      <p>Ready to get started? We'd love to learn more about your project or
-      hear all about what an awesome dev you are.</p>
+      <p><a href="{{ page.url }}" class="blue form-toggler">Ready to get started?</a>
+      We'd love to learn more about your project, or hear all about what an awesome dev you are.</p>
     </div>
     <div class="columns-8">{% include contact.html %}
     </div>
@@ -88,10 +85,15 @@ tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP,
       other and to our clients. Socha Dev's <a href="/workflow" class="green">workflow</a> is
       designed to incorporate our clients' feedback throughout a project's life cycle.</p>
     </div>
+  </div>
+  <div class="container">
     <div class="columns-12">
       <p>If you need material for the boss or board, <a href="/assets/downloads/socha-dev-executive-summary" target="_blank" class="red">here's an executive summary</a> of our team.</p>
-      <p>Want to work here? By all means, <a href="#contact" class="blue">contact us</a>
-      and be sure to include a link to your GitHub account if you're a developer!</p>
+      <p>Want to work here? <a href="#contact" class="blue form-toggler">We'd
+      love to talk!</a> Be sure to include a link to your GitHub account if
+      you're a developer!</p>
     </div>
+    <hr>
   </div>
+
 </div>

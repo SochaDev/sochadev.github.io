@@ -17,10 +17,18 @@
     font-size: $base;
     margin: $dmrg auto;
     padding: $dmrg;
-    max-width: 970px;
+    max-width: #{map-get($breakpoints, 'lg')};
 
     .alpha { @include span-columns(8); @include shift(0); }
     .beta { @include span-columns(4); @include omega(0); }
+
+    @include media("<=md") {
+      margin: $dmrg;
+      padding: $mrg;
+      @include full-width();
+
+      .beta { margin-top: $dmrg; }
+    }
 
     img { float: left; }
     h3 { text-transform: none; }
