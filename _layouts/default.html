@@ -19,11 +19,9 @@
   <header>
     <div class="stripe first">
       <div class="container">
-        <div class="columns-10">
-          <a href="/" class="top" title="Scroll up">{{ site.title }}</a>
-        </div>
-        <div class="columns-2">
-          <a href="/" title="Home" class="home{% if page.url == '/' %} top{% endif %}"><img src="https://avatars2.githubusercontent.com/u/1489168?v=3&s=36" alt="Home" class="logo"></a>
+        <div class="columns-12">
+          <a href="/" title="Home" class="{% if page.url == '/' %}top {% endif %}logo"><img src="https://avatars2.githubusercontent.com/u/1489168?v=3&s=36" alt="Home" class="logo"></a>
+          <a href="/" class="top brand" title="Scroll up">{{ site.title }}</a>
         </div>
       </div>
     </div>
@@ -32,7 +30,7 @@
     <div class="stripe first{% if page.url != '/' %} default{% endif %}">
       <div class="container">
         <div class="columns-12">
-          <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}{% if page.url != '/' %}<a href="/" title="Home"><img src="https://avatars2.githubusercontent.com/u/1489168?v=3&s=36" alt="Socha Dev" class="logo"></a>{% endif %}</h1>{% if page.url != '/' %}
+          <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}{% if page.url != '/' %}<a href="/" title="Home" class="logo"><img src="https://avatars2.githubusercontent.com/u/1489168?v=3&s=36" alt="Socha Dev" class="logo"></a>{% endif %}</h1>{% if page.url != '/' %}
           <p class="breadcrumb"><a href="/" class="blue">Home</a>{% endif %}</p>
         </div>
       </div>

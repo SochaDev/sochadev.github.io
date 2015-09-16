@@ -17,12 +17,12 @@
     font-weight: 400;
   }
   h1 {
-    font-size: $base * 3;
+    font-size: $base * 2.8;
     line-height: 1;
     margin: 0;
   }
   h2 {
-    font-size: $base * 2.5;
+    font-size: $base * 2.4;
     text-transform: lowercase;
   }
   h3 {
@@ -37,7 +37,7 @@
     }
   }
 
-  h4 { font-size: $base * 1.5; }
+  h4 { font-size: $base * 1.6; }
   h5 { font-size: $base; }
 
   b, strong, h4 { font-weight: 700; }
