@@ -20,13 +20,3 @@ for hosting, so we ported the whole thing over here to GitHub Pages. Enjoy!
 
 * `bundle install` - initial setup.
 * `bundle exec jekyll build --watch` - watch and rebuild to local `_site` dir, as anything changes.
-
-### TODO
-
-* `@mistressofdrupal` - Build a micro RESTful API using either Slim or Phalcon (private SD repo plz), make sure a base path of `https://wintermute.sochadev.com/api-www` exists and can handle POST and GET, reject all other verbs with a 403. Ping `@natemow` for SSL or alias setup or whatever on `wintermute` as needed. API should also make sure that cross-origin requests are handled from `sochadev.github.io`, `sochadev.com` and `local.sochadev`; all other domains should throw a 403. We need `status` (HTTP response int) and `messages` (array) included in all API responses. Update `assets/js/app.js::theme.contactForm` jQuery `$.post` and/or `.respond` handler to reflect API JSON responses.
-
-* `@jasonsocha` - Apply seal-of-approval to above and point the `sochadev.com` domain. To do that we'll need this stuff:
-
-  * Add a `CNAME` file to repo root with 1 line in it: `sochadev.com`. Confirm this is acknowledged under project settings (you should see "Your site is published at http://sochadev.com" in a minute or so).
-  * Add DNS `A` records for `192.30.252.153`, `192.30.252.154`, remove existing record.
-  * Add DNS `CNAME` record for `www.sochadev.com` pointing to `sochadev.github.io`.
