@@ -24,7 +24,7 @@
     attach: function(context, settings) {
 
       this.header = $('header', context);
-      this.headerScrollOffset = (this.header.height() + 24);
+      this.headerScrollOffset = (this.header.height() + (settings.theme.margin * 2));
 
       this.scrollStickyStuff(context, settings);
       this.contactForm(context, settings);
@@ -79,6 +79,7 @@
         .click(function(evt) {
           evt.preventDefault();
 
+
           var $self = $(this);
           var message = $self.attr('data-tip');
           if (!message) {
@@ -90,10 +91,21 @@
             $tip = $(document.createElement('div'))
               .addClass('tip')
               .html(message.replace('\\n', '<br>'))
-              .css({ width: (message.length * 2 + $self.text().length) + 'px' })
               .hide();
             $self
               .append($tip);
+          }
+
+          var offset = ($(window).width() - $self.offset().left);
+          var margin = ($tip.outerWidth() / 2);
+          if (offset - $tip.outerWidth() >= $tip.outerWidth()) {
+            margin = -$tip.outerWidth();
+          }
+          else if (offset - $tip.outerWidth() <= 0) {
+            margin = Math.abs(offset - $tip.outerWidth()) + settings.theme.margin;
+          }
+          if ($tip.outerWidth() >= offset) {
+            $tip.css({ marginLeft: (-margin) + 'px' });
           }
 
           $('.tip', context)
@@ -263,9 +275,9 @@
           var project = settings.projects[$self.attr('data-project')];
           var $content = $modal.children('.modal');
 
-          if ($(window).width() > 768) {
+          if ($(window).width() > settings.theme.breakpoints.md) {
             $content
-              .height($modal.parents('.stripe').height() - 60);
+              .height($modal.parents('.stripe').height() - (settings.theme.margin * 5));
           }
 
           $content.find('.name')

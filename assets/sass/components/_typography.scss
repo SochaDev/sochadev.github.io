@@ -96,14 +96,17 @@
       border-bottom: dotted 2px $gray;
       cursor: pointer;
       position: relative;
+      white-space: nowrap;
 
       .tip {
+        white-space: normal;
         position: absolute;
         bottom: 0;
         left: 0;
         z-index: 1;
-        margin: 0 0 $mrg $mrg;
-
+        margin-bottom: $mrg;
+        margin-left: 0;
+        width: ($mrg * 20);
         @include border-radius($border-radius * 2);
         background: $white;
         border: solid $border-radius $gray-darker;

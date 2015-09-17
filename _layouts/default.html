@@ -62,7 +62,7 @@
             <span class="tooltip purple" data-tip="Phalcon and Slim are current favorites, but we've worked with dozens of others over the years.">PHP frameworks</span>,
             <span class="tooltip blue" data-tip="We've all been working with Drupal for a looong time and are pretty active in the community - its a great tool for many projects. We don't believe its the right tool for EVERY project, though.">Drupal</span>,
             <span class="tooltip green" data-tip="We actually try to write tests for every project we do these days (and can prove it) - stacks we're hot on right now are Codeception, Chai and Supertest.">TDD and BDD suites</span>,
-            <span class="tooltip orange" data-tip="TravisCI and CircleCI perform automated app testing for us - because who wants to mess with Jenkins?">continuous integration services</span>
+            <span class="tooltip orange" data-tip="TravisCI and CircleCI perform continuous integration of code and automated app testing for us.">CI services</span>
             and a slew of front-end tools to complete projects, end-to-end. We also offer
             <span class="tooltip orange" data-tip="">full-stack JavaScript development</span> expertise using many tools such as
             <span class="tooltip green" data-tip="">Node.js</span>,
@@ -92,6 +92,12 @@
     theme: {
       logo: '{{ site.logoUrl }}',
       images: '/assets/images',
+      margin: 12,
+      breakpoints: {
+        sm: 480,
+        md: 768,
+        lg: 1024
+      },
       animation: {
         speed: 200
       }

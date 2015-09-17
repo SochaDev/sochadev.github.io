@@ -2616,13 +2616,17 @@ a {
 a.tooltip, span.tooltip {
   border-bottom: dotted 2px #666;
   cursor: pointer;
-  position: relative; }
+  position: relative;
+  white-space: nowrap; }
   a.tooltip .tip, span.tooltip .tip {
+    white-space: normal;
     position: absolute;
     bottom: 0;
     left: 0;
     z-index: 1;
-    margin: 0 0 12px 12px;
+    margin-bottom: 12px;
+    margin-left: 0;
+    width: 240px;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
