@@ -3202,9 +3202,12 @@ ul.projects {
       font-size: 25.6px; } }
     @media (max-width: 768px) {
         #modal .modal .alpha {
+          padding: 0;
           height: 300px; }
         #modal .modal .beta {
-          margin-top: 24px; }
+          margin-top: 12px;
+          padding: 24px 12px 0 12px;
+          border-top: solid 1px #bbb; }
         #modal .modal img {
           height: auto;
           width: 100%; } }

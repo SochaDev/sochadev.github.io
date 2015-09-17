@@ -88,8 +88,8 @@ ul.projects {
       padding-bottom: $dmrg;
       @include full-width();
 
-      .alpha { height: 300px; }
-      .beta { margin-top: $dmrg; }
+      .alpha { padding: 0; height: 300px; }
+      .beta { margin-top: $mrg; padding: $dmrg $mrg 0 $mrg; border-top: solid 1px $gray-light; }
       img { height: auto; width: 100%; }
     }
 
