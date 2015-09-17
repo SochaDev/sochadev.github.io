@@ -43,7 +43,7 @@
   image: client-project
   description: Here are the project details.
 
-- name: Discovery Communications
+- name: Discovery Education
   client: Discovery Education
   clientUrl: http://discoveryeducation.com
   url: http://discoveryeducation.com
@@ -64,7 +64,7 @@
   image: seabourne-fcc
   description: Working with Seabourne, Socha Dev helped to lead the porting of the FCC's site into Drupal. This build involved a wide variety of custom Drupal modules to integrate with backend FCC systems as well as some tricky thinking to work within the guidelines and restrictions of a high-security, high-traffic federal agency web site. Socha Dev also helped with prototyping and development of the FCC's slick customizable dashboard application, MyFCC.
 
-- name: National Press Club
+- name: The National Press Club
   client: Home Front Communications
   clientUrl: http://homefrontdc.com
   url: https://www.press.org

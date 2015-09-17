@@ -97,8 +97,6 @@
       cursor: pointer;
       position: relative;
 
-      @include media("<=sm") { border-width: 1px; }
-
       .tip {
         position: absolute;
         bottom: 0;

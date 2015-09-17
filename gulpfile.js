@@ -10,112 +10,117 @@ var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
 
-
 gulp.task('css', function () {
-	return gulp.src('./assets/sass/*.scss')
-		.pipe(sourcemaps.init())
-		.pipe(sass().on('error', sass.logError))
-		.pipe(sourcemaps.write('.'))
-		.pipe(gulp.dest('./assets/css'));
+  return gulp
+    .src('./assets/sass/*.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('./assets/css'));
 });
 
 gulp.task('css-reload', function () {
-	gulp.src('./assets/sass/*.scss')
-		.pipe(sass().on('error', sass.logError))
-		.pipe(gulp.dest('./assets/css'))
-		.pipe(livereload());
+  gulp
+    .src('./assets/sass/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./assets/css'))
+    .pipe(livereload());
 });
 
-gulp.task('uglify-css', function() {
-	gulp.src('./assets/css/*.css')
-		.pipe(uglifycss({
-			'max-line-len': 80
-		}))
-		.pipe(gulp.dest('./assets/css'));
+gulp.task('uglify-css', function () {
+  gulp
+    .src('./assets/css/*.css')
+    .pipe(uglifycss({
+      'max-line-len': 80
+    }))
+    .pipe(gulp.dest('./assets/css'));
 });
 
-gulp.task('uglify-js', function() {
-  gulp.src('./assets/js/*.js')
+gulp.task('uglify-js', function () {
+  gulp
+    .src('./assets/js/*.js')
     .pipe(uglify())
     .pipe(gulp.dest('./assets/js'));
 });
 
-gulp.task('prefix', function() {
-	gulp.src('./assets/css/*.css')
-		.pipe(autoprefixer({
-			browsers: ['last 2 versions', 'ie >= 8'],
-			cascade: false }))
-		.pipe(gulp.dest('./assets/css'));
+gulp.task('prefix', function () {
+  gulp
+    .src('./assets/css/*.css')
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions', 'ie >= 8'],
+      cascade: false
+    }))
+    .pipe(gulp.dest('./assets/css'));
 });
 
-gulp.task('concat-css', function() {
-	gulp.src('./assets/css/**/*.css')
-		.pipe(concat('screen.css'))
-		.pipe(gulp.dest('./assets/css'));
+gulp.task('concat-css', function () {
+  gulp
+    .src('./assets/css/**/*.css')
+    .pipe(concat('screen.css'))
+    .pipe(gulp.dest('./assets/css'));
 });
 
-gulp.task('production-css', ['css'], function() {
-	gulp.src('./assets/css/**/*.css')
-		.pipe(autoprefixer({
-			browsers: ['last 2 versions', 'ie >= 8'],
-			cascade: false
-		}))
-		.pipe(uglifycss({
-			'max-line-len': 80
-		}))
-		.pipe(concat('all.css'))
-		.pipe(gulp.dest('./assets/css/production'));
+gulp.task('production-css', ['css'], function () {
+  gulp
+    .src('./assets/css/**/*.css')
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions', 'ie >= 8'],
+      cascade: false
+    }))
+    .pipe(uglifycss({
+      'max-line-len': 80
+    }))
+    .pipe(concat('all.css'))
+    .pipe(gulp.dest('./assets/css/production'));
 });
 
-gulp.task('production-js', function() {
-	gulp.src('./assets/js/**/*.js')
-		.pipe(uglify())
-		.pipe(concat('all.js'))
-		.pipe(gulp.dest('./assets/js/production'));
+gulp.task('production-js', function () {
+  gulp
+    .src('./assets/js/**/*.js')
+    .pipe(uglify())
+    .pipe(concat('all.js'))
+    .pipe(gulp.dest('./assets/js/production'));
 });
 
 gulp.task('sprites', function () {
-  var spriteData = gulp.src('./assets/images/sprites/*.*')
-		.pipe(spritesmith({
-    	imgName: 'sprites.png',
-    	cssName: '_sprites.scss',
-			padding: 10,
-			algorithm: 'binary-tree',
-			cssOpts: {functions: false}
-  }));
+  var spriteData = gulp
+    .src('./assets/images/sprites/*.*')
+    .pipe(spritesmith({
+      imgName: 'sprites.jpg',
+      cssName: '_sprites.scss',
+      algorithm: 'binary-tree',
+      engine: require('gmsmith'),
+      cssOpts: {
+        functions: false
+      },
+      engineOpts: {
+        graphicsmagick: true
+      },
+      exportOpts: {
+        quality: 100
+      }
+    }));
 
-	spriteData.img.pipe(gulp.dest('./assets/images/'));
-	spriteData.css.pipe(gulp.dest('./assets/sass/'));
+  spriteData.img.pipe(gulp.dest('./assets/images/'));
+  spriteData.css.pipe(gulp.dest('./assets/sass/'));
 });
 
-gulp.task('sprites-projects', function () {
-  var spriteData = gulp.src('./assets/images/projects/*.*')
-		.pipe(spritesmith({
-    	imgName: 'projects.png',
-    	cssName: '_sprites-projects.scss',
-			padding: 10,
-			algorithm: 'binary-tree',
-			cssOpts: {functions: false}
-  }));
+gulp.task('production', ['production-css', 'production-js'], function () {
 
-	spriteData.img.pipe(gulp.dest('./assets/images/'));
-	spriteData.css.pipe(gulp.dest('./assets/sass/'));
 });
 
-gulp.task('production', ['production-css', 'production-js'], function() {
+gulp.task('browser-reload', function () {
+  gulp
+    .src(['./assets/js/**/*.js'])
+    .pipe(livereload());
 });
 
-gulp.task('browser-reload',function(){
-  gulp.src(['./assets/js/**/*.js'])
-  	.pipe(livereload());
+gulp.task('watch', function () {
+  gulp.watch('./assets/sass/**/*.scss', ['css']);
 });
 
-gulp.task('watch', function() {
-	gulp.watch('./assets/sass/**/*.scss', ['css']);
-});
-
-gulp.task('watch-reload', function() {
-	livereload.listen();
-	gulp.watch('./assets/sass/**/*.scss', ['css-reload']);
-	gulp.watch(['./assets/js/**/*.js', './**/*.html'], ['browser-reload']);
+gulp.task('watch-reload', function () {
+  livereload.listen();
+  gulp.watch('./assets/sass/**/*.scss', ['css-reload']);
+  gulp.watch(['./assets/js/**/*.js', './**/*.html'], ['browser-reload']);
 });

@@ -2161,6 +2161,24 @@ $icon-home: x y offset_x offset_y width height total_width total_height image_pa
 At the bottom of this section, we provide information about the spritesheet itself
 $spritesheet: width height image $spritesheet-sprites;
 */
+@media (max-width: 768px) {
+  footer .container .alpha, footer .container .beta,
+  footer .container .columns-2, footer .container .columns-4, footer .container .columns-6, footer .container .columns-8, footer .container .columns-10, footer .container .columns-12 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-left: 0%; }
+    footer .container .alpha:last-child, footer .container .beta:last-child,
+    footer .container .columns-2:last-child, footer .container .columns-4:last-child, footer .container .columns-6:last-child, footer .container .columns-8:last-child, footer .container .columns-10:last-child, footer .container .columns-12:last-child {
+      margin-right: 0; }
+    footer .container .alpha:nth-child(0), footer .container .beta:nth-child(0),
+    footer .container .columns-2:nth-child(0), footer .container .columns-4:nth-child(0), footer .container .columns-6:nth-child(0), footer .container .columns-8:nth-child(0), footer .container .columns-10:nth-child(0), footer .container .columns-12:nth-child(0) {
+      margin-right: 0; }
+    footer .container .alpha p:last-child, footer .container .beta p:last-child,
+    footer .container .columns-2 p:last-child, footer .container .columns-4 p:last-child, footer .container .columns-6 p:last-child, footer .container .columns-8 p:last-child, footer .container .columns-10 p:last-child, footer .container .columns-12 p:last-child {
+      margin-bottom: 0; } }
+
 body {
   font-size: 22.4px;
   line-height: 1.3;
@@ -2172,8 +2190,17 @@ body {
   @media (max-width: 768px) {
     body {
       font-size: 18.4px;
-      line-height: 1.3;
-      margin-top: 0; } }
+      line-height: 1.5;
+      margin-top: 0; }
+      body h1 {
+        font-size: 38.4px; }
+      body h2 {
+        font-size: 32px; }
+      body h3 {
+        font-size: 25.6px; }
+      body.front .sprite,
+      body.front .fa {
+        display: none; } }
 
 .clearfix::after {
   clear: both;
@@ -2190,328 +2217,162 @@ body {
     display: table; }
   body.front .container {
     max-width: 768px; }
-  .container .columns-12 {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-    margin-left: 0%; }
-    .container .columns-12:last-child {
-      margin-right: 0; }
-    .container .columns-12:nth-child(0) {
-      margin-right: 0; }
-  .container .columns-10 {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 82.94039%;
-    margin-left: 0%; }
-    .container .columns-10:last-child {
-      margin-right: 0; }
-  .container .columns-8 {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-left: 17.05961%; }
-    .container .columns-8:last-child {
-      margin-right: 0; }
-  .container .columns-6 {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%; }
-    .container .columns-6:last-child {
-      margin-right: 0; }
-  .container .columns-4 {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
-    margin-left: 34.11922%; }
-    .container .columns-4:last-child {
-      margin-right: 0; }
-  .container .columns-2 {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 14.70196%; }
-    .container .columns-2:last-child {
-      margin-right: 0; }
-    .container .columns-2:nth-child(0) {
-      margin-right: 0; }
-
-.stripe {
-  padding: 24px;
-  position: relative;
-  width: 100%; }
-  main .stripe.first {
-    border-bottom: solid 1px #666; }
-    body.front main .stripe.first {
-      border: 0;
-      padding-bottom: 0; }
-      body.front main .stripe.first .columns-12 {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 82.94039%;
-        margin-left: 8.5298%; }
-        body.front main .stripe.first .columns-12:last-child {
-          margin-right: 0; }
-      @media (max-width: 768px) {
-        body.front main .stripe.first .alpha, body.front main .stripe.first .beta, body.front main .stripe.first .columns-2, body.front main .stripe.first .columns-4, body.front main .stripe.first .columns-6, body.front main .stripe.first .columns-8, body.front main .stripe.first .columns-10, body.front main .stripe.first .columns-12, body.front main .stripe.first #modal .modal .alpha, #modal .modal body.front main .stripe.first .alpha, body.front main .stripe.first #modal .modal .beta, #modal .modal body.front main .stripe.first .beta,
-        body.front main .stripe.first #modal .modal .columns-2, #modal .modal body.front main .stripe.first .columns-2, body.front main .stripe.first #modal .modal .columns-4, #modal .modal body.front main .stripe.first .columns-4, body.front main .stripe.first #modal .modal .columns-6, #modal .modal body.front main .stripe.first .columns-6, body.front main .stripe.first #modal .modal .columns-8, #modal .modal body.front main .stripe.first .columns-8, body.front main .stripe.first #modal .modal .columns-10, #modal .modal body.front main .stripe.first .columns-10, body.front main .stripe.first #modal .modal .columns-12, #modal .modal body.front main .stripe.first .columns-12 {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 100%;
-          margin-left: 0%; }
-          body.front main .stripe.first .alpha:last-child, body.front main .stripe.first .beta:last-child, body.front main .stripe.first .columns-2:last-child, body.front main .stripe.first .columns-4:last-child, body.front main .stripe.first .columns-6:last-child, body.front main .stripe.first .columns-8:last-child, body.front main .stripe.first .columns-10:last-child, body.front main .stripe.first .columns-12:last-child, body.front main .stripe.first #modal .modal .alpha:last-child, #modal .modal body.front main .stripe.first .alpha:last-child, body.front main .stripe.first #modal .modal .beta:last-child, #modal .modal body.front main .stripe.first .beta:last-child,
-          body.front main .stripe.first #modal .modal .columns-2:last-child, #modal .modal body.front main .stripe.first .columns-2:last-child, body.front main .stripe.first #modal .modal .columns-4:last-child, #modal .modal body.front main .stripe.first .columns-4:last-child, body.front main .stripe.first #modal .modal .columns-6:last-child, #modal .modal body.front main .stripe.first .columns-6:last-child, body.front main .stripe.first #modal .modal .columns-8:last-child, #modal .modal body.front main .stripe.first .columns-8:last-child, body.front main .stripe.first #modal .modal .columns-10:last-child, #modal .modal body.front main .stripe.first .columns-10:last-child, body.front main .stripe.first #modal .modal .columns-12:last-child, #modal .modal body.front main .stripe.first .columns-12:last-child {
-            margin-right: 0; }
-          body.front main .stripe.first .alpha:nth-child(0), body.front main .stripe.first .beta:nth-child(0), body.front main .stripe.first .columns-2:nth-child(0), body.front main .stripe.first .columns-4:nth-child(0), body.front main .stripe.first .columns-6:nth-child(0), body.front main .stripe.first .columns-8:nth-child(0), body.front main .stripe.first .columns-10:nth-child(0), body.front main .stripe.first .columns-12:nth-child(0), body.front main .stripe.first #modal .modal .alpha:nth-child(0), #modal .modal body.front main .stripe.first .alpha:nth-child(0), body.front main .stripe.first #modal .modal .beta:nth-child(0), #modal .modal body.front main .stripe.first .beta:nth-child(0),
-          body.front main .stripe.first #modal .modal .columns-2:nth-child(0), #modal .modal body.front main .stripe.first .columns-2:nth-child(0), body.front main .stripe.first #modal .modal .columns-4:nth-child(0), #modal .modal body.front main .stripe.first .columns-4:nth-child(0), body.front main .stripe.first #modal .modal .columns-6:nth-child(0), #modal .modal body.front main .stripe.first .columns-6:nth-child(0), body.front main .stripe.first #modal .modal .columns-8:nth-child(0), #modal .modal body.front main .stripe.first .columns-8:nth-child(0), body.front main .stripe.first #modal .modal .columns-10:nth-child(0), #modal .modal body.front main .stripe.first .columns-10:nth-child(0), body.front main .stripe.first #modal .modal .columns-12:nth-child(0), #modal .modal body.front main .stripe.first .columns-12:nth-child(0) {
-            margin-right: 0; }
-        body.front main .stripe.first .alpha p:last-child, body.front main .stripe.first .beta p:last-child,
-        body.front main .stripe.first .columns-2 p:last-child, body.front main .stripe.first .columns-4 p:last-child, body.front main .stripe.first .columns-6 p:last-child, body.front main .stripe.first .columns-8 p:last-child, body.front main .stripe.first .columns-10 p:last-child, body.front main .stripe.first .columns-12 p:last-child {
-          margin-bottom: 0; }
-        body.front body.front main .stripe.first .sprite,
-        body.front body.front main .stripe.first .fa {
-          display: none; }
-        body.front main .stripe.first h1 {
-          font-size: 38.4px; }
-        body.front main .stripe.first h2 {
-          font-size: 32px; }
-        body.front main .stripe.first h3 {
-          font-size: 25.6px; } }
-    @media (max-width: 768px) {
-      body.front main .stripe.first .alpha, body.front main .stripe.first .beta,
-      body.front main .stripe.first .columns-2, body.front main .stripe.first .columns-4, body.front main .stripe.first .columns-6, body.front main .stripe.first .columns-8, body.front main .stripe.first .columns-10, body.front main .stripe.first .columns-12, main .stripe.first .alpha, main .stripe.first .beta,
-      main .stripe.first .columns-2, main .stripe.first .columns-4, main .stripe.first .columns-6, main .stripe.first .columns-8, main .stripe.first .columns-10, main .stripe.first .columns-12, main .stripe.first #modal .modal .alpha, #modal .modal main .stripe.first .alpha, main .stripe.first #modal .modal .beta, #modal .modal main .stripe.first .beta,
-      main .stripe.first #modal .modal .columns-2, #modal .modal main .stripe.first .columns-2, main .stripe.first #modal .modal .columns-4, #modal .modal main .stripe.first .columns-4, main .stripe.first #modal .modal .columns-6, #modal .modal main .stripe.first .columns-6, main .stripe.first #modal .modal .columns-8, #modal .modal main .stripe.first .columns-8, main .stripe.first #modal .modal .columns-10, #modal .modal main .stripe.first .columns-10, main .stripe.first #modal .modal .columns-12, #modal .modal main .stripe.first .columns-12 {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%;
-        margin-left: 0%; }
-        body.front main .stripe.first .alpha:last-child, body.front main .stripe.first .beta:last-child,
-        body.front main .stripe.first .columns-2:last-child, body.front main .stripe.first .columns-4:last-child, body.front main .stripe.first .columns-6:last-child, body.front main .stripe.first .columns-8:last-child, body.front main .stripe.first .columns-10:last-child, body.front main .stripe.first .columns-12:last-child, main .stripe.first .alpha:last-child, main .stripe.first .beta:last-child,
-        main .stripe.first .columns-2:last-child, main .stripe.first .columns-4:last-child, main .stripe.first .columns-6:last-child, main .stripe.first .columns-8:last-child, main .stripe.first .columns-10:last-child, main .stripe.first .columns-12:last-child, main .stripe.first #modal .modal .alpha:last-child, #modal .modal main .stripe.first .alpha:last-child, main .stripe.first #modal .modal .beta:last-child, #modal .modal main .stripe.first .beta:last-child,
-        main .stripe.first #modal .modal .columns-2:last-child, #modal .modal main .stripe.first .columns-2:last-child, main .stripe.first #modal .modal .columns-4:last-child, #modal .modal main .stripe.first .columns-4:last-child, main .stripe.first #modal .modal .columns-6:last-child, #modal .modal main .stripe.first .columns-6:last-child, main .stripe.first #modal .modal .columns-8:last-child, #modal .modal main .stripe.first .columns-8:last-child, main .stripe.first #modal .modal .columns-10:last-child, #modal .modal main .stripe.first .columns-10:last-child, main .stripe.first #modal .modal .columns-12:last-child, #modal .modal main .stripe.first .columns-12:last-child {
-          margin-right: 0; }
-        body.front main .stripe.first .alpha:nth-child(0), body.front main .stripe.first .beta:nth-child(0),
-        body.front main .stripe.first .columns-2:nth-child(0), body.front main .stripe.first .columns-4:nth-child(0), body.front main .stripe.first .columns-6:nth-child(0), body.front main .stripe.first .columns-8:nth-child(0), body.front main .stripe.first .columns-10:nth-child(0), body.front main .stripe.first .columns-12:nth-child(0), main .stripe.first .alpha:nth-child(0), main .stripe.first .beta:nth-child(0),
-        main .stripe.first .columns-2:nth-child(0), main .stripe.first .columns-4:nth-child(0), main .stripe.first .columns-6:nth-child(0), main .stripe.first .columns-8:nth-child(0), main .stripe.first .columns-10:nth-child(0), main .stripe.first .columns-12:nth-child(0), main .stripe.first #modal .modal .alpha:nth-child(0), #modal .modal main .stripe.first .alpha:nth-child(0), main .stripe.first #modal .modal .beta:nth-child(0), #modal .modal main .stripe.first .beta:nth-child(0),
-        main .stripe.first #modal .modal .columns-2:nth-child(0), #modal .modal main .stripe.first .columns-2:nth-child(0), main .stripe.first #modal .modal .columns-4:nth-child(0), #modal .modal main .stripe.first .columns-4:nth-child(0), main .stripe.first #modal .modal .columns-6:nth-child(0), #modal .modal main .stripe.first .columns-6:nth-child(0), main .stripe.first #modal .modal .columns-8:nth-child(0), #modal .modal main .stripe.first .columns-8:nth-child(0), main .stripe.first #modal .modal .columns-10:nth-child(0), #modal .modal main .stripe.first .columns-10:nth-child(0), main .stripe.first #modal .modal .columns-12:nth-child(0), #modal .modal main .stripe.first .columns-12:nth-child(0) {
-          margin-right: 0; }
-      main .stripe.first .alpha p:last-child, main .stripe.first .beta p:last-child,
-      main .stripe.first .columns-2 p:last-child, main .stripe.first .columns-4 p:last-child, main .stripe.first .columns-6 p:last-child, main .stripe.first .columns-8 p:last-child, main .stripe.first .columns-10 p:last-child, main .stripe.first .columns-12 p:last-child {
-        margin-bottom: 0; }
-      body.front main .stripe.first .sprite,
-      body.front main .stripe.first .fa {
-        display: none; }
-      main .stripe.first h1 {
-        font-size: 38.4px; }
-      main .stripe.first h2 {
-        font-size: 32px; }
-      main .stripe.first h3 {
-        font-size: 25.6px; } }
-  footer .stripe.first {
-    border-top: solid 1px #666; }
-    body.front footer .stripe.first {
-      border: 0;
-      padding-top: 0; }
-  .stripe.second .alpha {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 82.94039%;
-    margin-left: 8.5298%; }
-    .stripe.second .alpha:last-child {
-      margin-right: 0; }
-    .stripe.second .alpha hr {
-      margin-top: 0; }
-    .stripe.second .alpha p:last-child {
-      margin-bottom: 24px; }
-  @media (max-width: 768px) {
-    .stripe.second main .stripe.first .alpha, main .stripe.first .stripe.second .alpha, .stripe.second main .stripe.first .beta, main .stripe.first .stripe.second .beta,
-    .stripe.second main .stripe.first .columns-2, main .stripe.first .stripe.second .columns-2, .stripe.second main .stripe.first .columns-4, main .stripe.first .stripe.second .columns-4, .stripe.second main .stripe.first .columns-6, main .stripe.first .stripe.second .columns-6, .stripe.second main .stripe.first .columns-8, main .stripe.first .stripe.second .columns-8, .stripe.second main .stripe.first .columns-10, main .stripe.first .stripe.second .columns-10, .stripe.second main .stripe.first .columns-12, main .stripe.first .stripe.second .columns-12, .stripe.second .alpha, .stripe.second .beta,
-    .stripe.second .columns-2, .stripe.second .columns-4, .stripe.second .columns-6, .stripe.second .columns-8, .stripe.second .columns-10, .stripe.second .columns-12, .stripe.second #modal .modal .alpha, #modal .modal .stripe.second .alpha, .stripe.second #modal .modal .beta, #modal .modal .stripe.second .beta,
-    .stripe.second #modal .modal .columns-2, #modal .modal .stripe.second .columns-2, .stripe.second #modal .modal .columns-4, #modal .modal .stripe.second .columns-4, .stripe.second #modal .modal .columns-6, #modal .modal .stripe.second .columns-6, .stripe.second #modal .modal .columns-8, #modal .modal .stripe.second .columns-8, .stripe.second #modal .modal .columns-10, #modal .modal .stripe.second .columns-10, .stripe.second #modal .modal .columns-12, #modal .modal .stripe.second .columns-12 {
+  @media (min-width: 769px) {
+    .container .columns-12 {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 100%;
       margin-left: 0%; }
-      .stripe.second .alpha:last-child, .stripe.second .beta:last-child,
-      .stripe.second .columns-2:last-child, .stripe.second .columns-4:last-child, .stripe.second .columns-6:last-child, .stripe.second .columns-8:last-child, .stripe.second .columns-10:last-child, .stripe.second .columns-12:last-child, .stripe.second #modal .modal .alpha:last-child, #modal .modal .stripe.second .alpha:last-child, .stripe.second #modal .modal .beta:last-child, #modal .modal .stripe.second .beta:last-child,
-      .stripe.second #modal .modal .columns-2:last-child, #modal .modal .stripe.second .columns-2:last-child, .stripe.second #modal .modal .columns-4:last-child, #modal .modal .stripe.second .columns-4:last-child, .stripe.second #modal .modal .columns-6:last-child, #modal .modal .stripe.second .columns-6:last-child, .stripe.second #modal .modal .columns-8:last-child, #modal .modal .stripe.second .columns-8:last-child, .stripe.second #modal .modal .columns-10:last-child, #modal .modal .stripe.second .columns-10:last-child, .stripe.second #modal .modal .columns-12:last-child, #modal .modal .stripe.second .columns-12:last-child {
+      .container .columns-12:last-child {
         margin-right: 0; }
-      .stripe.second .alpha:nth-child(0), .stripe.second .beta:nth-child(0),
-      .stripe.second .columns-2:nth-child(0), .stripe.second .columns-4:nth-child(0), .stripe.second .columns-6:nth-child(0), .stripe.second .columns-8:nth-child(0), .stripe.second .columns-10:nth-child(0), .stripe.second .columns-12:nth-child(0), .stripe.second #modal .modal .alpha:nth-child(0), #modal .modal .stripe.second .alpha:nth-child(0), .stripe.second #modal .modal .beta:nth-child(0), #modal .modal .stripe.second .beta:nth-child(0),
-      .stripe.second #modal .modal .columns-2:nth-child(0), #modal .modal .stripe.second .columns-2:nth-child(0), .stripe.second #modal .modal .columns-4:nth-child(0), #modal .modal .stripe.second .columns-4:nth-child(0), .stripe.second #modal .modal .columns-6:nth-child(0), #modal .modal .stripe.second .columns-6:nth-child(0), .stripe.second #modal .modal .columns-8:nth-child(0), #modal .modal .stripe.second .columns-8:nth-child(0), .stripe.second #modal .modal .columns-10:nth-child(0), #modal .modal .stripe.second .columns-10:nth-child(0), .stripe.second #modal .modal .columns-12:nth-child(0), #modal .modal .stripe.second .columns-12:nth-child(0) {
+      .container .columns-12:nth-child(0) {
         margin-right: 0; }
-    .stripe.second .alpha p:last-child, .stripe.second .beta p:last-child,
-    .stripe.second .columns-2 p:last-child, .stripe.second .columns-4 p:last-child, .stripe.second .columns-6 p:last-child, .stripe.second .columns-8 p:last-child, .stripe.second .columns-10 p:last-child, .stripe.second .columns-12 p:last-child {
-      margin-bottom: 0; }
-    body.front .stripe.second .sprite,
-    body.front .stripe.second .fa {
-      display: none; }
-    .stripe.second h1 {
-      font-size: 38.4px; }
-    .stripe.second h2 {
-      font-size: 32px; }
-    .stripe.second h3 {
-      font-size: 25.6px; } }
-  .stripe.blue {
-    background: #41a7bf; }
-    .stripe.blue .alpha {
+    .container .columns-10 {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 23.23176%; }
-      .stripe.blue .alpha:last-child {
+      width: 82.94039%;
+      margin-left: 8.5298%; }
+      .container .columns-10:last-child {
         margin-right: 0; }
-    .stripe.blue .beta {
+    .container .columns-8 {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 65.88078%;
-      margin-right: 0; }
-      .stripe.blue .beta:last-child {
+      margin-left: 17.05961%; }
+      .container .columns-8:last-child {
         margin-right: 0; }
-    .stripe.blue .fa {
-      margin: 12px 0 0 24px; }
-    @media (max-width: 768px) {
-      .stripe.blue main .stripe.first .alpha, main .stripe.first .stripe.blue .alpha, .stripe.blue main .stripe.first .beta, main .stripe.first .stripe.blue .beta,
-      .stripe.blue main .stripe.first .columns-2, main .stripe.first .stripe.blue .columns-2, .stripe.blue main .stripe.first .columns-4, main .stripe.first .stripe.blue .columns-4, .stripe.blue main .stripe.first .columns-6, main .stripe.first .stripe.blue .columns-6, .stripe.blue main .stripe.first .columns-8, main .stripe.first .stripe.blue .columns-8, .stripe.blue main .stripe.first .columns-10, main .stripe.first .stripe.blue .columns-10, .stripe.blue main .stripe.first .columns-12, main .stripe.first .stripe.blue .columns-12, .stripe.blue .alpha, .stripe.blue .beta,
-      .stripe.blue .columns-2, .stripe.blue .columns-4, .stripe.blue .columns-6, .stripe.blue .columns-8, .stripe.blue .columns-10, .stripe.blue .columns-12, .stripe.blue #modal .modal .alpha, #modal .modal .stripe.blue .alpha, .stripe.blue #modal .modal .beta, #modal .modal .stripe.blue .beta,
-      .stripe.blue #modal .modal .columns-2, #modal .modal .stripe.blue .columns-2, .stripe.blue #modal .modal .columns-4, #modal .modal .stripe.blue .columns-4, .stripe.blue #modal .modal .columns-6, #modal .modal .stripe.blue .columns-6, .stripe.blue #modal .modal .columns-8, #modal .modal .stripe.blue .columns-8, .stripe.blue #modal .modal .columns-10, #modal .modal .stripe.blue .columns-10, .stripe.blue #modal .modal .columns-12, #modal .modal .stripe.blue .columns-12 {
+    .container .columns-6 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .container .columns-6:last-child {
+        margin-right: 0; }
+    .container .columns-4 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      margin-left: 34.11922%; }
+      .container .columns-4:last-child {
+        margin-right: 0; }
+    .container .columns-2 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 14.70196%; }
+      .container .columns-2:last-child {
+        margin-right: 0; }
+      .container .columns-2:nth-child(0) {
+        margin-right: 0; } }
+
+@media (min-width: 769px) {
+  .stripe.blue, .stripe.red, .stripe.green {
+    padding-bottom: 36px;
+    padding-top: 36px; } }
+
+.stripe {
+  padding: 24px;
+  position: relative;
+  width: 100%;
+  @extends %full-width; }
+  main .stripe.first {
+    border-bottom: solid 1px #666; }
+    body.front main .stripe.first {
+      border: 0;
+      padding-bottom: 0; }
+      @media (min-width: 769px) {
+        body.front main .stripe.first .columns-12 {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 82.94039%;
+          margin-left: 8.5298%; }
+          body.front main .stripe.first .columns-12:last-child {
+            margin-right: 0; } }
+  .stripe.second .alpha hr {
+    margin-top: 0; }
+  .stripe.second .alpha p:last-child {
+    margin-bottom: 24px; }
+  @media (min-width: 769px) {
+    .stripe.second .alpha {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      margin-left: 8.5298%; }
+      .stripe.second .alpha:last-child {
+        margin-right: 0; }
+      .stripe.second .alpha p:last-child {
+        margin-bottom: 12px; } }
+  @media (max-width: 768px) {
+    .stripe.second {
+      padding-bottom: 0; } }
+  .stripe.blue {
+    background: #41a7bf; }
+    @media (min-width: 769px) {
+      .stripe.blue .alpha {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 100%;
-        margin-left: 0%; }
-        .stripe.blue .alpha:last-child, .stripe.blue .beta:last-child,
-        .stripe.blue .columns-2:last-child, .stripe.blue .columns-4:last-child, .stripe.blue .columns-6:last-child, .stripe.blue .columns-8:last-child, .stripe.blue .columns-10:last-child, .stripe.blue .columns-12:last-child, .stripe.blue #modal .modal .alpha:last-child, #modal .modal .stripe.blue .alpha:last-child, .stripe.blue #modal .modal .beta:last-child, #modal .modal .stripe.blue .beta:last-child,
-        .stripe.blue #modal .modal .columns-2:last-child, #modal .modal .stripe.blue .columns-2:last-child, .stripe.blue #modal .modal .columns-4:last-child, #modal .modal .stripe.blue .columns-4:last-child, .stripe.blue #modal .modal .columns-6:last-child, #modal .modal .stripe.blue .columns-6:last-child, .stripe.blue #modal .modal .columns-8:last-child, #modal .modal .stripe.blue .columns-8:last-child, .stripe.blue #modal .modal .columns-10:last-child, #modal .modal .stripe.blue .columns-10:last-child, .stripe.blue #modal .modal .columns-12:last-child, #modal .modal .stripe.blue .columns-12:last-child {
+        width: 23.23176%; }
+        .stripe.blue .alpha:last-child {
           margin-right: 0; }
-        .stripe.blue .alpha:nth-child(0), .stripe.blue .beta:nth-child(0),
-        .stripe.blue .columns-2:nth-child(0), .stripe.blue .columns-4:nth-child(0), .stripe.blue .columns-6:nth-child(0), .stripe.blue .columns-8:nth-child(0), .stripe.blue .columns-10:nth-child(0), .stripe.blue .columns-12:nth-child(0), .stripe.blue #modal .modal .alpha:nth-child(0), #modal .modal .stripe.blue .alpha:nth-child(0), .stripe.blue #modal .modal .beta:nth-child(0), #modal .modal .stripe.blue .beta:nth-child(0),
-        .stripe.blue #modal .modal .columns-2:nth-child(0), #modal .modal .stripe.blue .columns-2:nth-child(0), .stripe.blue #modal .modal .columns-4:nth-child(0), #modal .modal .stripe.blue .columns-4:nth-child(0), .stripe.blue #modal .modal .columns-6:nth-child(0), #modal .modal .stripe.blue .columns-6:nth-child(0), .stripe.blue #modal .modal .columns-8:nth-child(0), #modal .modal .stripe.blue .columns-8:nth-child(0), .stripe.blue #modal .modal .columns-10:nth-child(0), #modal .modal .stripe.blue .columns-10:nth-child(0), .stripe.blue #modal .modal .columns-12:nth-child(0), #modal .modal .stripe.blue .columns-12:nth-child(0) {
+      .stripe.blue .beta {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%;
+        margin-right: 0; }
+        .stripe.blue .beta:last-child {
           margin-right: 0; }
-      .stripe.blue .alpha p:last-child, .stripe.blue .beta p:last-child,
-      .stripe.blue .columns-2 p:last-child, .stripe.blue .columns-4 p:last-child, .stripe.blue .columns-6 p:last-child, .stripe.blue .columns-8 p:last-child, .stripe.blue .columns-10 p:last-child, .stripe.blue .columns-12 p:last-child {
-        margin-bottom: 0; }
-      body.front .stripe.blue .sprite,
-      body.front .stripe.blue .fa {
-        display: none; }
-      .stripe.blue h1 {
-        font-size: 38.4px; }
-      .stripe.blue h2 {
-        font-size: 32px; }
-      .stripe.blue h3 {
-        font-size: 25.6px; } }
+      .stripe.blue .fa {
+        margin: 12px 0 0 24px; } }
   .stripe.red {
     background: #b20b23; }
-    .stripe.red .alpha {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 57.35098%;
-      margin-left: 17.05961%; }
-      .stripe.red .alpha:last-child {
-        margin-right: 0; }
-    .stripe.red .beta {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 23.23176%;
-      margin-right: 0; }
-      .stripe.red .beta:last-child {
-        margin-right: 0; }
-    .stripe.red .fa {
-      margin: 48px 0 0 36px; }
-    @media (max-width: 768px) {
-      .stripe.red main .stripe.first .alpha, main .stripe.first .stripe.red .alpha, .stripe.red main .stripe.first .beta, main .stripe.first .stripe.red .beta,
-      .stripe.red main .stripe.first .columns-2, main .stripe.first .stripe.red .columns-2, .stripe.red main .stripe.first .columns-4, main .stripe.first .stripe.red .columns-4, .stripe.red main .stripe.first .columns-6, main .stripe.first .stripe.red .columns-6, .stripe.red main .stripe.first .columns-8, main .stripe.first .stripe.red .columns-8, .stripe.red main .stripe.first .columns-10, main .stripe.first .stripe.red .columns-10, .stripe.red main .stripe.first .columns-12, main .stripe.first .stripe.red .columns-12, .stripe.red .alpha, .stripe.red .beta,
-      .stripe.red .columns-2, .stripe.red .columns-4, .stripe.red .columns-6, .stripe.red .columns-8, .stripe.red .columns-10, .stripe.red .columns-12, .stripe.red #modal .modal .alpha, #modal .modal .stripe.red .alpha, .stripe.red #modal .modal .beta, #modal .modal .stripe.red .beta,
-      .stripe.red #modal .modal .columns-2, #modal .modal .stripe.red .columns-2, .stripe.red #modal .modal .columns-4, #modal .modal .stripe.red .columns-4, .stripe.red #modal .modal .columns-6, #modal .modal .stripe.red .columns-6, .stripe.red #modal .modal .columns-8, #modal .modal .stripe.red .columns-8, .stripe.red #modal .modal .columns-10, #modal .modal .stripe.red .columns-10, .stripe.red #modal .modal .columns-12, #modal .modal .stripe.red .columns-12 {
+    @media (min-width: 769px) {
+      .stripe.red .alpha {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 100%;
-        margin-left: 0%; }
-        .stripe.red .alpha:last-child, .stripe.red .beta:last-child,
-        .stripe.red .columns-2:last-child, .stripe.red .columns-4:last-child, .stripe.red .columns-6:last-child, .stripe.red .columns-8:last-child, .stripe.red .columns-10:last-child, .stripe.red .columns-12:last-child, .stripe.red #modal .modal .alpha:last-child, #modal .modal .stripe.red .alpha:last-child, .stripe.red #modal .modal .beta:last-child, #modal .modal .stripe.red .beta:last-child,
-        .stripe.red #modal .modal .columns-2:last-child, #modal .modal .stripe.red .columns-2:last-child, .stripe.red #modal .modal .columns-4:last-child, #modal .modal .stripe.red .columns-4:last-child, .stripe.red #modal .modal .columns-6:last-child, #modal .modal .stripe.red .columns-6:last-child, .stripe.red #modal .modal .columns-8:last-child, #modal .modal .stripe.red .columns-8:last-child, .stripe.red #modal .modal .columns-10:last-child, #modal .modal .stripe.red .columns-10:last-child, .stripe.red #modal .modal .columns-12:last-child, #modal .modal .stripe.red .columns-12:last-child {
+        width: 57.35098%;
+        margin-left: 17.05961%; }
+        .stripe.red .alpha:last-child {
           margin-right: 0; }
-        .stripe.red .alpha:nth-child(0), .stripe.red .beta:nth-child(0),
-        .stripe.red .columns-2:nth-child(0), .stripe.red .columns-4:nth-child(0), .stripe.red .columns-6:nth-child(0), .stripe.red .columns-8:nth-child(0), .stripe.red .columns-10:nth-child(0), .stripe.red .columns-12:nth-child(0), .stripe.red #modal .modal .alpha:nth-child(0), #modal .modal .stripe.red .alpha:nth-child(0), .stripe.red #modal .modal .beta:nth-child(0), #modal .modal .stripe.red .beta:nth-child(0),
-        .stripe.red #modal .modal .columns-2:nth-child(0), #modal .modal .stripe.red .columns-2:nth-child(0), .stripe.red #modal .modal .columns-4:nth-child(0), #modal .modal .stripe.red .columns-4:nth-child(0), .stripe.red #modal .modal .columns-6:nth-child(0), #modal .modal .stripe.red .columns-6:nth-child(0), .stripe.red #modal .modal .columns-8:nth-child(0), #modal .modal .stripe.red .columns-8:nth-child(0), .stripe.red #modal .modal .columns-10:nth-child(0), #modal .modal .stripe.red .columns-10:nth-child(0), .stripe.red #modal .modal .columns-12:nth-child(0), #modal .modal .stripe.red .columns-12:nth-child(0) {
+      .stripe.red .beta {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 23.23176%;
+        margin-right: 0; }
+        .stripe.red .beta:last-child {
           margin-right: 0; }
-      .stripe.red .alpha p:last-child, .stripe.red .beta p:last-child,
-      .stripe.red .columns-2 p:last-child, .stripe.red .columns-4 p:last-child, .stripe.red .columns-6 p:last-child, .stripe.red .columns-8 p:last-child, .stripe.red .columns-10 p:last-child, .stripe.red .columns-12 p:last-child {
-        margin-bottom: 0; }
-      body.front .stripe.red .sprite,
-      body.front .stripe.red .fa {
-        display: none; }
-      .stripe.red h1 {
-        font-size: 38.4px; }
-      .stripe.red h2 {
-        font-size: 32px; }
-      .stripe.red h3 {
-        font-size: 25.6px; } }
+      .stripe.red .fa {
+        margin: 48px 0 0 36px; } }
   .stripe.green {
     background: #6b7e28; }
-    .stripe.green .alpha {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 23.23176%;
-      margin-left: 8.5298%; }
-      .stripe.green .alpha:last-child {
-        margin-right: 0; }
-    .stripe.green .beta {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 57.35098%;
-      margin-left: 8.5298%; }
-      .stripe.green .beta:last-child {
-        margin-right: 0; }
-    .stripe.green .fa {
-      margin: 24px 0 0 24px; }
-    @media (max-width: 768px) {
-      .stripe.green main .stripe.first .alpha, main .stripe.first .stripe.green .alpha, .stripe.green main .stripe.first .beta, main .stripe.first .stripe.green .beta,
-      .stripe.green main .stripe.first .columns-2, main .stripe.first .stripe.green .columns-2, .stripe.green main .stripe.first .columns-4, main .stripe.first .stripe.green .columns-4, .stripe.green main .stripe.first .columns-6, main .stripe.first .stripe.green .columns-6, .stripe.green main .stripe.first .columns-8, main .stripe.first .stripe.green .columns-8, .stripe.green main .stripe.first .columns-10, main .stripe.first .stripe.green .columns-10, .stripe.green main .stripe.first .columns-12, main .stripe.first .stripe.green .columns-12, .stripe.green .alpha, .stripe.green .beta,
-      .stripe.green .columns-2, .stripe.green .columns-4, .stripe.green .columns-6, .stripe.green .columns-8, .stripe.green .columns-10, .stripe.green .columns-12, .stripe.green #modal .modal .alpha, #modal .modal .stripe.green .alpha, .stripe.green #modal .modal .beta, #modal .modal .stripe.green .beta,
-      .stripe.green #modal .modal .columns-2, #modal .modal .stripe.green .columns-2, .stripe.green #modal .modal .columns-4, #modal .modal .stripe.green .columns-4, .stripe.green #modal .modal .columns-6, #modal .modal .stripe.green .columns-6, .stripe.green #modal .modal .columns-8, #modal .modal .stripe.green .columns-8, .stripe.green #modal .modal .columns-10, #modal .modal .stripe.green .columns-10, .stripe.green #modal .modal .columns-12, #modal .modal .stripe.green .columns-12 {
+    @media (min-width: 769px) {
+      .stripe.green .alpha {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 100%;
-        margin-left: 0%; }
-        .stripe.green .alpha:last-child, .stripe.green .beta:last-child,
-        .stripe.green .columns-2:last-child, .stripe.green .columns-4:last-child, .stripe.green .columns-6:last-child, .stripe.green .columns-8:last-child, .stripe.green .columns-10:last-child, .stripe.green .columns-12:last-child, .stripe.green #modal .modal .alpha:last-child, #modal .modal .stripe.green .alpha:last-child, .stripe.green #modal .modal .beta:last-child, #modal .modal .stripe.green .beta:last-child,
-        .stripe.green #modal .modal .columns-2:last-child, #modal .modal .stripe.green .columns-2:last-child, .stripe.green #modal .modal .columns-4:last-child, #modal .modal .stripe.green .columns-4:last-child, .stripe.green #modal .modal .columns-6:last-child, #modal .modal .stripe.green .columns-6:last-child, .stripe.green #modal .modal .columns-8:last-child, #modal .modal .stripe.green .columns-8:last-child, .stripe.green #modal .modal .columns-10:last-child, #modal .modal .stripe.green .columns-10:last-child, .stripe.green #modal .modal .columns-12:last-child, #modal .modal .stripe.green .columns-12:last-child {
+        width: 23.23176%;
+        margin-left: 8.5298%; }
+        .stripe.green .alpha:last-child {
           margin-right: 0; }
-        .stripe.green .alpha:nth-child(0), .stripe.green .beta:nth-child(0),
-        .stripe.green .columns-2:nth-child(0), .stripe.green .columns-4:nth-child(0), .stripe.green .columns-6:nth-child(0), .stripe.green .columns-8:nth-child(0), .stripe.green .columns-10:nth-child(0), .stripe.green .columns-12:nth-child(0), .stripe.green #modal .modal .alpha:nth-child(0), #modal .modal .stripe.green .alpha:nth-child(0), .stripe.green #modal .modal .beta:nth-child(0), #modal .modal .stripe.green .beta:nth-child(0),
-        .stripe.green #modal .modal .columns-2:nth-child(0), #modal .modal .stripe.green .columns-2:nth-child(0), .stripe.green #modal .modal .columns-4:nth-child(0), #modal .modal .stripe.green .columns-4:nth-child(0), .stripe.green #modal .modal .columns-6:nth-child(0), #modal .modal .stripe.green .columns-6:nth-child(0), .stripe.green #modal .modal .columns-8:nth-child(0), #modal .modal .stripe.green .columns-8:nth-child(0), .stripe.green #modal .modal .columns-10:nth-child(0), #modal .modal .stripe.green .columns-10:nth-child(0), .stripe.green #modal .modal .columns-12:nth-child(0), #modal .modal .stripe.green .columns-12:nth-child(0) {
+      .stripe.green .beta {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 57.35098%;
+        margin-left: 8.5298%; }
+        .stripe.green .beta:last-child {
           margin-right: 0; }
-      .stripe.green .alpha p:last-child, .stripe.green .beta p:last-child,
-      .stripe.green .columns-2 p:last-child, .stripe.green .columns-4 p:last-child, .stripe.green .columns-6 p:last-child, .stripe.green .columns-8 p:last-child, .stripe.green .columns-10 p:last-child, .stripe.green .columns-12 p:last-child {
-        margin-bottom: 0; }
-      body.front .stripe.green .sprite,
-      body.front .stripe.green .fa {
-        display: none; }
-      .stripe.green h1 {
-        font-size: 38.4px; }
-      .stripe.green h2 {
-        font-size: 32px; }
-      .stripe.green h3 {
-        font-size: 25.6px; } }
+      .stripe.green .fa {
+        margin: 24px 0 0 24px; } }
   .stripe.gray {
     background: #333;
     padding-bottom: 72px; }
@@ -2520,120 +2381,34 @@ body {
       margin-top: 0; }
     body.front .stripe.gray {
       padding-bottom: 0; }
-    @media (max-width: 768px) {
-      .stripe.gray main .stripe.first .alpha, main .stripe.first .stripe.gray .alpha, .stripe.gray main .stripe.first .beta, main .stripe.first .stripe.gray .beta,
-      .stripe.gray main .stripe.first .columns-2, main .stripe.first .stripe.gray .columns-2, .stripe.gray main .stripe.first .columns-4, main .stripe.first .stripe.gray .columns-4, .stripe.gray main .stripe.first .columns-6, main .stripe.first .stripe.gray .columns-6, .stripe.gray main .stripe.first .columns-8, main .stripe.first .stripe.gray .columns-8, .stripe.gray main .stripe.first .columns-10, main .stripe.first .stripe.gray .columns-10, .stripe.gray main .stripe.first .columns-12, main .stripe.first .stripe.gray .columns-12, .stripe.gray .alpha, .stripe.gray .beta,
-      .stripe.gray .columns-2, .stripe.gray .columns-4, .stripe.gray .columns-6, .stripe.gray .columns-8, .stripe.gray .columns-10, .stripe.gray .columns-12, .stripe.gray #modal .modal .alpha, #modal .modal .stripe.gray .alpha, .stripe.gray #modal .modal .beta, #modal .modal .stripe.gray .beta,
-      .stripe.gray #modal .modal .columns-2, #modal .modal .stripe.gray .columns-2, .stripe.gray #modal .modal .columns-4, #modal .modal .stripe.gray .columns-4, .stripe.gray #modal .modal .columns-6, #modal .modal .stripe.gray .columns-6, .stripe.gray #modal .modal .columns-8, #modal .modal .stripe.gray .columns-8, .stripe.gray #modal .modal .columns-10, #modal .modal .stripe.gray .columns-10, .stripe.gray #modal .modal .columns-12, #modal .modal .stripe.gray .columns-12 {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%;
-        margin-left: 0%; }
-        .stripe.gray .alpha:last-child, .stripe.gray .beta:last-child,
-        .stripe.gray .columns-2:last-child, .stripe.gray .columns-4:last-child, .stripe.gray .columns-6:last-child, .stripe.gray .columns-8:last-child, .stripe.gray .columns-10:last-child, .stripe.gray .columns-12:last-child, .stripe.gray #modal .modal .alpha:last-child, #modal .modal .stripe.gray .alpha:last-child, .stripe.gray #modal .modal .beta:last-child, #modal .modal .stripe.gray .beta:last-child,
-        .stripe.gray #modal .modal .columns-2:last-child, #modal .modal .stripe.gray .columns-2:last-child, .stripe.gray #modal .modal .columns-4:last-child, #modal .modal .stripe.gray .columns-4:last-child, .stripe.gray #modal .modal .columns-6:last-child, #modal .modal .stripe.gray .columns-6:last-child, .stripe.gray #modal .modal .columns-8:last-child, #modal .modal .stripe.gray .columns-8:last-child, .stripe.gray #modal .modal .columns-10:last-child, #modal .modal .stripe.gray .columns-10:last-child, .stripe.gray #modal .modal .columns-12:last-child, #modal .modal .stripe.gray .columns-12:last-child {
-          margin-right: 0; }
-        .stripe.gray .alpha:nth-child(0), .stripe.gray .beta:nth-child(0),
-        .stripe.gray .columns-2:nth-child(0), .stripe.gray .columns-4:nth-child(0), .stripe.gray .columns-6:nth-child(0), .stripe.gray .columns-8:nth-child(0), .stripe.gray .columns-10:nth-child(0), .stripe.gray .columns-12:nth-child(0), .stripe.gray #modal .modal .alpha:nth-child(0), #modal .modal .stripe.gray .alpha:nth-child(0), .stripe.gray #modal .modal .beta:nth-child(0), #modal .modal .stripe.gray .beta:nth-child(0),
-        .stripe.gray #modal .modal .columns-2:nth-child(0), #modal .modal .stripe.gray .columns-2:nth-child(0), .stripe.gray #modal .modal .columns-4:nth-child(0), #modal .modal .stripe.gray .columns-4:nth-child(0), .stripe.gray #modal .modal .columns-6:nth-child(0), #modal .modal .stripe.gray .columns-6:nth-child(0), .stripe.gray #modal .modal .columns-8:nth-child(0), #modal .modal .stripe.gray .columns-8:nth-child(0), .stripe.gray #modal .modal .columns-10:nth-child(0), #modal .modal .stripe.gray .columns-10:nth-child(0), .stripe.gray #modal .modal .columns-12:nth-child(0), #modal .modal .stripe.gray .columns-12:nth-child(0) {
-          margin-right: 0; }
-      .stripe.gray .alpha p:last-child, .stripe.gray .beta p:last-child,
-      .stripe.gray .columns-2 p:last-child, .stripe.gray .columns-4 p:last-child, .stripe.gray .columns-6 p:last-child, .stripe.gray .columns-8 p:last-child, .stripe.gray .columns-10 p:last-child, .stripe.gray .columns-12 p:last-child {
-        margin-bottom: 0; }
-      body.front .stripe.gray .sprite,
-      body.front .stripe.gray .fa {
-        display: none; }
-      .stripe.gray h1 {
-        font-size: 38.4px; }
-      .stripe.gray h2 {
-        font-size: 32px; }
-      .stripe.gray h3 {
-        font-size: 25.6px; } }
+      @media (min-width: 769px) {
+        body.front .stripe.gray {
+          padding-top: 36px; } }
   .stripe.last {
     border-top: solid 1px #666;
     padding-bottom: 0; }
-    @media (max-width: 768px) {
-      .stripe.last main .stripe.first .alpha, main .stripe.first .stripe.last .alpha, .stripe.last main .stripe.first .beta, main .stripe.first .stripe.last .beta,
-      .stripe.last main .stripe.first .columns-2, main .stripe.first .stripe.last .columns-2, .stripe.last main .stripe.first .columns-4, main .stripe.first .stripe.last .columns-4, .stripe.last main .stripe.first .columns-6, main .stripe.first .stripe.last .columns-6, .stripe.last main .stripe.first .columns-8, main .stripe.first .stripe.last .columns-8, .stripe.last main .stripe.first .columns-10, main .stripe.first .stripe.last .columns-10, .stripe.last main .stripe.first .columns-12, main .stripe.first .stripe.last .columns-12, .stripe.last .alpha, .stripe.last .beta,
-      .stripe.last .columns-2, .stripe.last .columns-4, .stripe.last .columns-6, .stripe.last .columns-8, .stripe.last .columns-10, .stripe.last .columns-12, .stripe.last #modal .modal .alpha, #modal .modal .stripe.last .alpha, .stripe.last #modal .modal .beta, #modal .modal .stripe.last .beta,
-      .stripe.last #modal .modal .columns-2, #modal .modal .stripe.last .columns-2, .stripe.last #modal .modal .columns-4, #modal .modal .stripe.last .columns-4, .stripe.last #modal .modal .columns-6, #modal .modal .stripe.last .columns-6, .stripe.last #modal .modal .columns-8, #modal .modal .stripe.last .columns-8, .stripe.last #modal .modal .columns-10, #modal .modal .stripe.last .columns-10, .stripe.last #modal .modal .columns-12, #modal .modal .stripe.last .columns-12 {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%;
-        margin-left: 0%; }
-        .stripe.last .alpha:last-child, .stripe.last .beta:last-child,
-        .stripe.last .columns-2:last-child, .stripe.last .columns-4:last-child, .stripe.last .columns-6:last-child, .stripe.last .columns-8:last-child, .stripe.last .columns-10:last-child, .stripe.last .columns-12:last-child, .stripe.last #modal .modal .alpha:last-child, #modal .modal .stripe.last .alpha:last-child, .stripe.last #modal .modal .beta:last-child, #modal .modal .stripe.last .beta:last-child,
-        .stripe.last #modal .modal .columns-2:last-child, #modal .modal .stripe.last .columns-2:last-child, .stripe.last #modal .modal .columns-4:last-child, #modal .modal .stripe.last .columns-4:last-child, .stripe.last #modal .modal .columns-6:last-child, #modal .modal .stripe.last .columns-6:last-child, .stripe.last #modal .modal .columns-8:last-child, #modal .modal .stripe.last .columns-8:last-child, .stripe.last #modal .modal .columns-10:last-child, #modal .modal .stripe.last .columns-10:last-child, .stripe.last #modal .modal .columns-12:last-child, #modal .modal .stripe.last .columns-12:last-child {
-          margin-right: 0; }
-        .stripe.last .alpha:nth-child(0), .stripe.last .beta:nth-child(0),
-        .stripe.last .columns-2:nth-child(0), .stripe.last .columns-4:nth-child(0), .stripe.last .columns-6:nth-child(0), .stripe.last .columns-8:nth-child(0), .stripe.last .columns-10:nth-child(0), .stripe.last .columns-12:nth-child(0), .stripe.last #modal .modal .alpha:nth-child(0), #modal .modal .stripe.last .alpha:nth-child(0), .stripe.last #modal .modal .beta:nth-child(0), #modal .modal .stripe.last .beta:nth-child(0),
-        .stripe.last #modal .modal .columns-2:nth-child(0), #modal .modal .stripe.last .columns-2:nth-child(0), .stripe.last #modal .modal .columns-4:nth-child(0), #modal .modal .stripe.last .columns-4:nth-child(0), .stripe.last #modal .modal .columns-6:nth-child(0), #modal .modal .stripe.last .columns-6:nth-child(0), .stripe.last #modal .modal .columns-8:nth-child(0), #modal .modal .stripe.last .columns-8:nth-child(0), .stripe.last #modal .modal .columns-10:nth-child(0), #modal .modal .stripe.last .columns-10:nth-child(0), .stripe.last #modal .modal .columns-12:nth-child(0), #modal .modal .stripe.last .columns-12:nth-child(0) {
-          margin-right: 0; }
-      .stripe.last .alpha p:last-child, .stripe.last .beta p:last-child,
-      .stripe.last .columns-2 p:last-child, .stripe.last .columns-4 p:last-child, .stripe.last .columns-6 p:last-child, .stripe.last .columns-8 p:last-child, .stripe.last .columns-10 p:last-child, .stripe.last .columns-12 p:last-child {
-        margin-bottom: 0; }
-      body.front .stripe.last .sprite,
-      body.front .stripe.last .fa {
-        display: none; }
-      .stripe.last h1 {
-        font-size: 38.4px; }
-      .stripe.last h2 {
-        font-size: 32px; }
-      .stripe.last h3 {
-        font-size: 25.6px; } }
   .stripe.team {
     padding-top: 0; }
-    .stripe.team .alpha {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%; }
-      .stripe.team .alpha:last-child {
-        margin-right: 0; }
-    .stripe.team .beta {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 65.88078%; }
-      .stripe.team .beta:last-child {
-        margin-right: 0; }
-    .stripe.team .sprite {
-      float: none;
-      margin: 0 auto 36px auto; }
-    .stripe.team hr:last-child {
-      margin-bottom: 0; }
-    @media (max-width: 768px) {
-      .stripe.team main .stripe.first .alpha, main .stripe.first .stripe.team .alpha, .stripe.team main .stripe.first .beta, main .stripe.first .stripe.team .beta,
-      .stripe.team main .stripe.first .columns-2, main .stripe.first .stripe.team .columns-2, .stripe.team main .stripe.first .columns-4, main .stripe.first .stripe.team .columns-4, .stripe.team main .stripe.first .columns-6, main .stripe.first .stripe.team .columns-6, .stripe.team main .stripe.first .columns-8, main .stripe.first .stripe.team .columns-8, .stripe.team main .stripe.first .columns-10, main .stripe.first .stripe.team .columns-10, .stripe.team main .stripe.first .columns-12, main .stripe.first .stripe.team .columns-12, .stripe.team .alpha, .stripe.team .beta,
-      .stripe.team .columns-2, .stripe.team .columns-4, .stripe.team .columns-6, .stripe.team .columns-8, .stripe.team .columns-10, .stripe.team .columns-12, .stripe.team #modal .modal .alpha, #modal .modal .stripe.team .alpha, .stripe.team #modal .modal .beta, #modal .modal .stripe.team .beta,
-      .stripe.team #modal .modal .columns-2, #modal .modal .stripe.team .columns-2, .stripe.team #modal .modal .columns-4, #modal .modal .stripe.team .columns-4, .stripe.team #modal .modal .columns-6, #modal .modal .stripe.team .columns-6, .stripe.team #modal .modal .columns-8, #modal .modal .stripe.team .columns-8, .stripe.team #modal .modal .columns-10, #modal .modal .stripe.team .columns-10, .stripe.team #modal .modal .columns-12, #modal .modal .stripe.team .columns-12 {
+    @media (min-width: 769px) {
+      .stripe.team .alpha {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 100%;
-        margin-left: 0%; }
-        .stripe.team .alpha:last-child, .stripe.team .beta:last-child,
-        .stripe.team .columns-2:last-child, .stripe.team .columns-4:last-child, .stripe.team .columns-6:last-child, .stripe.team .columns-8:last-child, .stripe.team .columns-10:last-child, .stripe.team .columns-12:last-child, .stripe.team #modal .modal .alpha:last-child, #modal .modal .stripe.team .alpha:last-child, .stripe.team #modal .modal .beta:last-child, #modal .modal .stripe.team .beta:last-child,
-        .stripe.team #modal .modal .columns-2:last-child, #modal .modal .stripe.team .columns-2:last-child, .stripe.team #modal .modal .columns-4:last-child, #modal .modal .stripe.team .columns-4:last-child, .stripe.team #modal .modal .columns-6:last-child, #modal .modal .stripe.team .columns-6:last-child, .stripe.team #modal .modal .columns-8:last-child, #modal .modal .stripe.team .columns-8:last-child, .stripe.team #modal .modal .columns-10:last-child, #modal .modal .stripe.team .columns-10:last-child, .stripe.team #modal .modal .columns-12:last-child, #modal .modal .stripe.team .columns-12:last-child {
+        width: 31.76157%; }
+        .stripe.team .alpha:last-child {
           margin-right: 0; }
-        .stripe.team .alpha:nth-child(0), .stripe.team .beta:nth-child(0),
-        .stripe.team .columns-2:nth-child(0), .stripe.team .columns-4:nth-child(0), .stripe.team .columns-6:nth-child(0), .stripe.team .columns-8:nth-child(0), .stripe.team .columns-10:nth-child(0), .stripe.team .columns-12:nth-child(0), .stripe.team #modal .modal .alpha:nth-child(0), #modal .modal .stripe.team .alpha:nth-child(0), .stripe.team #modal .modal .beta:nth-child(0), #modal .modal .stripe.team .beta:nth-child(0),
-        .stripe.team #modal .modal .columns-2:nth-child(0), #modal .modal .stripe.team .columns-2:nth-child(0), .stripe.team #modal .modal .columns-4:nth-child(0), #modal .modal .stripe.team .columns-4:nth-child(0), .stripe.team #modal .modal .columns-6:nth-child(0), #modal .modal .stripe.team .columns-6:nth-child(0), .stripe.team #modal .modal .columns-8:nth-child(0), #modal .modal .stripe.team .columns-8:nth-child(0), .stripe.team #modal .modal .columns-10:nth-child(0), #modal .modal .stripe.team .columns-10:nth-child(0), .stripe.team #modal .modal .columns-12:nth-child(0), #modal .modal .stripe.team .columns-12:nth-child(0) {
+      .stripe.team .beta {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%; }
+        .stripe.team .beta:last-child {
           margin-right: 0; }
-      .stripe.team .alpha p:last-child, .stripe.team .beta p:last-child,
-      .stripe.team .columns-2 p:last-child, .stripe.team .columns-4 p:last-child, .stripe.team .columns-6 p:last-child, .stripe.team .columns-8 p:last-child, .stripe.team .columns-10 p:last-child, .stripe.team .columns-12 p:last-child {
-        margin-bottom: 0; }
-      body.front .stripe.team .sprite,
-      body.front .stripe.team .fa {
-        display: none; }
-      .stripe.team h1 {
-        font-size: 38.4px; }
-      .stripe.team h2 {
-        font-size: 32px; }
-      .stripe.team h3 {
-        font-size: 25.6px; } }
+      .stripe.team .sprite {
+        float: none;
+        margin: 0 auto 36px auto; } }
+    .stripe.team hr:last-child {
+      margin-bottom: 0; }
     @media (max-width: 768px) {
       .stripe.team .beta p:last-child {
         margin-bottom: 24px; } }
@@ -2697,60 +2472,11 @@ header {
   main {
     margin-top: 0; } }
 
-@media (max-width: 768px) {
-  footer body.front main .stripe.first .alpha, body.front main .stripe.first footer .alpha, footer body.front main .stripe.first .beta, body.front main .stripe.first footer .beta,
-  footer body.front main .stripe.first .columns-2, body.front main .stripe.first footer .columns-2, footer body.front main .stripe.first .columns-4, body.front main .stripe.first footer .columns-4, footer body.front main .stripe.first .columns-6, body.front main .stripe.first footer .columns-6, footer body.front main .stripe.first .columns-8, body.front main .stripe.first footer .columns-8, footer body.front main .stripe.first .columns-10, body.front main .stripe.first footer .columns-10, footer body.front main .stripe.first .columns-12, body.front main .stripe.first footer .columns-12, footer main .stripe.first .alpha, main .stripe.first footer .alpha, footer main .stripe.first .beta, main .stripe.first footer .beta,
-  footer main .stripe.first .columns-2, main .stripe.first footer .columns-2, footer main .stripe.first .columns-4, main .stripe.first footer .columns-4, footer main .stripe.first .columns-6, main .stripe.first footer .columns-6, footer main .stripe.first .columns-8, main .stripe.first footer .columns-8, footer main .stripe.first .columns-10, main .stripe.first footer .columns-10, footer main .stripe.first .columns-12, main .stripe.first footer .columns-12, footer .stripe.second .alpha, .stripe.second footer .alpha, footer .stripe.second .beta, .stripe.second footer .beta,
-  footer .stripe.second .columns-2, .stripe.second footer .columns-2, footer .stripe.second .columns-4, .stripe.second footer .columns-4, footer .stripe.second .columns-6, .stripe.second footer .columns-6, footer .stripe.second .columns-8, .stripe.second footer .columns-8, footer .stripe.second .columns-10, .stripe.second footer .columns-10, footer .stripe.second .columns-12, .stripe.second footer .columns-12, footer .stripe.blue .alpha, .stripe.blue footer .alpha, footer .stripe.blue .beta, .stripe.blue footer .beta,
-  footer .stripe.blue .columns-2, .stripe.blue footer .columns-2, footer .stripe.blue .columns-4, .stripe.blue footer .columns-4, footer .stripe.blue .columns-6, .stripe.blue footer .columns-6, footer .stripe.blue .columns-8, .stripe.blue footer .columns-8, footer .stripe.blue .columns-10, .stripe.blue footer .columns-10, footer .stripe.blue .columns-12, .stripe.blue footer .columns-12, footer .stripe.red .alpha, .stripe.red footer .alpha, footer .stripe.red .beta, .stripe.red footer .beta,
-  footer .stripe.red .columns-2, .stripe.red footer .columns-2, footer .stripe.red .columns-4, .stripe.red footer .columns-4, footer .stripe.red .columns-6, .stripe.red footer .columns-6, footer .stripe.red .columns-8, .stripe.red footer .columns-8, footer .stripe.red .columns-10, .stripe.red footer .columns-10, footer .stripe.red .columns-12, .stripe.red footer .columns-12, footer .stripe.green .alpha, .stripe.green footer .alpha, footer .stripe.green .beta, .stripe.green footer .beta,
-  footer .stripe.green .columns-2, .stripe.green footer .columns-2, footer .stripe.green .columns-4, .stripe.green footer .columns-4, footer .stripe.green .columns-6, .stripe.green footer .columns-6, footer .stripe.green .columns-8, .stripe.green footer .columns-8, footer .stripe.green .columns-10, .stripe.green footer .columns-10, footer .stripe.green .columns-12, .stripe.green footer .columns-12, footer .stripe.gray .alpha, .stripe.gray footer .alpha, footer .stripe.gray .beta, .stripe.gray footer .beta,
-  footer .stripe.gray .columns-2, .stripe.gray footer .columns-2, footer .stripe.gray .columns-4, .stripe.gray footer .columns-4, footer .stripe.gray .columns-6, .stripe.gray footer .columns-6, footer .stripe.gray .columns-8, .stripe.gray footer .columns-8, footer .stripe.gray .columns-10, .stripe.gray footer .columns-10, footer .stripe.gray .columns-12, .stripe.gray footer .columns-12, footer .stripe.last .alpha, .stripe.last footer .alpha, footer .stripe.last .beta, .stripe.last footer .beta,
-  footer .stripe.last .columns-2, .stripe.last footer .columns-2, footer .stripe.last .columns-4, .stripe.last footer .columns-4, footer .stripe.last .columns-6, .stripe.last footer .columns-6, footer .stripe.last .columns-8, .stripe.last footer .columns-8, footer .stripe.last .columns-10, .stripe.last footer .columns-10, footer .stripe.last .columns-12, .stripe.last footer .columns-12, footer .stripe.team .alpha, .stripe.team footer .alpha, footer .stripe.team .beta, .stripe.team footer .beta,
-  footer .stripe.team .columns-2, .stripe.team footer .columns-2, footer .stripe.team .columns-4, .stripe.team footer .columns-4, footer .stripe.team .columns-6, .stripe.team footer .columns-6, footer .stripe.team .columns-8, .stripe.team footer .columns-8, footer .stripe.team .columns-10, .stripe.team footer .columns-10, footer .stripe.team .columns-12, .stripe.team footer .columns-12, footer .alpha, footer .beta,
-  footer .columns-2, footer .columns-4, footer .columns-6, footer .columns-8, footer .columns-10, footer .columns-12, footer #modal .modal .alpha, #modal .modal footer .alpha, footer #modal .modal .beta, #modal .modal footer .beta,
-  footer #modal .modal .columns-2, #modal .modal footer .columns-2, footer #modal .modal .columns-4, #modal .modal footer .columns-4, footer #modal .modal .columns-6, #modal .modal footer .columns-6, footer #modal .modal .columns-8, #modal .modal footer .columns-8, footer #modal .modal .columns-10, #modal .modal footer .columns-10, footer #modal .modal .columns-12, #modal .modal footer .columns-12 {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-    margin-left: 0%; }
-    footer main .stripe.first .alpha:last-child, main .stripe.first footer .alpha:last-child, footer main .stripe.first .beta:last-child, main .stripe.first footer .beta:last-child,
-    footer main .stripe.first .columns-2:last-child, main .stripe.first footer .columns-2:last-child, footer main .stripe.first .columns-4:last-child, main .stripe.first footer .columns-4:last-child, footer main .stripe.first .columns-6:last-child, main .stripe.first footer .columns-6:last-child, footer main .stripe.first .columns-8:last-child, main .stripe.first footer .columns-8:last-child, footer main .stripe.first .columns-10:last-child, main .stripe.first footer .columns-10:last-child, footer main .stripe.first .columns-12:last-child, main .stripe.first footer .columns-12:last-child, footer .stripe.second .alpha:last-child, .stripe.second footer .alpha:last-child, footer .stripe.second .beta:last-child, .stripe.second footer .beta:last-child,
-    footer .stripe.second .columns-2:last-child, .stripe.second footer .columns-2:last-child, footer .stripe.second .columns-4:last-child, .stripe.second footer .columns-4:last-child, footer .stripe.second .columns-6:last-child, .stripe.second footer .columns-6:last-child, footer .stripe.second .columns-8:last-child, .stripe.second footer .columns-8:last-child, footer .stripe.second .columns-10:last-child, .stripe.second footer .columns-10:last-child, footer .stripe.second .columns-12:last-child, .stripe.second footer .columns-12:last-child, footer .stripe.blue .alpha:last-child, .stripe.blue footer .alpha:last-child, footer .stripe.blue .beta:last-child, .stripe.blue footer .beta:last-child,
-    footer .stripe.blue .columns-2:last-child, .stripe.blue footer .columns-2:last-child, footer .stripe.blue .columns-4:last-child, .stripe.blue footer .columns-4:last-child, footer .stripe.blue .columns-6:last-child, .stripe.blue footer .columns-6:last-child, footer .stripe.blue .columns-8:last-child, .stripe.blue footer .columns-8:last-child, footer .stripe.blue .columns-10:last-child, .stripe.blue footer .columns-10:last-child, footer .stripe.blue .columns-12:last-child, .stripe.blue footer .columns-12:last-child, footer .stripe.red .alpha:last-child, .stripe.red footer .alpha:last-child, footer .stripe.red .beta:last-child, .stripe.red footer .beta:last-child,
-    footer .stripe.red .columns-2:last-child, .stripe.red footer .columns-2:last-child, footer .stripe.red .columns-4:last-child, .stripe.red footer .columns-4:last-child, footer .stripe.red .columns-6:last-child, .stripe.red footer .columns-6:last-child, footer .stripe.red .columns-8:last-child, .stripe.red footer .columns-8:last-child, footer .stripe.red .columns-10:last-child, .stripe.red footer .columns-10:last-child, footer .stripe.red .columns-12:last-child, .stripe.red footer .columns-12:last-child, footer .stripe.green .alpha:last-child, .stripe.green footer .alpha:last-child, footer .stripe.green .beta:last-child, .stripe.green footer .beta:last-child,
-    footer .stripe.green .columns-2:last-child, .stripe.green footer .columns-2:last-child, footer .stripe.green .columns-4:last-child, .stripe.green footer .columns-4:last-child, footer .stripe.green .columns-6:last-child, .stripe.green footer .columns-6:last-child, footer .stripe.green .columns-8:last-child, .stripe.green footer .columns-8:last-child, footer .stripe.green .columns-10:last-child, .stripe.green footer .columns-10:last-child, footer .stripe.green .columns-12:last-child, .stripe.green footer .columns-12:last-child, footer .stripe.gray .alpha:last-child, .stripe.gray footer .alpha:last-child, footer .stripe.gray .beta:last-child, .stripe.gray footer .beta:last-child,
-    footer .stripe.gray .columns-2:last-child, .stripe.gray footer .columns-2:last-child, footer .stripe.gray .columns-4:last-child, .stripe.gray footer .columns-4:last-child, footer .stripe.gray .columns-6:last-child, .stripe.gray footer .columns-6:last-child, footer .stripe.gray .columns-8:last-child, .stripe.gray footer .columns-8:last-child, footer .stripe.gray .columns-10:last-child, .stripe.gray footer .columns-10:last-child, footer .stripe.gray .columns-12:last-child, .stripe.gray footer .columns-12:last-child, footer .stripe.last .alpha:last-child, .stripe.last footer .alpha:last-child, footer .stripe.last .beta:last-child, .stripe.last footer .beta:last-child,
-    footer .stripe.last .columns-2:last-child, .stripe.last footer .columns-2:last-child, footer .stripe.last .columns-4:last-child, .stripe.last footer .columns-4:last-child, footer .stripe.last .columns-6:last-child, .stripe.last footer .columns-6:last-child, footer .stripe.last .columns-8:last-child, .stripe.last footer .columns-8:last-child, footer .stripe.last .columns-10:last-child, .stripe.last footer .columns-10:last-child, footer .stripe.last .columns-12:last-child, .stripe.last footer .columns-12:last-child, footer .stripe.team .alpha:last-child, .stripe.team footer .alpha:last-child, footer .stripe.team .beta:last-child, .stripe.team footer .beta:last-child,
-    footer .stripe.team .columns-2:last-child, .stripe.team footer .columns-2:last-child, footer .stripe.team .columns-4:last-child, .stripe.team footer .columns-4:last-child, footer .stripe.team .columns-6:last-child, .stripe.team footer .columns-6:last-child, footer .stripe.team .columns-8:last-child, .stripe.team footer .columns-8:last-child, footer .stripe.team .columns-10:last-child, .stripe.team footer .columns-10:last-child, footer .stripe.team .columns-12:last-child, .stripe.team footer .columns-12:last-child, footer .alpha:last-child, footer .beta:last-child,
-    footer .columns-2:last-child, footer .columns-4:last-child, footer .columns-6:last-child, footer .columns-8:last-child, footer .columns-10:last-child, footer .columns-12:last-child, footer #modal .modal .alpha:last-child, #modal .modal footer .alpha:last-child, footer #modal .modal .beta:last-child, #modal .modal footer .beta:last-child,
-    footer #modal .modal .columns-2:last-child, #modal .modal footer .columns-2:last-child, footer #modal .modal .columns-4:last-child, #modal .modal footer .columns-4:last-child, footer #modal .modal .columns-6:last-child, #modal .modal footer .columns-6:last-child, footer #modal .modal .columns-8:last-child, #modal .modal footer .columns-8:last-child, footer #modal .modal .columns-10:last-child, #modal .modal footer .columns-10:last-child, footer #modal .modal .columns-12:last-child, #modal .modal footer .columns-12:last-child {
-      margin-right: 0; }
-    footer main .stripe.first .alpha:nth-child(0), main .stripe.first footer .alpha:nth-child(0), footer main .stripe.first .beta:nth-child(0), main .stripe.first footer .beta:nth-child(0),
-    footer main .stripe.first .columns-2:nth-child(0), main .stripe.first footer .columns-2:nth-child(0), footer main .stripe.first .columns-4:nth-child(0), main .stripe.first footer .columns-4:nth-child(0), footer main .stripe.first .columns-6:nth-child(0), main .stripe.first footer .columns-6:nth-child(0), footer main .stripe.first .columns-8:nth-child(0), main .stripe.first footer .columns-8:nth-child(0), footer main .stripe.first .columns-10:nth-child(0), main .stripe.first footer .columns-10:nth-child(0), footer main .stripe.first .columns-12:nth-child(0), main .stripe.first footer .columns-12:nth-child(0), footer .stripe.second .alpha:nth-child(0), .stripe.second footer .alpha:nth-child(0), footer .stripe.second .beta:nth-child(0), .stripe.second footer .beta:nth-child(0),
-    footer .stripe.second .columns-2:nth-child(0), .stripe.second footer .columns-2:nth-child(0), footer .stripe.second .columns-4:nth-child(0), .stripe.second footer .columns-4:nth-child(0), footer .stripe.second .columns-6:nth-child(0), .stripe.second footer .columns-6:nth-child(0), footer .stripe.second .columns-8:nth-child(0), .stripe.second footer .columns-8:nth-child(0), footer .stripe.second .columns-10:nth-child(0), .stripe.second footer .columns-10:nth-child(0), footer .stripe.second .columns-12:nth-child(0), .stripe.second footer .columns-12:nth-child(0), footer .stripe.blue .alpha:nth-child(0), .stripe.blue footer .alpha:nth-child(0), footer .stripe.blue .beta:nth-child(0), .stripe.blue footer .beta:nth-child(0),
-    footer .stripe.blue .columns-2:nth-child(0), .stripe.blue footer .columns-2:nth-child(0), footer .stripe.blue .columns-4:nth-child(0), .stripe.blue footer .columns-4:nth-child(0), footer .stripe.blue .columns-6:nth-child(0), .stripe.blue footer .columns-6:nth-child(0), footer .stripe.blue .columns-8:nth-child(0), .stripe.blue footer .columns-8:nth-child(0), footer .stripe.blue .columns-10:nth-child(0), .stripe.blue footer .columns-10:nth-child(0), footer .stripe.blue .columns-12:nth-child(0), .stripe.blue footer .columns-12:nth-child(0), footer .stripe.red .alpha:nth-child(0), .stripe.red footer .alpha:nth-child(0), footer .stripe.red .beta:nth-child(0), .stripe.red footer .beta:nth-child(0),
-    footer .stripe.red .columns-2:nth-child(0), .stripe.red footer .columns-2:nth-child(0), footer .stripe.red .columns-4:nth-child(0), .stripe.red footer .columns-4:nth-child(0), footer .stripe.red .columns-6:nth-child(0), .stripe.red footer .columns-6:nth-child(0), footer .stripe.red .columns-8:nth-child(0), .stripe.red footer .columns-8:nth-child(0), footer .stripe.red .columns-10:nth-child(0), .stripe.red footer .columns-10:nth-child(0), footer .stripe.red .columns-12:nth-child(0), .stripe.red footer .columns-12:nth-child(0), footer .stripe.green .alpha:nth-child(0), .stripe.green footer .alpha:nth-child(0), footer .stripe.green .beta:nth-child(0), .stripe.green footer .beta:nth-child(0),
-    footer .stripe.green .columns-2:nth-child(0), .stripe.green footer .columns-2:nth-child(0), footer .stripe.green .columns-4:nth-child(0), .stripe.green footer .columns-4:nth-child(0), footer .stripe.green .columns-6:nth-child(0), .stripe.green footer .columns-6:nth-child(0), footer .stripe.green .columns-8:nth-child(0), .stripe.green footer .columns-8:nth-child(0), footer .stripe.green .columns-10:nth-child(0), .stripe.green footer .columns-10:nth-child(0), footer .stripe.green .columns-12:nth-child(0), .stripe.green footer .columns-12:nth-child(0), footer .stripe.gray .alpha:nth-child(0), .stripe.gray footer .alpha:nth-child(0), footer .stripe.gray .beta:nth-child(0), .stripe.gray footer .beta:nth-child(0),
-    footer .stripe.gray .columns-2:nth-child(0), .stripe.gray footer .columns-2:nth-child(0), footer .stripe.gray .columns-4:nth-child(0), .stripe.gray footer .columns-4:nth-child(0), footer .stripe.gray .columns-6:nth-child(0), .stripe.gray footer .columns-6:nth-child(0), footer .stripe.gray .columns-8:nth-child(0), .stripe.gray footer .columns-8:nth-child(0), footer .stripe.gray .columns-10:nth-child(0), .stripe.gray footer .columns-10:nth-child(0), footer .stripe.gray .columns-12:nth-child(0), .stripe.gray footer .columns-12:nth-child(0), footer .stripe.last .alpha:nth-child(0), .stripe.last footer .alpha:nth-child(0), footer .stripe.last .beta:nth-child(0), .stripe.last footer .beta:nth-child(0),
-    footer .stripe.last .columns-2:nth-child(0), .stripe.last footer .columns-2:nth-child(0), footer .stripe.last .columns-4:nth-child(0), .stripe.last footer .columns-4:nth-child(0), footer .stripe.last .columns-6:nth-child(0), .stripe.last footer .columns-6:nth-child(0), footer .stripe.last .columns-8:nth-child(0), .stripe.last footer .columns-8:nth-child(0), footer .stripe.last .columns-10:nth-child(0), .stripe.last footer .columns-10:nth-child(0), footer .stripe.last .columns-12:nth-child(0), .stripe.last footer .columns-12:nth-child(0), footer .stripe.team .alpha:nth-child(0), .stripe.team footer .alpha:nth-child(0), footer .stripe.team .beta:nth-child(0), .stripe.team footer .beta:nth-child(0),
-    footer .stripe.team .columns-2:nth-child(0), .stripe.team footer .columns-2:nth-child(0), footer .stripe.team .columns-4:nth-child(0), .stripe.team footer .columns-4:nth-child(0), footer .stripe.team .columns-6:nth-child(0), .stripe.team footer .columns-6:nth-child(0), footer .stripe.team .columns-8:nth-child(0), .stripe.team footer .columns-8:nth-child(0), footer .stripe.team .columns-10:nth-child(0), .stripe.team footer .columns-10:nth-child(0), footer .stripe.team .columns-12:nth-child(0), .stripe.team footer .columns-12:nth-child(0), footer .alpha:nth-child(0), footer .beta:nth-child(0),
-    footer .columns-2:nth-child(0), footer .columns-4:nth-child(0), footer .columns-6:nth-child(0), footer .columns-8:nth-child(0), footer .columns-10:nth-child(0), footer .columns-12:nth-child(0), footer #modal .modal .alpha:nth-child(0), #modal .modal footer .alpha:nth-child(0), footer #modal .modal .beta:nth-child(0), #modal .modal footer .beta:nth-child(0),
-    footer #modal .modal .columns-2:nth-child(0), #modal .modal footer .columns-2:nth-child(0), footer #modal .modal .columns-4:nth-child(0), #modal .modal footer .columns-4:nth-child(0), footer #modal .modal .columns-6:nth-child(0), #modal .modal footer .columns-6:nth-child(0), footer #modal .modal .columns-8:nth-child(0), #modal .modal footer .columns-8:nth-child(0), footer #modal .modal .columns-10:nth-child(0), #modal .modal footer .columns-10:nth-child(0), footer #modal .modal .columns-12:nth-child(0), #modal .modal footer .columns-12:nth-child(0) {
-      margin-right: 0; }
-  footer .alpha p:last-child, footer .beta p:last-child,
-  footer .columns-2 p:last-child, footer .columns-4 p:last-child, footer .columns-6 p:last-child, footer .columns-8 p:last-child, footer .columns-10 p:last-child, footer .columns-12 p:last-child {
-    margin-bottom: 0; }
-  body.front footer .sprite,
-  body.front footer .fa {
-    display: none; }
-  footer h1 {
-    font-size: 38.4px; }
-  footer h2 {
-    font-size: 32px; }
-  footer h3 {
-    font-size: 25.6px; } }
+footer .stripe.first {
+  border-top: solid 1px #666; }
+  body.front footer .stripe.first {
+    border: 0;
+    padding-top: 0; }
 
 img.logo {
   border-top-left-radius: 3px;
@@ -2771,7 +2497,7 @@ img.logo {
   float: left;
   margin: 0 24px 24px 0; }
   .sprite.a-team {
-    background-image: url("../images/sprites.png");
+    background-image: url("../images/sprites.jpg");
     background-position: 0px 0px;
     width: 200px;
     height: 214px; }
@@ -2891,9 +2617,6 @@ a.tooltip, span.tooltip {
   border-bottom: dotted 2px #666;
   cursor: pointer;
   position: relative; }
-  @media (max-width: 480px) {
-    a.tooltip, span.tooltip {
-      border-width: 1px; } }
   a.tooltip .tip, span.tooltip .tip {
     position: absolute;
     bottom: 0;
@@ -3066,15 +2789,7 @@ ul.projects {
     -moz-filter: grayscale(100);
     filter: grayscale(100);
     filter: gray;
-    -webkit-filter: grayscale(1);
-    /*
-    &[data-project="0"] { @include sprite($discovery-communications); }
-    &[data-project="1"] { @include sprite($discovery-communications); }
-    &[data-project="2"] { @include sprite($discovery-communications); }
-    &[data-project="3"] { @include sprite($discovery-communications); }
-    &[data-project="4"] { @include sprite($discovery-communications); }
-    &[data-project="5"] { @include sprite($discovery-communications); }
-    */ }
+    -webkit-filter: grayscale(1); }
     ul.projects a:hover {
       filter: grayscale(0);
       -webkit-filter: grayscale(0);
@@ -3082,36 +2797,36 @@ ul.projects {
       filter: grayscale(0);
       filter: gray;
       -webkit-filter: grayscale(0); }
-    ul.projects a[data-project="6"] {
-      background-image: url("../images/sprites.png");
-      background-position: -210px 0px;
+    ul.projects a.discovery-education {
+      background-image: url("../images/sprites.jpg");
+      background-position: 0px -214px;
       width: 180px;
-      height: 125px; }
-    ul.projects a[data-project="7"] {
-      background-image: url("../images/sprites.png");
-      background-position: -400px -135px;
+      height: 135px; }
+    ul.projects a.repequity {
+      background-image: url("../images/sprites.jpg");
+      background-position: -200px 0px;
+      width: 203px;
+      height: 152px; }
+    ul.projects a.fcc-gov {
+      background-image: url("../images/sprites.jpg");
+      background-position: 0px -349px;
       width: 180px;
-      height: 125px; }
-    ul.projects a[data-project="8"] {
-      background-image: url("../images/sprites.png");
-      background-position: 0px -359px;
+      height: 135px; }
+    ul.projects a.the-national-press-club {
+      background-image: url("../images/sprites.jpg");
+      background-position: -403px 0px;
       width: 180px;
-      height: 125px; }
-    ul.projects a[data-project="9"] {
-      background-image: url("../images/sprites.png");
-      background-position: -190px -224px;
+      height: 135px; }
+    ul.projects a.the-cook-political-report {
+      background-image: url("../images/sprites.jpg");
+      background-position: -180px -214px;
       width: 180px;
-      height: 125px; }
-    ul.projects a[data-project="10"] {
-      background-image: url("../images/sprites.png");
-      background-position: 0px -224px;
+      height: 135px; }
+    ul.projects a.channel-democracy {
+      background-image: url("../images/sprites.jpg");
+      background-position: -403px -135px;
       width: 180px;
-      height: 125px; }
-    ul.projects a[data-project="11"] {
-      background-image: url("../images/sprites.png");
-      background-position: -400px 0px;
-      width: 180px;
-      height: 125px; }
+      height: 135px; }
 
 #modal {
   display: none;
@@ -3141,71 +2856,45 @@ ul.projects {
       clear: both;
       content: "";
       display: table; }
-    #modal .modal .alpha {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 65.88078%;
-      margin-left: 0%;
-      height: 100%;
-      overflow: hidden; }
-      #modal .modal .alpha:last-child {
-        margin-right: 0; }
-    #modal .modal .beta {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%;
-      height: 100%;
-      overflow: hidden; }
-      #modal .modal .beta:last-child {
-        margin-right: 0; }
-      #modal .modal .beta:nth-child(0) {
-        margin-right: 0; }
-    #modal .modal img {
-      float: left;
-      height: 100%; }
     #modal .modal h3 {
       text-transform: none; }
     #modal .modal a {
       color: #41a7bf; }
+    @media (min-width: 769px) {
+      #modal .modal .alpha {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%;
+        margin-left: 0%;
+        height: 100%;
+        overflow: hidden; }
+        #modal .modal .alpha:last-child {
+          margin-right: 0; }
+      #modal .modal .beta {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%;
+        height: 100%;
+        overflow: hidden; }
+        #modal .modal .beta:last-child {
+          margin-right: 0; }
+        #modal .modal .beta:nth-child(0) {
+          margin-right: 0; }
+      #modal .modal img {
+        float: left;
+        height: 100%; } }
     @media (max-width: 768px) {
       #modal .modal {
         margin: 24px;
-        padding: 12px;
-        padding-bottom: 24px; } }
-  @media (max-width: 768px) and (max-width: 768px) {
-    #modal .modal .alpha, #modal .modal .beta,
-    #modal .modal .columns-2, #modal .modal .columns-4, #modal .modal .columns-6, #modal .modal .columns-8, #modal .modal .columns-10, #modal .modal .columns-12 {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%;
-      margin-left: 0%; }
-      #modal .modal .alpha:last-child, #modal .modal .beta:last-child,
-      #modal .modal .columns-2:last-child, #modal .modal .columns-4:last-child, #modal .modal .columns-6:last-child, #modal .modal .columns-8:last-child, #modal .modal .columns-10:last-child, #modal .modal .columns-12:last-child {
-        margin-right: 0; }
-      #modal .modal .alpha:nth-child(0), #modal .modal .beta:nth-child(0),
-      #modal .modal .columns-2:nth-child(0), #modal .modal .columns-4:nth-child(0), #modal .modal .columns-6:nth-child(0), #modal .modal .columns-8:nth-child(0), #modal .modal .columns-10:nth-child(0), #modal .modal .columns-12:nth-child(0) {
-        margin-right: 0; }
-    #modal .modal .alpha p:last-child, #modal .modal .beta p:last-child,
-    #modal .modal .columns-2 p:last-child, #modal .modal .columns-4 p:last-child, #modal .modal .columns-6 p:last-child, #modal .modal .columns-8 p:last-child, #modal .modal .columns-10 p:last-child, #modal .modal .columns-12 p:last-child {
-      margin-bottom: 0; }
-    body.front #modal .modal .sprite,
-    body.front #modal .modal .fa {
-      display: none; }
-    #modal .modal h1 {
-      font-size: 38.4px; }
-    #modal .modal h2 {
-      font-size: 32px; }
-    #modal .modal h3 {
-      font-size: 25.6px; } }
-    @media (max-width: 768px) {
-        #modal .modal .alpha {
-          padding: 0;
-          height: 300px; }
+        padding: 12px; }
+        #modal .modal .alpha::after {
+          clear: both;
+          content: "";
+          display: table; }
         #modal .modal .beta {
-          padding: 12px 12px 0 12px; }
+          padding: 24px 12px 12px 12px; }
         #modal .modal img {
           height: auto;
           width: 100%; } }

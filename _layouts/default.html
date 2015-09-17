@@ -95,8 +95,10 @@
       animation: {
         speed: 200
       }
-    },{% comment %}Not super-happy with Liquid's json filter...{% endcomment %}
-    projects: [{{ site.data.projects | join: ',' | replace: '=>', ':' | replace: 'client-project', 'https://avatars2.githubusercontent.com/u/1489168?v=3&s=507' }}]
+    },
+    projects: [ {% comment %}Not super-happy with Liquid's json filter...{% endcomment %}
+      {{ site.data.projects | join: ',' | replace: '=>', ':' | replace: 'client-project', 'https://avatars2.githubusercontent.com/u/1489168?v=3&s=507' }}
+    ]
   };
   </script>
   <script type="text/javascript" src="/assets/js/app.js"></script>

@@ -1,6 +1,6 @@
 <div class="container">
         <ul class="projects">{% for project in site.data.projects %}
-          <li><a href="{{ page.url }}" data-project="{{ forloop.index | minus: 1 }}" title="{{ project.name }} - {{ project.client }}" class="project-{{ project.name | downcase | split: ' ' | join: '-' |  }}">{{ project.name }}</a></li>{% endfor %}
+          <li><a href="{{ page.url }}" data-project="{{ forloop.index | minus: 1 }}" title="{{ project.name }}{% if project.name != project.client %} - {{ project.client }}{% endif %}" class="{{ project.name | downcase | split: ' ' | join: '-' | replace: '.', '-' }}">{{ project.name }}</a></li>{% endfor %}
         </ul>
         <div id="modal">
           <div class="modal">

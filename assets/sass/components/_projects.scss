@@ -36,20 +36,18 @@ ul.projects {
       @include grayscale(0);
     }
 
-    /*
-    &[data-project="0"] { @include sprite($discovery-communications); }
-    &[data-project="1"] { @include sprite($discovery-communications); }
-    &[data-project="2"] { @include sprite($discovery-communications); }
-    &[data-project="3"] { @include sprite($discovery-communications); }
-    &[data-project="4"] { @include sprite($discovery-communications); }
-    &[data-project="5"] { @include sprite($discovery-communications); }
-    */
-    &[data-project="6"] { @include sprite($discovery-communications); }
-    &[data-project="7"] { @include sprite($repequity); }
-    &[data-project="8"] { @include sprite($seabourne-fcc); }
-    &[data-project="9"] { @include sprite($home-front-communications-national-press-club); }
-    &[data-project="10"] { @include sprite($home-front-communications-cook-political-report); }
-    &[data-project="11"] { @include sprite($iws-channel-democracy); }
+    &.discovery-education {
+      @include sprite($discovery-education); }
+    &.repequity {
+      @include sprite($repequity); }
+    &.fcc-gov {
+      @include sprite($seabourne-fcc); }
+    &.the-national-press-club {
+      @include sprite($home-front-communications-national-press-club); }
+    &.the-cook-political-report {
+      @include sprite($home-front-communications-cook-political-report); }
+    &.channel-democracy {
+      @include sprite($iws-channel-democracy); }
   }
 }
 
@@ -74,22 +72,20 @@ ul.projects {
     padding: $dmrg;
     max-width: #{map-get($breakpoints, 'lg')};
 
-    .alpha { @include span-columns(8); @include shift(0); height: 100%; overflow: hidden; }
-    .beta { @include span-columns(4); @include omega(0); height: 100%; overflow: hidden; }
-
-    img {
-      float: left; height: 100%; }
     h3 { text-transform: none; }
     a { color: $blue; }
 
+    @include media(">md") {
+      .alpha { @include span-columns(8); @include shift(0); height: 100%; overflow: hidden; }
+      .beta { @include span-columns(4); @include omega(0); height: 100%; overflow: hidden; }
+      img {float: left; height: 100%; }
+    }
     @include media("<=md") {
       margin: $dmrg;
       padding: $mrg;
-      padding-bottom: $dmrg;
-      @include full-width();
 
-      .alpha { padding: 0; height: 300px; }
-      .beta { padding: $mrg $mrg 0 $mrg; }
+      .alpha { @include clearfix(); }
+      .beta { padding: $dmrg $mrg $mrg $mrg; }
       img { height: auto; width: 100%; }
     }
 
