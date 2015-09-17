@@ -261,10 +261,8 @@
 
           var $self = $(this);
           var project = settings.projects[$self.attr('data-project')];
+          var $content = $modal.children('.modal');
 
-          var $content = $modal
-            .children('.modal');
-console.log($(window).width());
           if ($(window).width() > 768) {
             $content
               .height($modal.parents('.stripe').height() - 72);
@@ -284,6 +282,9 @@ console.log($(window).width());
             .attr('alt', project.name);
 
           $modal.fadeIn(settings.theme.animation.speed);
+
+          settings.theme.top = ($modal.offset().top - theme.headerScrollOffset);
+          theme.scrollMain(context, settings);
         });
 
       $modal
