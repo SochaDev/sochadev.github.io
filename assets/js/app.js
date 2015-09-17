@@ -265,7 +265,7 @@
 
           if ($(window).width() > 768) {
             $content
-              .height($modal.parents('.stripe').height() - 72);
+              .height($modal.parents('.stripe').height() - 60);
           }
 
           $content.find('.name')

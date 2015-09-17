@@ -32,13 +32,13 @@
       <div class="container">
         <div class="columns-12">
           <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}{% if page.url != '/' %}<a href="/" title="Home" class="logo"><img src="{{ site.logoUrl }}" alt="Socha Dev" class="logo"></a>{% endif %}</h1>{% if page.url != '/' %}
-          <p class="breadcrumb"><a href="/" class="blue">Home</a>{% endif %}</p>
+          <p class="breadcrumb"><a href="/" class="blue">Home</a></p>{% endif %}
         </div>
       </div>
     </div>{% if page.url == '/' %}
 
-{{ content }}
-    {% else %}<div class="stripe gray">
+{{ content }}{% else %}
+    <div class="stripe gray">
       <div class="container">
         <div class="columns-12">
 
