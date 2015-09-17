@@ -7,7 +7,9 @@ ul.projects {
   li {
     @include span-columns(3);
     @include omega(4n);
+    background: $white;
     margin-bottom: $dmrg;
+    border: solid 1px $gray-darker;
 
     @include media("<=sm") {
       @include span-columns(6);
@@ -22,13 +24,32 @@ ul.projects {
     background: $gray-4;
     cursor: pointer;
     display: block;
+    float: none;
+    margin: 0;
     overflow: hidden;
     padding: $dmrg * 2;
     text-indent: -9999px;
+    width: 100% !important;
 
+    @include grayscale(100);
     &:hover {
-      background: $gray;
+      @include grayscale(0);
     }
+
+    /*
+    &[data-project="0"] { @include sprite($discovery-communications); }
+    &[data-project="1"] { @include sprite($discovery-communications); }
+    &[data-project="2"] { @include sprite($discovery-communications); }
+    &[data-project="3"] { @include sprite($discovery-communications); }
+    &[data-project="4"] { @include sprite($discovery-communications); }
+    &[data-project="5"] { @include sprite($discovery-communications); }
+    */
+    &[data-project="6"] { @include sprite($discovery-communications); }
+    &[data-project="7"] { @include sprite($repequity); }
+    &[data-project="8"] { @include sprite($seabourne-fcc); }
+    &[data-project="9"] { @include sprite($home-front-communications-national-press-club); }
+    &[data-project="10"] { @include sprite($home-front-communications-cook-political-report); }
+    &[data-project="11"] { @include sprite($iws-channel-democracy); }
   }
 }
 
@@ -44,7 +65,7 @@ ul.projects {
   z-index: 10;
 
   .modal {
-    @include border-radius($border-radius * 2);
+    @include border-radius();
     @include clearfix();
     background: $white;
     color: $bg;
@@ -53,8 +74,8 @@ ul.projects {
     padding: $dmrg;
     max-width: #{map-get($breakpoints, 'lg')};
 
-    .alpha { @include span-columns(8); @include shift(0); }
-    .beta { @include span-columns(4); @include omega(0); }
+    .alpha { @include span-columns(8); @include shift(0); height: 100%; overflow: hidden; }
+    .beta { @include span-columns(4); @include omega(0); height: 100%; overflow: hidden; }
 
     @include media("<=md") {
       margin: $dmrg;
@@ -64,7 +85,9 @@ ul.projects {
       .beta { margin-top: $dmrg; }
     }
 
-    img { float: left; }
+    img {
+      float: left; height: 100%; }
     h3 { text-transform: none; }
+    a { color: $blue; }
   }
 }

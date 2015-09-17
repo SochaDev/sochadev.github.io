@@ -57,7 +57,7 @@
           evt.preventDefault();
           settings.theme.top = 0;
 
-          $('#modal, fieldset.contact, .messages', context)
+          $('#modal, fieldset.contact, .messages, .tooltip .tip', context)
             .fadeOut(settings.theme.animation.speed);
 
           theme.scrollMain(context, settings);
@@ -75,32 +75,33 @@
     },
     toolTips: function(context, settings) {
 
-      $('.tooltip', context).click(function(evt) {
-        evt.preventDefault();
+      $('.tooltip', context)
+        .click(function(evt) {
+          evt.preventDefault();
 
-        var $self = $(this);
-        var message = $self.attr('data-tip');
-        if (!message) {
-          return;
-        }
+          var $self = $(this);
+          var message = $self.attr('data-tip');
+          if (!message) {
+            return;
+          }
 
-        var $tip = $('.tip', $self);
-        if (!$tip.length) {
-          $tip = $(document.createElement('div'))
-            .addClass('tip')
-            .html(message.replace('\\n', '<br>'))
-            .css({ width: (message.length * 2 + $self.text().length) + 'px' })
+          var $tip = $('.tip', $self);
+          if (!$tip.length) {
+            $tip = $(document.createElement('div'))
+              .addClass('tip')
+              .html(message.replace('\\n', '<br>'))
+              .css({ width: (message.length * 2 + $self.text().length) + 'px' })
+              .hide();
+            $self
+              .append($tip);
+          }
+
+          $('.tip', context)
+            .not($tip)
             .hide();
-          $self
-            .append($tip);
-        }
-
-        $('.tip', context)
-          .not($tip)
-          .hide();
-        $tip
-          .toggle();
-      });
+          $tip
+            .toggle();
+        });
 
     },
     contactForm: function(context, settings) {
@@ -258,9 +259,25 @@
         .click(function(evt) {
           evt.preventDefault();
 
-          $modal
+          var $self = $(this);
+          var project = settings.projects[$self.attr('data-project')];
+
+          var $content = $modal
             .children('.modal')
             .height($modal.parents('.stripe').height() - 72);
+
+          $content.find('.name')
+            .text(project.name)
+            .attr('href', project.url);
+          $content.find('.client')
+            .text(project.client)
+            .attr('href', project.clientUrl);
+          $content.find('.description')
+            .html(project.description);
+          $content
+            .find('img')
+            .attr('src', (project.image.indexOf('http') < 0 ? (settings.theme.images + '/projects/' + project.image + '.jpg') : project.image))
+            .attr('alt', project.name);
 
           $modal.fadeIn(settings.theme.animation.speed);
         });

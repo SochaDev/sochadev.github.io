@@ -1,0 +1,86 @@
+# This file is converted to JSON in the main Liquid layout template footer for
+# consumption by the jQuery modal handler.
+
+- name: Project
+  client: Client
+  clientUrl: http://sochadev.com
+  url: http://sochadev.com
+  image: client-project
+  description: Here are the project details.
+
+- name: Project
+  client: Client
+  clientUrl: http://sochadev.com
+  url: http://sochadev.com
+  image: client-project
+  description: Here are the project details.
+
+- name: Project
+  client: Client
+  clientUrl: http://sochadev.com
+  url: http://sochadev.com
+  image: client-project
+  description: Here are the project details.
+
+- name: Project
+  client: Client
+  clientUrl: http://sochadev.com
+  url: http://sochadev.com
+  image: client-project
+  description: Here are the project details.
+
+- name: Project
+  client: Client
+  clientUrl: http://sochadev.com
+  url: http://sochadev.com
+  image: client-project
+  description: Here are the project details.
+
+- name: Project
+  client: Client
+  clientUrl: http://sochadev.com
+  url: http://sochadev.com
+  image: client-project
+  description: Here are the project details.
+
+- name: Discovery Communications
+  client: Discovery Education
+  clientUrl: http://discoveryeducation.com
+  url: http://discoveryeducation.com
+  image: discovery-communications
+  description: When Discovery Education decided to make the switch to Drupal for a whole slew of sites, Socha Dev was there to help. Since the start of that project, Socha Dev has been engaged in advising, designing, porting, and developing a variety of properties for Discovery, as well as managing all staging and deployment on the Acquia platform.
+
+- name: RepEquity
+  client: RepEquity
+  clientUrl: http://www.repequity.com
+  url: http://www.repequity.com
+  image: repequity
+  description: RepEquity is one of D.C.'s premier digital strategy & online brand management firms. When they need expert consulting on an architecture, coding help on a build, or extra brain power on a sticky problem, they call Socha Dev first.
+
+- name: FCC.gov
+  client: Seabourne
+  clientUrl: http://www.seabourneinc.com/case-studies-fcc
+  url: https://www.fcc.gov
+  image: seabourne-fcc
+  description: Working with Seabourne, Socha Dev helped to lead the porting of the FCC's site into Drupal. This build involved a wide variety of custom Drupal modules to integrate with backend FCC systems as well as some tricky thinking to work within the guidelines and restrictions of a high-security, high-traffic federal agency web site. Socha Dev also helped with prototyping and development of the FCC's slick customizable dashboard application, MyFCC.
+
+- name: National Press Club
+  client: Home Front Communications
+  clientUrl: http://homefrontdc.com
+  url: https://www.press.org
+  image: home-front-communications-national-press-club
+  description: Working with Home Front Communications, Socha Dev was the lead developer on the National Press Club's port to Drupal, including work on custom modules, CSPAN integration, and a variety of custom calendar / event widgets.
+
+- name: The Cook Political Report
+  client: IWS
+  clientUrl: http://www.workwithiws.com
+  url: http://cookpolitical.com
+  image: home-front-communications-cook-political-report
+  description: While not widely known to the masses, The Cook Political Report has been described as "The bible of the political community." Tracking every race and candidate for House, Senate, President, and Governor in the United States, the site is a data monster. When the Cook organization hired Home Front Communications to completely restructure and rebuild their web presence, Socha Dev was there to play a lead role in all aspects of architecture and development. The site handles subscription payments, MailChimp integration, and many other custom data-driven features.
+
+- name: Channel Democracy
+  client: IWS
+  clientUrl: http://www.workwithiws.com
+  url: http://channeldemocracy.com
+  image: iws-channel-democracy
+  description: IWS is a web and marketing shop with a nation-wide customer base of Fortune 500 companies, government agencies, and advocacy organizations. They needed architecture and development help with Channel Democracy, a white-label online advocacy system. Socha Dev stepped up to the plate and hit a homer.

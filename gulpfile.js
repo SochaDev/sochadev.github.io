@@ -88,6 +88,20 @@ gulp.task('sprites', function () {
 	spriteData.css.pipe(gulp.dest('./assets/sass/'));
 });
 
+gulp.task('sprites-projects', function () {
+  var spriteData = gulp.src('./assets/images/projects/*.*')
+		.pipe(spritesmith({
+    	imgName: 'projects.png',
+    	cssName: '_sprites-projects.scss',
+			padding: 10,
+			algorithm: 'binary-tree',
+			cssOpts: {functions: false}
+  }));
+
+	spriteData.img.pipe(gulp.dest('./assets/images/'));
+	spriteData.css.pipe(gulp.dest('./assets/sass/'));
+});
+
 gulp.task('production', ['production-css', 'production-js'], function() {
 });
 

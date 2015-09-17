@@ -6,7 +6,14 @@
   @include border-left-radius($radius);
 }
 
-
+@mixin grayscale($percent: '100%') {
+  filter: grayscale($percent);
+  -webkit-filter: grayscale($percent);
+  -moz-filter: grayscale($percent);
+  filter: grayscale($percent);
+  filter: gray;
+  -webkit-filter: grayscale($percent / 100);
+}
 
 @mixin full-width() {
 

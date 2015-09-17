@@ -25,10 +25,6 @@ for hosting, so we ported the whole thing over here to GitHub Pages. Enjoy!
 
 * `@mistressofdrupal` - Build a micro RESTful API using either Slim or Phalcon (private SD repo plz), make sure a base path of `https://wintermute.sochadev.com/api-www` exists and can handle POST and GET, reject all other verbs with a 403. Ping `@natemow` for SSL or alias setup or whatever on `wintermute` as needed. API should also make sure that cross-origin requests are handled from `sochadev.github.io`, `sochadev.com` and `local.sochadev`; all other domains should throw a 403. We need `status` (HTTP response int) and `messages` (array) included in all API responses. Update `assets/js/app.js::theme.contactForm` jQuery `$.post` and/or `.respond` handler to reflect API JSON responses.
 
-* `@jeffeoff` - Dunno if Bourbon/Bitters/whatever has built-in stuff for 508 compliance (e.g. `.sr-only` in Bootstrap) -- but we'd also get `pro` points if we could make our HTML5 document outline have legit headings and stuff. @see [this](https://gsnedders.html5.org/outliner/)
-
-* `@jeffeoff` - Audit everything ever because you are way more `in touch` than `@natemoo` is and you know what's actually cool these days.
-
 * `@jasonsocha` - Apply seal-of-approval to above and point the `sochadev.com` domain. To do that we'll need this stuff:
 
   * Add a `CNAME` file to repo root with 1 line in it: `sochadev.com`. Confirm this is acknowledged under project settings (you should see "Your site is published at http://sochadev.com" in a minute or so).

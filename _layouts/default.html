@@ -21,7 +21,7 @@
       <div class="container">
         <div class="columns-12">
           <span class="tagline">{{ site.tagline }}</span>
-          <a href="/" title="Home" class="{% if page.url == '/' %}top {% endif %}logo"><img src="https://avatars2.githubusercontent.com/u/1489168?v=3&s=36" alt="Home" class="logo"></a>
+          <a href="/" title="Home" class="{% if page.url == '/' %}top {% endif %}logo"><img src="{{ site.logoUrl }}" alt="Home" class="logo"></a>
           <a href="/" class="top brand" title="Scroll up">{{ site.title }}</a>
         </div>
       </div>
@@ -31,7 +31,7 @@
     <div class="stripe first">
       <div class="container">
         <div class="columns-12">
-          <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}{% if page.url != '/' %}<a href="/" title="Home" class="logo"><img src="https://avatars2.githubusercontent.com/u/1489168?v=3&s=36" alt="Socha Dev" class="logo"></a>{% endif %}</h1>{% if page.url != '/' %}
+          <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}{% if page.url != '/' %}<a href="/" title="Home" class="logo"><img src="{{ site.logoUrl }}" alt="Socha Dev" class="logo"></a>{% endif %}</h1>{% if page.url != '/' %}
           <p class="breadcrumb"><a href="/" class="blue">Home</a>{% endif %}</p>
         </div>
       </div>
@@ -86,14 +86,17 @@
     },
     page: {
       url: "{{ page.url }}",
-      title: "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
-      description: "{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"
+      title: "{% if page.title %}{{ page.title | strip_html }}{% else %}{{ site.title }}{% endif %}",
+      description: "{% if page.description %}{{ page.description | strip_html }}{% else %}{{ site.description }}{% endif %}"
     },
     theme: {
+      logo: '{{ site.logoUrl }}',
+      images: '/assets/images',
       animation: {
         speed: 200
       }
-    }
+    },{% comment %}Not super-happy with Liquid's json filter...{% endcomment %}
+    projects: [{{ site.data.projects | join: ',' | replace: '=>', ':' | replace: 'client-project', 'https://avatars2.githubusercontent.com/u/1489168?v=3&s=507' }}]
   };
   </script>
   <script type="text/javascript" src="/assets/js/app.js"></script>

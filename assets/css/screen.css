@@ -3027,7 +3027,9 @@ ul.projects {
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%;
-    margin-bottom: 24px; }
+    background: #fff;
+    margin-bottom: 24px;
+    border: solid 1px #2b2b2b; }
     ul.projects li:last-child {
       margin-right: 0; }
     ul.projects li:nth-child(4n) {
@@ -3053,11 +3055,63 @@ ul.projects {
     background: #444;
     cursor: pointer;
     display: block;
+    float: none;
+    margin: 0;
     overflow: hidden;
     padding: 48px;
-    text-indent: -9999px; }
+    text-indent: -9999px;
+    width: 100% !important;
+    filter: grayscale(100);
+    -webkit-filter: grayscale(100);
+    -moz-filter: grayscale(100);
+    filter: grayscale(100);
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    /*
+    &[data-project="0"] { @include sprite($discovery-communications); }
+    &[data-project="1"] { @include sprite($discovery-communications); }
+    &[data-project="2"] { @include sprite($discovery-communications); }
+    &[data-project="3"] { @include sprite($discovery-communications); }
+    &[data-project="4"] { @include sprite($discovery-communications); }
+    &[data-project="5"] { @include sprite($discovery-communications); }
+    */ }
     ul.projects a:hover {
-      background: #666; }
+      filter: grayscale(0);
+      -webkit-filter: grayscale(0);
+      -moz-filter: grayscale(0);
+      filter: grayscale(0);
+      filter: gray;
+      -webkit-filter: grayscale(0); }
+    ul.projects a[data-project="6"] {
+      background-image: url("../images/sprites.png");
+      background-position: -210px 0px;
+      width: 180px;
+      height: 125px; }
+    ul.projects a[data-project="7"] {
+      background-image: url("../images/sprites.png");
+      background-position: -400px -135px;
+      width: 180px;
+      height: 125px; }
+    ul.projects a[data-project="8"] {
+      background-image: url("../images/sprites.png");
+      background-position: 0px -359px;
+      width: 180px;
+      height: 125px; }
+    ul.projects a[data-project="9"] {
+      background-image: url("../images/sprites.png");
+      background-position: -190px -224px;
+      width: 180px;
+      height: 125px; }
+    ul.projects a[data-project="10"] {
+      background-image: url("../images/sprites.png");
+      background-position: 0px -224px;
+      width: 180px;
+      height: 125px; }
+    ul.projects a[data-project="11"] {
+      background-image: url("../images/sprites.png");
+      background-position: -400px 0px;
+      width: 180px;
+      height: 125px; }
 
 #modal {
   display: none;
@@ -3069,14 +3123,14 @@ ul.projects {
   bottom: 0;
   z-index: 10; }
   #modal .modal {
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-    border-top-right-radius: 6px;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-    border-bottom-left-radius: 6px;
-    border-top-left-radius: 6px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
     background: #fff;
     color: #2b2b2b;
     font-size: 16px;
@@ -3092,14 +3146,18 @@ ul.projects {
       display: block;
       margin-right: 2.35765%;
       width: 65.88078%;
-      margin-left: 0%; }
+      margin-left: 0%;
+      height: 100%;
+      overflow: hidden; }
       #modal .modal .alpha:last-child {
         margin-right: 0; }
     #modal .modal .beta {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 31.76157%; }
+      width: 31.76157%;
+      height: 100%;
+      overflow: hidden; }
       #modal .modal .beta:last-child {
         margin-right: 0; }
       #modal .modal .beta:nth-child(0) {
@@ -3138,8 +3196,11 @@ ul.projects {
         #modal .modal .beta {
           margin-top: 24px; } }
     #modal .modal img {
-      float: left; }
+      float: left;
+      height: 100%; }
     #modal .modal h3 {
       text-transform: none; }
+    #modal .modal a {
+      color: #41a7bf; }
 
 /*# sourceMappingURL=screen.css.map */

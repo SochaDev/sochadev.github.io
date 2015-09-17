@@ -1,26 +1,16 @@
 <div class="container">
-        <ul class="projects">
-          <li><a href="{{ page.url }}">Project</a></li>
-          <li><a href="{{ page.url }}">Project</a></li>
-          <li><a href="{{ page.url }}">Project</a></li>
-          <li><a href="{{ page.url }}">Project</a></li>
-          <li><a href="{{ page.url }}">Project</a></li>
-          <li><a href="{{ page.url }}">Project</a></li>
-          <li><a href="{{ page.url }}">Project</a></li>
-          <li><a href="{{ page.url }}">Project</a></li>
-          <li><a href="{{ page.url }}">Project</a></li>
-          <li><a href="{{ page.url }}">Project</a></li>
-          <li><a href="{{ page.url }}">Project</a></li>
-          <li><a href="{{ page.url }}">Project</a></li>
+        <ul class="projects">{% for project in site.data.projects %}
+          <li><a href="{{ page.url }}" data-project="{{ forloop.index | minus: 1 }}" title="{{ project.name }} - {{ project.client }}" class="project-{{ project.name | downcase | split: ' ' | join: '-' |  }}">{{ project.name }}</a></li>{% endfor %}
         </ul>
         <div id="modal">
           <div class="modal">
             <div class="alpha">
-              <img src="https://avatars2.githubusercontent.com/u/1489168?v=3&s=300" alt="Socha Dev" class="logo">
+              <img src="{{ site.logoUrl }}" alt="{{ site.title }}">
             </div>
             <div class="beta">
-              <h3 class="title">Title</h3>
-              <div class="content">Some project details.</div>
+              <h3><a href="{{ site.url }}" target="_blank" class="name">{{ site.title }}</a></h3>
+              <p>Partnered with <a href="{{ site.url }}" target="_blank" class="client">{{ site.title }}</a>.</p>
+              <div class="description">{{ site.tagline }}</div>
             </div>
           </div>
         </div>

@@ -58,7 +58,7 @@ tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP,
   <div class="container">
     <div class="columns-12">
       <h2 id="projects">Projects</h2>
-      <p>We build and develop &mdash; really well. Here are some highlights.</p>
+      <p>We build and develop on behalf of our partners &mdash; really well. Here are some highlights.</p>
       {% include projects.html %}
     </div>
   </div>
