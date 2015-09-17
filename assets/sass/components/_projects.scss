@@ -77,17 +77,21 @@ ul.projects {
     .alpha { @include span-columns(8); @include shift(0); height: 100%; overflow: hidden; }
     .beta { @include span-columns(4); @include omega(0); height: 100%; overflow: hidden; }
 
-    @include media("<=md") {
-      margin: $dmrg;
-      padding: $mrg;
-      @include full-width();
-
-      .beta { margin-top: $dmrg; }
-    }
-
     img {
       float: left; height: 100%; }
     h3 { text-transform: none; }
     a { color: $blue; }
+
+    @include media("<=md") {
+      margin: $dmrg;
+      padding: $mrg;
+      padding-bottom: $dmrg;
+      @include full-width();
+
+      .alpha { height: 300px; }
+      .beta { margin-top: $dmrg; }
+      img { height: auto; width: 100%; }
+    }
+
   }
 }

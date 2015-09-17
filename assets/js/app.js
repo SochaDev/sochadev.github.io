@@ -263,8 +263,12 @@
           var project = settings.projects[$self.attr('data-project')];
 
           var $content = $modal
-            .children('.modal')
-            .height($modal.parents('.stripe').height() - 72);
+            .children('.modal');
+console.log($(window).width());
+          if ($(window).width() > 768) {
+            $content
+              .height($modal.parents('.stripe').height() - 72);
+          }
 
           $content.find('.name')
             .text(project.name)

@@ -3162,10 +3162,18 @@ ul.projects {
         margin-right: 0; }
       #modal .modal .beta:nth-child(0) {
         margin-right: 0; }
+    #modal .modal img {
+      float: left;
+      height: 100%; }
+    #modal .modal h3 {
+      text-transform: none; }
+    #modal .modal a {
+      color: #41a7bf; }
     @media (max-width: 768px) {
       #modal .modal {
         margin: 24px;
-        padding: 12px; } }
+        padding: 12px;
+        padding-bottom: 24px; } }
   @media (max-width: 768px) and (max-width: 768px) {
     #modal .modal .alpha, #modal .modal .beta,
     #modal .modal .columns-2, #modal .modal .columns-4, #modal .modal .columns-6, #modal .modal .columns-8, #modal .modal .columns-10, #modal .modal .columns-12 {
@@ -3193,14 +3201,12 @@ ul.projects {
     #modal .modal h3 {
       font-size: 25.6px; } }
     @media (max-width: 768px) {
+        #modal .modal .alpha {
+          height: 300px; }
         #modal .modal .beta {
-          margin-top: 24px; } }
-    #modal .modal img {
-      float: left;
-      height: 100%; }
-    #modal .modal h3 {
-      text-transform: none; }
-    #modal .modal a {
-      color: #41a7bf; }
+          margin-top: 24px; }
+        #modal .modal img {
+          height: auto;
+          width: 100%; } }
 
 /*# sourceMappingURL=screen.css.map */
