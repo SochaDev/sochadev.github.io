@@ -89,7 +89,7 @@ ul.projects {
       @include full-width();
 
       .alpha { padding: 0; height: 300px; }
-      .beta { margin-top: $mrg; padding: $dmrg $mrg 0 $mrg; border-top: solid 1px $gray-light; }
+      .beta { padding: $mrg $mrg 0 $mrg; }
       img { height: auto; width: 100%; }
     }
 

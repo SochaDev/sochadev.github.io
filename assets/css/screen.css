@@ -3205,9 +3205,7 @@ ul.projects {
           padding: 0;
           height: 300px; }
         #modal .modal .beta {
-          margin-top: 12px;
-          padding: 24px 12px 0 12px;
-          border-top: solid 1px #bbb; }
+          padding: 12px 12px 0 12px; }
         #modal .modal img {
           height: auto;
           width: 100%; } }
