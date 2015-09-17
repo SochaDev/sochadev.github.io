@@ -2784,6 +2784,7 @@ ul.projects {
     padding: 48px;
     text-indent: -9999px;
     width: 100% !important;
+    height: auto !important;
     filter: grayscale(100);
     -webkit-filter: grayscale(100);
     -moz-filter: grayscale(100);

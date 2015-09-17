@@ -30,6 +30,7 @@ ul.projects {
     padding: $dmrg * 2;
     text-indent: -9999px;
     width: 100% !important;
+    height: auto !important;
 
     @include grayscale(100);
     &:hover {
