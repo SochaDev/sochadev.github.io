@@ -16,13 +16,13 @@
   image: discovery-communications
   description: When Discovery Education decided to make the switch to Drupal for a whole slew of sites, Socha Dev was there to help. Since the start of the project, Socha Dev has been engaged in advising, designing, porting, and developing a variety of properties for Discovery, as well as managing all staging and deployment on the Acquia platform.\n\nToday, we continue iterating a single multisite instance of Drupal - which handles 30+ important web properties for Discovery Education. More and more, we are also developing custom apps using Phalcon and Slim to support a number of scholarship and education opportunities that Discovery Education provides in conjunction with their corporate partners.
 
-- name: Project
+- name: Drupal maintenance
   whiteLabel: true
-  client: another partner
+  client: a strategy and design firm in DC
   clientUrl: \#
   url: \#
   image: \#
-  description: Here are the project details.
+  description: Our partner needed a reliable go-to dev shop to deal with their legacy (and current) Drupal projects; Socha Dev stepped in to help take some of the burden off of their internal dev team.
 
 - name: RepEquity
   client: RepEquity
