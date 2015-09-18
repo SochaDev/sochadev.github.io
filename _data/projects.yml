@@ -7,7 +7,7 @@
   clientUrl: \#
   url: \#
   image: \#
-  description: When our partner's client (a Fortune 5 you've definitely heard of) approached them to create a new custom LMS for their workforce, they turned to Socha Dev to develop a RESTful API using Node.js, Express and MongoDB to support the gamified system they'd prototyped.\n\nWe helped iterate business requirements, then developed schema and API endpoints to realize our partner's unique vision of what an LMS could be.
+  description: When our partner's client (a Fortune 5 you've definitely heard of) approached them to create a new custom LMS for their workforce, they turned to Socha Dev to develop a RESTful API using Node.js, Express and MongoDB to support the gamified system they had prototyped.\n\nWe helped iterate business requirements, then developed schema and API endpoints to realize our partner's unique vision of what an LMS can be.
 
 - name: Discovery Education
   client: Discovery Education
@@ -21,22 +21,22 @@
   clientUrl: http://www.repequity.com
   url: http://www.repequity.com
   image: repequity
-  description: RepEquity is one of D.C.'s premier digital strategy & online brand management firms. When they need expert consulting on an architecture, coding help on a build, or extra brain power on a sticky problem, they call Socha Dev first.
+  description: RepEquity is one of DC's premier digital strategy and online brand management firms.\n\nWe've done a lot of great work together over the years &mdash; when RepEquity needs expert consulting on an architecture, coding help on a build, or extra brain power on a sticky problem &mdash; they call Socha Dev first.
 
-- name: Drupal overflow
+- name: Drupal and AngularJS hybrid site
   whiteLabel: true
-  client: a strategy and design firm in DC
+  client: a leading web design agency in DC
   clientUrl: \#
   url: \#
   image: \#
-  description: Our partner needed a reliable go-to dev shop to deal with some of their legacy (and current) Drupal projects; Socha Dev stepped in to help out and take some of the burden off of their internal dev team.
+  description: Our partner landed a big one and needed Socha Dev's Drupal expertise and front-end chops to help them deliver a beautiful end-to-end build to their new client. They gave us their strategy docs, wireframes and designs; we took it from there.\n\nAfter we'd completed the data migration from SharePoint, we then developed a very flexible presentation layer system built using our own "ngApp" contrib module and a new AngularJS app &mdash; all fully integrated in to Drupal's standard content management tools.
 
 - name: Science
   client: AAAS
   clientUrl: http://www.aaas.org
   url: http://www.sciencemag.org
   image: aaas-science
-  description: When AAAS (publisher of the world-renowned Science magazine) found that their previous Drupal vendor was not keeping up, they turned to Socha Dev for some much-needed support and expertise. Working closely with AAAS' internal web dev team, we have developed many new Drupal modules and theme elements to support their initiatives, and provided as-needed maintenance help on several legacy systems.\n\nSocha Dev has turned AAAS' Science web property in to the robust, unified publishing platform that an organization of their caliber requires, all tailored to accommodate their unique needs.
+  description: When AAAS (publisher of the world-renowned Science magazine) found that their previous Drupal vendor was not keeping up, they turned to Socha Dev for some much-needed support and expertise.\n\nWorking closely with AAAS' internal web dev team, we have developed many new Drupal modules and theme elements to support their initiatives, and provided as-needed maintenance help on several legacy systems.\n\nSocha Dev has turned AAAS' Science web property in to the robust, unified publishing platform that an organization of their caliber requires &mdash; all tailored to accommodate their unique needs.
 
 - name: Meteor dashboard reporting app
   whiteLabel: true
@@ -60,13 +60,13 @@
   image: home-front-communications-cook-political-report
   description: While not widely known to the masses, The Cook Political Report has been described as "The bible of the political community." Tracking every race and candidate for House, Senate, President, and Governor in the United States, the site is a data monster.\n\nWhen the Cook organization hired Home Front Communications to completely restructure and rebuild their web presence, Socha Dev was there to play a lead role in all aspects of architecture and development. The site handles subscription payments, MailChimp integration, and many other custom data-driven features.
 
-- name: Drupal and AngularJS hybrid site
+- name: Drupal overflow
   whiteLabel: true
-  client: a leading web design agency in DC
+  client: a DC strategy firm
   clientUrl: \#
   url: \#
   image: \#
-  description: Our partner landed a big one and needed Socha Dev's Drupal expertise and front-end chops to help them deliver a beautiful end-to-end build to their new client. They gave us their strategy docs, wireframes and designs; we took it from there.\n\nAfter we'd completed the data migration from SharePoint, we then developed a very flexible presentation layer system built using our own "ngApp" contrib module and a new AngularJS app - all fully integrated in to Drupal's standard content management tools.
+  description: Our partner needed a reliable go-to dev shop to deal with some of their legacy (and current) Drupal projects; Socha Dev stepped in to help out and take some of the burden off of their internal dev team &mdash; its a pretty natural relationship, as a few of us have also worked there.
 
 - name: The National Press Club
   client: Home Front Communications
@@ -81,7 +81,7 @@
   clientUrl: \#
   url: \#
   image: \#
-  description: One of our more fun "development for the real world" projects - our partner provides physical environment design that makes extensive use of giant flatscreen displays to loop corporate messaging and/or present passers-by with interactive experiences.\n\nThey needed some help turning their homegrown Drupal modules in to a full-fledged installation profile and guidance on how to distribute the profile on drupal.org. We used our partner's existing Pantheon subscription to present and iterate our work, making adjustments and incorporating their feedback along the way.
+  description: One of our more fun "development for the real world" projects &mdash; our partner provides physical environment design that makes extensive use of giant flatscreen displays to loop corporate messaging and/or present passers-by with interactive experiences.\n\nThey needed some help turning their homegrown Drupal modules in to a full-fledged installation profile and guidance on how to distribute the profile on drupal.org. We used our partner's existing Pantheon subscription to present and iterate our work, making adjustments and incorporating their feedback along the way.
 
 - name: Channel Democracy
   client: IWS

@@ -294,7 +294,7 @@
             .find('.partner')
             .toggle(project.client !== project.name);
           $content.find('.description')
-            .html(project.description.replace("\\n\\n", '</p><p>'));
+            .html(project.description.replace(/\\n\\n/g, '</p><p>'));
           $content
             .find('img')
             .attr('src', (project.image.indexOf('http') !== 0 ? (settings.theme.images + '/projects/' + project.image + '.jpg') : project.image))

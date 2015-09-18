@@ -2606,6 +2606,8 @@ a {
   a:hover {
     text-decoration: underline;
     color: #ffcc99; }
+  .social a:hover {
+    text-decoration: none; }
   a:visited,
   a:focus {
     outline: none; }
