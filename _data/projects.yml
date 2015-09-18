@@ -18,9 +18,9 @@
 
 - name: Project
   whiteLabel: true
-  client: Client
-  clientUrl: http://sochadev.com
-  url: http://sochadev.com
+  client: another partner
+  clientUrl: \#
+  url: \#
   image: \#
   description: Here are the project details.
 
@@ -38,11 +38,11 @@
   image: aaas-science
   description: When AAAS (publisher of the world-renowned Science magazine) found that their previous Drupal vendor was not keeping up, they turned to Socha Dev for some much-needed support and expertise. Working closely with AAAS' internal web dev team, we have developed many new Drupal modules and theme elements to support their initiatives, and provided as-needed maintenance help on several legacy systems.\n\nSocha Dev has turned AAAS' Science web property in to the robust, unified publishing platform that an organization of their caliber requires, all tailored to accommodate their unique needs.
 
-- name: Project
+- name: Meteor dashboard reporting app
   whiteLabel: true
-  client: Client
-  clientUrl: http://sochadev.com
-  url: http://sochadev.com
+  client: a boutique brand management agency
+  clientUrl: \#
+  url: \#
   image: \#
   description: Here are the project details.
 
