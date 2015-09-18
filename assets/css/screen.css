@@ -2199,7 +2199,7 @@ body {
       body h3 {
         font-size: 25.6px; }
       body.front .sprite,
-      body.front .fa {
+      body.front .fa.fa-hide-mobile {
         display: none; } }
 
 .clearfix::after {

@@ -90,7 +90,7 @@
           if (!$tip.length) {
             $tip = $(document.createElement('div'))
               .addClass('tip')
-              .html(message.replace('\\n', '<br>'))
+              .html(message.replace(/\\n/g, '<br>'))
               .hide();
             $self
               .append($tip);

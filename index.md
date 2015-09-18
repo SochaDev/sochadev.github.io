@@ -26,7 +26,7 @@ tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP,
 </div>
 <div class="stripe blue">
   <div class="container">
-    <div class="alpha"><i class="fa fa-tint fa-9x"></i></div>
+    <div class="alpha"><i class="fa fa-tint fa-9x fa-hide-mobile"></i></div>
     <div class="beta">
       <h2 id="overflow">Overflow</h2>
       <p>Sometimes you just have more work than you can handle. Sometimes a great contract comes along, but you're not sure if it warrants bringing on a new full-time developer. Socha Dev has you covered.</p>
@@ -39,12 +39,12 @@ tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP,
       <h2 id="triage">Triage</h2>
       <p>Projects go off the rails. The freelancer or new developer you hired isn't working out, the project is due in two weeks, and it doesn't work. We will assess your situation and make it happen.</p>
     </div>
-    <div class="beta"><i class="fa fa-ambulance fa-flip-horizontal fa-rotate-90 fa-7x"></i></div>
+    <div class="beta"><i class="fa fa-ambulance fa-flip-horizontal fa-rotate-90 fa-7x fa-hide-mobile"></i></div>
   </div>
 </div>
 <div class="stripe green">
   <div class="container">
-    <div class="alpha"><i class="fa fa-cogs fa-8x"></i></div>
+    <div class="alpha"><i class="fa fa-cogs fa-8x fa-hide-mobile"></i></div>
     <div class="beta">
       <h2 id="problem-solving">Problem Solving</h2>
       <p>Making great projects happen can be a tricky business. Some projects are a slam dunk. Some require careful thinking and experienced engineering. Some projects have annoying bugs in them. Socha Dev will figure it out.</p>
