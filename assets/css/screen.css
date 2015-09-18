@@ -2513,6 +2513,8 @@ h1, h2, h3, h4, h5 {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   line-height: 1; }
+  h1 a, h1 a:hover, h2 a, h2 a:hover, h3 a, h3 a:hover, h4 a, h4 a:hover, h5 a, h5 a:hover {
+    text-decoration: none; }
 
 h1 {
   font-size: 44.8px;
@@ -2911,6 +2913,20 @@ ul.projects {
       text-transform: none; }
     #modal .modal a {
       color: #41a7bf; }
+    @media (min-width: 769px) {
+      #modal .modal.white-label {
+        width: 40%;
+        height: auto;
+        bottom: auto; } }
+    #modal .modal.white-label .alpha {
+      display: none; }
+    #modal .modal.white-label .beta {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      #modal .modal.white-label .beta:last-child {
+        margin-right: 0; }
     @media (min-width: 769px) {
       #modal .modal .alpha {
         float: left;

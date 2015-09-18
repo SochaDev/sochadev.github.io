@@ -84,6 +84,13 @@ ul.projects {
     h3 { text-transform: none; }
     a { color: $blue; }
 
+    &.white-label {
+      @include media(">md") { width: 40%; height: auto; bottom: auto; }
+
+      .alpha { display: none; }
+      .beta { @include span-columns(12); }
+    }
+
     @include media(">md") {
       .alpha { @include span-columns(8); @include shift(0); height: 100%; overflow: hidden; }
       .beta { @include span-columns(4); @include omega(0); height: 100%; overflow: hidden; }

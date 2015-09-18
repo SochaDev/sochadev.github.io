@@ -16,6 +16,8 @@
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
     line-height: 1;
+
+    a, a:hover { text-decoration: none; }
   }
   h1 {
     font-size: $base * 2.8;

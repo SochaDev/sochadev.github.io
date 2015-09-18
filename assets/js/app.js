@@ -277,11 +277,6 @@
           var project = settings.projects[$self.attr('data-project')];
           var $content = $modal.children('.modal');
 
-          if ($(window).width() > settings.theme.breakpoints.md) {
-            $content
-              .height($modal.parents('.stripe').height() - (settings.theme.margin * 6));
-          }
-
           $content
             .find('.name')
             .text(project.name)
@@ -298,6 +293,7 @@
           $content.find('.description')
             .html(project.description.replace(/\\n\\n/g, '</p><p>'));
           $content
+            .removeClass('white-label')
             .find('img')
             .attr('src', (project.image.indexOf('http') !== 0 ? (settings.theme.images + '/projects/' + project.image + '.jpg') : project.image))
             .attr('alt', project.name);
@@ -315,14 +311,18 @@
               .text(project.client)
               .show();
             $content
-              .find('img')
-              .attr('src', settings.theme.logo.replace('s=36', 's=607'));
+              .addClass('white-label');
           }
           else {
             $content
               .find('.name-anon, .client-anon')
               .text('')
               .hide();
+          }
+
+          if ($(window).width() > settings.theme.breakpoints.md) {
+            $content
+              .height(  !$content.hasClass('white-label') ? $modal.parents('.stripe').height() - (settings.theme.margin * 6) : 'auto');
           }
 
           $modal.fadeIn(settings.theme.animation.speed);
