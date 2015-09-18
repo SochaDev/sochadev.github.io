@@ -53,7 +53,7 @@
         <div class="columns-12">
           <h2 id="open-source">Open Source</h2>
           <p>Like this site? That's cool, <a href="https://github.com/SochaDev/sochadev.github.io" target="_blank" class="blue">you can have it for free!</a> Its a custom
-            <span class="tooltip orange" data-tip="Jekyll is an awesome way to build entire sites and data schema using only plain text.">Jekyll</span> theme <a href="/team" class="green">we</a> built that has lots of great
+            <span class="tooltip orange" data-tip="Jekyll is an awesome way to build sites and data schema using only plain text.">Jekyll</span> theme <a href="/team" class="green">we</a> built that has lots of great
             <span class="tooltip red" data-tip="A JavaScript task runner built on the power of Node.js streams - compile SASS, make sprites, all kinds of neat stuff.">Gulp</span> and
             <span class="tooltip purple" data-tip="...because writing tons of raw CSS is not really fun or quick.">SASS</span> stuff baked in &mdash; all hosted courtesy of
             <span class="tooltip blue" data-tip="Hooray, free static hosting complete with CDN!">GitHub Pages</span>.</p>
@@ -97,7 +97,7 @@
       }
     },
     projects: [ {% comment %}Not super-happy with Liquid's json filter...{% endcomment %}
-      {{ site.data.projects | join: ',' | replace: '=>', ':' | replace: 'client-project', 'https://avatars2.githubusercontent.com/u/1489168?v=3&s=507' }}
+      {{ site.data.projects | join: ',' | replace: '=>', ':' }}
     ]
   };
   </script>

@@ -277,28 +277,53 @@
 
           if ($(window).width() > settings.theme.breakpoints.md) {
             $content
-              .height($modal.parents('.stripe').height() - (settings.theme.margin * 5));
+              .height($modal.parents('.stripe').height() - (settings.theme.margin * 6));
           }
 
-          $content.find('.name')
+          $content
+            .find('.name')
             .text(project.name)
-            .attr('href', project.url);
+            .attr('href', project.url)
+            .show();
           $content
             .find('.client')
             .text(project.client)
-            .attr('href', project.clientUrl);
+            .attr('href', project.clientUrl)
+            .show();
           $content
             .find('.partner')
             .toggle(project.client !== project.name);
           $content.find('.description')
-            .html(project.description);
+            .html(project.description.replace("\\n\\n", '</p><p>'));
           $content
             .find('img')
-            .attr('src', (project.image.indexOf('http') < 0 ? (settings.theme.images + '/projects/' + project.image + '.jpg') : project.image))
+            .attr('src', (project.image.indexOf('http') !== 0 ? (settings.theme.images + '/projects/' + project.image + '.jpg') : project.image))
             .attr('alt', project.name);
 
-          $modal.fadeIn(settings.theme.animation.speed);
+          if (project.whiteLabel) {
+            $content
+              .find('.name, .client')
+              .hide();
+            $content
+              .find('.name-anon')
+              .text(project.name)
+              .show();
+            $content
+              .find('.client-anon')
+              .text(project.client)
+              .show();
+            $content
+              .find('img')
+              .attr('src', settings.theme.logo.replace('s=36', 's=607'));
+          }
+          else {
+            $content
+              .find('.name-anon, .client-anon')
+              .text('')
+              .hide();
+          }
 
+          $modal.fadeIn(settings.theme.animation.speed);
           settings.theme.top = ($modal.offset().top - theme.headerScrollOffset);
           theme.scrollMain(context, settings);
         });

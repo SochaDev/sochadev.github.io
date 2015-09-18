@@ -36,7 +36,10 @@ ul.projects {
     &:hover {
       @include grayscale(0);
     }
-
+    &.socha-dev-white-label {
+      background: url('https://avatars2.githubusercontent.com/u/1489168?v=3&s=180') no-repeat 0 0; }
+    &.science {
+      @include sprite($aaas-science); }
     &.discovery-education {
       @include sprite($discovery-education); }
     &.repequity {

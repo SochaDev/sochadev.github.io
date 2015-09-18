@@ -1,54 +1,28 @@
 # This file is converted to JSON in the main Liquid layout template footer for
 # consumption by the jQuery modal handler.
 
-- name: Project
-  client: Client
-  clientUrl: http://sochadev.com
-  url: http://sochadev.com
-  image: client-project
-  description: Here are the project details.
-
-- name: Project
-  client: Client
-  clientUrl: http://sochadev.com
-  url: http://sochadev.com
-  image: client-project
-  description: Here are the project details.
-
-- name: Project
-  client: Client
-  clientUrl: http://sochadev.com
-  url: http://sochadev.com
-  image: client-project
-  description: Here are the project details.
-
-- name: Project
-  client: Client
-  clientUrl: http://sochadev.com
-  url: http://sochadev.com
-  image: client-project
-  description: Here are the project details.
-
-- name: Project
-  client: Client
-  clientUrl: http://sochadev.com
-  url: http://sochadev.com
-  image: client-project
-  description: Here are the project details.
-
-- name: Project
-  client: Client
-  clientUrl: http://sochadev.com
-  url: http://sochadev.com
-  image: client-project
-  description: Here are the project details.
+- name: RESTful API using server-side JavaScript
+  whiteLabel: true
+  client: a cutting-edge gamification agency
+  clientUrl: \#
+  url: \#
+  image: \#
+  description: When our partner's client (a Fortune 5 you've definitely heard of) approached them, our partner turned to Socha Dev to develop a RESTful API using Node.js, Express and MongoDB to support the gamified LMS they'd prototyped.\n\nWe helped iterate business requirements, then developed schema and API endpoints to realize our partner's unique vision of what an LMS could be.
 
 - name: Discovery Education
   client: Discovery Education
   clientUrl: http://discoveryeducation.com
   url: http://discoveryeducation.com
   image: discovery-communications
-  description: When Discovery Education decided to make the switch to Drupal for a whole slew of sites, Socha Dev was there to help. Since the start of that project, Socha Dev has been engaged in advising, designing, porting, and developing a variety of properties for Discovery, as well as managing all staging and deployment on the Acquia platform.
+  description: When Discovery Education decided to make the switch to Drupal for a whole slew of sites, Socha Dev was there to help. Since the start of the project, Socha Dev has been engaged in advising, designing, porting, and developing a variety of properties for Discovery, as well as managing all staging and deployment on the Acquia platform.\n\nToday, we continue iterating a single multisite instance of Drupal - which handles 30+ important web properties for Discovery Education. More and more, we are also developing custom apps using Phalcon and Slim to support a number of scholarship and education opportunities that Discovery Education provides in conjunction with their corporate partners.
+
+- name: Project
+  whiteLabel: true
+  client: Client
+  clientUrl: http://sochadev.com
+  url: http://sochadev.com
+  image: \#
+  description: Here are the project details.
 
 - name: RepEquity
   client: RepEquity
@@ -57,12 +31,42 @@
   image: repequity
   description: RepEquity is one of D.C.'s premier digital strategy & online brand management firms. When they need expert consulting on an architecture, coding help on a build, or extra brain power on a sticky problem, they call Socha Dev first.
 
+- name: Science
+  client: AAAS
+  clientUrl: http://www.aaas.org
+  url: http://www.sciencemag.org
+  image: aaas-science
+  description: When AAAS (publisher of the world-renowned Science magazine) found that their previous Drupal vendor was not keeping up, they turned to Socha Dev for some much-needed support and expertise. Working closely with AAAS' internal web dev team, we have developed many new Drupal modules and theme elements to support their initiatives, and provided as-needed maintenance help on several legacy systems.\n\nSocha Dev has turned AAAS' Science web property in to the robust, unified publishing platform that an organization of their caliber requires, all tailored to accommodate their unique needs.
+
+- name: Project
+  whiteLabel: true
+  client: Client
+  clientUrl: http://sochadev.com
+  url: http://sochadev.com
+  image: \#
+  description: Here are the project details.
+
 - name: FCC.gov
   client: Seabourne
   clientUrl: http://www.seabourneinc.com/case-studies-fcc
   url: https://www.fcc.gov
   image: seabourne-fcc
   description: Working with Seabourne, Socha Dev helped to lead the porting of the FCC's site into Drupal. This build involved a wide variety of custom Drupal modules to integrate with backend FCC systems as well as some tricky thinking to work within the guidelines and restrictions of a high-security, high-traffic federal agency web site. Socha Dev also helped with prototyping and development of the FCC's slick customizable dashboard application, MyFCC.
+
+- name: The Cook Political Report
+  client: IWS
+  clientUrl: http://www.workwithiws.com
+  url: http://cookpolitical.com
+  image: home-front-communications-cook-political-report
+  description: While not widely known to the masses, The Cook Political Report has been described as "The bible of the political community." Tracking every race and candidate for House, Senate, President, and Governor in the United States, the site is a data monster.\n\nWhen the Cook organization hired Home Front Communications to completely restructure and rebuild their web presence, Socha Dev was there to play a lead role in all aspects of architecture and development. The site handles subscription payments, MailChimp integration, and many other custom data-driven features.
+
+- name: Drupal and AngularJS hybrid site
+  whiteLabel: true
+  client: a leading web design agency in DC
+  clientUrl: \#
+  url: \#
+  image: \#
+  description: Our partner landed a big one and needed Socha Dev's Drupal expertise and front-end chops to help them deliver a beautiful end-to-end build to their new client. They gave us their strategy docs, wireframes and designs; we took it from there.\n\nAfter we'd completed the data migration from SharePoint, we then developed a very flexible presentation layer system built using our own "ngApp" contrib module and a new AngularJS app, fully integrated in to Drupal's standard content management tools.
 
 - name: The National Press Club
   client: Home Front Communications
@@ -71,16 +75,17 @@
   image: home-front-communications-national-press-club
   description: Working with Home Front Communications, Socha Dev was the lead developer on the National Press Club's port to Drupal, including work on custom modules, CSPAN integration, and a variety of custom calendar / event widgets.
 
-- name: The Cook Political Report
-  client: IWS
-  clientUrl: http://www.workwithiws.com
-  url: http://cookpolitical.com
-  image: home-front-communications-cook-political-report
-  description: While not widely known to the masses, The Cook Political Report has been described as "The bible of the political community." Tracking every race and candidate for House, Senate, President, and Governor in the United States, the site is a data monster. When the Cook organization hired Home Front Communications to completely restructure and rebuild their web presence, Socha Dev was there to play a lead role in all aspects of architecture and development. The site handles subscription payments, MailChimp integration, and many other custom data-driven features.
+- name: Drupal installation profile
+  whiteLabel: true
+  client: an interactive environment design firm
+  clientUrl: \#
+  url: \#
+  image: \#
+  description: One of our more fun "development for the real world" projects - our partner provides physical environment design that makes extensive use of giant flatscreen displays to loop corporate messaging and/or present passers-by with interactive experiences.\n\nThey needed some help turning their homegrown Drupal modules in to a full-fledged installation profile and guidance on how to distribute the profile on drupal.org. We used our partner's existing Pantheon subscription to present and iterate our work, making adjustments and incorporating their feedback along the way.
 
 - name: Channel Democracy
   client: IWS
   clientUrl: http://www.workwithiws.com
   url: http://channeldemocracy.com
   image: iws-channel-democracy
-  description: IWS is a web and marketing shop with a nation-wide customer base of Fortune 500 companies, government agencies, and advocacy organizations. They needed architecture and development help with Channel Democracy, a white-label online advocacy system. Socha Dev stepped up to the plate and hit a homer.
+  description: IWS is a web and marketing shop with a nation-wide customer base of Fortune 500 companies, government agencies, and advocacy organizations.\n\nThey needed architecture and development help with Channel Democracy, a white-label online advocacy system. Socha Dev stepped up to the plate and hit a homer.

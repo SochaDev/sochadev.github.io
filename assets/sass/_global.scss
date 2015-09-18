@@ -143,10 +143,6 @@
 
       body.front & {
         padding-bottom: 0;
-
-        @include media(">md") {
-          padding-top: ($mrg * 3);
-        }
       }
     }
     &.last {

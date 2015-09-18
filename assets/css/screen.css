@@ -2381,9 +2381,6 @@ body {
       margin-top: 0; }
     body.front .stripe.gray {
       padding-bottom: 0; }
-      @media (min-width: 769px) {
-        body.front .stripe.gray {
-          padding-top: 36px; } }
   .stripe.last {
     border-top: solid 1px #666;
     padding-bottom: 0; }
@@ -2802,9 +2799,16 @@ ul.projects {
       filter: grayscale(0);
       filter: gray;
       -webkit-filter: grayscale(0); }
-    ul.projects a.discovery-education {
+    ul.projects a.socha-dev-white-label {
+      background: url("https://avatars2.githubusercontent.com/u/1489168?v=3&s=180") no-repeat 0 0; }
+    ul.projects a.science {
       background-image: url("../images/sprites.jpg");
       background-position: 0px -214px;
+      width: 180px;
+      height: 135px; }
+    ul.projects a.discovery-education {
+      background-image: url("../images/sprites.jpg");
+      background-position: -180px -214px;
       width: 180px;
       height: 135px; }
     ul.projects a.repequity {
@@ -2814,22 +2818,22 @@ ul.projects {
       height: 152px; }
     ul.projects a.fcc-gov {
       background-image: url("../images/sprites.jpg");
-      background-position: 0px -349px;
+      background-position: -180px -349px;
       width: 180px;
       height: 135px; }
     ul.projects a.the-national-press-club {
       background-image: url("../images/sprites.jpg");
-      background-position: -403px 0px;
+      background-position: -403px -135px;
       width: 180px;
       height: 135px; }
     ul.projects a.the-cook-political-report {
       background-image: url("../images/sprites.jpg");
-      background-position: -180px -214px;
+      background-position: -403px 0px;
       width: 180px;
       height: 135px; }
     ul.projects a.channel-democracy {
       background-image: url("../images/sprites.jpg");
-      background-position: -403px -135px;
+      background-position: 0px -349px;
       width: 180px;
       height: 135px; }
 
