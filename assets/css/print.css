@@ -17,4 +17,30 @@ p {
   margin-bottom: 24px;
   margin-top: 0; }
 
+a {
+  color: #41a7bf;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+hr {
+  width: 100%; }
+  hr::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+img.logo {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  display: block;
+  float: right;
+  margin: 0 0 24px 24px; }
+
 /*# sourceMappingURL=print.css.map */

@@ -2,10 +2,12 @@
 baseurl: http://sochadev.github.io
 title: Socha Dev
 tagline: development overflow, triage and problem solving
-logoUrl: https://avatars2.githubusercontent.com/u/1489168?v=3&s=36
 description: Socha Dev is a white-label web and app development shop built to help your team succeed. We specialize in overflow, triage and problem solving services.
 author: Socha Dev
-rest_api: http://wintermute.sochadev.com/api-www
+logoUrl: https://avatars2.githubusercontent.com/u/1489168?v=3&s=36
+githubUrl: https://github.com/SochaDev
+drupalUrl: https://www.drupal.org/node/2439991
+restApiUrl: http://wintermute.sochadev.com/api-www
 ga_code: UA-45204620-1
 defaults:
   -
