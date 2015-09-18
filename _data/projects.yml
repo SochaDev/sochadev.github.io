@@ -16,6 +16,13 @@
   image: discovery-communications
   description: When Discovery Education decided to make the switch to Drupal for a whole slew of sites, Socha Dev was there to help. Since the start of the project, Socha Dev has been engaged in advising, designing, porting, and developing a variety of properties for Discovery, as well as managing all staging and deployment on the Acquia platform.\n\nToday, we continue iterating a single multisite instance of Drupal - which handles 30+ important web properties for Discovery Education. More and more, we are also developing custom apps using Phalcon and Slim to support a number of scholarship and education opportunities that Discovery Education provides in conjunction with their corporate partners.
 
+- name: RepEquity
+  client: RepEquity
+  clientUrl: http://www.repequity.com
+  url: http://www.repequity.com
+  image: repequity
+  description: RepEquity is one of D.C.'s premier digital strategy & online brand management firms. When they need expert consulting on an architecture, coding help on a build, or extra brain power on a sticky problem, they call Socha Dev first.
+
 - name: Drupal overflow
   whiteLabel: true
   client: a strategy and design firm in DC
@@ -23,13 +30,6 @@
   url: \#
   image: \#
   description: Our partner needed a reliable go-to dev shop to deal with some of their legacy (and current) Drupal projects; Socha Dev stepped in to help out and take some of the burden off of their internal dev team.
-
-- name: RepEquity
-  client: RepEquity
-  clientUrl: http://www.repequity.com
-  url: http://www.repequity.com
-  image: repequity
-  description: RepEquity is one of D.C.'s premier digital strategy & online brand management firms. When they need expert consulting on an architecture, coding help on a build, or extra brain power on a sticky problem, they call Socha Dev first.
 
 - name: Science
   client: AAAS
