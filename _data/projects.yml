@@ -62,11 +62,11 @@
 
 - name: Drupal overflow
   whiteLabel: true
-  client: a DC strategy firm
+  client: a DC strategy and design firm
   clientUrl: \#
   url: \#
   image: \#
-  description: Our partner needed a reliable go-to dev shop to deal with some of their legacy (and current) Drupal projects; Socha Dev stepped in to help out and take some of the burden off of their internal dev team &mdash; its a pretty natural relationship, as a few of us have also worked there.
+  description: Our partner needed a reliable go-to dev shop to deal with some of their legacy (and current) Drupal projects; Socha Dev stepped in to help out and take some of the burden off of their internal dev team.
 
 - name: The National Press Club
   client: Home Front Communications

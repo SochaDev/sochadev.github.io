@@ -293,10 +293,19 @@
           $content.find('.description')
             .html(project.description.replace(/\\n\\n/g, '</p><p>'));
           $content
-            .removeClass('white-label')
-            .find('img')
-            .attr('src', (project.image.indexOf('http') !== 0 ? (settings.theme.images + '/projects/' + project.image + '.jpg') : project.image))
-            .attr('alt', project.name);
+            .removeClass('white-label');
+
+          if (project.image) {
+            $content
+              .find('img')
+              .attr('src', (project.image.indexOf('http') !== 0 ? (settings.theme.images + '/projects/' + project.image + '.jpg') : project.image))
+              .attr('alt', project.name);
+          }
+          else {
+            $content
+              .find('img')
+              .attr('src', '');
+          }
 
           if (project.whiteLabel) {
             $content

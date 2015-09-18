@@ -82,7 +82,7 @@
       animation: { speed: 200 }
     }{% if page.url == '/' %},
     projects: [ {% comment %}Not super-happy with Liquid's json filter...{% endcomment %}
-      {{ site.data.projects | join: ',' | replace: '=>', ':' }}
+      {{ site.data.projects | join: ',' | replace: '=>', ':' | replace: '\\#', '' }}
     ]{% endif %}
   };
   </script>
