@@ -68,7 +68,7 @@
         $('p a[href*=#]', context)
           .click(function(evt) {
             evt.preventDefault();
-            settings.theme.top = ($(this.hash).offset().top - theme.headerScrollOffset);
+            settings.theme.top = ($(this.hash).offset().top - theme.headerScrollOffset + 1);
             theme.scrollMain(context, settings);
           });
       }
@@ -79,7 +79,6 @@
         .click(function(evt) {
           evt.preventDefault();
 
-
           var $self = $(this);
           var message = $self.attr('data-tip');
           if (!message) {
@@ -88,8 +87,11 @@
 
           var $tip = $('.tip', $self);
           if (!$tip.length) {
+
             $tip = $(document.createElement('div'))
               .addClass('tip')
+              //.addClass($self.attr('class') + ' bg')
+              //.removeClass('tooltip')
               .html(message.replace(/\\n/g, '<br>'))
               .hide();
             $self

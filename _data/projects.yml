@@ -36,7 +36,7 @@
   clientUrl: http://www.aaas.org
   url: http://www.sciencemag.org
   image: aaas-science
-  description: When AAAS (publisher of the world-renowned Science magazine) found that their previous Drupal vendor was not keeping up, they turned to Socha Dev for some much-needed support and expertise.\n\nWorking closely with AAAS' internal web dev team, we have developed many new Drupal modules and theme elements to support their initiatives, and provided as-needed maintenance help on several legacy systems.\n\nSocha Dev has turned AAAS' Science web property in to the robust, unified publishing platform that an organization of their caliber requires &mdash; all tailored to accommodate their unique needs.
+  description: When AAAS (publisher of the world-renowned Science magazine) found that their previous Drupal vendor was not keeping up, they turned to Socha Dev for some much-needed support and expertise.\n\nWorking closely with AAAS' internal web dev team, we have developed many new Drupal modules and theme elements to support their initiatives, and have provided as-needed maintenance help on several legacy systems.\n\nSocha Dev has turned AAAS' Science web property in to the robust, unified publishing platform that an organization of their caliber requires &mdash; all tailored to accommodate their unique needs.
 
 - name: Meteor dashboard reporting app
   whiteLabel: true

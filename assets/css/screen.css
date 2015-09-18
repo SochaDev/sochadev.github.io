@@ -2612,12 +2612,88 @@ a {
   a:focus {
     outline: none; }
 
-a.tooltip, span.tooltip {
+a.blue, span.blue, span.tooltip .blue.tip {
+  color: #8dcad9; }
+
+a.blue.bg, span.blue.bg, span.tooltip .blue.bg.tip {
+  background: #c7e5ec;
+  color: #2b2b2b; }
+  a.blue.bg:hover, span.blue.bg:hover, span.tooltip .blue.bg.tip:hover {
+    color: #2b2b2b; }
+
+a.blue:hover, span.blue:hover, span.tooltip .blue.tip:hover {
+  color: #c7e5ec; }
+
+a.red, span.red, span.tooltip .red.tip {
+  color: #f56176; }
+
+a.red.bg, span.red.bg, span.tooltip .red.bg.tip {
+  background: #faa9b4;
+  color: #2b2b2b; }
+  a.red.bg:hover, span.red.bg:hover, span.tooltip .red.bg.tip:hover {
+    color: #2b2b2b; }
+
+a.red:hover, span.red:hover, span.tooltip .red.tip:hover {
+  color: #faa9b4; }
+
+a.green, span.green, span.tooltip .green.tip {
+  color: #bbd16e; }
+
+a.green.bg, span.green.bg, span.tooltip .green.bg.tip {
+  background: #dfeabb;
+  color: #2b2b2b; }
+  a.green.bg:hover, span.green.bg:hover, span.tooltip .green.bg.tip:hover {
+    color: #2b2b2b; }
+
+a.green:hover, span.green:hover, span.tooltip .green.tip:hover {
+  color: #dfeabb; }
+
+a.gray, span.gray, span.tooltip .gray.tip {
+  color: #e4e4e4; }
+
+a.gray.bg, span.gray.bg, span.tooltip .gray.bg.tip {
+  background: white;
+  color: #2b2b2b; }
+  a.gray.bg:hover, span.gray.bg:hover, span.tooltip .gray.bg.tip:hover {
+    color: #2b2b2b; }
+
+a.gray:hover, span.gray:hover, span.tooltip .gray.tip:hover {
+  color: white; }
+
+a.orange, span.orange, span.tooltip .orange.tip {
+  color: #ffb366; }
+
+a.orange.bg, span.orange.bg, span.tooltip .orange.bg.tip {
+  background: #ffcc99;
+  color: #2b2b2b; }
+  a.orange.bg:hover, span.orange.bg:hover, span.tooltip .orange.bg.tip:hover {
+    color: #2b2b2b; }
+
+a.orange:hover, span.orange:hover, span.tooltip .orange.tip:hover {
+  color: #ffcc99; }
+
+a.purple, span.purple, span.tooltip .purple.tip {
+  color: #a491c2; }
+
+a.purple.bg, span.purple.bg, span.tooltip .purple.bg.tip {
+  background: #cdc2de;
+  color: #2b2b2b; }
+  a.purple.bg:hover, span.purple.bg:hover, span.tooltip .purple.bg.tip:hover {
+    color: #2b2b2b; }
+
+a.purple:hover, span.purple:hover, span.tooltip .purple.tip:hover {
+  color: #cdc2de; }
+
+.breadcrumb {
+  margin-top: 12px;
+  text-transform: lowercase; }
+
+span.tooltip {
   border-bottom: dotted 2px #666;
   cursor: pointer;
   position: relative;
   white-space: nowrap; }
-  a.tooltip .tip, span.tooltip .tip {
+  span.tooltip .tip {
     white-space: normal;
     position: absolute;
     bottom: 0;
@@ -2639,46 +2715,6 @@ a.tooltip, span.tooltip {
     color: #333;
     padding: 12px;
     font-size: 13px; }
-
-a.blue, span.blue {
-  color: #8dcad9; }
-
-a.blue:hover, span.blue:hover {
-  color: #c7e5ec; }
-
-a.red, span.red {
-  color: #f56176; }
-
-a.red:hover, span.red:hover {
-  color: #f891a0; }
-
-a.green, span.green {
-  color: #bbd16e; }
-
-a.green:hover, span.green:hover {
-  color: #dfeabb; }
-
-a.gray, span.gray {
-  color: #e4e4e4; }
-
-a.gray:hover, span.gray:hover {
-  color: white; }
-
-a.orange, span.orange {
-  color: #ffb366; }
-
-a.orange:hover, span.orange:hover {
-  color: #ffcc99; }
-
-a.purple, span.purple {
-  color: #a491c2; }
-
-a.purple:hover, span.purple:hover {
-  color: #cdc2de; }
-
-.breadcrumb {
-  margin-top: 12px;
-  text-transform: lowercase; }
 
 .messages {
   border-top-left-radius: 3px;
@@ -2802,7 +2838,11 @@ ul.projects {
       filter: gray;
       -webkit-filter: grayscale(0); }
     ul.projects a.socha-dev-white-label {
-      background: url("https://avatars2.githubusercontent.com/u/1489168?v=3&s=180") no-repeat 0 0; }
+      background: url(https://avatars2.githubusercontent.com/u/1489168?v=3&s=180) no-repeat 0 0; }
+      @media (max-width: 768px) {
+        ul.projects a.socha-dev-white-label {
+          background: url(https://avatars2.githubusercontent.com/u/1489168?v=3&s=170) no-repeat 0 0;
+          bacgkround-size: 100% auto; } }
     ul.projects a.science {
       background-image: url("../images/sprites.jpg");
       background-position: 0px -214px;

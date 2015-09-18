@@ -95,47 +95,59 @@
 
   // Text highlighting.
   %text-highlight {
-    &.tooltip {
-      border-bottom: dotted 2px $gray;
-      cursor: pointer;
-      position: relative;
-      white-space: nowrap;
-
-      .tip {
-        white-space: normal;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        z-index: 1;
-        margin-bottom: $mrg;
-        margin-left: 0;
-        width: ($mrg * 20);
-        @include border-radius($border-radius * 2);
-        background: $white;
-        border: solid $border-radius $gray-darker;
-        color: $gray-dark;
-        padding: $mrg;
-        font-size: $base - 3;
-      }
-    }
-
     &.blue { color: lighten($blue, 20%); }
-    &.blue:hover { color: lighten($blue, 35%); }
+    $blue-lighter: lighten($blue, 35%);
+    &.blue.bg {
+      background: $blue-lighter;
+      color: $gray-darker;
+      &:hover { color: $gray-darker; }
+    }
+    &.blue:hover { color: $blue-lighter; }
 
     &.red { color: lighten($red, 30%); }
-    &.red:hover { color: lighten($red, 40%); }
+    $red-lighter: lighten($red, 45%);
+    &.red.bg {
+      background: $red-lighter;
+      color: $gray-darker;
+      &:hover { color: $gray-darker; }
+    }
+    &.red:hover { color: $red-lighter; }
 
     &.green { color: lighten($green, 30%); }
-    &.green:hover { color: lighten($green, 50%); }
+    $green-lighter: lighten($green, 50%);
+    &.green.bg {
+      background: $green-lighter;
+      color: $gray-darker;
+      &:hover { color: $gray-darker; }
+    }
+    &.green:hover { color: $green-lighter; }
 
     &.gray { color: $gray-lighter; }
-    &.gray:hover { color: lighten($gray-lighter, 100%); }
+    $gray-lightest: lighten($gray-lighter, 100%);
+    &.gray.bg {
+      background: $gray-lightest;
+      color: $gray-darker;
+      &:hover { color: $gray-darker; }
+    }
+    &.gray:hover { color: $gray-lightest; }
 
     &.orange { color: $orange; }
-    &.orange:hover { color: lighten($orange, 10%); }
+    $orange-lighter: lighten($orange, 10%);
+    &.orange.bg {
+      background: $orange-lighter;
+      color: $gray-darker;
+      &:hover { color: $gray-darker; }
+    }
+    &.orange:hover { color: $orange-lighter; }
 
     &.purple { color: lighten($purple, 20%); }
-    &.purple:hover { color: lighten($purple, 35%); }
+    $purple-lighter: lighten($purple, 35%);
+    &.purple.bg {
+      background: $purple-lighter;
+      color: $gray-darker;
+      &:hover { color: $gray-darker; }
+    }
+    &.purple:hover { color: $purple-lighter; }
   }
 
   a, span {
@@ -144,4 +156,29 @@
   .breadcrumb {
     margin-top: $mrg;
     text-transform: lowercase;
+  }
+
+  span.tooltip {
+    border-bottom: dotted 2px $gray;
+    cursor: pointer;
+    position: relative;
+    white-space: nowrap;
+
+    .tip {
+      @extend %text-highlight;
+      white-space: normal;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      margin-bottom: $mrg;
+      margin-left: 0;
+      width: ($mrg * 20);
+      @include border-radius($border-radius * 2);
+      background: $white;
+      border: solid $border-radius $gray-darker;
+      color: $gray-dark;
+      padding: $mrg;
+      font-size: $base - 3;
+    }
   }
