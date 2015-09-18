@@ -76,10 +76,7 @@ tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP,
     <div class="alpha"><span class="sprite a-team"></span></div>
     <div class="beta">
       <h2 id="about">Our team</h2>
-      <p><a href="/team" class="purple">Our team members</a> live and work happily
-      all over the US &mdash; we use some neat apps to keep us connected to each
-      other and to our clients. Socha Dev's <a href="/workflow" class="green">workflow</a> is
-      designed to incorporate our clients' feedback throughout a project's life cycle.</p>
+      <p><a href="/team" class="purple">Our team members</a> live and work happily all over the US &mdash; we use some neat apps to keep us connected to each other and to our clients. <a href="/workflow" class="green">Our workflow</a> is designed to incorporate our clients' feedback and our great ideas throughout a project's life cycle.</p>
     </div>
   </div>
   <div class="container">

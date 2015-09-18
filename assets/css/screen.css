@@ -2271,8 +2271,8 @@ body {
 
 @media (min-width: 769px) {
   .stripe.blue, .stripe.red, .stripe.green {
-    padding-bottom: 36px;
-    padding-top: 36px; } }
+    padding-bottom: 24px;
+    padding-top: 24px; } }
 
 .stripe {
   padding: 24px;

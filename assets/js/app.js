@@ -283,9 +283,13 @@
           $content.find('.name')
             .text(project.name)
             .attr('href', project.url);
-          $content.find('.client')
+          $content
+            .find('.client')
             .text(project.client)
             .attr('href', project.clientUrl);
+          $content
+            .find('.partner')
+            .toggle(project.client !== project.name);
           $content.find('.description')
             .html(project.description);
           $content
