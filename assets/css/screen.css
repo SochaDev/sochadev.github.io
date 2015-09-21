@@ -2485,7 +2485,9 @@ img.logo {
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
   display: block;
-  text-transform: lowercase; }
+  text-transform: lowercase;
+  width: 36px;
+  height: 36px; }
   h1 img.logo {
     float: right; }
 
@@ -2793,20 +2795,22 @@ ul.projects {
     width: 23.23176%;
     background: #fff;
     margin-bottom: 24px;
-    border: solid 1px #2b2b2b; }
+    border: solid 1px #2b2b2b;
+    overflow: hidden; }
     ul.projects li:last-child {
       margin-right: 0; }
     ul.projects li:nth-child(4n) {
       margin-right: 0; }
     ul.projects li:nth-child(4n+1) {
       clear: left; }
-    @media (max-width: 480px) {
+    @media (max-width: 490px) {
       ul.projects li {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 48.82117%;
-        margin-bottom: 12px; }
+        margin-bottom: 12px;
+        min-width: 130px; }
         ul.projects li:last-child {
           margin-right: 0; }
         ul.projects li:nth-child(2n) {
@@ -2840,11 +2844,12 @@ ul.projects {
       filter: gray;
       -webkit-filter: grayscale(0); }
     ul.projects a.socha-dev-white-label {
-      background: url(https://avatars2.githubusercontent.com/u/1489168?v=3&s=180) no-repeat 0 0; }
-      @media (max-width: 768px) {
-        ul.projects a.socha-dev-white-label {
-          background: url(https://avatars2.githubusercontent.com/u/1489168?v=3&s=170) no-repeat 0 0;
-          bacgkround-size: 100% auto; } }
+      background: url("../images/socha-dev.png") no-repeat 0 0;
+      background-size: cover;
+      /*      @include media("<=md") {
+        background: url($logo-url=186) no-repeat 0 0;
+        bacgkround-size: 100% auto;
+      }*/ }
     ul.projects a.science {
       background-image: url("../images/sprites.jpg");
       background-position: 0px -214px;

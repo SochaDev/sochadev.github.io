@@ -10,11 +10,13 @@ ul.projects {
     background: $white;
     margin-bottom: $dmrg;
     border: solid 1px $gray-darker;
+    overflow: hidden;
 
     @include media("<=sm") {
       @include span-columns(6);
       @include omega(2n);
       margin-bottom: $mrg;
+      min-width: 130px;
 
       &:last-child { margin-bottom: $dmrg; }
     }
@@ -37,11 +39,12 @@ ul.projects {
       @include grayscale(0);
     }
     &.socha-dev-white-label {
-      background: url($logo-url=180) no-repeat 0 0;
-      @include media("<=md") {
-        background: url($logo-url=170) no-repeat 0 0;
+      background: url('../images/socha-dev.png') no-repeat 0 0;
+      background-size: cover;
+/*      @include media("<=md") {
+        background: url($logo-url=186) no-repeat 0 0;
         bacgkround-size: 100% auto;
-      }
+      }*/
     }
     &.science {
       @include sprite($aaas-science); }

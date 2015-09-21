@@ -255,6 +255,8 @@
     @include border-radius();
     display: block;
     text-transform: lowercase;
+    width: 36px;
+    height: 36px;
 
     h1 & { float: right; }
   }

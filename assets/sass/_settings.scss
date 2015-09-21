@@ -1,7 +1,7 @@
 // sass settings and variables
 
 // breakpoints map for include-media.
-$breakpoints: (sm: 480px, md: 768px, lg: 1024px);
+$breakpoints: (sm: 490px, md: 768px, lg: 1024px);
 
 // neat grid settings
 $grid-columns: 12 !global;
@@ -35,5 +35,4 @@ $text: $gray-lighter;
 $bg: $gray-darker; //$gray-darker;
 
 // flourishes
-$logo-url: 'https://avatars2.githubusercontent.com/u/1489168?v=3&s'; // Append =# for desired size.
 $border-radius: 3px;
