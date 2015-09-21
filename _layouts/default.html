@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
-  {% include meta.html %}{% include favicon.html %}  <link rel="canonical" href="{{ site.baseurl }}{{ page.url }}" />
-  <link rel="stylesheet" href="/assets/css/screen.css" type="text/css" />
+  {% include meta.html %}{% include favicon.html %}  <link rel="canonical" href="{{ site.baseurl }}{{ page.url }}" />{% if site.prodBuild == 1 %}
+  <link rel="stylesheet" href="/assets/css/production.css" type="text/css" />{% else %}
+  <link rel="stylesheet" href="/assets/css/screen.css" type="text/css" />{% endif %}
   <!--
        _______.  ______     ______  __    __       ___          _______   ___________    ____
       /       | /  __  \   /      ||  |  |  |     /   \        |       \ |   ____\   \  /   /
@@ -85,8 +86,9 @@
       {{ site.data.projects | join: ',' | replace: '=>', ':' | replace: '\\#', '' }}
     ]{% endif %}
   };
-  </script>
-  <script type="text/javascript" src="/assets/js/app.js"></script>
+  </script>{% if site.prodBuild == 1 %}
+  <script type="text/javascript" src="/assets/js/production.js"></script>{% else %}
+  <script type="text/javascript" src="/assets/js/app.js"></script>{% endif %}
   <script type="text/javascript">
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

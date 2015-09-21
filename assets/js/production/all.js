@@ -1,2 +1,0 @@
-!function(t){"use strict";var a={attach:function(t,a){}},c=t("body");a.attach(c,settings)}(jQuery);
-!function(t){"use strict";var a={attach:function(t,a){}},c=t("body");a.attach(c,settings)}(jQuery),!function(t){"use strict";var a={attach:function(t,a){}},c=t("body");a.attach(c,settings)}(jQuery),!function(t){"use strict";var a={attach:function(t,a){}},c=t("body");a.attach(c,settings)}(jQuery),!function(t){"use strict";var a={attach:function(t,a){}},c=t("body");a.attach(c,settings)}(jQuery);

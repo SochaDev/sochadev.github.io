@@ -70,7 +70,7 @@ gulp.task('production-css', ['css'], function () {
     .pipe(uglifycss({
       'max-line-len': 80
     }))
-    .pipe(concat('all.css'))
+    .pipe(concat('production.css'))
     .pipe(gulp.dest('./assets/css/production'));
 });
 
@@ -78,7 +78,7 @@ gulp.task('production-js', function () {
   gulp
     .src('./assets/js/**/*.js')
     .pipe(uglify())
-    .pipe(concat('all.js'))
+    .pipe(concat('production.js'))
     .pipe(gulp.dest('./assets/js/production'));
 });
 

@@ -9,6 +9,7 @@ githubUrl: https://github.com/SochaDev
 drupalUrl: https://www.drupal.org/node/2439991
 restApiUrl: http://wintermute.sochadev.com/api-www
 ga_code: UA-45204620-1
+prodBuild: 1
 defaults:
   -
     scope:

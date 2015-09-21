@@ -22,6 +22,7 @@
 
 // overall site variables and settings.
 @import 'settings';
+@import 'normalize';
 
 // font-awesome v4.4.0 - icons and utility classes: http://fortawesome.github.io/Font-Awesome/examples/
 // we load this after settings so it can use our $base for base font-size variable.

@@ -3,6 +3,7 @@
 @import 'vendor/bourbon/bourbon';
 @import 'settings';
 @import 'mixins';
+@import 'normalize';
 
 body {
   font-size: $base;
