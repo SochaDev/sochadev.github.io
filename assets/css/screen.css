@@ -2943,7 +2943,7 @@ hr {
   border: solid 2px #333;
   clear: both;
   float: left;
-  height: 1px;
+  height: 0px;
   margin: 24px 0;
   width: 100%; }
 
