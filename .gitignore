@@ -2,6 +2,7 @@
 .DS_Store
 nbproject
 node_modules
+npm-debug.log
 
 # Jekyll stuff.
 _site
