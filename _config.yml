@@ -7,9 +7,9 @@ author: Socha Dev
 logoUrl: /assets/images/socha-dev.png
 githubUrl: https://github.com/SochaDev
 drupalUrl: https://www.drupal.org/node/2439991
-restApiUrl: http://wintermute.sochadev.com/api-www
+restApiUrl: http://api.sochadev.com
 ga_code: UA-45204620-1
-prodBuild: 1
+prodBuild: 0
 defaults:
   -
     scope:

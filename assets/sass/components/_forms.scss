@@ -34,6 +34,7 @@
       }
       label { display: none; }
       input, select, textarea {
+        color: $gray-dark;
         margin-bottom: 0;
 
         @include media("<=md") {
@@ -43,6 +44,7 @@
         }
       }
       input[type="submit"] {
+        color: $white;
         font-weight: normal;
         text-transform: lowercase;
         width: 100%;
