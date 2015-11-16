@@ -246,8 +246,6 @@
               return obj;
             }, {});
 
-        data.subject = 'website contact form';
-
         // Do some validation.
         var valid = validate(data, 0);
         if (valid) {
@@ -261,23 +259,17 @@
         $.ajax(settings.api.baseUri + '/contact', {
           method: 'POST',
           contentType: 'application/json',
-          data: data,
+          data: JSON.stringify(data),
           success: function(response) {
-            console.log(response);
+            response = JSON.parse(response);
             respond(true, response.messages);
           },
           error: function(response) {
-            console.log(response);
+            response = JSON.parse(response);
             respond(false, ["Error occurred sending data to <i>" + settings.api.baseUri + "</i>."]);
           }
         });
 
-//        $.post(settings.api.baseUri + '/contact', JSON.stringify(data), function(response) {
-//            respond(true, response.messages);
-//          }, 'json')
-//          .fail(function() {
-//            respond(false, ["Error occurred sending data to <i>" + settings.api.baseUri + "</i>."]);
-//          });
       });
 
     },
