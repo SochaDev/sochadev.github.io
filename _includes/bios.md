@@ -88,7 +88,7 @@ accessibility and managed higly successful projects for Government agencies,
 publishers, associations, universities and Fortune500 businesses including the 
 National Archives in London and Science Magazine in the US. He is a motivated, creative 
 problem solver and strong team player. Hew thrives on doing excellent work with 
-excellent colleagues.
+excellent colleagues. He has a degree in Physics and Geophysics.
 
 
 
