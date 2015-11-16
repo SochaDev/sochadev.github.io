@@ -77,3 +77,20 @@ she has many Drupal 6 and 7 websites under her belt for clients such as the
 Smithsonian National Air and Space Museum and the American Postal Workers
 Union. Tory is known for getting intimate with the Drupal core APIs and
 writing paragraph-length code comments.
+
+### Martyn Green
+
+For the past 15 years Martyn has worked in the field of web technology. He has 
+pursued a successful, varied career that has encompassed visual design, interaction 
+design, front-end development, audio-visual production and management of web and 
+mobile applications on both a small and large scale.  He was won awards for design, 
+accessibility and managed higly successful projects for Government agencies, 
+publishers, associations, universities and Fortune500 businesses including the 
+National Archives in London and Science Magazine in the US. He is a motivated, creative 
+problem solver and strong team player. Hew thrives on doing excellent work with 
+excellent colleagues.
+
+
+
+
+
