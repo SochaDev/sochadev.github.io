@@ -9,6 +9,7 @@ githubUrl: https://github.com/SochaDev
 drupalUrl: https://www.drupal.org/node/2439991
 restApiUrl: http://api.sochadev.com
 ga_code: UA-45204620-1
+facebookAppId: 1657090981233155
 prodBuild: 0
 defaults:
   -
