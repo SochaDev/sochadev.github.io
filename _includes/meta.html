@@ -9,7 +9,9 @@
   <meta property="og:url" content="{{ site.baseurl }}{{ page.url }}" />
   <meta property="og:site_name" content="{{ site.title }}" />
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title | strip_html }} | {% endif %}{{ site.title }}" />
   <meta property="og:image" content="{{ site.baseurl }}/assets/favicon/fluidicon.png" />
   <meta property="og:type" content="business.business" />
+  <meta property="og:business:contact_data:email" content="socha dot jason at sochadev dot com" />
+  <meta property="og:business:contact_data:phone" content="608-213-9838" />
   <meta property="og:business:contact_data:country" content="US" />
