@@ -57,5 +57,3 @@ tell you about them!
 {% include tools.html %}
 {% endcapture %}
 {{ tools | strip_html | strip_newlines }}
-
-{% include workflow.md %}

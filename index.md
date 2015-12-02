@@ -64,7 +64,7 @@ tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP,
   <div class="container">
     <div class="columns-12">
       <h2 id="contact">Contact Us</h2>
-      <p><a href="{{ page.url }}" class="blue form-toggler">Ready to get started?</a> We'd love to learn more about your project, or hear all about what an awesome dev you are.</p>
+      <p><a href="{{ page.url }}" class="blue form-toggler">Ready to get started?</a> We'd love to learn more about your project.</p>
     </div>
     <div class="columns-8">{% include contact.html %}
     </div>
@@ -76,7 +76,7 @@ tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP,
     <div class="alpha"><span class="sprite a-team"></span></div>
     <div class="beta">
       <h2 id="about">Our Team</h2>
-      <p><a href="/team" class="purple">Our team members</a> live and work happily all over the US &mdash; we use some neat apps to keep us connected to each other and to our clients. <a href="/workflow" class="green">Our workflow</a> is designed to incorporate our clients' feedback and our great ideas throughout a project's life cycle.</p>
+      <p><a href="/team" class="purple">Our team members</a> live and work happily all over the US &mdash; we use some neat apps to keep us connected to each other and to our clients. <!--<a href="/workflow" class="green">Our workflow</a>--> Our workflow is designed to incorporate great ideas throughout a project's life cycle.</p>
     </div>
   </div>
   <div class="container">

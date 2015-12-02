@@ -10,8 +10,6 @@ We're small, but we don't mind &mdash; we're pretty large and mighty when it com
 
 If you think you might be a good fit here at Socha Dev &mdash; please <a href="/#contact" class="green">contact us!</a> Contenders will have a couple of <span class="blue">Google Hangouts</span> with us, then may be invited to spend a day observing our <span class="purple">Slack</span> activity to get a sense of what the day-to-day here feels like. Pro tip: You should probably include a link to your GitHub account if you're a dev ;)
 
-You might also be interested in learning more about [our workflow](/workflow).
-
 <br />
 
 {% include bios.md %}
