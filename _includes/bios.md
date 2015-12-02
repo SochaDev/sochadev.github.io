@@ -85,9 +85,9 @@ pursued a successful, varied career that has encompassed visual design, interact
 design, front-end development, audio-visual production and management of web and 
 mobile applications on both a small and large scale.  He was won awards for design, 
 accessibility and managed higly successful projects for Government agencies, 
-publishers, associations, universities and Fortune500 businesses including the 
+publishers, associations, universities and Fortune 500 businesses including the 
 National Archives in London and Science Magazine in the US. He is a motivated, creative 
-problem solver and strong team player. Hew thrives on doing excellent work with 
+problem solver and strong team player. He thrives on doing excellent work with 
 excellent colleagues. He has a degree in Physics and Geophysics.
 
 
