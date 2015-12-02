@@ -5,9 +5,11 @@
   <meta name="application-name" content="{{ site.title }}"/>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta property="fb:app_id" content="{{ site.facebookAppId }}" />
   <meta property="og:url" content="{{ site.baseurl }}{{ page.url }}" />
   <meta property="og:site_name" content="{{ site.title }}" />
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
   <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}" />
   <meta property="og:image" content="{{ site.baseurl }}/assets/favicon/fluidicon.png" />
   <meta property="og:type" content="business.business" />
+  <meta property="og:business:contact_data:country" content="US" />
