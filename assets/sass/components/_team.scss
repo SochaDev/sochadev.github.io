@@ -18,6 +18,10 @@
     display: block;
     width: 100%;
     margin: 0 0 $mrg 0;
+
+    @include media("<md") {
+      @include border-radius();
+    }
   }
 
   ul.social {

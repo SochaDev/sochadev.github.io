@@ -3375,6 +3375,16 @@ ul.projects {
   display: block;
   width: 100%;
   margin: 0 0 12px 0; }
+  @media (max-width: 767px) {
+    .bios img.avatar {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      border-top-right-radius: 3px;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+      border-bottom-left-radius: 3px;
+      border-top-left-radius: 3px; } }
 
 .bios ul.social {
   list-style: none;
