@@ -47,11 +47,14 @@ tell you about them!
 
 ## [Team Members]({{ site.baseurl }}/team)
 
-{% include bios.md %}
+{% for person in site.data.team %}
+### {{ person.name }}
+{{ person.description }}
+{% endfor %}
 
 * * *
 
-## [Workflow ]({{ site.baseurl }}/workflow)
+## Workflow
 
 {% capture tools %}
 {% include tools.html %}

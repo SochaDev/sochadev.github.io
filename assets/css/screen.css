@@ -3330,4 +3330,58 @@ ul.projects {
           height: auto;
           width: 100%; } }
 
+@media (min-width: 768px) {
+  .bios {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%; }
+    .bios:last-child {
+      margin-right: 0; } }
+
+.bios .container {
+  margin-top: 48px; }
+
+.bios .alpha {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%; }
+  .bios .alpha:last-child {
+    margin-right: 0; }
+
+.bios .beta {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%; }
+  .bios .beta:last-child {
+    margin-right: 0; }
+
+.bios p {
+  font-size: 18.4px;
+  line-height: 1.5; }
+
+.bios img.avatar {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+  display: block;
+  width: 100%;
+  margin: 0 0 12px 0; }
+
+.bios ul.social {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .bios ul.social li {
+    float: left;
+    margin: 0 12px 0 0; }
+
 /*# sourceMappingURL=screen.css.map */

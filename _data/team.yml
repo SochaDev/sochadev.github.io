@@ -1,0 +1,118 @@
+
+- name: Jason Socha
+  github: jasonsocha
+  drupal: gnosis
+  image: https://avatars.githubusercontent.com/u/509437
+  description:
+    With 20+ years of experience in coding, most of that web-related, Jason is
+    proficient in many of the major (and several of the minor) languages and
+    standards that make the internet useful. He is a specialist in PHP architecture
+    and development and tends to focus on server-side application development. He
+    also loves JavaScript, both client and server-side. Jason lives on the business
+    side of things mostly these days, but still gets his hands dirty often enough.
+    Recent work includes leading development on such larger projects as fcc.gov and
+    press.org (The Nat\'l Press Club) (both Drupal), among many others.
+  projects: []
+
+- name: Matt West
+  github: mattdanger
+  drupal: mattdanger
+  image: https://avatars.githubusercontent.com/u/609890
+  description:
+    Matt lives in Rochester, NY and has been developing for the web for almost 15
+    years. He has a B.S. in IT and a M.S. in International Business from D\'Youville
+    College in Buffalo, NY. While in school Matt was one of 900 students to
+    participate in the Google Summer of Code program. He worked with Geeklog CMS
+    and developed an installation UI that made the CMS more friendly to install and
+    even supported 3rd party plugins and migrations from older versions. In later
+    years Matt participated in the Summer of Code program as a student mentor. After
+    spending a few years working in the academic world, Matt joined Our Hometown,
+    a small web development company that develops and hosts websites for newspapers
+    from all over the U.S. Matt led the company\'s migration of 200 customer sites
+    to Drupal.
+  projects: []
+
+- name: Drew Deering
+  github: atdc98
+  drupal: spacepope
+  image: https://avatars.githubusercontent.com/u/4480350
+  description:
+    As a kid, Drew always loved computers. A hacker at heart, he wrote his first
+    computer program at the age of 12 - a simple text-based dungeon crawler, complete
+    with random monster encounters and fat loots. His true love for programming,
+    however, would not be realized until while attending the University of Missouri
+    he was invited to choose a major, or not come back the following semester. He
+    had just completed a course in C programming and liked it well enough to make
+    programming his profession. Eventually deciding to move to the D.C. area, Drew
+    held positions with National Journal, NPR, and Triple Canopy before coming to
+    Socha Dev in May of 2013, where he has been wowing everyone with his skills in
+    hybrid app development using technologies such as Node.js and Meteor.
+  projects: []
+
+- name: Nate Mow
+  github: natemow
+  drupal: natemow
+  image: https://avatars.githubusercontent.com/u/1195102
+  description:
+    Nate serves as the Development Foreman at Socha Dev, guiding the team and making
+    sure functional deliverables are completed according to spec. Nate is a senior
+    Drupal developer that has built dozens of sites over the years for a wide
+    variety of government, non-profit and private sector clients. These days, Nate
+    is becoming increasingly obsessed with all things JavaScript, shell scripting,
+    and generally just enhancing the dev machinery at Socha Dev through automation,
+    testing and process improvement. When not actively creating great sites for
+    clients or cracking his fiery foreman whip (and sometimes in parallel), Nate
+    also enjoys tinkering with front-end stack du jour and giving back to the open
+    source community however possible.
+  projects: []
+
+- name: Jeff Eoff
+  github: jeffeoff
+  drupal: jeffeoff
+  image: https://avatars.githubusercontent.com/u/772062
+  description:
+    Jeff cut his teeth in the ANSI art scene of the BBS heyday before the popularity
+    of the internet. He fondly recalls the sound of modems handshaking. He first got
+    involved with programming in the BBS modification scene of the late nineties.
+    Later he would go on to study software development in college, where he
+    developed a love of beautiful software and intuitive interfaces. During college,
+    Jeff worked in the dental software industry, supporting UNIX serial networks. In
+    2006 he became a systems architect working primarily with internal, home-grown
+    web apps for workforce management. In this role, Jeff developed a love for
+    JavaScript and CSS, quickly becoming the go-to architect for other developers
+    looking to improve their front-end designs and simplify user interactions.
+  projects: []
+
+- name: Tory Gobat
+  github: tea-time
+  drupal: tea.time
+  image: https://avatars.githubusercontent.com/u/4837392
+  description:
+    While majoring in a cross-disciplinary program called Digital Media Design Tory
+    picked up a variety of experience in object-oriented programming -- and the
+    realization that design was not so much her forte. Maintaining appreciation for
+    the visual nonetheless, she soon found her niche in web development via a
+    couple of summer internships. After graduating, Tory boarded the Drupal
+    bandwagon via her first full-time position and was soon writing custom modules
+    and themes alongside honing front-end development skills. Several years later,
+    she has many Drupal 6 and 7 websites under her belt for clients such as the
+    Smithsonian National Air and Space Museum and the American Postal Workers
+    Union. Tory is known for getting intimate with the Drupal core APIs and
+    writing paragraph-length code comments.
+  projects: []
+
+- name: Martyn Green
+  github: montysavage
+  drupal:
+  image: https://avatars.githubusercontent.com/u/3733139
+  description:
+    For the past 15 years Martyn has worked in the field of web technology. He has
+    pursued a successful, varied career that has encompassed visual design, interaction
+    design, front-end development, audio-visual production and management of web and
+    mobile applications on both a small and large scale.  He was won awards for design,
+    accessibility and managed higly successful projects for Government agencies,
+    publishers, associations, universities and Fortune 500 businesses including the
+    National Archives in London and Science Magazine in the US. He is a motivated, creative
+    problem solver and strong team player. He thrives on doing excellent work with
+    excellent colleagues. He has a degree in Physics and Geophysics.
+  projects: []

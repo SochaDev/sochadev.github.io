@@ -5,7 +5,7 @@
   <meta name="application-name" content="{{ site.title }}" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta property="fb:app_id" content="{{ site.facebookAppId }}" />
+  <meta property="fb:app_id" content="{{ site.facebook.appId }}" />
   <meta property="og:url" content="{{ site.baseurl }}{{ page.url }}" />
   <meta property="og:site_name" content="{{ site.title }}" />
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
@@ -17,5 +17,5 @@
   <meta property="business:contact_data:postal_code" content="when the code you just wrote is very angry" />
   <meta property="business:contact_data:country_name" content="we know no boundary" />
   <meta property="business:contact_data:website" content="{{ site.baseurl }}" />
-  <meta property="business:contact_data:email" content="socha dot jason at sochadev dot com" />
-  <meta property="business:contact_data:phone_number" content="608-213-9838" />
+  <meta property="business:contact_data:email" content="{{ site.contact.email }}" />
+  <meta property="business:contact_data:phone_number" content="{{ site.contact.phone }}" />

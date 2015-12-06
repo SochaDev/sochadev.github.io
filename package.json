@@ -5,7 +5,7 @@
   "private": "true",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sochadev.github.io"
+    "url": "https://github.com/SochaDev/sochadev.github.io"
   },
   "scripts": {
     "start": "gulp watch"

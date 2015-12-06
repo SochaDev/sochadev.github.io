@@ -4,13 +4,21 @@ title: Socha Dev
 tagline: development overflow, triage and problem solving
 description: Socha Dev is a white-label web and app development shop built to help your team succeed. We specialize in overflow, triage and problem solving services.
 author: Socha Dev
+prodBuild: 0
 logoUrl: /assets/images/socha-dev.png
 githubUrl: https://github.com/SochaDev
 drupalUrl: https://www.drupal.org/node/2439991
 restApiUrl: http://api.sochadev.com
-ga_code: UA-45204620-1
-facebookAppId: 1657090981233155
-prodBuild: 0
+
+contact:
+  email: socha dot jason at sochadev dot com
+  phone: 608-213-9838
+
+google:
+  analyticsCode: UA-45204620-1
+facebook:
+  appId: 1657090981233155
+
 defaults:
   -
     scope:
@@ -32,7 +40,16 @@ defaults:
       layout: default
 
 # Handling reading.
-exclude: [ nbproject, vendor, script, assets/sass, assets/images/sprites/, Gemfile, Gemfile.lock, gulpfile.js, package.json, node_modules, README.md ]
+exclude: [
+  nbproject,
+  vendor,
+  script,
+  assets/sass,
+  assets/images/sprites/,
+  Gemfile, Gemfile.lock,
+  gulpfile.js, package.json, node_modules,
+  README.md
+]
 
 # Conversion.
 markdown: kramdown
