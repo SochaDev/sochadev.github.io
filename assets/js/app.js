@@ -197,7 +197,10 @@
         // Scroll to messages.
         settings.theme.top = ($messages.offset().top - theme.headerScrollOffset);
         theme.scrollMain(context, settings);
-        reset();
+
+        if (success) {
+          reset();
+        }
       };
       // Submit validation.
       var validate = function(data, pass) {

@@ -37,10 +37,8 @@ tell you about them!
 {% for project in site.data.projects %}
   {% if project.whiteLabel != true %}
 ### {{ project.name }}
-
 {{ project.description | replace: '\n', ' ' }}
   {% endif %}
-
 {% endfor %}
 
 * * *
