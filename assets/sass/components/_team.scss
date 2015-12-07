@@ -14,7 +14,7 @@
     line-height: 1.5;
   }
   img.avatar {
-    @include border-radius(6px);
+    @include border-radius($border-radius * 2);
     display: block;
     width: 100%;
     margin: 0 0 $mrg 0;
