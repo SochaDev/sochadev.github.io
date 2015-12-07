@@ -15,8 +15,14 @@ In all cases, the exercises are valuable for staying current with the latest tre
 
 `TODO: Add and integrate demos to larger site.`
 
-* [Demo 1](#)
-* [Demo 2](#)
-* [Demo 3](#)
+* [Demo 1](#demo-1)
+* [Demo 2](#demo-2)
+* [Demo 3](#demo-3)
+
+## Demo 1
+
+## Demo 2
+
+## Demo 3
 
 Interested in what you see? [Have an idea you want to discuss?](/#contact)
