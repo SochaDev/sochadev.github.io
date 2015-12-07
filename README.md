@@ -27,11 +27,12 @@ for hosting, so we ported the whole thing over here to GitHub Pages. Enjoy!
 * [Notes on adding hero images](assets/images/heroes)
 * To enable AngularJS support in the default layout, add these params to your Front Matter:
 
-
-    angular: true
-    angularApp: myApp
-    scripts: [
-      "/sandbox/apps/my-app/script1.js",
-      "/sandbox/apps/my-app/script2.js",
-      "/sandbox/apps/my-app/script3.js"
-    ]
+<pre><code>
+angular: true
+angularApp: myApp
+scripts: [
+  "/sandbox/apps/my-app/script1.js",
+  "/sandbox/apps/my-app/script2.js",
+  "/sandbox/apps/my-app/script3.js"
+]
+</code></pre>
