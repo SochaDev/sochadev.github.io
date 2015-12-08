@@ -4,12 +4,14 @@ rvm:
 
 env:
   global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
+before_install:
+  - wget http://chromedriver.storage.googleapis.com/2.20/chromedriver_linux64.zip && unzip chromedriver_linux64.zip && rm -f chromedriver_linux64.zip;
+  - "./chromedriver --port=4444 --url-base=wd/hub &"
 
 before_script:
   - npm install;
-  - wget http://chromedriver.storage.googleapis.com/2.20/chromedriver_linux64.zip && unzip chromedriver_linux64.zip && rm -f chromedriver_linux64.zip;
-  - ./chromedriver --port=4444 --url-base=wd/hub &
-  - sleep 1
 
-script: ./script/cibuild
+script:
+  - ./script/cibuild;
