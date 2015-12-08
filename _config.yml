@@ -1,5 +1,6 @@
 # Site settings.
-baseurl: http://sochadev.com
+# baseurl: http://sochadev.com
+baseurl: 
 title: Socha Dev
 tagline: development overflow, triage and problem solving
 description: Socha Dev is a white-label web and app development shop built to help your team succeed. We specialize in overflow, triage and problem solving services.

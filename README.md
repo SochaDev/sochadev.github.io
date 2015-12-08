@@ -20,6 +20,7 @@ for hosting, so we ported the whole thing over here to GitHub Pages. Enjoy!
 
 * `bundle install` - initial setup.
 * `bundle exec jekyll build --watch` - watch and rebuild to local `_site` dir, as anything changes.
+* `bundle exec jekyll serve --detach` - run the Ruby WEBrick server instead of setting up an Apache vhost with DocumentRoot `_site`.
 
 ## Running tests
 

@@ -12,7 +12,7 @@
 # chmod +x ./chromedriver;
 # ./chromedriver --port=4444 --url-base=wd/hub > /dev/null &
 # sleep 3;
-./node_modules/intern/bin/intern-runner.js config=tests/intern/intern;
+./node_modules/intern/bin/intern-runner.js config=_site/tests/intern/intern;
 
 # Run the HTML proofer.
 rm -rf node_modules tests && cd ../;
