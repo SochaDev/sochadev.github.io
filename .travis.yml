@@ -15,12 +15,12 @@ before_script:
   - npm install;
   # Download and serve ChromeDriver at http://127.0.0.1:4444
   - wget http://chromedriver.storage.googleapis.com/2.20/chromedriver_linux64.zip && unzip chromedriver_linux64.zip && rm -f chromedriver_linux64.zip;
+
+script:
   - ./chromedriver --port=4444 --url-base=wd/hub > /dev/null &
   - ps aux | grep chromedriver;
   # Serve Jekyll site at http://127.0.0.1:4000 (per _config.yml)
   - bundle exec jekyll serve --no-watch --detach;
   - sleep 3;
-
-script:
   - node_modules/intern/bin/intern-runner.js config=tests/intern/intern;
   - bundle exec htmlproof ./_site --disable-external;
