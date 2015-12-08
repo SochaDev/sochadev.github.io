@@ -25,7 +25,7 @@ for hosting, so we ported the whole thing over here to GitHub Pages. Enjoy!
 
 * Download the [latest ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) to site root.
 * Run `./chromedriver --port=4444 --url-base=wd/hub`
-* Open a new shell and execute the test runner: `node_modules/.bin/intern-runner config=tests/intern/intern`
+* Open a new shell and execute the test runner: `./node_modules/intern/bin/intern-runner.js config=tests/intern/intern`
 
 ## Content
 

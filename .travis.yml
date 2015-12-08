@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-- 2.1
+  - 2.1
 
 env:
   global:
@@ -8,6 +8,9 @@ env:
 
 before_script:
   - npm install;
+  - wget http://chromedriver.storage.googleapis.com/2.20/chromedriver_linux64.zip && unzip chromedriver_linux64.zip && rm -f chromedriver_linux64.zip;
+  - ./chromedriver --port=4444 --url-base=wd/hub &
+  - sleep 1
 
 script: ./script/cibuild
 
