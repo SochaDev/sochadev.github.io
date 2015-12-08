@@ -7,7 +7,7 @@ define({
     { browserName: 'firefox', version: '42', platform: 'LINUX' },
   ],
   tunnel: 'NullTunnel',
-  tunnelOptions: { hostname: 'localhost', port: 9000 },
+  tunnelOptions: {  },
   maxConcurrency: 2,
 
   loaderOptions: {

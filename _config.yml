@@ -1,5 +1,6 @@
 # Site settings.
 # baseurl: http://sochadev.com
+port: 4000
 baseurl:
 title: Socha Dev
 tagline: development overflow, triage and problem solving
@@ -48,7 +49,7 @@ exclude: [
   assets/sass,
   assets/images/sprites/,
   Gemfile, Gemfile.lock,
-  gulpfile.js, package.json, npm-debug.log,
+  gulpfile.js, package.json, node_modules, tests, npm-debug.log,
   README.md,
   .travis.yml
 ]

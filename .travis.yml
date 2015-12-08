@@ -12,6 +12,5 @@ before_script:
   - sleep 3;
 
 script:
-  - cd _site && node_modules/intern/bin/intern-runner.js config=tests/intern/intern;
-  - rm -rf tests node_modules && cd ../;
+  - node_modules/intern/bin/intern-runner.js config=tests/intern/intern;
   - bundle exec htmlproof ./_site --disable-external;

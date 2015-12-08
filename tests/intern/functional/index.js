@@ -5,7 +5,8 @@ define([
   'intern/chai!assert'
 ],
 function(require, bdd, expect, assert) {
-  var url = 'index.html';
+  var host = 'http://localhost:4000'
+  var url = host + '/index.html';
 
   bdd.describe('Homepage', function() {
 
