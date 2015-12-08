@@ -27,7 +27,7 @@ few years and many of our staff have attained high levels of Drupal expertise.
 
 * * *
 
-## [Case Studies]({{ site.baseurl }}#projects)
+## [Case Studies]({{ site.baseurl }}/#projects)
 
 A few happy clients include The Chronicle of Higher Education, Discovery
 Communications, RepEquity, Interactive Strategies, IWS, and Seabourne. There

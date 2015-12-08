@@ -8,7 +8,7 @@ env:
 
 before_script:
   - npm install;
-  - bundle exec jekyll serve --detach;
+  - bundle exec jekyll serve --no-watch --detach;
   - sleep 3;
 
 script:
