@@ -8,6 +8,8 @@ env:
 
 before_script:
   - npm install;
+  - _site/chromedriver --port=4444 --url-base=wd/hub;
+  - sleep 3;
 
 script: ./script/cibuild
 

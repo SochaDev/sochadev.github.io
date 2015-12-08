@@ -48,7 +48,8 @@ exclude: [
   assets/images/sprites/,
   Gemfile, Gemfile.lock,
   gulpfile.js, package.json, npm-debug.log,
-  README.md
+  README.md,
+  .travis.yml
 ]
 
 # Conversion.
