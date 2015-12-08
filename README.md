@@ -21,6 +21,12 @@ for hosting, so we ported the whole thing over here to GitHub Pages. Enjoy!
 * `bundle install` - initial setup.
 * `bundle exec jekyll build --watch` - watch and rebuild to local `_site` dir, as anything changes.
 
+## Running tests
+
+* Download the [latest ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) to site root.
+* Run `./chromedriver --port=4444 --url-base=wd/hub`
+* Open a new shell and execute the test runner: `node_modules/.bin/intern-runner config=tests/intern/intern`
+
 ## Content
 
 * Update [team data](_data/team.yml), [project data](_data/projects.yml), [sandbox stuff](_data/sandbox.yml)
