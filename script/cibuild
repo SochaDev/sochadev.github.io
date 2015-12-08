@@ -1,16 +1,17 @@
 #!/usr/bin/env bash
 
 # Halt script on error.
-set -e;
+# set -e;
 
 # Build the Jekyll site.
-bundle exec jekyll build;
+# bundle exec jekyll build;
 
 # Run Intern.js tests.
-cd ./_site && ls -lah;
-wget http://chromedriver.storage.googleapis.com/2.20/chromedriver_linux64.zip && unzip chromedriver_linux64.zip && rm -f chromedriver_linux64.zip;
-./chromedriver --port=4444 --url-base=wd/hub > /dev/null &
-sleep 3;
+# cd ./_site && ls -lah;
+# wget http://chromedriver.storage.googleapis.com/2.20/chromedriver_linux64.zip && unzip chromedriver_linux64.zip && rm -f chromedriver_linux64.zip;
+# chmod +x ./chromedriver;
+# ./chromedriver --port=4444 --url-base=wd/hub > /dev/null &
+# sleep 3;
 ./node_modules/intern/bin/intern-runner.js config=tests/intern/intern;
 
 # Run the HTML proofer.

@@ -8,6 +8,8 @@ env:
 
 before_script:
   - npm install;
+  - jekyll serve --detach;
+  - sleep 3;
 
 script:
   - ./script/cibuild;
