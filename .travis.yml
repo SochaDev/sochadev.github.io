@@ -13,4 +13,3 @@ before_script:
   - sleep 1
 
 script: ./script/cibuild
-
