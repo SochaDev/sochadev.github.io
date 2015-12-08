@@ -8,8 +8,9 @@ env:
 
 before_script:
   - npm install;
-  - jekyll serve --detach;
+  - bundle exec jekyll serve --detach;
   - sleep 3;
 
 script:
-  - ./script/cibuild;
+  - ./_site/node_modules/intern/bin/intern-runner.js config=_site/tests/intern/intern;
+  - bundle exec htmlproof ./_site --disable-external;
