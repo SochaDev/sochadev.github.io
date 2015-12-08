@@ -9,6 +9,5 @@ bundle exec jekyll build;
 
 # Run Intern.js tests.
 cd ./_site && ls -lah;
-chromedriver --port=4444 --url-base=wd/hub &;
-node_modules/.bin/intern-runner config=tests/intern/intern;
-
+./chromedriver --port=4444 --url-base=wd/hub &;
+./node_modules/.bin/intern-runner config=tests/intern/intern;
