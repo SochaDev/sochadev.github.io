@@ -4,10 +4,9 @@ define({
 
   },
   environments: [
-    { browserName: 'firefox', version: '42', platform: 'LINUX' },
+    { browserName: 'chrome' },
   ],
   tunnel: 'NullTunnel',
-  tunnelOptions: { hostname: '127.0.0.1' },
   maxConcurrency: 2,
 
   loaderOptions: {
