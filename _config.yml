@@ -47,7 +47,7 @@ exclude: [
   assets/sass,
   assets/images/sprites/,
   Gemfile, Gemfile.lock,
-  gulpfile.js, package.json, node_modules, npm-debug.log,
+  gulpfile.js, npm-debug.log,
   README.md
 ]
 
