@@ -20,13 +20,13 @@ for hosting, so we ported the whole thing over here to GitHub Pages. Enjoy!
 
 * `bundle install` - initial setup.
 * `bundle exec jekyll build --watch` - watch and rebuild to local `_site` dir, as anything changes.
-* `bundle exec jekyll serve --detach` - run the Ruby WEBrick server instead of setting up an Apache vhost with DocumentRoot `_site`.
+* `bundle exec jekyll serve --detach` - run the Ruby WEBrick server instead of setting up an Apache vhost with DocumentRoot `_site`. You'll want to also set `_config.yml:baseurl` to an empty string in this case.
 
 ## Running tests
 
-* Download the [latest ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) to site root.
-* Run `./chromedriver --port=4444 --url-base=wd/hub`
-* Open a new shell and execute the test runner: `./node_modules/intern/bin/intern-runner.js config=tests/intern/intern`
+* `wget http://selenium-release.storage.googleapis.com/2.48/selenium-server-standalone-2.48.2.jar`
+* `java -jar selenium-server-standalone-2.48.2.jar &> /dev/null &`
+* `node_modules/intern/bin/intern-runner.js config=tests/intern/intern`
 
 ## Content
 

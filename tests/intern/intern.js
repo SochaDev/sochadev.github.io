@@ -3,8 +3,7 @@ define({
   capabilities: {
   },
   environments: [
-    { browserName: 'firefox' },
-    { browserName: 'chrome' }
+    { browserName: 'firefox' }
     /*
     {browserName: 'internet explorer', version: '11', platform: 'WIN8'},
     {browserName: 'internet explorer', version: '10', platform: 'WIN8'},

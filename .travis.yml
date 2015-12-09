@@ -1,6 +1,5 @@
 addons:
   hosts:
-    - travis.dev
     - sochadev.com
 
 language: ruby
