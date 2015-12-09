@@ -10,5 +10,7 @@ _site
 Gemfile.lock
 
 # Test stuff.
+chromedriver*
 chromedriver
+selenium-server-standalone*
 
