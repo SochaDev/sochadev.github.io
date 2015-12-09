@@ -1,7 +1,7 @@
 # Site settings.
 # baseurl: http://sochadev.com
 port: 4000
-baseurl:
+baseurl: http://sochadev.com
 title: Socha Dev
 tagline: development overflow, triage and problem solving
 description: Socha Dev is a white-label web and app development shop built to help your team succeed. We specialize in overflow, triage and problem solving services.
