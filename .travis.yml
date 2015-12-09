@@ -11,9 +11,9 @@ before_script:
   - sh -e /etc/init.d/xvfb start;
   - export DISPLAY=:99.0;
 
-  # Download and start Selenium standalone server.
+  # Download and start Selenium standalone server; note the silencer.
   - wget http://selenium-release.storage.googleapis.com/2.48/selenium-server-standalone-2.48.2.jar;
-  - java -jar selenium-server-standalone-2.48.2.jar > /dev/null &
+  - java -jar selenium-server-standalone-2.48.2.jar &> /dev/null
   - sleep 3;
 
   # Serve Jekyll site at http://127.0.0.1:9000 (per /_config.yml and per Intern.js' default)
