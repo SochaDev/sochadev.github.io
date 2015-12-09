@@ -1,6 +1,4 @@
 # Site settings.
-# baseurl: http://sochadev.com
-port: 4000
 baseurl: http://sochadev.com
 title: Socha Dev
 tagline: development overflow, triage and problem solving
