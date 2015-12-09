@@ -7,9 +7,10 @@ env:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
 before_script:
-  # Start X Virtual Framebuffer.
+  # Start X Virtual Framebuffer (needed for headless GUI).
   - sh -e /etc/init.d/xvfb start;
   - export DISPLAY=:99.0;
+
   # Download and start Selenium standalone server.
   - wget http://selenium-release.storage.googleapis.com/2.48/selenium-server-standalone-2.48.2.jar;
   - java -jar selenium-server-standalone-2.48.2.jar > /dev/null &
@@ -21,11 +22,9 @@ before_script:
 
   # Install node_modules.
   - npm install;
-  # Download and serve ChromeDriver at http://127.0.0.1:4444
-  # - wget http://chromedriver.storage.googleapis.com/2.20/chromedriver_linux64.zip && unzip chromedriver_linux64.zip && rm -f chromedriver_linux64.zip && sudo mv chromedriver /usr/bin;
-  # - ./chromedriver --port=4444 --url-base=wd/hub > /dev/null &
-  # - ps aux | grep chromedriver;
-script:
 
+script:
+  # Run Intern.js tests.
   - node_modules/intern/bin/intern-runner.js config=tests/intern/intern;
+  # Run HTML proofer tests.
   - bundle exec htmlproof ./_site --disable-external;

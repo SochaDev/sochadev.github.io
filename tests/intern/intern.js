@@ -3,8 +3,7 @@ define({
   capabilities: {
   },
   environments: [
-    { browserName: 'chrome', platform: ['LINUX'] },
-    { browserName: 'firefox', platform: ['LINUX'] }
+    { browserName: 'firefox' }
     /*
     {browserName: 'internet explorer', version: '11', platform: 'WIN8'},
     {browserName: 'internet explorer', version: '10', platform: 'WIN8'},
@@ -16,7 +15,7 @@ define({
   ],
   tunnel: 'NullTunnel',
   tunnelOptions: {
-
+    hostname: '127.0.0.1'
   },
   maxConcurrency: 2,
   loaderOptions: {
