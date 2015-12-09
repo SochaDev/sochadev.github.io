@@ -16,12 +16,12 @@ before_script:
   - java -jar selenium-server-standalone-2.48.2.jar &> /dev/null &
   - sleep 3;
 
-  # Serve Jekyll site at http://127.0.0.1:9000 (per /_config.yml and per Intern.js' default)
+  # Serve Jekyll site at http://127.0.0.1:4000 (per /_config.yml).
   - bundle exec jekyll serve --no-watch --detach;
   - sleep 3;
 
   # Install node_modules.
-  - npm install --silent;
+  - npm install -s;
 
 script:
   # Run Intern.js tests.
