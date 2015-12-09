@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#"{% if page.angular && page.angularApp %} ng-app="{{ page.angularApp }}" ng-strict-di=""{% endif %}>
 <head>
-  {% include meta.html %}{% include favicon.html %}  <link rel="canonical" href="{{ site.baseurl }}{{ page.url }}" />
+  {% include meta.html %}{% include favicon.html %}  <link rel="canonical" href="{{ site.contact.website }}{{ page.url }}" />
   <link rel="stylesheet" href="/assets/css/{% if site.prodBuild == 1 %}production.css{% else %}screen.css{% endif %}" type="text/css" />
   <!--
        _______.  ______     ______  __    __       ___          _______   ___________    ____
@@ -64,9 +64,9 @@
             <span class="tooltip purple" data-tip="...because writing tons of raw CSS is not really fun or quick.">SASS</span> stuff baked in &mdash; all hosted courtesy of
             <span class="tooltip blue" data-tip="Hooray, free static hosting complete with CDN!">GitHub Pages</span>.</p>
             {% include tools.html %}
-          <p class="social">Find us on 
-            <a href="{{ site.githubUrl }}" title="Find us on GitHub" target="_blank" class="orange"><i class="fa fa-github"></i> GitHub</a> or 
-            <a href="{{ site.drupalUrl }}" title="Find us on Drupal.org" target="_blank" class="blue"><i class="fa fa-drupal"></i> Drupal.org</a> 
+          <p class="social">Find us on
+            <a href="{{ site.githubUrl }}" title="Find us on GitHub" target="_blank" class="orange"><i class="fa fa-github"></i> GitHub</a> or
+            <a href="{{ site.drupalUrl }}" title="Find us on Drupal.org" target="_blank" class="blue"><i class="fa fa-drupal"></i> Drupal.org</a>
             &mdash; please, help yourself to any of our stuff and pay it forward if you can!</p>
         </div>
       </div>
