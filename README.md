@@ -22,7 +22,7 @@ for hosting, so we ported the whole thing over here to GitHub Pages. Enjoy!
 * `bundle exec jekyll build --watch` - watch and rebuild to local `_site` dir, as anything changes.
 * `bundle exec jekyll serve --detach` - run the Ruby WEBrick server instead of setting up an Apache vhost with DocumentRoot `_site`. You'll want to also set `_config.yml:baseurl` to an empty string in this case.
 
-## Running tests
+[Intern.js](https://theintern.github.io/) test stuff:
 
 * `wget http://selenium-release.storage.googleapis.com/2.48/selenium-server-standalone-2.48.2.jar`
 * `java -jar selenium-server-standalone-2.48.2.jar &> /dev/null &`
