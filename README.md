@@ -19,7 +19,13 @@ for hosting, so we ported the whole thing over here to GitHub Pages. Enjoy!
 [Jekyll](https://jekyllrb.com/) stuff:
 
 * `bundle install` - initial setup.
-* `bundle exec jekyll build --watch` - watch and rebuild to local `_site` dir, as anything changes.
+* `bundle exec jekyll serve --host 127.0.0.1 --port 4000 --watch --detach` - use Ruby WEBrick server, watch and rebuild to local `_site` dir, as anything changes.
+
+[Intern.js](https://theintern.github.io/) test stuff:
+
+* `wget http://selenium-release.storage.googleapis.com/2.48/selenium-server-standalone-2.48.2.jar` - download and run Selenium.
+* `java -jar selenium-server-standalone-2.48.2.jar &> /dev/null &`
+* `node_modules/intern/bin/intern-runner.js config=tests/intern/intern`
 
 ## Content
 

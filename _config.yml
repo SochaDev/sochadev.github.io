@@ -1,5 +1,5 @@
 # Site settings.
-baseurl: http://sochadev.com
+baseurl:
 title: Socha Dev
 tagline: development overflow, triage and problem solving
 description: Socha Dev is a white-label web and app development shop built to help your team succeed. We specialize in overflow, triage and problem solving services.
@@ -13,6 +13,7 @@ restApiUrl: http://api.sochadev.com
 contact:
   email: socha dot jason at sochadev dot com
   phone: 608-213-9838
+  website: http://sochadev.com
 
 google:
   analyticsCode: UA-45204620-1
@@ -47,8 +48,10 @@ exclude: [
   assets/sass,
   assets/images/sprites/,
   Gemfile, Gemfile.lock,
-  gulpfile.js, package.json, node_modules, npm-debug.log,
-  README.md
+  gulpfile.js, package.json, node_modules, tests, npm-debug.log,
+  README.md,
+  selenium-server-standalone*,
+  .travis.yml
 ]
 
 # Conversion.

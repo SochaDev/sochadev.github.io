@@ -8,3 +8,7 @@ npm-debug.log
 _site
 .jekyll-metadata
 Gemfile.lock
+
+# Test stuff.
+selenium-server-standalone*
+

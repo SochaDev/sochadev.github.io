@@ -11,6 +11,7 @@
     "start": "gulp watch"
   },
   "dependencies": {
+    "intern": "^3.0.6",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.0",
     "gulp-concat": "^2.6.0",

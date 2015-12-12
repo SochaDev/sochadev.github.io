@@ -21,13 +21,13 @@ help plan and execute successful projects, be they web sites, web applications,
 APIs, or other. A lot of these systems have been heavy on Drupal for the past
 few years and many of our staff have attained high levels of Drupal expertise.
 
-* [Visit {{ site.baseurl | replace: 'http://', '' }}]({{ site.baseurl }})
+* [Visit {{ site.baseurl | replace: 'http://', '' }}]({{ site.baseurl }}/)
 * [Find us on GitHub]({{ site.githubUrl }})
 * [Find us on Drupal.org]({{ site.drupalUrl }})
 
 * * *
 
-## [Case Studies]({{ site.baseurl }}#projects)
+## [Case Studies]({{ site.baseurl }}/#projects)
 
 A few happy clients include The Chronicle of Higher Education, Discovery
 Communications, RepEquity, Interactive Strategies, IWS, and Seabourne. There
