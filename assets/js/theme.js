@@ -342,7 +342,7 @@
 
           if ($(window).width() > settings.theme.breakpoints.md) {
             $content
-              .height(  !$content.hasClass('white-label') ? $modal.parents('.stripe').height() - (settings.theme.margin * 6) : 'auto');
+              .height(!$content.hasClass('white-label') ? $modal.parents('.stripe').height() - (settings.theme.margin * 6) : 'auto');
           }
 
           $modal.fadeIn(settings.theme.animation.speed);

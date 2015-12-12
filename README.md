@@ -19,7 +19,8 @@ for hosting, so we ported the whole thing over here to GitHub Pages. Enjoy!
 [Jekyll](https://jekyllrb.com/) stuff:
 
 * `bundle install` - initial setup.
-* `bundle exec jekyll serve --host 127.0.0.1 --port 4000 --watch --detach` - use Ruby WEBrick server, watch and rebuild to local `_site` dir, as anything changes.
+* `bundle exec jekyll build --watch` - watch and rebuild to local `_site` dir, as anything changes.
+* `bundle exec jekyll serve --host 127.0.0.1 --port 4000 --detach` - use Ruby WEBrick to serve `_site` build.
 
 [Intern.js](https://theintern.github.io/) test stuff:
 
