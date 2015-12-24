@@ -44,8 +44,8 @@ function(require, config, bdd, expect, assert) {
         .then(function(text) {
 
 
-          console.log('Name field validation:');
-          expect(text).to.have.string('name would be good')
+//          console.log('Name field validation:');
+//          expect(text).to.have.string('name would be good')
 //          //var obj = expect(text).to.contain('name would be good', 'Has name field validation');
         })
         .end();
