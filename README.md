@@ -9,7 +9,7 @@ for hosting, so we ported the whole thing over here to GitHub Pages. Enjoy!
 
 [Gulp](http://gulpjs.com/) stuff:
 
-* `npm install` `npm install --global gulp` - initial setup.
+* `npm install --global gulp` `npm install` - initial setup.
 * `gulp css` - _fast_ compilation of scss to css (with sourcemaps).
 * `gulp watch` - compilation of scss to css, as scss changes.
 * `gulp watch-reload` - as above, but with [LiveReload](http://livereload.com/).

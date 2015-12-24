@@ -20,7 +20,7 @@ before_script:
   - java -jar selenium-server-standalone-2.48.2.jar &> /dev/null &
   - sleep 3;
 
-  # Serve Jekyll site at http://127.0.0.1:4000
+  # Serve Jekyll site at http://127.0.0.1:4000. Note tests/config/main.js mirror of same.
   - bundle exec jekyll serve --host 127.0.0.1 --port 4000 --no-watch --detach;
   - sleep 3;
 
@@ -29,6 +29,6 @@ before_script:
 
 script:
   # Run Intern.js tests.
-  - node_modules/intern/bin/intern-runner.js config=tests/intern/intern;
+  - node_modules/intern/bin/intern-runner.js config=tests/intern/intern environment=ci;
   # Run HTML proofer tests.
   - bundle exec htmlproof ./_site --disable-external;
