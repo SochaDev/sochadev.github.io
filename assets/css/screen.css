@@ -2833,7 +2833,6 @@ img.logo {
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
   display: block;
-  text-transform: lowercase;
   width: 36px;
   height: 36px; }
   h1 img.logo {
@@ -2933,7 +2932,6 @@ code {
 hr {
   border: solid 2px #333;
   clear: both;
-  float: left;
   height: 0px;
   margin: 24px 0;
   width: 100%; }
@@ -2963,88 +2961,96 @@ a {
   a:visited, a:focus {
     outline: none; }
 
-a.blue, span.blue, span.tooltip .blue.tip {
+.bios p {
+  font-size: 18.4px;
+  line-height: 1.5; }
+
+ol.comic {
+  font-size: 16px;
+  line-height: 1.5; }
+
+a.blue, span.blue, em.blue, strong.blue, .tooltip .blue.tip {
   color: #8dcad9; }
 
-a.blue.bg, span.blue.bg, span.tooltip .blue.bg.tip {
+a.blue.bg, span.blue.bg, em.blue.bg, strong.blue.bg, .tooltip .blue.bg.tip {
   background: #c7e5ec;
   color: #2b2b2b; }
-  a.blue.bg:hover, span.blue.bg:hover, span.tooltip .blue.bg.tip:hover {
+  a.blue.bg:hover, span.blue.bg:hover, em.blue.bg:hover, strong.blue.bg:hover, .tooltip .blue.bg.tip:hover {
     color: #2b2b2b; }
 
-a.blue:hover, span.blue:hover, span.tooltip .blue.tip:hover {
+a.blue:hover, span.blue:hover, em.blue:hover, strong.blue:hover, .tooltip .blue.tip:hover {
   color: #c7e5ec; }
 
-a.red, span.red, span.tooltip .red.tip {
+a.red, span.red, em.red, strong.red, .tooltip .red.tip {
   color: #f56176; }
 
-a.red.bg, span.red.bg, span.tooltip .red.bg.tip {
+a.red.bg, span.red.bg, em.red.bg, strong.red.bg, .tooltip .red.bg.tip {
   background: #faa9b4;
   color: #2b2b2b; }
-  a.red.bg:hover, span.red.bg:hover, span.tooltip .red.bg.tip:hover {
+  a.red.bg:hover, span.red.bg:hover, em.red.bg:hover, strong.red.bg:hover, .tooltip .red.bg.tip:hover {
     color: #2b2b2b; }
 
-a.red:hover, span.red:hover, span.tooltip .red.tip:hover {
+a.red:hover, span.red:hover, em.red:hover, strong.red:hover, .tooltip .red.tip:hover {
   color: #faa9b4; }
 
-a.green, span.green, span.tooltip .green.tip {
+a.green, span.green, em.green, strong.green, .tooltip .green.tip {
   color: #bbd16e; }
 
-a.green.bg, span.green.bg, span.tooltip .green.bg.tip {
+a.green.bg, span.green.bg, em.green.bg, strong.green.bg, .tooltip .green.bg.tip {
   background: #dfeabb;
   color: #2b2b2b; }
-  a.green.bg:hover, span.green.bg:hover, span.tooltip .green.bg.tip:hover {
+  a.green.bg:hover, span.green.bg:hover, em.green.bg:hover, strong.green.bg:hover, .tooltip .green.bg.tip:hover {
     color: #2b2b2b; }
 
-a.green:hover, span.green:hover, span.tooltip .green.tip:hover {
+a.green:hover, span.green:hover, em.green:hover, strong.green:hover, .tooltip .green.tip:hover {
   color: #dfeabb; }
 
-a.gray, span.gray, span.tooltip .gray.tip {
+a.gray, span.gray, em.gray, strong.gray, .tooltip .gray.tip {
   color: #e4e4e4; }
 
-a.gray.bg, span.gray.bg, span.tooltip .gray.bg.tip {
+a.gray.bg, span.gray.bg, em.gray.bg, strong.gray.bg, .tooltip .gray.bg.tip {
   background: white;
   color: #2b2b2b; }
-  a.gray.bg:hover, span.gray.bg:hover, span.tooltip .gray.bg.tip:hover {
+  a.gray.bg:hover, span.gray.bg:hover, em.gray.bg:hover, strong.gray.bg:hover, .tooltip .gray.bg.tip:hover {
     color: #2b2b2b; }
 
-a.gray:hover, span.gray:hover, span.tooltip .gray.tip:hover {
+a.gray:hover, span.gray:hover, em.gray:hover, strong.gray:hover, .tooltip .gray.tip:hover {
   color: white; }
 
-a.orange, span.orange, span.tooltip .orange.tip {
+a.orange, span.orange, em.orange, strong.orange, .tooltip .orange.tip {
   color: #ffb366; }
 
-a.orange.bg, span.orange.bg, span.tooltip .orange.bg.tip {
+a.orange.bg, span.orange.bg, em.orange.bg, strong.orange.bg, .tooltip .orange.bg.tip {
   background: #ffcc99;
   color: #2b2b2b; }
-  a.orange.bg:hover, span.orange.bg:hover, span.tooltip .orange.bg.tip:hover {
+  a.orange.bg:hover, span.orange.bg:hover, em.orange.bg:hover, strong.orange.bg:hover, .tooltip .orange.bg.tip:hover {
     color: #2b2b2b; }
 
-a.orange:hover, span.orange:hover, span.tooltip .orange.tip:hover {
+a.orange:hover, span.orange:hover, em.orange:hover, strong.orange:hover, .tooltip .orange.tip:hover {
   color: #ffcc99; }
 
-a.purple, span.purple, span.tooltip .purple.tip {
+a.purple, span.purple, em.purple, strong.purple, .tooltip .purple.tip {
   color: #a491c2; }
 
-a.purple.bg, span.purple.bg, span.tooltip .purple.bg.tip {
+a.purple.bg, span.purple.bg, em.purple.bg, strong.purple.bg, .tooltip .purple.bg.tip {
   background: #cdc2de;
   color: #2b2b2b; }
-  a.purple.bg:hover, span.purple.bg:hover, span.tooltip .purple.bg.tip:hover {
+  a.purple.bg:hover, span.purple.bg:hover, em.purple.bg:hover, strong.purple.bg:hover, .tooltip .purple.bg.tip:hover {
     color: #2b2b2b; }
 
-a.purple:hover, span.purple:hover, span.tooltip .purple.tip:hover {
+a.purple:hover, span.purple:hover, em.purple:hover, strong.purple:hover, .tooltip .purple.tip:hover {
   color: #cdc2de; }
 
 .breadcrumb {
   margin-top: 12px;
   text-transform: lowercase; }
 
-span.tooltip {
+.tooltip {
   border-bottom: dotted 2px #666;
   cursor: pointer;
   position: relative;
   white-space: nowrap; }
-  span.tooltip .tip {
+  .tooltip .tip {
     white-space: normal;
     position: absolute;
     bottom: 0;
@@ -3065,7 +3071,8 @@ span.tooltip {
     border: solid 3px #2b2b2b;
     color: #333;
     padding: 12px;
-    font-size: 13px; }
+    font-size: 13px;
+    font-style: normal; }
 
 .messages {
   border-top-left-radius: 3px;
@@ -3349,10 +3356,6 @@ ul.projects {
   .bios .beta:last-child {
     margin-right: 0; }
 
-.bios p {
-  font-size: 18.4px;
-  line-height: 1.5; }
-
 .bios img.avatar {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
@@ -3384,6 +3387,74 @@ ul.projects {
     float: left;
     margin: 0 12px 0 0; }
 
+.comic-title {
+  display: block;
+  font-size: 51.2px;
+  margin: 24px 0; }
+  .comic-title::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+ol.comic {
+  margin: 36px 0 0 0;
+  padding: 0; }
+  ol.comic > li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    position: relative;
+    margin-bottom: 24px;
+    padding: 12px;
+    border: solid 1px #444;
+    min-height: 300px; }
+    ol.comic > li:last-child {
+      margin-right: 0; }
+    ol.comic > li:nth-child(3n) {
+      margin-right: 0; }
+    ol.comic > li:nth-child(3n+1) {
+      clear: left; }
+    ol.comic > li::after {
+      clear: both;
+      content: "";
+      display: table; }
+    ol.comic > li:hover {
+      background: #393939;
+      cursor: pointer; }
+  ol.comic ul {
+    margin: 24px 0 0 24px;
+    padding: 0;
+    list-style: none; }
+    ol.comic ul.bullets {
+      list-style: disc; }
+    ol.comic ul li {
+      margin: 0 0 12px 0; }
+  ol.comic img.logo {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    width: 60px;
+    height: 60px;
+    margin: 0 12px 0 0; }
+  ol.comic .no-img img {
+    display: none; }
+  ol.comic .tooltip {
+    white-space: normal; }
+
 .stripe.hero {
   padding: 0;
   background-repeat: no-repeat;
@@ -3410,7 +3481,7 @@ ul.projects {
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
     border-top-left-radius: 6px;
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(0, 0, 0, 0.6);
     margin-top: 72px;
     padding: 12px 24px; }
     @media (min-width: 769px) {

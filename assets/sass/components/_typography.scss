@@ -65,7 +65,6 @@
   hr {
     border: solid 2px $gray-dark;
     clear: both;
-    float: left;
     height: 0px;
     margin: $dmrg 0;
     width: 100%;
@@ -94,6 +93,17 @@
       outline: none;
     }
   }
+
+  // Dense text elements.
+  %text-dense {
+    font-size: $base * 1.15;
+    line-height: 1.5;
+  }
+  %text-comic {
+    font-size: $base;
+    line-height: 1.5;
+  }
+
 
   // Text highlighting.
   %text-highlight {
@@ -152,7 +162,7 @@
     &.purple:hover { color: $purple-lighter; }
   }
 
-  a, span {
+  a, span, em, strong {
     @extend %text-highlight;
   }
   .breadcrumb {
@@ -160,7 +170,7 @@
     text-transform: lowercase;
   }
 
-  span.tooltip {
+  .tooltip {
     border-bottom: dotted 2px $gray;
     cursor: pointer;
     position: relative;
@@ -182,5 +192,7 @@
       color: $gray-dark;
       padding: $mrg;
       font-size: $base - 3;
+      font-style: normal;
     }
   }
+

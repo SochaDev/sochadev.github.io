@@ -30,8 +30,8 @@ for hosting, so we ported the whole thing over here to GitHub Pages. Enjoy!
 
 ## Content
 
-* Update [team data](_data/team.yml), [project data](_data/projects.yml), [sandbox stuff](_data/sandbox.yml)
-* [Notes on adding hero images](assets/images/heroes)
+* Update [team data](_data/team.yml), [project data](_data/projects.yml), [sandbox stuff](_data/sandbox.yml).
+* [Notes on adding hero images](assets/images/heroes).
 * To enable AngularJS support in the default layout, add these params to your Front Matter:
 
 <pre><code>angular: true

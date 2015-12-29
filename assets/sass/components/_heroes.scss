@@ -1,6 +1,6 @@
 
 .stripe.hero {
-  
+
   @include media(">md") {
     height: 500px;
   }
@@ -23,7 +23,7 @@
 
   .intro {
     @include border-radius($border-radius * 2);
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(0, 0, 0, .60);
     margin-top: ($mrg * 6);
     padding: $mrg $dmrg;
 

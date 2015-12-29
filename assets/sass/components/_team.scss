@@ -1,5 +1,5 @@
-.bios {
 
+.bios {
   @include media(">=md") {
     @include span-columns(10);
     @include shift(1);
@@ -10,8 +10,7 @@
   .beta { @include span-columns(10); }
 
   p {
-    font-size: $base * 1.15;
-    line-height: 1.5;
+    @extend %text-dense;
   }
   img.avatar {
     @include border-radius($border-radius * 2);
@@ -34,4 +33,60 @@
       margin: 0 $mrg 0 0;
     }
   }
+}
+
+.comic-title {
+  @include clearfix();
+  display: block;
+  font-size: $base * 3.2;
+  margin: $dmrg 0;
+}
+ol.comic {
+  @extend %text-comic;
+  margin: ($dmrg + $mrg) 0 0 0;
+  padding: 0;
+
+  > li {
+    @include span-columns(4);
+    @include omega(3n);
+    @include clearfix();
+    @include border-radius($border-radius * 4);
+    position: relative;
+    margin-bottom: $dmrg;
+    padding: $mrg;
+    border: solid 1px $gray-4;
+    min-height: 300px;
+
+    &:hover {
+      background: #393939;
+      cursor: pointer;
+    }
+  }
+
+  ul {
+    margin: $dmrg 0 0 $dmrg;
+    padding: 0;
+    list-style: none;
+
+    &.bullets {
+      list-style: disc;
+    }
+    li {
+      margin: 0 0 $mrg 0;
+    }
+  }
+
+  img.logo {
+    @include border-radius($border-radius * 2);
+    width: ($mrg * 5);
+    height: ($mrg * 5);
+    margin: 0 $mrg 0 0; }
+  .no-img {
+    img {
+      display: none; }
+  }
+
+  .tooltip {
+    white-space: normal; }
+
 }

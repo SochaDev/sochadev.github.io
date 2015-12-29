@@ -254,9 +254,8 @@
   img.logo {
     @include border-radius();
     display: block;
-    text-transform: lowercase;
-    width: 36px;
-    height: 36px;
+    width: ($mrg * 3);
+    height: ($mrg * 3);
 
     h1 & { float: right; }
   }
