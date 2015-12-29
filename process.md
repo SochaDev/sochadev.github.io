@@ -52,8 +52,8 @@ charms all involved with their practical can-do and down-to-earth manner. The
 proposed UX for the Rainbow Cannon in particular was a big hit._
 1. {{ actor1 }} I feel confident and I'm signing off on this. Now let's get the
 {{ project }} launched, {{ actor2 }}{: .no-img }!
-  * {{ actor3 }} _I knew I was right about these guys! Back to doing the one
-    1,000,000 other things I have to do now..._{: .purple }
+  * {{ actor3 }} _I knew I was right about these guys! Back to doing the 1,000,000
+    other things I have to do now..._{: .purple }
 1. {{ actor5 }} Hi Harvey, looking forward to working with you! I
   know we just got sign-off from {{ actor1 }}{: .no-img } but I wanted to reach out with...
 1. _...A FEW KICKOFF ITEMS!!!_

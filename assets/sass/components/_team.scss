@@ -47,15 +47,20 @@ ol.comic {
   padding: 0;
 
   > li {
-    @include span-columns(4);
-    @include omega(3n);
+
+    @include media(">=md") {
+      @include span-columns(4);
+      @include omega(3n);
+      min-height: 300px;
+    }
+
     @include clearfix();
     @include border-radius($border-radius * 4);
     position: relative;
     margin-bottom: $dmrg;
     padding: $mrg;
+    list-style: none;
     border: solid 1px $gray-4;
-    min-height: 300px;
 
     &:hover {
       background: #393939;

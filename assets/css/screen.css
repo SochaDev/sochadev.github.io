@@ -3400,10 +3400,6 @@ ol.comic {
   margin: 36px 0 0 0;
   padding: 0; }
   ol.comic > li {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -3415,14 +3411,21 @@ ol.comic {
     position: relative;
     margin-bottom: 24px;
     padding: 12px;
-    border: solid 1px #444;
-    min-height: 300px; }
-    ol.comic > li:last-child {
-      margin-right: 0; }
-    ol.comic > li:nth-child(3n) {
-      margin-right: 0; }
-    ol.comic > li:nth-child(3n+1) {
-      clear: left; }
+    list-style: none;
+    border: solid 1px #444; }
+    @media (min-width: 768px) {
+      ol.comic > li {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%;
+        min-height: 300px; }
+        ol.comic > li:last-child {
+          margin-right: 0; }
+        ol.comic > li:nth-child(3n) {
+          margin-right: 0; }
+        ol.comic > li:nth-child(3n+1) {
+          clear: left; } }
     ol.comic > li::after {
       clear: both;
       content: "";
