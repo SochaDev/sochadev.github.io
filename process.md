@@ -6,7 +6,7 @@ heroContent: <p>"I'm definitely interested, but how does this all work day-to-da
 tags: [ workflow ]
 ---
 
-{% assign project = '**Bubble Maker 9000&trade;**{: .tooltip .orange }{: data-tip="Sure, it makes bubbles. But the key to real, lasting success is its Rainbow Cannon and built-in Unicorn Rider&trade; integration." }' %}
+{% assign project = '**Bubble Maker 9000&trade;**{: .tooltip .green }{: data-tip="Sure, it makes bubbles. But the key to real, lasting success is its Rainbow Cannon and built-in Unicorn Rider&trade; integration." }' %}
 {% assign actor1 = '**![Chief Marketeer Carol](/assets/images/socha-dev.png){: .logo }Chief Marketeer Carol**{: .tooltip .red .actor .actor-1 }{: data-tip="Carol is a real go-getter, and really needs good news to send up the food chain AT ALL TIMES." }' %}
 {% assign actor2 = '**![Tech Manager Harvey](/assets/images/socha-dev.png){: .logo }Tech Manager Harvey**{: .tooltip .orange .actor .actor-2 }{: data-tip="Harvey does his best to keep his team moving, but is lately feeling a ton of pressure from the top." }' %}
 {% assign actor3 = '**![Overworked Developer Chris](/assets/images/socha-dev.png){: .logo }Overworked Developer Chris**{: .tooltip .orange .actor .actor-3 }{: data-tip="Chis has more work than he can handle, pretty much all the time." }' %}
@@ -15,8 +15,17 @@ tags: [ workflow ]
 
 We made this awesome comic to illustrate how we are typically brought on to a
 project, how we interact with your team during development, and how that project
-becomes an all-around success. We proudly present... _The Tale Of The {{ project }}_{: .comic-title }
+becomes an all-around success. We proudly present...
+_<span class="issue">
+  <span class="numbers">
+    <span class="price">10&cent;</span>
+    <span class="date"><span class="number">#135</span>{{ 'now' | date: "%m-%y" }}</span>
+  </span>
+  <span class="publisher"></span>
+ </span>
+ <span class="title green">The Tale Of The<br>{{ project }}<span class="authority"></span></span>_{: .comic-banner }
 
+1. _Our sensational saga begins at the weekly Steering Committee meeting, nestled somewhere in the dark gloom of Conference Room 2..._{: .narrator }
 1. {{ actor1 }} We ABSOLUTELY MUST complete the {{ project }} project by March!!
   It is critical that our stakeholders have their bubbles!!
   * {{ actor2 }} Yeah, I'm gonna have to look at scheduling with the team ...let's
@@ -36,7 +45,7 @@ can't hire anybody new right now, but I did meet this awesome dev crew called
   SUPER smart ...how can we help you get out of this deep poo that you're in?
 1. _...an epic story of pressure and expectation unfolds, Jason works with
 [the team](/team){: .green } afterwards to create a bang-up plan, SOW for
-development of the {{ project }} system is prepared and delivered._
+development of the {{ project }} system is prepared and delivered..._{: .narrator }
 1. {{ actor2 }} Awesome, thanks Jason! We'll get back to you ASAP. _Wow, I can't
 believe the level of technical detail in this doc -- these ideas on the
 Unicorn Rider&trade; integration are fantastic! And this
@@ -47,9 +56,9 @@ is gonna want to see!_{: .purple }
 1. {{ actor1 }} This all sounds great {{ actor2 }}{: .no-img } ...whatever it takes to get
   the {{ project }} done by March. Bring `{{ site.title }}` in and let's
   listen to their ideas some more.
-1. _...meet-and-greet and brainstorming sessions follow, `{{ site.title }}`
+1. _...meet-and-greet and brainstorming sessions follow, {{ site.title }}
 charms all involved with their practical can-do and down-to-earth manner. The
-proposed UX for the Rainbow Cannon in particular was a big hit._
+proposed UX for the Rainbow Cannon in particular was a big hit..._{: .narrator }
 1. {{ actor1 }} I feel confident and I'm signing off on this. Now let's get the
 {{ project }} launched, {{ actor2 }}{: .no-img }!
   * {{ actor3 }} _I knew I was right about these guys! Back to doing the 1,000,000

@@ -35,16 +35,113 @@
   }
 }
 
-.comic-title {
+
+.comic-banner {
   @include clearfix();
+  background: url(../images/comic-01.png) repeat-x 0 0 transparent;
+  border: solid 1px $gray-4;
   display: block;
-  font-size: $base * 3.2;
-  margin: $dmrg 0;
+  text-align: center;
+  margin: ($dmrg * 2) 0 0 0;
+
+  .tooltip {
+    border-bottom: 0;
+    white-space: normal; }
+
+  .issue {
+    $height: 250px;
+    $height-publisher: 65px;
+
+    @include span-columns(2);
+    background: $gray-dark;
+    border-right: solid 1px $gray-4;
+    height: $height;
+    position: relative;
+    font-size: $base;
+    font-style: normal;
+    text-align: center;
+
+    %position {
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      padding: $mrg 0;
+    }
+
+    .numbers {
+      @extend %position;
+      top: 0;
+      height: ($height - $height-publisher);
+
+      .price {
+        display: block;
+        color: $gray-lighter;
+        font-size: $base * 3.2;
+        padding: $dmrg 0;
+      }
+      .date {
+        @extend %position;
+        width: auto;
+        left: auto;
+        right: 0;
+        bottom: 0;
+        color: $gray-light;
+        padding: $hmrg $mrg;
+        background: $gray-4;
+
+        .number {
+          display: block;
+          font-size: $base * 1.6;
+          font-style: italic;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .publisher {
+      @extend %position;
+      bottom: 0;
+      background: url('../images/socha-dev.png') no-repeat 0 0;
+      background-size: cover;
+      border-top: solid 1px $gray-4;
+      color: $white;
+      text-transform: uppercase;
+      height: $height-publisher;
+    }
+  }
+
+  .title {
+    @include span-columns(10);
+    padding: ($dmrg * 2) 0;
+    position: relative;
+    font-size: $base * 3.6;
+    font-weight: bold;
+
+    .authority {
+      background: url('../images/comics-code-authority.jpg') no-repeat 0 0;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 65px;
+      height: 79px;
+      margin: $dmrg;
+    }
+  }
 }
+
 ol.comic {
   @extend %text-comic;
-  margin: ($dmrg + $mrg) 0 0 0;
+  margin: 0;
   padding: 0;
+
+  @include media(">=md") {
+    background: $white;
+    border: solid 1px $gray-4;
+    padding: $dmrg;
+    padding-bottom: 0;
+  }
 
   > li {
 
@@ -55,16 +152,17 @@ ol.comic {
     }
 
     @include clearfix();
-    @include border-radius($border-radius * 4);
+    //@include border-radius($border-radius * 4);
+    background: url(../images/comic-01.png) repeat-x 0 0 $gray-dark;
+    border: solid 1px $gray-4;
     position: relative;
     margin-bottom: $dmrg;
     padding: $mrg;
     list-style: none;
-    border: solid 1px $gray-4;
 
     &:hover {
-      background: #393939;
-      cursor: pointer;
+      //background: #363636;
+      //cursor: pointer;
     }
   }
 
@@ -86,12 +184,23 @@ ol.comic {
     width: ($mrg * 5);
     height: ($mrg * 5);
     margin: 0 $mrg 0 0; }
-  .no-img {
-    img {
-      display: none; }
-  }
+  .no-img img {
+    display: none; }
 
   .tooltip {
     white-space: normal; }
 
+  .narrator {
+    @include media(">=md") {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: $gray-dark;
+      border-bottom: solid 1px $gray-4;
+      font-size: $base - 3;
+    }
+
+    color: $gray-lighter;
+    padding: $mrg;
+  }
 }

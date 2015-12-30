@@ -3072,7 +3072,8 @@ a.purple:hover, span.purple:hover, em.purple:hover, strong.purple:hover, .toolti
     color: #333;
     padding: 12px;
     font-size: 13px;
-    font-style: normal; }
+    font-style: normal;
+    text-align: left; }
 
 .messages {
   border-top-left-radius: 3px;
@@ -3387,32 +3388,105 @@ ul.projects {
     float: left;
     margin: 0 12px 0 0; }
 
-.comic-title {
+.comic-banner {
+  background: url(../images/comic-01.png) repeat-x 0 0 transparent;
+  border: solid 1px #444;
   display: block;
-  font-size: 51.2px;
-  margin: 24px 0; }
-  .comic-title::after {
+  text-align: center;
+  margin: 48px 0 0 0; }
+  .comic-banner::after {
     clear: both;
     content: "";
     display: table; }
+  .comic-banner .tooltip {
+    border-bottom: 0;
+    white-space: normal; }
+  .comic-banner .issue {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    background: #333;
+    border-right: solid 1px #444;
+    height: 250px;
+    position: relative;
+    font-size: 16px;
+    font-style: normal;
+    text-align: center; }
+    .comic-banner .issue:last-child {
+      margin-right: 0; }
+    .comic-banner .issue .numbers, .comic-banner .issue .numbers .date, .comic-banner .issue .publisher {
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      padding: 12px 0; }
+    .comic-banner .issue .numbers {
+      top: 0;
+      height: 185px; }
+      .comic-banner .issue .numbers .price {
+        display: block;
+        color: #e4e4e4;
+        font-size: 51.2px;
+        padding: 24px 0; }
+      .comic-banner .issue .numbers .date {
+        width: auto;
+        left: auto;
+        right: 0;
+        bottom: 0;
+        color: #bbb;
+        padding: 6px 12px;
+        background: #444; }
+        .comic-banner .issue .numbers .date .number {
+          display: block;
+          font-size: 25.6px;
+          font-style: italic;
+          font-weight: bold; }
+    .comic-banner .issue .publisher {
+      bottom: 0;
+      background: url("../images/socha-dev.png") no-repeat 0 0;
+      background-size: cover;
+      border-top: solid 1px #444;
+      color: #fff;
+      text-transform: uppercase;
+      height: 65px; }
+  .comic-banner .title {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    padding: 48px 0;
+    position: relative;
+    font-size: 57.6px;
+    font-weight: bold; }
+    .comic-banner .title:last-child {
+      margin-right: 0; }
+    .comic-banner .title .authority {
+      background: url("../images/comics-code-authority.jpg") no-repeat 0 0;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 65px;
+      height: 79px;
+      margin: 24px; }
 
 ol.comic {
-  margin: 36px 0 0 0;
+  margin: 0;
   padding: 0; }
+  @media (min-width: 768px) {
+    ol.comic {
+      background: #fff;
+      border: solid 1px #444;
+      padding: 24px;
+      padding-bottom: 0; } }
   ol.comic > li {
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-top-left-radius: 12px;
+    background: url(../images/comic-01.png) repeat-x 0 0 #333;
+    border: solid 1px #444;
     position: relative;
     margin-bottom: 24px;
     padding: 12px;
-    list-style: none;
-    border: solid 1px #444; }
+    list-style: none; }
     @media (min-width: 768px) {
       ol.comic > li {
         float: left;
@@ -3430,9 +3504,6 @@ ol.comic {
       clear: both;
       content: "";
       display: table; }
-    ol.comic > li:hover {
-      background: #393939;
-      cursor: pointer; }
   ol.comic ul {
     margin: 24px 0 0 24px;
     padding: 0;
@@ -3457,6 +3528,17 @@ ol.comic {
     display: none; }
   ol.comic .tooltip {
     white-space: normal; }
+  ol.comic .narrator {
+    color: #e4e4e4;
+    padding: 12px; }
+    @media (min-width: 768px) {
+      ol.comic .narrator {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #333;
+        border-bottom: solid 1px #444;
+        font-size: 13px; } }
 
 .stripe.hero {
   padding: 0;
