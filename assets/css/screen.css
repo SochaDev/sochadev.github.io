@@ -3591,7 +3591,7 @@ ol.comic {
       margin: 0 0 12px 0; }
       ol.comic ul li:last-child {
         margin: 0; }
-  ol.comic img.logo {
+  ol.comic img.avatar {
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -3635,7 +3635,7 @@ ol.comic {
   ol.comic .blue {
     color: #348699; }
   ol.comic .red {
-    color: red; }
+    color: #cd3737; }
   ol.comic .green {
     color: #5b6b22; }
   ol.comic .gray {
@@ -3646,8 +3646,14 @@ ol.comic {
     color: #574278; }
   ol.comic strong {
     text-transform: uppercase; }
+  ol.comic .actor {
+    font-weight: normal; }
   ol.comic .brand {
-    color: #000; }
+    color: #666;
+    font-weight: bold; }
+    ol.comic .brand.actor {
+      color: #000;
+      font-weight: normal; }
   ol.comic .narrator {
     display: block;
     background: #fff; }

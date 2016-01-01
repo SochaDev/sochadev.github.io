@@ -8,11 +8,11 @@ tags: [ workflow ]
 
 {% assign project = '**Bubble Maker 9000&trade;**{: .tooltip .green .project }{: data-tip="Sure, it makes bubbles. But the key to real, lasting success is its Rainbow Cannon and built-in Unicorn Rider&trade; integration." }' %}
 {% assign projectDue = 'now' | date: "%B" | plus: 3 | prepend: "2015-" | append: "-01" | date: "%B" %}
-{% assign actor1 = '**![Chief Caroline](/assets/images/socha-dev.png){: .avatar .logo }Chief Caroline**{: .tooltip .red .actor .actor-1 }{: data-tip="Caroline is a real go-getter, and really needs good news to send up the corporate food chain AT ALL TIMES." }' %}
-{% assign actor2 = '**![Marvin Manager](/assets/images/socha-dev.png){: .avatar .logo }Marvin Manager**{: .tooltip .orange .actor .actor-2 }{: data-tip="Marvin does his best to keep his team moving, but is lately feeling a ton of pressure from the top." }' %}
-{% assign actor3 = '**![Developer Dave](/assets/images/socha-dev.png){: .avatar .logo }Developer Dave**{: .tooltip .orange .actor .actor-3 }{: data-tip="Poor Dave has more work than he can handle, pretty much all the time." }' %}
-{% assign actor4 = '**![Socha Dev](/assets/images/socha-dev.png){: .logo }Jason @ ' | append: site.title | append: '**{: .tooltip .orange .actor .actor-4 }{: data-tip="TODO" }' %}
-{% assign actor5 = '**![Socha Dev](/assets/images/socha-dev.png){: .logo }Martyn @ ' | append: site.title | append: '**{: .tooltip .orange .actor .actor-5 }{: data-tip="TODO" }' %}
+{% assign actor1 = '**![Chief Caroline](http://placehold.it/60x60/cd3737/ffffff){: .avatar }Chief Caroline**{: .tooltip .red .actor }{: data-tip="Caroline is a real go-getter, and really needs good news to send up the corporate food chain AT ALL TIMES." }' %}
+{% assign actor2 = '**![Marvin Manager](http://placehold.it/60x60/ff9933/ffffff){: .avatar }Marvin Manager**{: .tooltip .orange .actor }{: data-tip="Marvin does his best to keep his team moving, but is lately feeling a ton of pressure from the top." }' %}
+{% assign actor3 = '**![Developer Dave](http://placehold.it/60x60/41a7bf/ffffff){: .avatar }Developer Dave**{: .tooltip .blue .actor }{: data-tip="Poor Dave has more work than he can handle, pretty much all the time." }' %}
+{% assign actor4 = '**![Socha Dev](/assets/images/socha-dev.png){: .avatar }Jason @ ' | append: site.title | append: '**{: .tooltip .brand .actor }{: data-tip="TODO" }' %}
+{% assign actor5 = '**![Socha Dev](/assets/images/socha-dev.png){: .avatar }Martyn @ ' | append: site.title | append: '**{: .tooltip .brand .actor }{: data-tip="TODO" }' %}
 
 We made this awesome comic to illustrate how we are typically brought on to a
 project, how we interact with your team during development, and how that project
@@ -29,10 +29,10 @@ _<span class="issue">
 1. _Our sensational saga begins at the weekly Steering Committee meeting, nestled
   somewhere in the dark gloom of Conference Room 2..._{: .narrator }
   ![Illustration](http://placehold.it/284x150/e4e4e4/bbbbbb){: .illustration .bottom }
-1. {{ actor1 }} We ABSOLUTELY MUST complete the {{ project }} project by {{ projectDue }}!!
+1. {{ actor1 }} We absolutely MUST complete the {{ project }} project by {{ projectDue }}!!
   It is critical that our stakeholders have their bubbles!!
   * {{ actor2 }} Yeah, I'm gonna have to look at scheduling with the team -- let's
-  meet again next week?
+  meet again next week?<br>
     _...sheeeit, there's no way we can complete the {{ project }} in 2 months!!
     What is she thinking, especially with this hiring freeze?!_{: .purple }
 1. ![Illustration](http://placehold.it/284x100/e4e4e4/bbbbbb){: .illustration .top }
@@ -63,7 +63,7 @@ _<span class="issue">
   group in and let's listen to their ideas some more.
   ![Illustration](http://placehold.it/284x150/e4e4e4/bbbbbb){: .illustration .bottom }
 1. _...meet-and-greet and brainstorming sessions follow, **{{ site.title }}**{: .brand }
-  charms all involved with their practical can-do and down-to-earth manner. The
+  charms all involved with their practical can-do, down-to-earth manner. The
   proposed UX for the Rainbow Cannon in particular was a big hit..._{: .narrator }
 ![Illustration](http://placehold.it/284x150/e4e4e4/bbbbbb){: .illustration .bottom }
 1. {{ actor1 }} I feel very confident in **{{ site.title }}**{: .brand } and
@@ -86,7 +86,7 @@ _<span class="issue">
       {: .bullets }
 1. {{ actor2 }} Shiz Martyn, my mind is blown!! **{{ site.title }}**{: .brand }
   is really on top of this!
-    * {{ actor3 }} For realsies, this is great -- this won't be a drain on my own time at all!
+    * {{ actor3 }} For realsies, this is awesome -- this won't be a drain on my own time at all!
     ![Illustration](http://placehold.it/284x205/e4e4e4/bbbbbb){: .illustration }
 1. TODO
 1. TODO
