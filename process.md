@@ -19,7 +19,7 @@ project, how we interact with your team during development, and how that project
 becomes an all-around success. We proudly present...
 _<span class="issue">
   <span class="numbers">
-    <span class="price">10<sup>&cent;</sup></span>
+    <span class="price">10&cent;</span>
     <span class="date"><span class="number">#135</span>{{ 'now' | date: "%m-%Y" }}</span>
   </span>
   <span class="publisher"></span>
