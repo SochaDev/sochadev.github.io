@@ -11,8 +11,8 @@ tags: [ workflow ]
 {% assign actor1 = '**![Chief Caroline](http://placehold.it/60x60/cd3737/ffffff){: .avatar }Chief Caroline**{: .tooltip .red .actor }{: data-tip="Caroline is a real go-getter, and really needs good news to send up the corporate food chain AT ALL TIMES." }' %}
 {% assign actor2 = '**![Marvin Manager](http://placehold.it/60x60/ff9933/ffffff){: .avatar }Marvin Manager**{: .tooltip .orange .actor }{: data-tip="Marvin does his best to keep his team moving, but is lately feeling a ton of pressure from the top." }' %}
 {% assign actor3 = '**![Developer Dave](http://placehold.it/60x60/41a7bf/ffffff){: .avatar }Developer Dave**{: .tooltip .blue .actor }{: data-tip="Poor Dave has more work than he can handle, pretty much all the time." }' %}
-{% assign actor4 = '**![Socha Dev](/assets/images/socha-dev.png){: .avatar }Jason @ ' | append: site.title | append: '**{: .tooltip .brand .actor }{: data-tip="TODO" }' %}
-{% assign actor5 = '**![Socha Dev](/assets/images/socha-dev.png){: .avatar }Martyn @ ' | append: site.title | append: '**{: .tooltip .brand .actor }{: data-tip="TODO" }' %}
+{% assign actor4 = '**![Socha Dev](/assets/images/socha-dev.png){: .avatar }Jason @ ' | append: site.title | append: '**{: .tooltip .brand .actor }{: data-tip="' | append: site.description | append: '" }' %}
+{% assign actor5 = '**![Socha Dev](/assets/images/socha-dev.png){: .avatar }Martyn @ ' | append: site.title | append: '**{: .tooltip .brand .actor }{: data-tip="' | append: site.description | append: '" }' %}
 
 We made this awesome comic to illustrate how we are typically brought on to a
 project, how we interact with your team during development, and how that project

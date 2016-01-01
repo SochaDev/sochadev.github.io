@@ -211,10 +211,10 @@ ol.comic {
     display: none; }
 
   .tooltip {
-    border-bottom-color: $gray-lighter;
+    border-bottom-color: $gray-light;
 
     .tip {
-      border-color: $gray-4;
+      border-color: $gray;
       text-transform: none; }
 
     &.no-img,
