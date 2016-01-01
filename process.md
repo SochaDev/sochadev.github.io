@@ -67,7 +67,7 @@ _<span class="issue">
   proposed UX for the Rainbow Cannon in particular was a big hit..._{: .narrator }
 ![Illustration](http://placehold.it/284x150/e4e4e4/bbbbbb){: .illustration .bottom }
 1. {{ actor1 }} I feel very confident in **{{ site.title }}**{: .brand } and
-  I'm signing off on this. Now let's get the{{ project }} launched, {{ actor2 }}{: .no-img }!
+  I'm signing off on this. Now let's get the {{ project }} launched, {{ actor2 }}{: .no-img }!
   * {{ actor3 }} _I knew I was right about these guys! Back to doing the 1,000,000
     other things I have to do now..._{: .purple }
 1. ![Illustration](http://placehold.it/284x244/e4e4e4/bbbbbb){: .illustration .top }
