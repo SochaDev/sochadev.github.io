@@ -2965,10 +2965,6 @@ a {
   font-size: 18.4px;
   line-height: 1.5; }
 
-ol.comic {
-  font-size: 16px;
-  line-height: 1.5; }
-
 a.blue, span.blue, em.blue, strong.blue, .tooltip .blue.tip {
   color: #8dcad9; }
 
@@ -3388,158 +3384,6 @@ ul.projects {
     float: left;
     margin: 0 12px 0 0; }
 
-.comic-banner {
-  background: url(../images/comic-01.png) repeat-x 0 0 transparent;
-  border: solid 1px #444;
-  display: block;
-  text-align: center;
-  margin: 48px 0 0 0; }
-  .comic-banner::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .comic-banner .tooltip {
-    border-bottom: 0;
-    white-space: normal; }
-  .comic-banner .issue {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 14.70196%;
-    background: #333;
-    border-right: solid 1px #444;
-    height: 250px;
-    position: relative;
-    font-size: 16px;
-    font-style: normal;
-    text-align: center; }
-    .comic-banner .issue:last-child {
-      margin-right: 0; }
-    .comic-banner .issue .numbers, .comic-banner .issue .numbers .date, .comic-banner .issue .publisher {
-      display: block;
-      position: absolute;
-      left: 0;
-      width: 100%;
-      padding: 12px 0; }
-    .comic-banner .issue .numbers {
-      top: 0;
-      height: 185px; }
-      .comic-banner .issue .numbers .price {
-        display: block;
-        color: #e4e4e4;
-        font-size: 51.2px;
-        padding: 24px 0; }
-      .comic-banner .issue .numbers .date {
-        width: auto;
-        left: auto;
-        right: 0;
-        bottom: 0;
-        color: #bbb;
-        padding: 6px 12px;
-        background: #444; }
-        .comic-banner .issue .numbers .date .number {
-          display: block;
-          font-size: 25.6px;
-          font-style: italic;
-          font-weight: bold; }
-    .comic-banner .issue .publisher {
-      bottom: 0;
-      background: url("../images/socha-dev.png") no-repeat 0 0;
-      background-size: cover;
-      border-top: solid 1px #444;
-      color: #fff;
-      text-transform: uppercase;
-      height: 65px; }
-  .comic-banner .title {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 82.94039%;
-    padding: 48px 0;
-    position: relative;
-    font-size: 57.6px;
-    font-weight: bold; }
-    .comic-banner .title:last-child {
-      margin-right: 0; }
-    .comic-banner .title .authority {
-      background: url("../images/comics-code-authority.jpg") no-repeat 0 0;
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 65px;
-      height: 79px;
-      margin: 24px; }
-
-ol.comic {
-  margin: 0;
-  padding: 0; }
-  @media (min-width: 768px) {
-    ol.comic {
-      background: #fff;
-      border: solid 1px #444;
-      padding: 24px;
-      padding-bottom: 0; } }
-  ol.comic > li {
-    background: url(../images/comic-01.png) repeat-x 0 0 #333;
-    border: solid 1px #444;
-    position: relative;
-    margin-bottom: 24px;
-    padding: 12px;
-    list-style: none; }
-    @media (min-width: 768px) {
-      ol.comic > li {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 31.76157%;
-        min-height: 300px; }
-        ol.comic > li:last-child {
-          margin-right: 0; }
-        ol.comic > li:nth-child(3n) {
-          margin-right: 0; }
-        ol.comic > li:nth-child(3n+1) {
-          clear: left; } }
-    ol.comic > li::after {
-      clear: both;
-      content: "";
-      display: table; }
-  ol.comic ul {
-    margin: 24px 0 0 24px;
-    padding: 0;
-    list-style: none; }
-    ol.comic ul.bullets {
-      list-style: disc; }
-    ol.comic ul li {
-      margin: 0 0 12px 0; }
-  ol.comic img.logo {
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-    border-top-right-radius: 6px;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-    border-bottom-left-radius: 6px;
-    border-top-left-radius: 6px;
-    width: 60px;
-    height: 60px;
-    margin: 0 12px 0 0; }
-  ol.comic .no-img img {
-    display: none; }
-  ol.comic .tooltip {
-    white-space: normal; }
-  ol.comic .narrator {
-    color: #e4e4e4;
-    padding: 12px; }
-    @media (min-width: 768px) {
-      ol.comic .narrator {
-        position: absolute;
-        left: 0;
-        top: 0;
-        background: #333;
-        border-bottom: solid 1px #444;
-        font-size: 13px; } }
-
 .stripe.hero {
   padding: 0;
   background-repeat: no-repeat;
@@ -3582,5 +3426,264 @@ ol.comic {
     @media (max-width: 768px) {
       .stripe.hero .intro {
         margin: 24px; } }
+
+.comic-banner {
+  background: url(../images/comics/comic-bg-00.png) repeat-x 0 0 transparent;
+  display: block;
+  text-align: center;
+  margin: 24px 0 0 0; }
+  .comic-banner::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media (min-width: 768px) {
+    .comic-banner {
+      margin: 48px 0 0 0;
+      border: solid 1px #444; } }
+  .comic-banner .issue {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    background: #333;
+    border-right: solid 1px #444;
+    height: 250px;
+    position: relative;
+    font-size: 16px;
+    font-style: normal;
+    text-align: center; }
+    @media (max-width: 767px) {
+      .comic-banner .issue {
+        display: none; } }
+    .comic-banner .issue:last-child {
+      margin-right: 0; }
+    .comic-banner .issue .numbers, .comic-banner .issue .numbers .date, .comic-banner .issue .publisher {
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      padding: 12px 0; }
+    .comic-banner .issue .numbers {
+      top: 0;
+      height: 185px; }
+      .comic-banner .issue .numbers .price {
+        display: block;
+        color: #e4e4e4;
+        font-size: 51.2px;
+        padding: 24px 0; }
+      .comic-banner .issue .numbers .date {
+        width: auto;
+        left: auto;
+        right: 0;
+        bottom: 0;
+        color: #444;
+        padding: 6px 12px;
+        background: url(../images/comics/comic-bg-02.png) repeat 0 0 #fff; }
+        .comic-banner .issue .numbers .date .number {
+          display: block;
+          font-size: 25.6px;
+          font-style: italic;
+          font-weight: bold; }
+    .comic-banner .issue .publisher {
+      bottom: 0;
+      background: url("../images/socha-dev.png") no-repeat 0 0;
+      background-size: cover;
+      border-top: solid 1px #444;
+      color: #fff;
+      text-transform: uppercase;
+      height: 65px; }
+  .comic-banner .title {
+    position: relative;
+    font-size: 57.6px;
+    font-weight: normal; }
+    @media (min-width: 769px) {
+      .comic-banner .title {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 82.94039%;
+        padding: 48px 0; }
+        .comic-banner .title:last-child {
+          margin-right: 0; } }
+    .comic-banner .title .tooltip {
+      border-bottom: 0;
+      font-weight: bold;
+      white-space: normal; }
+      .comic-banner .title .tooltip .tip {
+        font-weight: normal; }
+    .comic-banner .title .authority {
+      background: url("../images/comics/comics-code-authority.jpg") no-repeat 0 0;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 65px;
+      height: 79px;
+      margin: 24px; }
+      @media (max-width: 767px) {
+        .comic-banner .title .authority {
+          display: none; } }
+
+ol.comic {
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background: url(../images/comics/comic-bg-01.png) repeat 0 0 #fff;
+  color: #2b2b2b;
+  padding: 12px; }
+  @media (min-width: 768px) {
+    ol.comic {
+      border: solid 1px #444;
+      padding: 24px;
+      padding-bottom: 0; } }
+  ol.comic > li {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    background: url(../images/comics/comic-bg-02.png) repeat 0 0 #fff;
+    border: solid 1px #bbb;
+    position: relative;
+    margin-bottom: 12px;
+    padding: 12px;
+    list-style: none; }
+    @media (min-width: 768px) {
+      ol.comic > li {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%;
+        min-height: 300px;
+        margin-bottom: 24px; }
+        ol.comic > li:last-child {
+          margin-right: 0; }
+        ol.comic > li:nth-child(3n) {
+          margin-right: 0; }
+        ol.comic > li:nth-child(3n+1) {
+          clear: left; } }
+    ol.comic > li::after {
+      clear: both;
+      content: "";
+      display: table; }
+    ol.comic > li:nth-child(2n+1) {
+      border-color: #e4e4e4; }
+      ol.comic > li:nth-child(2n+1) .narrator {
+        border-color: #e4e4e4; }
+    ol.comic > li:nth-child(4n) {
+      background: #fff; }
+    ol.comic > li:nth-child(6n) {
+      border: solid 1px #b3b3b3; }
+    ol.comic > li em, ol.comic > li strong, ol.comic > li .tooltip {
+      background: #fff; }
+  ol.comic ul {
+    margin: 24px 0 0 24px;
+    padding: 0;
+    list-style: none; }
+    ol.comic ul.bullets {
+      list-style: disc; }
+    ol.comic ul li {
+      background: #fff;
+      margin: 0 0 12px 0; }
+      ol.comic ul li:last-child {
+        margin: 0; }
+  ol.comic img.logo {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    width: 60px;
+    height: 60px;
+    margin: 0 12px 0 0; }
+  ol.comic img.illustration {
+    display: block;
+    margin: 12px auto;
+    width: 100%; }
+    ol.comic img.illustration::after {
+      clear: both;
+      content: "";
+      display: table; }
+    ol.comic img.illustration.top {
+      margin-top: 0; }
+    @media (min-width: 768px) {
+      ol.comic img.illustration.bottom {
+        position: absolute;
+        bottom: 0;
+        z-index: 0;
+        width: auto;
+        margin: 0 0 12px 0; } }
+    @media (max-width: 767px) {
+      ol.comic img.illustration.bottom {
+        margin-bottom: 0; } }
+  ol.comic .no-img img {
+    display: none; }
+  ol.comic .tooltip {
+    border-bottom-color: #e4e4e4; }
+    ol.comic .tooltip .tip {
+      border-color: #444;
+      text-transform: none; }
+    ol.comic .tooltip.no-img, ol.comic .tooltip.project {
+      white-space: normal; }
+  ol.comic .blue {
+    color: #348699; }
+  ol.comic .red {
+    color: red; }
+  ol.comic .green {
+    color: #5b6b22; }
+  ol.comic .gray {
+    color: #bbb; }
+  ol.comic .orange {
+    color: #e67300; }
+  ol.comic .purple {
+    color: #574278; }
+  ol.comic strong {
+    text-transform: uppercase; }
+  ol.comic .brand {
+    color: #000; }
+  ol.comic .narrator {
+    display: block;
+    background: #fff; }
+    @media (min-width: 768px) {
+      ol.comic .narrator {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        border-bottom: solid 1px #bbb;
+        padding: 12px; } }
+  ol.comic .index {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 12px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    line-height: 2;
+    font-size: 11px;
+    background: #fff;
+    border: solid 1px #e4e4e4;
+    color: #bbb; }
+    @media (max-width: 767px) {
+      ol.comic .index {
+        display: none; } }
 
 /*# sourceMappingURL=screen.css.map */

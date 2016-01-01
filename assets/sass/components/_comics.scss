@@ -1,0 +1,273 @@
+
+.comic-banner {
+  @include clearfix();
+  background: url(../images/comics/comic-bg-00.png) repeat-x 0 0 transparent;
+
+  display: block;
+  text-align: center;
+  margin: $dmrg 0 0 0;
+
+  @include media(">=md") {
+    margin: ($dmrg * 2) 0 0 0;
+    border: solid 1px $gray-4;
+  }
+
+  .issue {
+    $height: 250px;
+    $height-publisher: 65px;
+
+    @include media("<md") {
+      display: none;
+    }
+
+    @include span-columns(2);
+    background: $gray-dark;
+    border-right: solid 1px $gray-4;
+    height: $height;
+    position: relative;
+    font-size: $base;
+    font-style: normal;
+    text-align: center;
+
+    %position {
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      padding: $mrg 0;
+    }
+
+    .numbers {
+      @extend %position;
+      top: 0;
+      height: ($height - $height-publisher);
+
+      .price {
+        display: block;
+        color: $gray-lighter;
+        font-size: $base * 3.2;
+        padding: $dmrg 0;
+      }
+      .date {
+        @extend %position;
+        width: auto;
+        left: auto;
+        right: 0;
+        bottom: 0;
+        color: $gray-4;
+        padding: $hmrg $mrg;
+        background: url(../images/comics/comic-bg-02.png) repeat 0 0 $white;
+
+        .number {
+          display: block;
+          font-size: $base * 1.6;
+          font-style: italic;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .publisher {
+      @extend %position;
+      bottom: 0;
+      background: url('../images/socha-dev.png') no-repeat 0 0;
+      background-size: cover;
+      border-top: solid 1px $gray-4;
+      color: $white;
+      text-transform: uppercase;
+      height: $height-publisher;
+    }
+  }
+
+  .title {
+    position: relative;
+    font-size: $base * 3.6;
+    font-weight: normal;
+
+    @include media(">md") {
+      @include span-columns(10);
+      padding: ($dmrg * 2) 0;
+    }
+
+    .tooltip {
+      border-bottom: 0;
+      font-weight: bold;
+      white-space: normal;
+
+      .tip {
+        font-weight: normal; }
+    }
+
+    .authority {
+      background: url('../images/comics/comics-code-authority.jpg') no-repeat 0 0;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 65px;
+      height: 79px;
+      margin: $dmrg;
+
+      @include media("<md") {
+        display: none;
+      }
+    }
+  }
+}
+
+ol.comic {
+  font-size: $base - 3;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background: url(../images/comics/comic-bg-01.png) repeat 0 0 $white;
+  color: $gray-darker;
+  padding: $mrg;
+
+  @include media(">=md") {
+    border: solid 1px $gray-4;
+    padding: $dmrg;
+    padding-bottom: 0;
+  }
+
+  > li {
+    @include media(">=md") {
+      @include span-columns(4);
+      @include omega(3n);
+      min-height: 300px;
+      margin-bottom: $dmrg;
+    }
+
+    @include clearfix();
+    @include border-radius();
+    background: url(../images/comics/comic-bg-02.png) repeat 0 0 $white;
+    border: solid 1px $gray-light;
+    position: relative;
+    margin-bottom: $mrg;
+    padding: $mrg;
+    list-style: none;
+
+    // "Age the paper".
+    &:nth-child(2n+1) {
+      border-color: $gray-lighter;
+
+      .narrator {
+        border-color: $gray-lighter; }
+    }
+    &:nth-child(4n) {
+      background: $white;
+    }
+    &:nth-child(6n) {
+      border: solid 1px lighten($gray, 30%); }
+    em, strong, .tooltip {
+      background: $white; }
+  }
+
+  ul {
+    margin: $dmrg 0 0 $dmrg;
+    padding: 0;
+    list-style: none;
+
+    &.bullets {
+      list-style: disc; }
+    li {
+      background: $white;
+      margin: 0 0 $mrg 0;
+
+      &:last-child { margin: 0; }
+    }
+  }
+
+  img.logo {
+    @include border-radius($border-radius * 2);
+    width: ($mrg * 5);
+    height: ($mrg * 5);
+    margin: 0 $mrg 0 0; }
+  img.avatar {
+
+  }
+  img.illustration {
+    @include clearfix();
+    display: block;
+    margin: $mrg auto;
+    width: 100%;
+
+    &.top {
+      margin-top: 0;
+    }
+    &.bottom {
+      @include media(">=md") {
+        position: absolute;
+        bottom: 0;
+        z-index: 0;
+        width: auto;
+        margin: 0 0 $mrg 0;
+      }
+      @include media("<md") {
+        margin-bottom: 0;
+      }
+    }
+
+
+  }
+  .no-img img {
+    display: none; }
+
+  .tooltip {
+    border-bottom-color: $gray-lighter;
+
+    .tip {
+      border-color: $gray-4;
+      text-transform: none; }
+
+    &.no-img,
+    &.project {
+      white-space: normal; }
+  }
+
+  .blue { color: darken($blue, 10%); }
+  .red { color: red; }
+  .green { color: darken($green, 5%); }
+  .gray { color: $gray-light; }
+  .orange { color: darken($orange, 25%); }
+  .purple { color: darken($purple, 10%); }
+  strong { text-transform: uppercase; }
+  .brand { color: $black; }
+
+  .narrator {
+    display: block;
+    background: $white;
+
+    @include media(">=md") {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      border-bottom: solid 1px $gray-light;
+      padding: $mrg;
+    }
+  }
+
+  .index {
+    @include border-radius($border-radius * 4);
+    display: block;
+    width: $dmrg;
+    height: $dmrg;
+    margin: $mrg;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    line-height: 2;
+    font-size: $base - 5;
+    background: $white;
+    border: solid 1px $gray-lighter;
+    color: $gray-light;
+
+    @include media("<md") {
+      display: none;
+    }
+  }
+
+}

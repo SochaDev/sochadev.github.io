@@ -30,6 +30,7 @@
       this.contactForm(context, settings);
       this.toolTips(context, settings);
       this.projectList(context, settings);
+      this.comicPanels(context, settings);
 
     },
     scrollMain: function(context, settings) {
@@ -354,6 +355,23 @@
         .click(function(evt) {
           $modal.fadeOut(settings.theme.animation.speed);
         });
+    },
+    comicPanels: function(context, settings) {
+
+      var $panels = $('ol.comic > li', context);
+      if (!$panels.length) {
+        return;
+      }
+
+      $panels
+        .each(function(ix, e) {
+          var $panel = $(e);
+          var number = document.createElement('span');
+          number.innerHTML = (ix + 1);
+          number.className = 'index';
+          $panel.append(number);
+        });
+
     }
   };
 
