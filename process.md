@@ -28,7 +28,7 @@ _<span class="issue">
 
 1. _Our sensational saga begins at the weekly Steering Committee meeting, nestled
   somewhere in the dark gloom of Conference Room 2..._{: .narrator }
-  ![Illustration](http://placehold.it/284x150/e4e4e4/bbbbbb){: .illustration .bottom }
+  ![Illustration](http://placehold.it/284x160/e4e4e4/bbbbbb){: .illustration .bottom }
 1. {{ actor1 }} We absolutely MUST complete the {{ project }} project by {{ projectDue }}!!
   It is critical that our stakeholders have their bubbles!!
   * {{ actor2 }} Yeah, I'm gonna have to look at scheduling with the team -- let's
