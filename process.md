@@ -19,7 +19,7 @@ project, how we interact with your team during development, and how that project
 becomes an all-around success. We proudly present...
 _<span class="issue">
   <span class="numbers">
-    <span class="price">10&cent;</span>
+    <span class="price">10<sup>&cent;</sup></span>
     <span class="date"><span class="number">#135</span>{{ 'now' | date: "%m-%Y" }}</span>
   </span>
   <span class="publisher"></span>
@@ -28,7 +28,7 @@ _<span class="issue">
 
 1. _Our sensational saga begins at the weekly Steering Committee meeting, nestled
   somewhere in the dark gloom of Conference Room 2..._{: .narrator }
-  ![Illustration](http://placehold.it/284x160/e4e4e4/bbbbbb){: .illustration .bottom }
+  ![Illustration](http://placehold.it/284x170/e4e4e4/bbbbbb){: .illustration .bottom }
 1. {{ actor1 }} We absolutely MUST complete the {{ project }} project by {{ projectDue }}!!
   It is critical that our stakeholders have their bubbles!!
   * {{ actor2 }} Yeah, I'm gonna have to look at scheduling with the team -- let's
