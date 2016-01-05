@@ -40,30 +40,6 @@
     },
     scrollStickyStuff: function(context, settings) {
 
-      // Magical sticky header.
-      $(window)
-        .scroll(function() {
-          var height = $(window).scrollTop();
-          if (height  > theme.header.outerHeight()) {
-            theme.header.fadeIn(settings.theme.animation.speed);
-          }
-          else if (theme.header.is(':visible')) {
-            theme.header.fadeOut(settings.theme.animation.speed);
-          }
-        });
-
-      // Magical scroll-to-top.
-      $('a.top', theme.header)
-        .click(function(evt) {
-          evt.preventDefault();
-          settings.theme.top = 0;
-
-          $('#modal, fieldset.contact, .messages, .tooltip .tip', context)
-            .fadeOut(settings.theme.animation.speed);
-
-          theme.scrollMain(context, settings);
-        });
-
       // Magical scroll-to-target.
       if (settings.page.url == '/') {
         $('p a[href*=#]', context)
@@ -80,8 +56,32 @@
             $e.click();
           }
         }
-
       }
+
+      // Magical sticky header.
+      $(window)
+        .scroll(function() {
+          var height = $(window).scrollTop();
+          if (height > theme.header.outerHeight()) {
+            theme.header.fadeIn(settings.theme.animation.speed);
+          }
+          else if (theme.header.css('opacity') == 1) {
+            theme.header.fadeOut(settings.theme.animation.speed);
+          }
+        });
+
+      // Magical scroll-to-top.
+      $('a.top', theme.header)
+        .click(function(evt) {
+          evt.preventDefault();
+          settings.theme.top = 0;
+
+          $('#modal, fieldset.contact, .messages, .tooltip .tip', context)
+            .fadeOut(settings.theme.animation.speed);
+
+          theme.scrollMain(context, settings);
+        });
+
     },
     scrollFadeChildren: function(context, settings) {
 
@@ -414,7 +414,7 @@
 
       $modal
         .click(function(evt) {
-          document.location.hash = '#projects';
+          document.location.hash = 'projects';
           document.title = settings.page.title;
 
           $modal.fadeOut(settings.theme.animation.speed);
