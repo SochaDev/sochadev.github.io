@@ -8,7 +8,7 @@ tags: [ workflow ]
 
 {% assign project = '**Bubble Maker 9000&trade;**{: .tooltip .green .project }{: data-tip="Sure, it makes bubbles. But the key to real, lasting success is its Rainbow Cannon and built-in Unicorn Rider&trade; integration." }' %}
 {% assign projectDue = 'now' | date: "%B" | plus: 3 | prepend: "2015-" | append: "-01" | date: "%B" %}
-{% assign actor1 = '**![Chief Caroline](http://placehold.it/60x60/cd3737/ffffff){: .avatar }Chief Caroline**{: .tooltip .red .actor }{: data-tip="Caroline is a real go-getter, and really needs good news to send up the corporate food chain AT ALL TIMES." }' %}
+{% assign actor1 = '**![Chief Caroline](http://placehold.it/60x60/b20b23/ffffff){: .avatar }Chief Caroline**{: .tooltip .red .actor }{: data-tip="Caroline is a real go-getter, and really needs good news to send up the corporate food chain AT ALL TIMES." }' %}
 {% assign actor2 = '**![Marvin Manager](http://placehold.it/60x60/ff9933/ffffff){: .avatar }Marvin Manager**{: .tooltip .orange .actor }{: data-tip="Marvin does his best to keep his team moving, but is lately feeling a ton of pressure from the top." }' %}
 {% assign actor3 = '**![Developer Dave](http://placehold.it/60x60/41a7bf/ffffff){: .avatar }Developer Dave**{: .tooltip .blue .actor }{: data-tip="Poor Dave has more work than he can handle, pretty much all the time." }' %}
 {% assign actor4 = '**![Socha Dev](/assets/images/socha-dev.png){: .avatar }Jason @ ' | append: site.title | append: '**{: .tooltip .brand .actor }{: data-tip="' | append: site.description | append: '" }' %}

@@ -1,6 +1,6 @@
 <div class="container">
         <ul class="projects">{% for project in site.data.projects %}
-          <li><a href="{% if project.whiteLabel %}{{ page.url }}{% else %}{{ project.clientUrl }}{% endif %}" data-project="{{ forloop.index | minus: 1 }}" title="{{ project.name }}{% if project.name != project.client %}{% if project.whiteLabel %} for {% else %} - {% endif %}{{ project.client }}{% endif %}" class="{% if project.whiteLabel %}socha-dev-white-label{% else %}{{ project.name | downcase | split: ' ' | join: '-' | replace: '.', '-' }}{% endif %}">{{ project.name }}</a></li>{% endfor %}
+          <li><a href="#projects-{{ forloop.index0 }}" data-project="{{ forloop.index0 }}" title="{{ project.name }}{% if project.name != project.client %}{% if project.whiteLabel %} for {% else %} - {% endif %}{{ project.client }}{% endif %}" class="{% if project.whiteLabel %}socha-dev-white-label{% else %}{{ project.name | downcase | split: ' ' | join: '-' | replace: '.', '-' }}{% endif %}">{{ project.name }}</a></li>{% endfor %}
         </ul>
         <div id="modal">
           <div class="modal">

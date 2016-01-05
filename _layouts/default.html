@@ -83,6 +83,9 @@
     api: {
       baseUri: "{{ site.restApiUrl }}"
     },
+    site: {
+      title: "{{ site.title }}"
+    },
     page: {
       url: "{{ page.url }}",
       title: "{% if page.title %}{{ page.title | strip_html }}{% else %}{{ site.title }}{% endif %}",

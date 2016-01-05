@@ -40,14 +40,32 @@
     },
     scrollStickyStuff: function(context, settings) {
 
+      // Magical scroll-to-target.
+      if (settings.page.url == '/') {
+        $('p a[href*=#]', context)
+          .click(function(evt) {
+            evt.preventDefault();
+            settings.theme.top = ($(this.hash).offset().top - theme.headerScrollOffset + 1);
+            theme.scrollMain(context, settings);
+            document.location.hash = this.hash;
+          });
+
+        if (document.location.hash) {
+          var $e = $('p a[href=' + document.location.hash + ']', context);
+          if ($e.length) {
+            $e.click();
+          }
+        }
+      }
+
       // Magical sticky header.
       $(window)
         .scroll(function() {
           var height = $(window).scrollTop();
-          if (height  > theme.header.outerHeight()) {
+          if (height > theme.header.outerHeight()) {
             theme.header.fadeIn(settings.theme.animation.speed);
           }
-          else if (theme.header.is(':visible')) {
+          else if (theme.header.css('opacity') == 1) {
             theme.header.fadeOut(settings.theme.animation.speed);
           }
         });
@@ -64,15 +82,44 @@
           theme.scrollMain(context, settings);
         });
 
-      // Magical scroll-to-target.
-      if (settings.page.url == '/') {
-        $('p a[href*=#]', context)
-          .click(function(evt) {
-            evt.preventDefault();
-            settings.theme.top = ($(this.hash).offset().top - theme.headerScrollOffset + 1);
-            theme.scrollMain(context, settings);
-          });
+    },
+    scrollFadeChildren: function(context, settings) {
+
+      var $window = $(window);
+      if ($window.width() < settings.theme.breakpoints.md) {
+        return;
       }
+
+      // Function to fade context children in or out.
+      var fade = function() {
+        context
+          .each(function(ix, e) {
+            var $self = $(e);
+            var objectBottom = $self.offset().top + ($self.outerHeight() / 3);
+            var windowBottom = $window.scrollTop() + $window.innerHeight();
+
+            if (objectBottom < windowBottom) {
+              if ($self.css('opacity') == 0) {
+                $self.fadeTo(settings.theme.animation.speed * 3, 1);
+              }
+            }
+            else {
+              if ($self.css('opacity') == 1) {
+                $self.fadeTo(settings.theme.animation.speed, 0);
+              }
+            }
+          });
+        };
+
+      // Fade in completely visible elements during page load.
+      fade();
+
+      // Fade in elements during scroll.
+      $window
+        .scroll(function() {
+          fade();
+        });
+
     },
     toolTips: function(context, settings) {
 
@@ -289,11 +336,25 @@
           var project = settings.projects[$self.attr('data-project')];
           var $content = $modal.children('.modal');
 
+          document.location.hash = this.hash;
+          if (!project.whiteLabel) {
+            document.title = project.name + ' | ' + settings.site.title;
+          }
+          else {
+            document.title = settings.page.title;
+          }
+
           $content
             .find('.name')
             .text(project.name)
             .attr('href', project.url)
             .show();
+
+          $content
+            .find('.name')
+            .parents('h3')
+            .attr('id', 'project-' + $self.attr('data-project'));
+
           $content
             .find('.client')
             .text(project.client)
@@ -353,8 +414,20 @@
 
       $modal
         .click(function(evt) {
+          document.location.hash = 'projects';
+          document.title = settings.page.title;
+
           $modal.fadeOut(settings.theme.animation.speed);
         });
+
+      // Sniff for #project-N request, trigger animation.
+      if (document.location.hash) {
+        var $e = $('ul.projects a[href=' + document.location.hash + ']', context);
+        if ($e.length) {
+          $e.click();
+        }
+      }
+
     },
     comicPanels: function(context, settings) {
 
@@ -372,6 +445,7 @@
           $panel.append(number);
         });
 
+      theme.scrollFadeChildren($panels, settings);
     }
   };
 
