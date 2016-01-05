@@ -74,6 +74,44 @@
           });
       }
     },
+    scrollFadeChildren: function(context, settings) {
+
+      var $window = $(window);
+      if ($window.width() < settings.theme.breakpoints.md) {
+        return;
+      }
+
+      // Function to fade context children in or out.
+      var fade = function() {
+        context
+          .each(function(ix, e) {
+            var $self = $(e);
+            var objectBottom = $self.offset().top + ($self.outerHeight() / 3);
+            var windowBottom = $window.scrollTop() + $window.innerHeight();
+
+            if (objectBottom < windowBottom) {
+              if ($self.css('opacity') == 0) {
+                $self.fadeTo(settings.theme.animation.speed * 3, 1);
+              }
+            }
+            else {
+              if ($self.css('opacity') == 1) {
+                $self.fadeTo(settings.theme.animation.speed, 0);
+              }
+            }
+          });
+        };
+
+      // Fade in completely visible elements during page load.
+      fade();
+
+      // Fade in elements during scroll.
+      $window
+        .scroll(function() {
+          fade();
+        });
+
+    },
     toolTips: function(context, settings) {
 
       $('.tooltip', context)
@@ -372,6 +410,7 @@
           $panel.append(number);
         });
 
+      theme.scrollFadeChildren($panels, settings);
     }
   };
 

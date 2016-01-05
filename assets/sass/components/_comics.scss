@@ -131,6 +131,9 @@ ol.comic {
   }
 
   > li {
+
+
+
     @include media(">=md") {
       @include span-columns(4);
       @include omega(3n);
@@ -183,6 +186,7 @@ ol.comic {
     width: ($mrg * 5);
     height: ($mrg * 5);
     margin: 0 $mrg 0 0; }
+
   img.illustration {
     @include clearfix();
     display: block;
@@ -204,8 +208,6 @@ ol.comic {
         margin-bottom: 0;
       }
     }
-
-
   }
   .no-img img {
     display: none; }
@@ -223,7 +225,7 @@ ol.comic {
   }
 
   .blue { color: darken($blue, 10%); }
-  .red { color: #cd3737; }
+  .red { color: $red; }
   .green { color: darken($green, 5%); }
   .gray { color: $gray-light; }
   .orange { color: darken($orange, 25%); }
