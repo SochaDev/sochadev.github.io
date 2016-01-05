@@ -69,14 +69,12 @@
         $('p a[href*=#]', context)
           .click(function(evt) {
             evt.preventDefault();
-
-            document.location.hash = this.hash;
             settings.theme.top = ($(this.hash).offset().top - theme.headerScrollOffset + 1);
             theme.scrollMain(context, settings);
+            document.location.hash = this.hash;
           });
 
         if (document.location.hash) {
-
           var $e = $('p a[href=' + document.location.hash + ']', context);
           if ($e.length) {
             $e.click();
