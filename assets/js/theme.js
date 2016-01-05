@@ -69,9 +69,20 @@
         $('p a[href*=#]', context)
           .click(function(evt) {
             evt.preventDefault();
+
+            document.location.hash = this.hash;
             settings.theme.top = ($(this.hash).offset().top - theme.headerScrollOffset + 1);
             theme.scrollMain(context, settings);
           });
+
+        if (document.location.hash) {
+
+          var $e = $('p a[href=' + document.location.hash + ']', context);
+          if ($e.length) {
+            $e.click();
+          }
+        }
+
       }
     },
     scrollFadeChildren: function(context, settings) {
@@ -327,11 +338,25 @@
           var project = settings.projects[$self.attr('data-project')];
           var $content = $modal.children('.modal');
 
+          document.location.hash = this.hash;
+          if (!project.whiteLabel) {
+            document.title = project.name + ' | ' + settings.site.title;
+          }
+          else {
+            document.title = settings.page.title;
+          }
+
           $content
             .find('.name')
             .text(project.name)
             .attr('href', project.url)
             .show();
+
+          $content
+            .find('.name')
+            .parents('h3')
+            .attr('id', 'project-' + $self.attr('data-project'));
+
           $content
             .find('.client')
             .text(project.client)
@@ -391,8 +416,20 @@
 
       $modal
         .click(function(evt) {
+          document.location.hash = '#projects';
+          document.title = settings.page.title;
+
           $modal.fadeOut(settings.theme.animation.speed);
         });
+
+      // Sniff for #project-N request, trigger animation.
+      if (document.location.hash) {
+        var $e = $('ul.projects a[href=' + document.location.hash + ']', context);
+        if ($e.length) {
+          $e.click();
+        }
+      }
+
     },
     comicPanels: function(context, settings) {
 
