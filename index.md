@@ -10,13 +10,16 @@ tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP,
         <span class="gray tooltip" data-tip="White-label means that you can take
         credit for the work you hire us to do; we like staying behind the scenes.">white-label</span>
         web and app development shop built to help your team succeed. We specialize in
-        <a href="#overflow" class="blue capitalize">overflow</a>,
-        <a href="#triage" class="red capitalize">triage</a> and
-        <a href="#problem-solving" class="green capitalize">problem solving</a> services.
+        <a href="#overflow" class="blue">overflow</a>,
+        <a href="#triage" class="red">triage</a> and
+        <a href="#problem-solving" class="green">problem solving</a> services.
       </p>
       <hr>
       <p>Give us your strategy, designs, requirements, API docs or let us help create them.
       We turn it all in to a beautiful, fully functioning application.</p>
+    </div>
+    <div class="beta">
+      <img src="/assets/images/heroes/main-illust.png" style="width: auto;" />
     </div>
   </div>
 </div>
@@ -79,7 +82,7 @@ tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP,
     <div class="columns-12">
       <p>If you need material for the boss or board, <a href="/executive-summary" target="_blank" class="red">here's an executive summary</a> of our team.</p>
       <p>Want to work here? <a href="#contact" class="blue form-toggler">We'd love to talk!</a> Be sure to include a link to your GitHub account if you're a developer!</p>
+      <hr>
     </div>
-    <hr>
   </div>
 </div>

@@ -16,7 +16,7 @@
   }
 
   body {
-    font-size: $base * 1;
+    font-size: $base * 0.9;
     line-height: 1.5;
     font-family: 'Open Sans', sans-serif;
     color: $white;
@@ -29,12 +29,7 @@
       line-height: 1.5;
       margin-top: 0;
 
-      h1 { 
-        font-size: $base * 2.4; 
-
-        div{ font-size:$base; }
-
-      }
+      h1 { font-size: $base * 2.4; }
       h2 { font-size: $base * 2; }
       h3 { font-size: $base * 1.6; }
 
@@ -79,6 +74,7 @@
 
     main &.first {
       border-bottom: solid 1px $gray;
+      margin-top: 80px;
 
       body.front & {
         border: 0;
@@ -86,7 +82,7 @@
 
         @include media(">md") {
           .columns-12 {
-            @include span-columns(10);
+            @include span-columns(12);
             /*@include shift(1);*/
           }
         }
@@ -96,24 +92,36 @@
     &.second {
       .alpha {
         hr { margin-top: 0; }
-        p:last-child { margin-bottom: $dmrg; }
+        p:last-child { margin-bottom: $dmrg;}
 
         @include media(">md") {
-          @include span-columns(8);
+          @include span-columns(6);
           /*@include shift(1);*/
-          p:last-child { margin-bottom: $mrg; }
+          p:last-child { margin-bottom: ($mrg*2); }
         }
+      }
+
+      .beta { 
+        @include span-columns(6); @include omega(); 
+
+        position: absolute;
+        top: -100px;
+        right: -28px;
+        z-index: 9999;
+
       }
 
       @include media("<=md") {
         padding-bottom: 0;
       }
+
     }
     &.blue {
       background: $blue;
       @extend %stripe-padding-for-icons;
 
       @include media(">md") {
+        padding-top: 60px;
         .alpha { @include span-columns(3); }
         .beta { @include span-columns(8); @include omega(); }
         .fa { margin: $mrg 0 0 ($dmrg); }
@@ -124,7 +132,7 @@
       @extend %stripe-padding-for-icons;
 
       @include media(">md") {
-        .alpha { @include span-columns(7); @include shift(2); }
+        .alpha { @include span-columns(8); @include shift(1); }
         .beta { @include span-columns(3); @include omega(); }
         .fa {  margin: ($dmrg * 2) 0 0 ($dmrg * 1.5); }
       }
@@ -134,19 +142,20 @@
       @extend %stripe-padding-for-icons;
 
       @include media(">md") {
-        .alpha { @include span-columns(3); @include shift(1); }
+        .alpha { @include span-columns(3); /*@include shift(1);*/ }
         .beta { @include span-columns(7); @include shift(1); }
         .fa { margin: $dmrg 0 0 $dmrg; }
       }
     }
     &.gray {
       background: $gray-dark;
-      padding-bottom: ($mrg * 6);
+      padding-bottom: ($mrg * 60);
+      padding-top:  ($mrg * 4);
 
       hr { border-color: $gray-4; margin-top: 0; }
 
       body.front & {
-        padding-bottom: 0;
+        padding-bottom: ($mrg * 6);
       }
     }
     &.last {

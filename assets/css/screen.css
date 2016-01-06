@@ -2528,7 +2528,7 @@ $spritesheet: width height image $spritesheet-sprites;
       margin-bottom: 0; } }
 
 body {
-  font-size: 16px;
+  font-size: 14.4px;
   line-height: 1.5;
   font-family: 'Open Sans', sans-serif;
   color: #fff;
@@ -2542,8 +2542,6 @@ body {
       margin-top: 0; }
       body h1 {
         font-size: 38.4px; }
-        body h1 div {
-          font-size: 16px; }
       body h2 {
         font-size: 32px; }
       body h3 {
@@ -2630,7 +2628,8 @@ body {
   width: 100%;
   @extends %full-width; }
   main .stripe.first {
-    border-bottom: solid 1px #666; }
+    border-bottom: solid 1px #666;
+    margin-top: 80px; }
     body.front main .stripe.first {
       border: 0;
       padding-bottom: 0; }
@@ -2639,7 +2638,7 @@ body {
           float: left;
           display: block;
           margin-right: 2.35765%;
-          width: 82.94039%;
+          width: 100%;
           /*@include shift(1);*/ }
           body.front main .stripe.first .columns-12:last-child {
             margin-right: 0; } }
@@ -2652,35 +2651,49 @@ body {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 65.88078%;
+      width: 48.82117%;
       /*@include shift(1);*/ }
       .stripe.second .alpha:last-child {
         margin-right: 0; }
       .stripe.second .alpha p:last-child {
-        margin-bottom: 12px; } }
+        margin-bottom: 24px; } }
+  .stripe.second .beta {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-right: 0;
+    position: absolute;
+    top: -100px;
+    right: -28px;
+    z-index: 9999; }
+    .stripe.second .beta:last-child {
+      margin-right: 0; }
   @media (max-width: 768px) {
     .stripe.second {
       padding-bottom: 0; } }
   .stripe.blue {
     background: #41a7bf; }
     @media (min-width: 769px) {
-      .stripe.blue .alpha {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 23.23176%; }
-        .stripe.blue .alpha:last-child {
+      .stripe.blue {
+        padding-top: 60px; }
+        .stripe.blue .alpha {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 23.23176%; }
+          .stripe.blue .alpha:last-child {
+            margin-right: 0; }
+        .stripe.blue .beta {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 65.88078%;
           margin-right: 0; }
-      .stripe.blue .beta {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 65.88078%;
-        margin-right: 0; }
-        .stripe.blue .beta:last-child {
-          margin-right: 0; }
-      .stripe.blue .fa {
-        margin: 12px 0 0 24px; } }
+          .stripe.blue .beta:last-child {
+            margin-right: 0; }
+        .stripe.blue .fa {
+          margin: 12px 0 0 24px; } }
   .stripe.red {
     background: #b20b23; }
     @media (min-width: 769px) {
@@ -2688,8 +2701,8 @@ body {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 57.35098%;
-        margin-left: 17.05961%; }
+        width: 65.88078%;
+        margin-left: 8.5298%; }
         .stripe.red .alpha:last-child {
           margin-right: 0; }
       .stripe.red .beta {
@@ -2710,7 +2723,7 @@ body {
         display: block;
         margin-right: 2.35765%;
         width: 23.23176%;
-        margin-left: 8.5298%; }
+        /*@include shift(1);*/ }
         .stripe.green .alpha:last-child {
           margin-right: 0; }
       .stripe.green .beta {
@@ -2725,12 +2738,13 @@ body {
         margin: 24px 0 0 24px; } }
   .stripe.gray {
     background: #333;
-    padding-bottom: 72px; }
+    padding-bottom: 720px;
+    padding-top: 48px; }
     .stripe.gray hr {
       border-color: #444;
       margin-top: 0; }
     body.front .stripe.gray {
-      padding-bottom: 0; }
+      padding-bottom: 72px; }
   .stripe.last {
     border-top: solid 1px #666;
     padding-bottom: 0; }
