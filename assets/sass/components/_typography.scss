@@ -7,8 +7,6 @@
     margin-top: 0;
 
     &:last-child { margin-bottom: 0; }
-
-    &.last-ex { margin-bottom: $dmrg; }
   }
   h2, h3 {
     margin-bottom: $mrg * 1.2;
@@ -22,8 +20,10 @@
     a, a:hover { text-decoration: none; }
   }
   h1 {
-    font-size: $base * 2.8;
+    font-size: $base * 5.2;
     margin: 0;
+
+    div { font-size: $base; }
   }
   h2 {
     font-size: $base * 2.4;

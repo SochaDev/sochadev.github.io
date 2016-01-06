@@ -1,26 +1,22 @@
 ---
-title: Hello, world.<br /> We are Socha Dev.
+title: <div>Hello, world. We are</div> Socha Dev
 tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP, Phalcon, Drupal, front ]
 ---
 
 <div class="stripe second">
   <div class="container">
     <div class="alpha">
-      <p>Socha Dev is a
-      <span class="gray tooltip" data-tip="White-label means that you can take
-      credit for the work you hire us to do; we like staying behind the scenes.">white-label</span>
-      web and app development shop built to help your team succeed. We specialize in
-      <a href="#overflow" class="blue capitalize">overflow</a>,
-      <a href="#triage" class="red capitalize">triage</a> and
-      <a href="#problem-solving" class="green capitalize">problem solving</a> services.
-      We invite you to check out our <a href="#projects">past projects</a>,
-      learn more about <a href="#about" class="purple">our team</a>
-      <a href="#open-source" class="blue">and their tools</a> &mdash; then
-      <a href="#contact">contact us</a> to discuss your next project.</p>
+      <p>a
+        <span class="gray tooltip" data-tip="White-label means that you can take
+        credit for the work you hire us to do; we like staying behind the scenes.">white-label</span>
+        web and app development shop built to help your team succeed. We specialize in
+        <a href="#overflow" class="blue capitalize">overflow</a>,
+        <a href="#triage" class="red capitalize">triage</a> and
+        <a href="#problem-solving" class="green capitalize">problem solving</a> services.
+      </p>
       <hr>
-      <p>We work in the development phase of projects &mdash; you give us your
-      strategy, designs, requirements, API docs and any other pertinents &mdash;
-      we turn it all in to a beautiful, fully functioning application.</p>
+      <p>Give us your strategy, designs, requirements, API docs or let us help create them.
+      We turn it all in to a beautiful, fully functioning application.</p>
     </div>
   </div>
 </div>
@@ -82,7 +78,7 @@ tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP,
   <div class="container">
     <div class="columns-12">
       <p>If you need material for the boss or board, <a href="/executive-summary" target="_blank" class="red">here's an executive summary</a> of our team.</p>
-      <p class="last-ex">Want to work here? <a href="#contact" class="blue form-toggler">We'd love to talk!</a> Be sure to include a link to your GitHub account if you're a developer!</p>
+      <p>Want to work here? <a href="#contact" class="blue form-toggler">We'd love to talk!</a> Be sure to include a link to your GitHub account if you're a developer!</p>
     </div>
     <hr>
   </div>
