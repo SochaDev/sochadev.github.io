@@ -74,6 +74,8 @@
       $('a.top', theme.header)
         .click(function(evt) {
           evt.preventDefault();
+          window.history.replaceState({}, document.title, settings.page.url);
+
           settings.theme.top = 0;
 
           $('#modal, fieldset.contact, .messages, .tooltip .tip', context)
@@ -364,7 +366,7 @@
             .find('.partner')
             .toggle(project.client !== project.name);
           $content.find('.description')
-            .html(project.description.replace(/\\n\\n/g, '</p><p>'));
+            .html('<p>' + project.description.replace(/\\n\\n/g, '</p><p>') + '</p>');
           $content
             .removeClass('white-label');
 
