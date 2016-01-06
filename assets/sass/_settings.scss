@@ -18,9 +18,9 @@ $gray: #666;
 $gray-light: #bbb;
 $gray-lighter: #e4e4e4;
 
-$blue: #41a7bf;
-$red: #b20b23;
-$green: #6b7e28;
+$blue: darken(#77d2e9, 20%); //#41a7bf;
+$red: #b20b23; //darken(#cd3737, 10%);
+$green: darken(#8faa37, 5%); //#6b7e28;
 $orange: lighten(#f93, 10%);
 $purple: #6f5499;
 

@@ -85,7 +85,7 @@ ul.projects {
     max-width: #{map-get($breakpoints, 'lg')};
 
     h3 { text-transform: none; }
-    a { color: $blue; }
+    a { color: darken($blue, 5%); }
 
     &.white-label {
       @include media(">md") { width: 40%; height: auto; bottom: auto; }

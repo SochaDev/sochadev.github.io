@@ -16,8 +16,8 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #41a7bf;
-$green: #bbd16e;
+$blue: darken(#77d2e9, 10%);
+$green: darken(#8faa37, 5%);
 $dark-gray: #333;
 $medium-gray: #888;
 $light-gray: #ddd;
@@ -27,16 +27,16 @@ $base-font-color: $dark-gray;
 $action-color: $blue;
 
 // Border
-$base-border-color: $light-gray;
-$base-border: 1px solid $base-border-color;
+$base-border-color: #ccc;
+$base-border: 2px solid $base-border-color;
 
 // Background Colors
 $base-background-color: #f4f4f4;
 $secondary-background-color: transparent;
 
 // Forms
-$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
-$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.02);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.4);
 
 // Animations
 $base-duration: 150ms;

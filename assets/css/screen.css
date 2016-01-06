@@ -9,7 +9,7 @@ html {
 
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   appearance: none;
-  background-color: #41a7bf;
+  background-color: #4bc3e2;
   border: 0;
   border-radius: 3px;
   color: #fff;
@@ -27,17 +27,17 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap; }
   button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
-    background-color: #348699;
+    background-color: #3c9cb5;
     color: #fff; }
   button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
     button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover {
-      background-color: #41a7bf; }
+      background-color: #4bc3e2; }
 
 fieldset {
   background-color: transparent;
-  border: 1px solid #ddd;
+  border: 2px solid #ccc;
   margin: 0 0 0.5em;
   padding: 1em; }
 
@@ -59,9 +59,9 @@ label {
 input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
 select[multiple=multiple] {
   background-color: #f4f4f4;
-  border: 1px solid #ddd;
+  border: 2px solid #ccc;
   border-radius: 3px;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.02);
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   font-size: 22.4px;
@@ -71,11 +71,11 @@ select[multiple=multiple] {
   width: 100%; }
   input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
   select[multiple=multiple]:hover {
-    border-color: #b1b1b1; }
+    border-color: #a3a3a3; }
   input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
   select[multiple=multiple]:focus {
-    border-color: #41a7bf;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(58, 151, 172, 0.7);
+    border-color: #4bc3e2;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.02), 0 0 5px rgba(53, 188, 222, 0.6);
     outline: none; }
   input[type="color"]:disabled, input[type="date"]:disabled, input[type="datetime"]:disabled, input[type="datetime-local"]:disabled, input[type="email"]:disabled, input[type="month"]:disabled, input[type="number"]:disabled, input[type="password"]:disabled, input[type="search"]:disabled, input[type="tel"]:disabled, input[type="text"]:disabled, input[type="time"]:disabled, input[type="url"]:disabled, input[type="week"]:disabled, input:not([type]):disabled, textarea:disabled,
   select[multiple=multiple]:disabled {
@@ -83,7 +83,7 @@ select[multiple=multiple] {
     cursor: not-allowed; }
     input[type="color"]:disabled:hover, input[type="date"]:disabled:hover, input[type="datetime"]:disabled:hover, input[type="datetime-local"]:disabled:hover, input[type="email"]:disabled:hover, input[type="month"]:disabled:hover, input[type="number"]:disabled:hover, input[type="password"]:disabled:hover, input[type="search"]:disabled:hover, input[type="tel"]:disabled:hover, input[type="text"]:disabled:hover, input[type="time"]:disabled:hover, input[type="url"]:disabled:hover, input[type="week"]:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover,
     select[multiple=multiple]:disabled:hover {
-      border: 1px solid #ddd; }
+      border: 2px solid #ccc; }
 
 textarea {
   resize: vertical; }
@@ -2660,7 +2660,7 @@ body {
     .stripe.second {
       padding-bottom: 0; } }
   .stripe.blue {
-    background: #41a7bf; }
+    background: #23b3d7; }
     @media (min-width: 769px) {
       .stripe.blue .alpha {
         float: left;
@@ -2701,7 +2701,7 @@ body {
       .stripe.red .fa {
         margin: 48px 0 0 36px; } }
   .stripe.green {
-    background: #6b7e28; }
+    background: #7f9731; }
     @media (min-width: 769px) {
       .stripe.green .alpha {
         float: left;
@@ -2968,40 +2968,40 @@ a {
   line-height: 1.5; }
 
 a.blue, span.blue, em.blue, strong.blue, .tooltip .blue.tip {
-  color: #8dcad9; }
+  color: #8dd9ed; }
 
 a.blue.bg, span.blue.bg, em.blue.bg, strong.blue.bg, .tooltip .blue.bg.tip {
-  background: #c7e5ec;
+  background: #b9e8f4;
   color: #2b2b2b; }
   a.blue.bg:hover, span.blue.bg:hover, em.blue.bg:hover, strong.blue.bg:hover, .tooltip .blue.bg.tip:hover {
     color: #2b2b2b; }
 
 a.blue:hover, span.blue:hover, em.blue:hover, strong.blue:hover, .tooltip .blue.tip:hover {
-  color: #c7e5ec; }
+  color: #b9e8f4; }
 
 a.red, span.red, em.red, strong.red, .tooltip .red.tip {
   color: #f56176; }
 
 a.red.bg, span.red.bg, em.red.bg, strong.red.bg, .tooltip .red.bg.tip {
-  background: #faa9b4;
+  background: #f891a0;
   color: #2b2b2b; }
   a.red.bg:hover, span.red.bg:hover, em.red.bg:hover, strong.red.bg:hover, .tooltip .red.bg.tip:hover {
     color: #2b2b2b; }
 
 a.red:hover, span.red:hover, em.red:hover, strong.red:hover, .tooltip .red.tip:hover {
-  color: #faa9b4; }
+  color: #f891a0; }
 
 a.green, span.green, em.green, strong.green, .tooltip .green.tip {
-  color: #bbd16e; }
+  color: #b3cc61; }
 
 a.green.bg, span.green.bg, em.green.bg, strong.green.bg, .tooltip .green.bg.tip {
-  background: #dfeabb;
+  background: #d8e5af;
   color: #2b2b2b; }
   a.green.bg:hover, span.green.bg:hover, em.green.bg:hover, strong.green.bg:hover, .tooltip .green.bg.tip:hover {
     color: #2b2b2b; }
 
 a.green:hover, span.green:hover, em.green:hover, strong.green:hover, .tooltip .green.tip:hover {
-  color: #dfeabb; }
+  color: #d8e5af; }
 
 a.gray, span.gray, em.gray, strong.gray, .tooltip .gray.tip {
   color: #e4e4e4; }
@@ -3088,8 +3088,8 @@ a.purple:hover, span.purple:hover, em.purple:hover, strong.purple:hover, .toolti
     background: #fef1f3;
     color: #b20b23; }
   .messages.success {
-    background: #dfeabb;
-    color: #6b7e28; }
+    background: #ebf1d5;
+    color: #7f9731; }
   .messages ul, .messages li {
     margin: 0;
     padding: 0; }
@@ -3134,7 +3134,7 @@ fieldset {
       width: 100%;
       margin-bottom: 12px; }
       fieldset.contact input[type="submit"]:hover {
-        background-color: #67b9cc; }
+        background-color: #23b3d7; }
 
 ul.projects {
   margin: 24px 0 0 0;
@@ -3272,7 +3272,7 @@ ul.projects {
     #modal .modal h3 {
       text-transform: none; }
     #modal .modal a {
-      color: #41a7bf; }
+      color: #1fa1c1; }
     @media (min-width: 769px) {
       #modal .modal.white-label {
         width: 40%;
@@ -3635,11 +3635,11 @@ ol.comic {
     ol.comic .tooltip.no-img, ol.comic .tooltip.project {
       white-space: normal; }
   ol.comic .blue {
-    color: #348699; }
+    color: #1c8eab; }
   ol.comic .red {
     color: #b20b23; }
   ol.comic .green {
-    color: #5b6b22; }
+    color: #6f832b; }
   ol.comic .gray {
     color: #bbb; }
   ol.comic .orange {
