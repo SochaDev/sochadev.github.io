@@ -2528,7 +2528,7 @@ $spritesheet: width height image $spritesheet-sprites;
       margin-bottom: 0; } }
 
 body {
-  font-size: 14.4px;
+  font-size: 16px;
   line-height: 1.5;
   font-family: 'Open Sans', sans-serif;
   color: #fff;
@@ -2666,7 +2666,7 @@ body {
     position: absolute;
     top: -100px;
     right: -28px;
-    z-index: 9999; }
+    z-index: 99; }
     .stripe.second .beta:last-child {
       margin-right: 0; }
   @media (max-width: 768px) {
