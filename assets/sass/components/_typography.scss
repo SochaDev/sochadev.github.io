@@ -7,6 +7,8 @@
     margin-top: 0;
 
     &:last-child { margin-bottom: 0; }
+
+    &.last-ex { margin-bottom: $dmrg; }
   }
   h2, h3 {
     margin-bottom: $mrg * 1.2;

@@ -82,7 +82,7 @@ tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP,
   <div class="container">
     <div class="columns-12">
       <p>If you need material for the boss or board, <a href="/executive-summary" target="_blank" class="red">here's an executive summary</a> of our team.</p>
-      <p>Want to work here? <a href="#contact" class="blue form-toggler">We'd love to talk!</a> Be sure to include a link to your GitHub account if you're a developer!</p>
+      <p class="last-ex">Want to work here? <a href="#contact" class="blue form-toggler">We'd love to talk!</a> Be sure to include a link to your GitHub account if you're a developer!</p>
     </div>
     <hr>
   </div>
