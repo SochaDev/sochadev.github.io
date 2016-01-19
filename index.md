@@ -19,7 +19,7 @@ tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP,
       We turn it all in to a beautiful, fully functioning application.</p>
     </div>
     <div class="beta">
-      <img src="/assets/images/heroes/main-illust.png" style="width: auto;" />
+      <img src="/assets/images/heroes/main-illust.png" />
     </div>
   </div>
 </div>

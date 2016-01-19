@@ -95,7 +95,7 @@
         p:last-child { margin-bottom: $dmrg;}
 
         @include media(">md") {
-          @include span-columns(6);
+          @include span-columns(5);
           /*@include shift(1);*/
           p:last-child { margin-bottom: ($mrg*2); }
         }
@@ -105,8 +105,8 @@
         @include span-columns(6); @include omega(); 
 
         position: absolute;
-        top: -100px;
-        right: -28px;
+        top: -126px;
+        right: -36px;
         z-index: 99;
 
       }

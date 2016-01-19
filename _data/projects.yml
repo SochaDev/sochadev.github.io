@@ -14,7 +14,7 @@
   clientUrl: http://discoveryeducation.com
   url: http://discoveryeducation.com
   image: discovery-communications
-  description: When Discovery Education decided to make the switch to Drupal for a whole slew of sites, Socha Dev was there to help. Since the start of the project, Socha Dev has been engaged in advising, designing, porting, and developing a variety of properties for Discovery, as well as managing all staging and deployment on the Acquia platform.\n\nToday, we continue iterating a single multisite instance of Drupal - which handles 30+ important web properties for Discovery Education. More and more, we are also developing custom apps using Phalcon and Slim to support a number of scholarship and education opportunities that Discovery Education provides in conjunction with their corporate partners.
+  description: When Discovery Education decided to switch their catalog of web sites to Drupal we were there to help. We engaged in technical consulting, architecture, and development services for over 30 of their leading web properties.\n\nToday, we provide ongoing support for the staging and production environment in a single, multisite instance of Drupal on the Acquia platform.\n\nWe also develop custom apps using <em>Phalcon</em> and <em>Slim</em> to support a number of scholarship and education opportunities that Discovery Education provides in conjunction with their corporate partners.
 
 - name: RepEquity
   client: RepEquity
@@ -36,7 +36,7 @@
   clientUrl: http://www.aaas.org
   url: http://www.sciencemag.org
   image: aaas-science
-  description: When AAAS (publisher of the world-renowned Science magazine) found that their previous Drupal vendor was not keeping up, they turned to Socha Dev for some much-needed support and expertise.\n\nWorking closely with AAAS' internal web dev team, we have developed many new Drupal modules and theme elements to support their initiatives, and have provided as-needed maintenance help on several legacy systems.\n\nSocha Dev has turned AAAS' Science web property in to the robust, unified publishing platform that an organization of their caliber requires &mdash; all tailored to accommodate their unique needs.
+  description: When AAAS (publisher of world-renowned <em>Science</em> magazine) began rebuilding their complex online publishing system  in Drupal, they turned to Socha Dev for support and expertise.\n\nWorking closely with their internal dev team, we developed many custom Drupal modules and theme elements and provided ad-hoc maintenance on several legacy systems.\n\nSocha Dev  built a robust, unified publishing platform that an organization of their caliber requires &mdash; tailored to accommodate their unique needs.
 
 - name: Meteor dashboard reporting app
   whiteLabel: true
@@ -51,14 +51,14 @@
   clientUrl: http://www.seabourneinc.com/case-studies-fcc
   url: https://www.fcc.gov
   image: seabourne-fcc
-  description: Working with Seabourne, Socha Dev helped to lead the porting of the FCC's site into Drupal. This build involved a wide variety of custom Drupal modules to integrate with backend FCC systems as well as some tricky thinking to work within the guidelines and restrictions of a high-security, high-traffic federal agency web site. Socha Dev also helped with prototyping and development of the FCC's slick customizable dashboard application, MyFCC.
+  description: Working with Seabourne, Socha Dev helped to lead the porting of the FCC's site into Drupal. This build involved a wide variety of custom Drupal modules to integrate with backend FCC systems as well as some tricky thinking to work within the guidelines and restrictions of a high-security, high-traffic federal agency web site. \n\nSocha Dev also helped with prototyping and development of the FCC's slick customizable dashboard application, MyFCC.
 
 - name: The Cook Political Report
   client: IWS
   clientUrl: http://www.workwithiws.com
   url: http://cookpolitical.com
   image: home-front-communications-cook-political-report
-  description: While not widely known to the masses, The Cook Political Report has been described as "The bible of the political community." Tracking every race and candidate for House, Senate, President, and Governor in the United States, the site is a data monster.\n\nWhen the Cook organization hired Home Front Communications to completely restructure and rebuild their web presence, Socha Dev was there to play a lead role in all aspects of architecture and development. The site handles subscription payments, MailChimp integration, and many other custom data-driven features.
+  description: While not widely known to the masses, The Cook Political Report has been described as "The bible of the political community." Tracking every race and candidate for House, Senate, President, and Governor in the U.S., the site is a data monster.\n\nWhen the Cook organization hired Home Front Communications to restructure and rebuild their web presence, Socha Dev was there to lead all aspects of architecture and development. The site handles subscription payments, MailChimp integration, and many other custom data-driven features.
 
 - name: Drupal overflow
   whiteLabel: true

@@ -2651,7 +2651,7 @@ body {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 48.82117%;
+      width: 40.29137%;
       /*@include shift(1);*/ }
       .stripe.second .alpha:last-child {
         margin-right: 0; }
@@ -2664,8 +2664,8 @@ body {
     width: 48.82117%;
     margin-right: 0;
     position: absolute;
-    top: -100px;
-    right: -28px;
+    top: -126px;
+    right: -36px;
     z-index: 99; }
     .stripe.second .beta:last-child {
       margin-right: 0; }
@@ -3199,8 +3199,12 @@ ul.projects {
     overflow: hidden;
     padding: 48px;
     text-indent: -9999px;
+    width: 180px;
+    height: 135px;
+    /*
     width: 100% !important;
     height: auto !important;
+    */
     filter: grayscale(100);
     -webkit-filter: grayscale(100);
     -moz-filter: grayscale(100);
@@ -3223,19 +3227,19 @@ ul.projects {
       }*/ }
     ul.projects a.science {
       background-image: url("../images/sprites.jpg");
-      background-position: 0px -214px;
+      background-position: -200px 0px;
       width: 180px;
       height: 135px; }
     ul.projects a.discovery-education {
       background-image: url("../images/sprites.jpg");
-      background-position: -180px -214px;
+      background-position: 0px -214px;
       width: 180px;
       height: 135px; }
     ul.projects a.repequity {
       background-image: url("../images/sprites.jpg");
-      background-position: -200px 0px;
-      width: 203px;
-      height: 152px; }
+      background-position: 0px -349px;
+      width: 180px;
+      height: 135px; }
     ul.projects a.fcc-gov {
       background-image: url("../images/sprites.jpg");
       background-position: -180px -349px;
@@ -3243,17 +3247,17 @@ ul.projects {
       height: 135px; }
     ul.projects a.the-national-press-club {
       background-image: url("../images/sprites.jpg");
-      background-position: -403px -135px;
+      background-position: -380px 0px;
       width: 180px;
       height: 135px; }
     ul.projects a.the-cook-political-report {
       background-image: url("../images/sprites.jpg");
-      background-position: -403px 0px;
+      background-position: -180px -214px;
       width: 180px;
       height: 135px; }
     ul.projects a.channel-democracy {
       background-image: url("../images/sprites.jpg");
-      background-position: 0px -349px;
+      background-position: -380px -135px;
       width: 180px;
       height: 135px; }
 

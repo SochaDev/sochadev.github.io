@@ -89,12 +89,16 @@ gulp.task('sprites', function () {
       imgName: 'sprites.jpg',
       cssName: '_sprites.scss',
       algorithm: 'binary-tree',
-      engine: require('gmsmith'),
+      engine: 'pixelsmith',
+
       cssOpts: {
         functions: false
       },
       engineOpts: {
         graphicsmagick: true
+      },
+      imgOpts: {
+        format: 'png'
       },
       exportOpts: {
         quality: 100
