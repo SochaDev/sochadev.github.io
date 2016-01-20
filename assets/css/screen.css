@@ -2528,7 +2528,7 @@ $spritesheet: width height image $spritesheet-sprites;
       margin-bottom: 0; } }
 
 body {
-  font-size: 16px;
+  font-size: 16.8px;
   line-height: 1.5;
   font-family: 'Open Sans', sans-serif;
   color: #fff;
@@ -2664,7 +2664,7 @@ body {
     width: 48.82117%;
     margin-right: 0;
     position: absolute;
-    top: -126px;
+    top: -92px;
     right: -36px;
     z-index: 99; }
     .stripe.second .beta:last-child {
@@ -2773,6 +2773,29 @@ body {
     @media (max-width: 768px) {
       .stripe.team .beta p:last-child {
         margin-bottom: 24px; } }
+  .stripe .modal .white-label-flag {
+    height: 126px;
+    position: absolute;
+    width: 126px;
+    display: none;
+    overflow: hidden; }
+  .stripe .modal .flag {
+    background-color: #2b2b2b;
+    color: white;
+    font-size: 14px;
+    height: 36px;
+    left: -39px;
+    line-height: 36px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 31px;
+    width: 172px;
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-45deg);
+    /* Chrome, Safari, Opera */ }
 
 header {
   background: rgba(0, 0, 0, 0.6);
@@ -2839,6 +2862,10 @@ footer .stripe.first {
     border: 0;
     padding-top: 0; }
 
+footer p {
+  color: #666;
+  line-height: 1.7; }
+
 img.logo {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -2882,7 +2909,7 @@ h1, h2, h3, h4, h5 {
     text-decoration: none; }
 
 h1 {
-  font-size: 83.2px;
+  font-size: 89.6px;
   margin: 0; }
   h1 div {
     font-size: 16px; }

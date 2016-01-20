@@ -6,7 +6,7 @@
   client: a cutting-edge gamification agency
   clientUrl: \#
   url: \#
-  image: \#
+  image: restful
   description: When our partner's client (a Fortune 5 you've definitely heard of) approached them to create a new custom LMS for their workforce, they turned to Socha Dev to develop a RESTful API using Node.js, Express and MongoDB to support the gamified system they had prototyped.\n\nWe helped iterate business requirements, then developed schema and API endpoints to realize our partner's unique vision of what an LMS can be.
 
 - name: Discovery Education
@@ -28,7 +28,7 @@
   client: a leading web design agency in DC
   clientUrl: \#
   url: \#
-  image: \#
+  image: hybrid
   description: Our partner landed a big one and needed Socha Dev's Drupal expertise and front-end chops to help them deliver a beautiful end-to-end build to their new client. They gave us their strategy docs, wireframes and designs; we took it from there.\n\nAfter we'd completed the data migration from SharePoint, we then developed a very flexible presentation layer system built using our own "ngApp" contrib module and a new AngularJS app &mdash; all fully integrated in to Drupal's standard content management tools.
 
 - name: Science
@@ -43,7 +43,7 @@
   client: a boutique brand management agency
   clientUrl: \#
   url: \#
-  image: \#
+  image: meteor
   description: We used Meteor with custom integrations for ElasticSearch and RabbitMQ/AMQP to create an always-on NOC dashboard app, providing enterprise security personnel instant alerts and drilldown searchability into their antivirus and network intrusion solution.
 
 - name: FCC.gov
@@ -65,7 +65,7 @@
   client: a DC strategy and design firm
   clientUrl: \#
   url: \#
-  image: \#
+  image: overflow
   description: Our partner needed a reliable go-to dev shop to deal with some of their legacy (and current) Drupal projects; Socha Dev stepped in to help out and take some of the burden off of their internal dev team.
 
 - name: The National Press Club
@@ -80,7 +80,7 @@
   client: an interactive environment design firm
   clientUrl: \#
   url: \#
-  image: \#
+  image: profile
   description: One of our more fun "development for the real world" projects &mdash; our partner provides physical environment design that makes extensive use of giant flatscreen displays to loop corporate messaging and/or present passers-by with interactive experiences.\n\nThey needed some help turning their homegrown Drupal modules in to a full-fledged installation profile and guidance on how to distribute the profile on drupal.org. We used our partner's existing Pantheon subscription to present and iterate our work, making adjustments and incorporating their feedback along the way.
 
 - name: Channel Democracy

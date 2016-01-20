@@ -360,11 +360,14 @@
             .text(project.client)
             .attr('href', project.clientUrl)
             .show();
+
           $content
             .find('.partner')
             .toggle(project.client !== project.name);
+
           $content.find('.description')
             .html(project.description.replace(/\\n\\n/g, '</p><p>'));
+
           $content
             .removeClass('white-label');
 
@@ -393,13 +396,21 @@
               .text(project.client)
               .show();
             $content
+              .find('.white-label-flag')
+              .show();              
+            /* prevent hiding display image on modal
+            $content
               .addClass('white-label');
+            */
           }
           else {
             $content
               .find('.name-anon, .client-anon')
               .text('')
               .hide();
+            $content
+              .find('.white-label-flag')
+              .hide();               
           }
 
           if ($(window).width() > settings.theme.breakpoints.md) {

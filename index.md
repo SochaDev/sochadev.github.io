@@ -74,15 +74,13 @@ tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP,
     <hr>
     <div class="alpha"><span class="sprite a-team"></span></div>
     <div class="beta">
-      <h2 id="about">Our Team</h2>
+      <h3 id="about">Our Team</h3>
       <p><a href="/team" class="purple">Our team members</a> live and work happily all over the US &mdash; we use some neat apps to keep us connected to each other and to our clients. <!--<a href="/workflow" class="green">Our workflow</a>--> Our workflow is designed to incorporate great ideas throughout a project's life cycle.</p>
     </div>
   </div>
   <div class="container">
     <div class="columns-12">
-      <p>If you need material for the boss or board, <a href="/executive-summary" target="_blank" class="red">here's an executive summary</a> of our team.</p>
-      <p>Want to work here? <a href="#contact" class="blue form-toggler">We'd love to talk!</a> Be sure to include a link to your GitHub account if you're a developer!</p>
-      <hr>
+      <p>If you need material for the boss or board, <a href="/executive-summary" target="_blank" class="red">here's an executive summary</a>.<br>Want to work here? <a href="#contact" class="blue form-toggler">We'd love to talk!</a> (include a link to your GitHub account if you're a developer!)</p>      <hr>
     </div>
   </div>
 </div>
