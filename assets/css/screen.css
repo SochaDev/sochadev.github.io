@@ -2535,6 +2535,10 @@ body {
   background-color: #2b2b2b;
   margin: 24px 0;
   padding: 0; }
+  body .mark {
+    position: absolute;
+    top: -160px;
+    right: 20%; }
   @media (max-width: 768px) {
     body {
       font-size: 18.4px;
@@ -2678,7 +2682,7 @@ body {
     background: #41a7bf; }
     @media (min-width: 769px) {
       .stripe.blue {
-        padding-top: 60px; }
+        padding: 33.6px 0; }
         .stripe.blue .alpha {
           float: left;
           display: block;
@@ -2699,45 +2703,49 @@ body {
   .stripe.red {
     background: #b20b23; }
     @media (min-width: 769px) {
-      .stripe.red .alpha {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 65.88078%;
-        margin-left: 8.5298%; }
-        .stripe.red .alpha:last-child {
+      .stripe.red {
+        padding: 33.6px 0; }
+        .stripe.red .alpha {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 65.88078%;
+          margin-left: 8.5298%; }
+          .stripe.red .alpha:last-child {
+            margin-right: 0; }
+        .stripe.red .beta {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 23.23176%;
           margin-right: 0; }
-      .stripe.red .beta {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 23.23176%;
-        margin-right: 0; }
-        .stripe.red .beta:last-child {
-          margin-right: 0; }
-      .stripe.red .fa {
-        margin: 48px 0 0 36px; } }
+          .stripe.red .beta:last-child {
+            margin-right: 0; }
+        .stripe.red .fa {
+          margin: 48px 0 0 36px; } }
   .stripe.green {
     background: #6b7e28; }
     @media (min-width: 769px) {
-      .stripe.green .alpha {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 23.23176%;
-        /*@include shift(1);*/ }
-        .stripe.green .alpha:last-child {
-          margin-right: 0; }
-      .stripe.green .beta {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 57.35098%;
-        margin-left: 8.5298%; }
-        .stripe.green .beta:last-child {
-          margin-right: 0; }
-      .stripe.green .fa {
-        margin: 24px 0 0 24px; } }
+      .stripe.green {
+        padding: 33.6px 0; }
+        .stripe.green .alpha {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 23.23176%;
+          /*@include shift(1);*/ }
+          .stripe.green .alpha:last-child {
+            margin-right: 0; }
+        .stripe.green .beta {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 57.35098%;
+          margin-left: 8.5298%; }
+          .stripe.green .beta:last-child {
+            margin-right: 0; }
+        .stripe.green .fa {
+          margin: 24px 0 0 24px; } }
   .stripe.gray {
     background: #333;
     padding-bottom: 720px;
@@ -2798,7 +2806,7 @@ body {
     width: 172px; }
 
 header {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
   display: none;
   position: fixed;
   top: 0;
@@ -2867,14 +2875,7 @@ footer p {
   line-height: 1.7; }
 
 img.logo {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-top-right-radius: 3px;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
-  border-top-left-radius: 3px;
+  /*@include border-radius();*/
   display: block;
   width: 36px;
   height: 36px; }
@@ -2912,7 +2913,8 @@ h1 {
   font-size: 83.2px;
   margin: 0; }
   h1 div {
-    font-size: 16px; }
+    font-size: 16px;
+    margin-bottom: 12px; }
 
 h2 {
   font-size: 38.4px;
@@ -3173,7 +3175,7 @@ fieldset {
     fieldset.contact input[type="submit"] {
       color: #fff;
       font-weight: normal;
-      text-transform: lowercase;
+      /*text-transform: lowercase;*/
       width: 100%;
       margin-bottom: 12px; }
       fieldset.contact input[type="submit"]:hover {

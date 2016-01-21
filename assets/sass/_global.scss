@@ -24,6 +24,12 @@
     margin: $dmrg 0;
     padding: 0;
 
+    .mark {
+      position: absolute;
+      top:-160px;
+      right: 20%;
+    }
+
     @include media("<=md") {
       font-size: $base * 1.15;
       line-height: 1.5;
@@ -37,6 +43,7 @@
         .sprite,
         .fa.fa-hide-mobile { display: none; }
       }
+
     }
   }
 
@@ -125,7 +132,7 @@
       @extend %stripe-padding-for-icons;
 
       @include media(">md") {
-        padding-top: 60px;
+        padding: ($dmrg * 1.4) 0;
         .alpha { @include span-columns(3); }
         .beta { @include span-columns(8); @include omega(); }
         .fa { margin: $mrg 0 0 ($dmrg); }
@@ -136,6 +143,7 @@
       @extend %stripe-padding-for-icons;
 
       @include media(">md") {
+        padding: ($dmrg * 1.4) 0;
         .alpha { @include span-columns(8); @include shift(1); }
         .beta { @include span-columns(3); @include omega(); }
         .fa {  margin: ($dmrg * 2) 0 0 ($dmrg * 1.5); }
@@ -146,6 +154,7 @@
       @extend %stripe-padding-for-icons;
 
       @include media(">md") {
+        padding: ($dmrg * 1.4) 0;
         .alpha { @include span-columns(3); /*@include shift(1);*/ }
         .beta { @include span-columns(7); @include shift(1); }
         .fa { margin: $dmrg 0 0 $dmrg; }
@@ -214,7 +223,7 @@
     $height: ($mrg * 3);
 
     @include clearfix();
-    background: rgba($black, 0.6);
+    background: rgba($black, 0.7);
     display: none;
     position: fixed;
     top: 0;
@@ -300,7 +309,7 @@
 
 // Flourish elements.
   img.logo {
-    @include border-radius();
+    /*@include border-radius();*/
     display: block;
     width: ($mrg * 3);
     height: ($mrg * 3);

@@ -23,7 +23,10 @@
     font-size: $base * 5.2;
     margin: 0;
 
-    div { font-size: $base; }
+    div {
+      font-size: $base;
+      margin-bottom: ($dmrg/2);
+    }
   }
   h2 {
     font-size: $base * 2.4;
