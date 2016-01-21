@@ -16,7 +16,7 @@
   }
 
   body {
-    font-size: $base * 1.05;
+    font-size: $base * 1.1;
     line-height: 1.5;
     font-family: 'Open Sans', sans-serif;
     color: $white;
@@ -104,10 +104,14 @@
       .beta { 
         @include span-columns(6); @include omega(); 
 
-        position: absolute;
-        top: -92px;
-        right: -36px;
+        position: relative;
         z-index: 99;
+
+        img {
+          position: absolute;
+          left: 82px;
+          top: -112px;
+        }
 
       }
 
@@ -189,6 +193,7 @@
       }
 
       .flag {
+          @include rotate(-45deg);
           background-color: #2b2b2b;
           color: white;
           font-size: 14px;
@@ -200,9 +205,6 @@
           text-transform: uppercase;
           top: 31px;
           width: 172px;
-          transform: rotate(-45deg);
-          -ms-transform: rotate(-45deg); /* IE 9 */
-          -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */          
       }
 
     }

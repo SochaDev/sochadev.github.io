@@ -81,7 +81,7 @@
   clientUrl: \#
   url: \#
   image: profile
-  description: One of our more fun "development for the real world" projects &mdash; our partner provides physical environment design that makes extensive use of giant flatscreen displays to loop corporate messaging and/or present passers-by with interactive experiences.\n\nThey needed some help turning their homegrown Drupal modules in to a full-fledged installation profile and guidance on how to distribute the profile on drupal.org. We used our partner's existing Pantheon subscription to present and iterate our work, making adjustments and incorporating their feedback along the way.
+  description: One of our more fun "development for the real world" projects&mdash;our partner designs interactive visual experiences using  enormous flatscreen displays.\n\nSocha Dev helped turn their homegrown Drupal modules in to a full-fledged installation profile and provided guidance on how to distribute it on drupal.org. We used our partner's existing Pantheon subscription to present and iterate our work, adjusting and incorporating their feedback along the way.
 
 - name: Channel Democracy
   client: IWS

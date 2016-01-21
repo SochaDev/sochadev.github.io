@@ -2528,7 +2528,7 @@ $spritesheet: width height image $spritesheet-sprites;
       margin-bottom: 0; } }
 
 body {
-  font-size: 16.8px;
+  font-size: 17.6px;
   line-height: 1.5;
   font-family: 'Open Sans', sans-serif;
   color: #fff;
@@ -2663,12 +2663,14 @@ body {
     margin-right: 2.35765%;
     width: 48.82117%;
     margin-right: 0;
-    position: absolute;
-    top: -92px;
-    right: -36px;
+    position: relative;
     z-index: 99; }
     .stripe.second .beta:last-child {
       margin-right: 0; }
+    .stripe.second .beta img {
+      position: absolute;
+      left: 82px;
+      top: -112px; }
   @media (max-width: 768px) {
     .stripe.second {
       padding-bottom: 0; } }
@@ -2780,6 +2782,9 @@ body {
     display: none;
     overflow: hidden; }
   .stripe .modal .flag {
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
     background-color: #2b2b2b;
     color: white;
     font-size: 14px;
@@ -2790,12 +2795,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     top: 31px;
-    width: 172px;
-    transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    /* IE 9 */
-    -webkit-transform: rotate(-45deg);
-    /* Chrome, Safari, Opera */ }
+    width: 172px; }
 
 header {
   background: rgba(0, 0, 0, 0.6);
@@ -2909,7 +2909,7 @@ h1, h2, h3, h4, h5 {
     text-decoration: none; }
 
 h1 {
-  font-size: 89.6px;
+  font-size: 83.2px;
   margin: 0; }
   h1 div {
     font-size: 16px; }

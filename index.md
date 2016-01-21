@@ -76,6 +76,7 @@ tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP,
     <div class="beta">
       <h3 id="about">Our Team</h3>
       <p><a href="/team" class="purple">Our team members</a> live and work happily all over the US &mdash; we use some neat apps to keep us connected to each other and to our clients. <!--<a href="/workflow" class="green">Our workflow</a>--> Our workflow is designed to incorporate great ideas throughout a project's life cycle.</p>
+      <p>We love it when a plan comes together.</p>
     </div>
   </div>
   <div class="container">
