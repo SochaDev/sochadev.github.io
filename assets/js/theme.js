@@ -374,7 +374,7 @@
           if (project.image) {
             $content
               .find('img')
-              .attr('src', (project.image.indexOf('http') !== 0 ? (settings.theme.images + '/projects/' + project.image + '.jpg') : project.image))
+              .attr('src', (project.image.indexOf('http') !== 0 ? (settings.theme.images + '/projects/' + project.image ) : project.image))
               .attr('alt', project.name);
           }
           else {
