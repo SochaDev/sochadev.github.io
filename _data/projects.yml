@@ -28,7 +28,7 @@
   client: a leading web design agency in DC
   clientUrl: \#
   url: \#
-  image: hybrid.jpg
+  image: hybrid.png
   description: Our partner landed a big one and needed Socha Dev's Drupal expertise and front-end chops to help them deliver a beautiful end-to-end build to their new client. They gave us their strategy docs, wireframes and designs; we took it from there.\n\nAfter we'd completed the data migration from SharePoint, we then developed a very flexible presentation layer system built using our own "ngApp" contrib module and a new AngularJS app &mdash; all fully integrated in to Drupal's standard content management tools.
 
 - name: Science
@@ -80,7 +80,7 @@
   client: an interactive environment design firm
   clientUrl: \#
   url: \#
-  image: profile.jpg
+  image: profile.png
   description: One of our more fun "development for the real world" projects&mdash;our partner designs interactive visual experiences using  enormous flatscreen displays.\n\nSocha Dev helped turn their homegrown Drupal modules in to a full-fledged installation profile and provided guidance on how to distribute it on drupal.org. We used our partner's existing Pantheon subscription to present and iterate our work, adjusting and incorporating their feedback along the way.
 
 - name: Channel Democracy
