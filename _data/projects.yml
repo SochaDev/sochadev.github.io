@@ -60,13 +60,13 @@
   image: home-front-communications-cook-political-report.jpg
   description: While not widely known to the masses, The Cook Political Report has been described as "The bible of the political community." Tracking every race and candidate for House, Senate, President, and Governor in the U.S., the site is a data monster.\n\nWhen the Cook organization hired Home Front Communications to restructure and rebuild their web presence, Socha Dev was there to lead all aspects of architecture and development. The site handles subscription payments, MailChimp integration, and many other custom data-driven features.
 
-- name: Drupal overflow
+- name: IA and Wireframe Prototypes
   whiteLabel: true
-  client: a DC strategy and design firm
+  client: a national careers site
   clientUrl: \#
   url: \#
-  image: overflow.jpg
-  description: Our partner needed a reliable go-to dev shop to deal with some of their legacy (and current) Drupal projects; Socha Dev stepped in to help out and take some of the burden off of their internal dev team.
+  image: project-ux.png
+  description: Our partner needed help planning and visualizing a full rebuild of their client's site. Socha Dev worked closely with our partner to brainstorm and prototype workable concepts. We then rapidly iterated a new information architecture and wireframes for the key areas and functional components of the site.\n\nWe delivered white-label documents that served as the basis for the design and development of the final web site.
 
 - name: The National Press Club
   client: Home Front Communications
