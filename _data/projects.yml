@@ -43,7 +43,7 @@
   client: a boutique brand management agency
   clientUrl: \#
   url: \#
-  image: meteor.jpg
+  image: meteor.png
   description: We used Meteor with custom integrations for ElasticSearch and RabbitMQ/AMQP to create an always-on NOC dashboard app, providing enterprise security personnel instant alerts and drilldown searchability into their antivirus and network intrusion solution.
 
 - name: FCC.gov
