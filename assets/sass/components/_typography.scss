@@ -99,6 +99,13 @@
     }
   }
 
+  // larger fa-x support
+  .fa.fa-6x { font-size: 6em; }
+  .fa.fa-7x { font-size: 7em; }
+  .fa.fa-8x { font-size: 8em; }
+  .fa.fa-9x { font-size: 9em; }
+  .fa.fa-10x { font-size: 10em; }
+
   // Dense text elements.
   %text-dense {
     font-size: $base * 1.15;
@@ -196,4 +203,3 @@
       text-align: left;
     }
   }
-

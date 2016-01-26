@@ -397,7 +397,7 @@
               .show();
             $content
               .find('.white-label-flag')
-              .show();              
+              .show();
             /* prevent hiding display image on modal
             $content
               .addClass('white-label');
@@ -410,7 +410,7 @@
               .hide();
             $content
               .find('.white-label-flag')
-              .hide();               
+              .hide();
           }
 
           if ($(window).width() > settings.theme.breakpoints.md) {

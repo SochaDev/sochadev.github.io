@@ -2,7 +2,8 @@
 <html lang="en" prefix="og: http://ogp.me/ns#"{% if page.angular && page.angularApp %} ng-app="{{ page.angularApp }}" ng-strict-di=""{% endif %}>
 <head>
   {% include meta.html %}{% include favicon.html %}  <link rel="canonical" href="{{ site.contact.website }}{{ page.url }}" />
-  <link rel="stylesheet" href="/assets/css/{% if site.prodBuild %}production.css{% else %}screen.css{% endif %}" type="text/css" />
+  <link rel="stylesheet" href="/assets/{% if site.prodBuild %}production/production.css{% else %}css/screen.css{% endif %}" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <!--
        _______.  ______     ______  __    __       ___          _______   ___________    ____
       /       | /  __  \   /      ||  |  |  |     /   \        |       \ |   ____\   \  /   /
@@ -72,11 +73,11 @@
       </div>
     </div>
   </footer>
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>{% if page.angular %}
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-sanitize.min.js"></script>
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>{% endif %}
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>{% if page.angular %}
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.0.1/lodash.min.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-sanitize.min.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-animate.min.js"></script>{% endif %}
   {% if page.scripts %}{% for script in page.scripts %}<script type="text/javascript" src="{{ script }}"></script>
   {% endfor %}{% endif %}<script type="text/javascript">
   var settings = {
@@ -103,7 +104,7 @@
     ]{% endif %}
   };
   </script>
-  <script type="text/javascript" src="/assets/js/{% if site.prodBuild %}production.js{% else %}theme.js{% endif %}"></script>
+  <script type="text/javascript" src="/assets/{% if site.prodBuild %}production/production.js{% else %}js/theme.js{% endif %}"></script>
   <script type="text/javascript">
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
