@@ -39,6 +39,7 @@
 
 // any custom global mixins of our own creation.
 @import 'mixins';
+@import 'utility';
 
 // overall global styling and general layout goes in here.
 @import 'global';
@@ -46,6 +47,7 @@
 // from here import other partials in a modular fashion,
 // moving from general to more specific.
 @import 'components/typography';
+@import 'components/fonticons';
 @import 'components/forms';
 @import 'components/projects';
 @import 'components/team';
