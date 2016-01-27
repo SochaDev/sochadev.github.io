@@ -479,6 +479,11 @@ $icon-home: x y offset_x offset_y width height total_width total_height image_pa
 At the bottom of this section, we provide information about the spritesheet itself
 $spritesheet: width height image $spritesheet-sprites;
 */
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
 .clearfix::after {
   clear: both;
   content: "";
@@ -493,7 +498,7 @@ $spritesheet: width height image $spritesheet-sprites;
     display: none; } }
 
 html {
-  font-size: 19.2px;
+  font-size: 17.6px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -863,12 +868,6 @@ img.logo {
   display: block;
   float: left;
   margin: 0 24px 24px 0; }
-  .sprite.a-team {
-    background-image: url("../images/sprites.png");
-    background-position: 0px 0px;
-    width: 200px;
-    height: 214px;
-    background-repeat: no-repeat; }
 
 p, ul, ol {
   margin-bottom: 24px;
@@ -1742,50 +1741,85 @@ ul.projects {
       filter: gray;
       -webkit-filter: grayscale(0); }
     ul.projects a.socha-dev-white-label {
-      background: url("../images/socha-dev.png") no-repeat 0 0;
-      background-size: cover; }
+      background-image: url("../images/sprites.png");
+      background-position: -180px -270px;
+      width: 180px;
+      height: 135px;
+      background-repeat: no-repeat; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        ul.projects a.socha-dev-white-label {
+          background-image: url("../images/sprites@2x.png");
+          background-size: 540px 405px; } }
     ul.projects a.science {
       background-image: url("../images/sprites.png");
-      background-position: -200px 0px;
+      background-position: 0px 0px;
       width: 180px;
       height: 135px;
       background-repeat: no-repeat; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        ul.projects a.science {
+          background-image: url("../images/sprites@2x.png");
+          background-size: 540px 405px; } }
     ul.projects a.discovery-education {
       background-image: url("../images/sprites.png");
-      background-position: 0px -214px;
+      background-position: -180px 0px;
       width: 180px;
       height: 135px;
       background-repeat: no-repeat; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        ul.projects a.discovery-education {
+          background-image: url("../images/sprites@2x.png");
+          background-size: 540px 405px; } }
     ul.projects a.repequity {
       background-image: url("../images/sprites.png");
-      background-position: 0px -349px;
+      background-position: -360px -135px;
       width: 180px;
       height: 135px;
       background-repeat: no-repeat; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        ul.projects a.repequity {
+          background-image: url("../images/sprites@2x.png");
+          background-size: 540px 405px; } }
     ul.projects a.fcc-gov {
       background-image: url("../images/sprites.png");
-      background-position: -180px -349px;
+      background-position: 0px -270px;
       width: 180px;
       height: 135px;
       background-repeat: no-repeat; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        ul.projects a.fcc-gov {
+          background-image: url("../images/sprites@2x.png");
+          background-size: 540px 405px; } }
     ul.projects a.the-national-press-club {
       background-image: url("../images/sprites.png");
-      background-position: -380px 0px;
+      background-position: -180px -135px;
       width: 180px;
       height: 135px;
       background-repeat: no-repeat; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        ul.projects a.the-national-press-club {
+          background-image: url("../images/sprites@2x.png");
+          background-size: 540px 405px; } }
     ul.projects a.the-cook-political-report {
       background-image: url("../images/sprites.png");
-      background-position: -180px -214px;
+      background-position: 0px -135px;
       width: 180px;
       height: 135px;
       background-repeat: no-repeat; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        ul.projects a.the-cook-political-report {
+          background-image: url("../images/sprites@2x.png");
+          background-size: 540px 405px; } }
     ul.projects a.channel-democracy {
       background-image: url("../images/sprites.png");
-      background-position: -380px -135px;
+      background-position: -360px 0px;
       width: 180px;
       height: 135px;
       background-repeat: no-repeat; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        ul.projects a.channel-democracy {
+          background-image: url("../images/sprites@2x.png");
+          background-size: 540px 405px; } }
 
 #modal {
   display: none;

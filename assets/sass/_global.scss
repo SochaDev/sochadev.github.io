@@ -1,5 +1,5 @@
 html {
-  font-size: $base * 1.2;
+  font-size: $base * 1.1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -326,6 +326,4 @@ html {
     display: block;
     float: left;
     margin: 0 $dmrg $dmrg 0;
-
-    &.a-team { @include sprite($a-team); }
   }

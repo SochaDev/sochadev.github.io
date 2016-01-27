@@ -39,17 +39,14 @@ ul.projects {
       @include grayscale(0);
     }
 
-    &.socha-dev-white-label {
-      background: url('../images/socha-dev.png') no-repeat 0 0;
-      background-size: cover;
-    }
-    &.science { @include sprite($aaas-science); }
-    &.discovery-education { @include sprite($discovery-education); }
-    &.repequity { @include sprite($repequity); }
-    &.fcc-gov { @include sprite($seabourne-fcc); }
-    &.the-national-press-club { @include sprite($home-front-communications-national-press-club); }
-    &.the-cook-political-report { @include sprite($home-front-communications-cook-political-report); }
-    &.channel-democracy { @include sprite($iws-channel-democracy); }
+    &.socha-dev-white-label { @include sprite2x($socha-dev-white-label-orig, $socha-dev-white-label-orig-2x); }
+    &.science { @include sprite2x($aaas-science, $aaas-science-2x); }
+    &.discovery-education { @include sprite2x($discovery-education, $discovery-education-2x); }
+    &.repequity { @include sprite2x($repequity, $repequity-2x); }
+    &.fcc-gov { @include sprite2x($seabourne-fcc, $seabourne-fcc-2x); }
+    &.the-national-press-club { @include sprite2x($home-front-communications-national-press-club, $home-front-communications-national-press-club-2x); }
+    &.the-cook-political-report { @include sprite2x($home-front-communications-cook-political-report, $home-front-communications-cook-political-report-2x); }
+    &.channel-democracy { @include sprite2x($iws-channel-democracy, $iws-channel-democracy-2x); }
   }
 }
 
