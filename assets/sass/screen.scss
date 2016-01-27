@@ -22,7 +22,7 @@
 
 // overall site variables and settings.
 @import 'settings';
-@import 'normalize';
+@import 'vendor/normalize';
 
 // Comment the next line out if you don't have any sprites.
 //
@@ -37,9 +37,9 @@
 @import 'sprites';
 @import 'sprite-mixins';
 
-// any custom global mixins of our own creation.
-@import 'mixins';
-@import 'utility';
+// any custom global mixins and utility classes.
+@import 'components/mixins';
+@import 'components/utility';
 
 // overall global styling and general layout goes in here.
 @import 'global';

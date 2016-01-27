@@ -2,8 +2,8 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import 'vendor/bourbon/bourbon';
 @import 'settings';
-@import 'mixins';
-@import 'normalize';
+@import 'components/mixins';
+@import 'vendor/normalize';
 
 body {
   font-size: $base;
