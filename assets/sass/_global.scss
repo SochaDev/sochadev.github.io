@@ -1,3 +1,8 @@
+html {
+  font-size: $base * 1.2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 // Layout stuff.
   %full-width {
@@ -16,9 +21,8 @@
   }
 
   body {
-    font-size: $base * 1.1;
     line-height: 1.5;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
     color: $white;
     background-color: $bg;
     margin: $dmrg 0;
@@ -41,16 +45,15 @@
 
       &.front {
         .sprite,
-        .fa.fa-hide-mobile { display: none; }
+        .icon.icon-hide-mobile { display: none; }
       }
-
     }
-  }
 
-  .clearfix { @include clearfix(); }
+  }
 
   .container {
     @include outer-container($max-width);
+
     body.front & {
       max-width: #{map-get($breakpoints, 'md')};
     }
@@ -77,7 +80,7 @@
     padding: $dmrg;
     position: relative;
     width: 100%;
-    @extends %full-width;
+    @extend %full-width;
 
     main &.first {
       border-bottom: solid 1px $gray;
@@ -108,8 +111,8 @@
         }
       }
 
-      .beta { 
-        @include span-columns(6); @include omega(); 
+      .beta {
+        @include span-columns(6); @include omega();
 
         position: relative;
         z-index: 99;
@@ -135,7 +138,7 @@
         padding: ($dmrg * 1.4) 0;
         .alpha { @include span-columns(3); }
         .beta { @include span-columns(8); @include omega(); }
-        .fa { margin: $mrg 0 0 ($dmrg); }
+        .icon { margin: $mrg 0 0 ($dmrg); }
       }
     }
     &.red {
@@ -146,7 +149,7 @@
         padding: ($dmrg * 1.4) 0;
         .alpha { @include span-columns(8); @include shift(1); }
         .beta { @include span-columns(3); @include omega(); }
-        .fa {  margin: ($dmrg * 2) 0 0 ($dmrg * 1.5); }
+        .icon {  margin: ($dmrg * 2) 0 0 ($dmrg * 1.5); }
       }
     }
     &.green {
@@ -157,7 +160,7 @@
         padding: ($dmrg * 1.4) 0;
         .alpha { @include span-columns(3); /*@include shift(1);*/ }
         .beta { @include span-columns(7); @include shift(1); }
-        .fa { margin: $dmrg 0 0 $dmrg; }
+        .icon { margin: $dmrg 0 0 $dmrg; }
       }
     }
     &.gray {
@@ -283,11 +286,13 @@
       }
     }
   }
+
   main {
     @include media("<=md") {
       margin-top: 0;
     }
   }
+
   footer {
     @extend %full-width;
 

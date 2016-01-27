@@ -3,7 +3,6 @@
 <head>
   {% include meta.html %}{% include favicon.html %}  <link rel="canonical" href="{{ site.contact.website }}{{ page.url }}" />
   <link rel="stylesheet" href="/assets/{% if site.prodBuild %}production/production.css{% else %}css/screen.css{% endif %}" type="text/css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <!--
        _______.  ______     ______  __    __       ___          _______   ___________    ____
       /       | /  __  \   /      ||  |  |  |     /   \        |       \ |   ____\   \  /   /
@@ -66,8 +65,8 @@
             <span class="tooltip blue" data-tip="Hooray, free static hosting complete with CDN!">GitHub Pages</span>.</p>
             {% include tools.html %}
           <p class="social">Find us on
-            <a href="{{ site.githubUrl }}" title="Find us on GitHub" target="_blank" class="orange"><i class="fa fa-github"></i> GitHub</a> or
-            <a href="{{ site.drupalUrl }}" title="Find us on Drupal.org" target="_blank" class="blue"><i class="fa fa-drupal"></i> Drupal.org</a>
+            <a href="{{ site.githubUrl }}" title="Find us on GitHub" target="_blank" class="orange"><i class="icon icon-github-circled"></i> GitHub</a> or
+            <a href="{{ site.drupalUrl }}" title="Find us on Drupal.org" target="_blank" class="blue"><i class="icon icon-drupal"></i> Drupal.org</a>
             &mdash; help yourself to any of our stuff. Pay it forward!</p>
         </div>
       </div>

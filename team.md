@@ -22,8 +22,8 @@ If you think you might be a good fit here at Socha Dev &mdash; please <a href="/
       <h3 id="{{ person.name | downcase | replace: " ", "-" }}">{{ person.name }}</h3>
       <p>{{ person.description }}</p>
       <ul class="social">
-        <li><a href="https://github.com/{{ person.github }}" title="{{ person.github }}" target="_blank" class="orange"><i class="fa fa-github"></i> GitHub</a></li>
-        {% if person.drupal %}<li><a href="https://www.drupal.org/u/{{ person.drupal }}" title="{{ person.drupal }}" target="_blank" class="blue"><i class="fa fa-drupal"></i> Drupal.org</a></li>{% endif %}
+        <li><a href="https://github.com/{{ person.github }}" title="{{ person.github }}" target="_blank" class="orange"><i class="icon icon-github-circled"></i> GitHub</a></li>
+        {% if person.drupal %}<li><a href="https://www.drupal.org/u/{{ person.drupal }}" title="{{ person.drupal }}" target="_blank" class="blue"><i class="icon icon-drupal"></i> Drupal.org</a></li>{% endif %}
       </ul>
     </div>
   </div>{% endfor %}

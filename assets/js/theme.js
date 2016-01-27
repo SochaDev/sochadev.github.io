@@ -383,6 +383,17 @@
               .attr('src', '');
           }
 
+          if (project.image2x) {
+            $content
+              .find('img')
+              .attr('srcset', (project.image2x.indexOf('http') !== 0 ? (settings.theme.images + '/projects/' + project.image2x + ' 2x' ) : project.image2x + ' 2x'));
+          }
+          else {
+            $content
+              .find('img')
+              .attr('srcset', '');
+          }
+
           if (project.whiteLabel) {
             $content
               .find('.name, .client')
