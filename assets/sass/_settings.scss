@@ -2,11 +2,8 @@
 
 // breakpoints map for include-media.
 $breakpoints: (sm: 490px, md: 768px, lg: 1024px);
-
-// neat grid settings
-$grid-columns: 12 !global;
+$mid-width: 768px !global;
 $max-width: 1024px !global;
-$border-box-sizing: true !global;
 
 // colors
 $black: #000;
@@ -24,6 +21,11 @@ $green: #6b7e28;
 $orange: lighten(#f93, 10%);
 $purple: #6f5499;
 
+$sochadev-gray: #1c1c1c;
+$sochadev-blue: #77d2e9;
+$sochadev-red: #cd3737;
+$sochadev-green: #8faa37;
+
 // layout variables
 $base: 16px; // our base font-size;
 $mrg: 12px; // most padding and margins should be a multiple of $mrg
@@ -32,7 +34,7 @@ $dmrg: ($mrg * 2.0);
 $qmrg: ($mrg * 0.25);
 
 $text: $gray-lighter;
-$bg: $gray-darker; //$gray-darker;
+$bg: $gray-darker;
 
 // flourishes
 $border-radius: 3px;

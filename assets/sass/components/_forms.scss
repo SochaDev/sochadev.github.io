@@ -1,56 +1,62 @@
 
 // Forms stuff.
-  .messages {
-    @include border-radius();
-    margin-bottom: $dmrg;
-    padding: $dmrg;
+.messages {
+  border-radius: $border-radius;
+  margin-bottom: $dmrg;
+  padding: $dmrg;
 
-    &.error { background: lighten($red, 60); color: $red; }
-    &.success { background: lighten($green, 50); color: $green; }
+  &.error { background: lighten($red, 60); color: $red; }
+  &.success { background: lighten($green, 50); color: $green; }
 
-    ul, li {
-      margin: 0;
-      padding: 0;
-    }
-    ul {
-      margin-left: $dmrg;
-    }
-  }
-
-  label { font-weight: normal; }
-
-  fieldset {
-    border: 0;
-    margin: $dmrg 0 0 0;
+  ul, li {
+    margin: 0;
     padding: 0;
+  }
 
-    &.contact {
-      display: none;
-      .messages { display: none; }
-      .form-item {
-        @include outer-container($max-width);
-        line-height: 1;
-        margin-bottom: $mrg;
-      }
-      label { display: none; }
-      input, select, textarea {
-        color: $gray-dark;
-        margin-bottom: 0;
+  ul {
+    margin-left: $dmrg;
+  }
+}
 
-        @include media("<=md") {
-          font-size: $base * 1.15;
-          line-height: 1.3;
-          margin-top: 0;
-        }
-      }
-      input[type="submit"] {
-        color: $white;
-        font-weight: normal;
-        /*text-transform: lowercase;*/
-        width: 100%;
-        margin-bottom: $mrg;
+label { font-weight: normal; }
 
-        &:hover { background-color: lighten($blue, 10%); }
+fieldset {
+  border: 0;
+  margin: $dmrg 0 0 0;
+  padding: 0;
+
+  &.contact {
+    display: none;
+
+    .messages { display: none; }
+
+    .form-item {
+      line-height: 1;
+      margin-bottom: $mrg;
+    }
+
+    label { display: none; }
+
+    input,
+    select,
+    textarea {
+      color: $gray-dark;
+      margin-bottom: 0;
+
+      @include media("<=md") {
+        font-size: $base * 1.15;
+        line-height: 1.3;
+        margin-top: 0;
       }
     }
+
+    input[type="submit"] {
+      color: $white;
+      font-weight: normal;
+      width: 100%;
+      margin-bottom: $mrg;
+
+      &:hover { background-color: lighten($blue, 10%); }
+    }
   }
+}

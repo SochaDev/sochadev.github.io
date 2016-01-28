@@ -1,11 +1,4 @@
 
-@mixin border-radius($radius: $border-radius) {
-  @include border-top-radius($radius);
-  @include border-right-radius($radius);
-  @include border-bottom-radius($radius);
-  @include border-left-radius($radius);
-}
-
 @mixin grayscale($percent: '100%') {
   filter: grayscale($percent);
   -webkit-filter: grayscale($percent);
@@ -17,6 +10,6 @@
 
 @mixin rotate($angle: '-45deg') {
   transform: rotate($angle);
-  -ms-transform: rotate($angle); 
-  -webkit-transform: rotate($angle); 
+  -ms-transform: rotate($angle);
+  -webkit-transform: rotate($angle);
 }

@@ -1,329 +1,415 @@
+* { box-sizing: border-box; }
+
+
 html {
   font-size: $base * 1.1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: $bg;
 }
 
-// Layout stuff.
-  %full-width {
-    @include media("<=md") {
-      & .container {
-        .alpha, .beta,
-        .columns-2, .columns-4, .columns-6, .columns-8, .columns-10, .columns-12 {
-          @include span-columns($grid-columns);
-          @include shift(0);
-          @include omega(0);
 
-          p:last-child { margin-bottom: 0; }
-        }
-      }
+body {
+  line-height: 1.5;
+  font-family: 'Open Sans', -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  color: $white;
+  background-color: $bg;
+  margin: $dmrg 0;
+  padding: 0;
+  width: 100%;
+
+  @include media("<=md") {
+    font-size: $base * 1.15;
+    margin-top: 0;
+
+    h1 { font-size: $base * 2.4; }
+    h2 { font-size: $base * 2; }
+    h3 { font-size: $base * 1.6; }
+  }
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: $mid-width;
+  margin: 0 auto;
+
+  &.fullblock { display: block; }
+}
+
+// by default, our major left and right
+// columns should be half width and collapse
+// to full width in mobile
+.alpha {
+  padding-right: $mrg;
+  width: 50%;
+}
+
+.beta {
+  padding-left: $mrg;
+  width: 50%;
+}
+
+@include media('<=md') {
+  .container {
+    display: block;
+    max-width: 100%;
+  }
+
+  .alpha,
+  .beta {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.fullwidth { width: 100%; }
+
+
+.mark {
+  position: absolute;
+  top: 0;
+  right: 20%;
+  height: $dmrg * 1.5;
+  width: $dmrg * 8;
+
+  .band {
+    display: inline-block;
+    float: left;
+    clear: none;
+    width: $dmrg * 2;
+    height: $dmrg * 1.5;
+  }
+
+  .sochadev-gray { background-color: $sochadev-gray; }
+  .sochadev-blue { background-color: $sochadev-blue; }
+  .sochadev-red { background-color: $sochadev-red; }
+  .sochadev-green { background-color: $sochadev-green; }
+
+  @include media('<=md') {
+    right: $dmrg;
+    height: $dmrg*1.25;
+    width: $dmrg * 6;
+
+    .band {
+      width: $dmrg*1.5;
+      height: $dmrg*1.25;
     }
   }
 
-  body {
-    line-height: 1.5;
-    font-family: 'Open Sans', -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  header & {
+    height: $hmrg * 6;
+    width: $hmrg * 6;
+
+    .band {
+      width: $hmrg * 1.5;
+      height: $hmrg * 6;
+    }
+  }
+}
+
+
+// persistent header
+header {
+  $height: ($mrg * 3);
+
+  @include clearfix();
+  background: rgba($black, 0.7);
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+
+  &.stripe { padding: $mrg; }
+
+  .fullwidth {
+    height: $height;
+    position: relative;
+  }
+
+  a {
     color: $white;
-    background-color: $bg;
-    margin: $dmrg 0;
+    &:hover { color: $white; }
+    display: block;
+    height: $height;
+    line-height: $height;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: auto;
+
+    &.brand {
+      left: 0;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: $base * 2.6;
+      font-weight: 400;
+      text-decoration: none;
+      width: 88%;
+
+      @include media("<=md") {
+        font-size: $base * 2.4;
+      }
+    }
+
+    &.logo {
+      right: 0;
+    }
+  }
+
+  span.tagline {
+    display: block;
+    font-size: $base;
+    font-weight: normal;
+    line-height: $height;
+    margin: 0 0 0 0;
+    text-align: center;
+    text-indent: 10%;
+    text-transform: lowercase;
+
+    body.front & { text-indent: 18%; }
+
+    @include media("<=md") {
+      display: none;
+    }
+  }
+}
+
+
+.stripe {
+  padding: $dmrg;
+  width: 100%;
+
+  &.blue {
+    background: $blue;
+    hr { border-color: lighten($blue, 5%); }
+  }
+
+  &.red {
+    background: $red;
+    hr { border-color: lighten($red, 5%); }
+  }
+
+  &.green {
+    background: $green;
+    hr { border-color: lighten($green, 5%); }
+  }
+
+  &.gray {
+    background: $gray-dark;
+    hr { border-color: lighten($gray-dark, 5%); }
+  }
+
+  &.darkgray {
+    background: $gray-darker;
+    hr { border-color: lighten($gray-darker, 5%); }
+  }
+}
+
+.title {
+  margin-top: $dmrg*1.25;
+  @include media('>md') { margin-top: 0; }
+}
+
+
+.intro {
+  padding-bottom: $dmrg * 3;
+
+  .alpha {
+    padding-right: $mrg * 5;
+
+    hr { margin-top: 0; }
+    p:last-child { margin-bottom: $dmrg;}
+  }
+
+  .beta {
+    padding-left: 0;
+    position: relative;
+
+    > img {
+      position: absolute;
+      left: $mrg;
+      top: -270px;
+    }
+  }
+
+  @include media('<=md') {
+    padding-bottom: $dmrg;
+
+    .alpha { padding-right: 0; }
+    .beta {
+      > img { display: none; }
+    }
+  }
+}
+
+
+.icon-stripe {
+  padding: 0 $dmrg;
+
+  @include media('<=md') {
+    .beta,
+    .alpha {
+      padding-bottom: $dmrg*2;
+
+      h2 { padding-top: $dmrg*2; }
+    }
+  }
+
+  @include media('>md') {
     padding: 0;
 
-    .mark {
-      position: absolute;
-      top:-160px;
-      right: 20%;
+    .icon { position: relative; }
+
+    .alpha {
+      width: 28%;
+      text-align: left;
+      padding-left: $mrg;
     }
 
-    @include media("<=md") {
-      font-size: $base * 1.15;
-      line-height: 1.5;
-      margin-top: 0;
+    .beta {
+      width: 72%;
+      text-align: left;
+      padding-right: $dmrg*2;
+      padding-top: 0;
+      padding-bottom: $dmrg*4;
 
-      h1 { font-size: $base * 2.4; }
-      h2 { font-size: $base * 2; }
-      h3 { font-size: $base * 1.6; }
-
-      &.front {
-        .sprite,
-        .icon.icon-hide-mobile { display: none; }
-      }
+      h2 { padding-top: $dmrg*4; }
     }
 
-  }
-
-  .container {
-    @include outer-container($max-width);
-
-    body.front & {
-      max-width: #{map-get($breakpoints, 'md')};
-    }
-
-    @include media(">md") {
-      .columns-12 { @include span-columns($grid-columns); @include shift(0); @include omega(0); }
-      .columns-10 { @include span-columns(10); @include shift(1); }
-      .columns-8 { @include span-columns(8); @include shift(2); }
-      .columns-6 { @include span-columns($grid-columns / 2); }
-      .columns-4 { @include span-columns($grid-columns / 3); @include shift(4); }
-      .columns-2 { @include span-columns(2); @include omega(0); }
-    }
-  }
-
-  %stripe-padding-for-icons {
-    @include media(">md") {
-      // TODO: Bumping this up any more will require the the JS scrollTo stuff be reworked.
-      padding-bottom: ($mrg * 2);
-      padding-top: ($mrg * 2);
-    }
-  }
-
-  .stripe {
-    padding: $dmrg;
-    position: relative;
-    width: 100%;
-    @extend %full-width;
-
-    main &.first {
-      border-bottom: solid 1px $gray;
-      margin-top: 80px;
-
-      body.front & {
-        border: 0;
-        padding-bottom: 0;
-
-        @include media(">md") {
-          .columns-12 {
-            @include span-columns(12);
-            /*@include shift(1);*/
-          }
-        }
-      }
-    }
-
-    &.second {
+    &:nth-child(even) {
       .alpha {
-        hr { margin-top: 0; }
-        p:last-child { margin-bottom: $dmrg;}
+        width: 72%;
+        text-align: left;
+        padding-left: $dmrg*2;
+        padding-bottom: $dmrg*4;
 
-        @include media(">md") {
-          @include span-columns(5);
-          /*@include shift(1);*/
-          p:last-child { margin-bottom: ($mrg*2); }
-        }
+        h2 { padding-top: $dmrg*4; }
       }
 
       .beta {
-        @include span-columns(6); @include omega();
-
-        position: relative;
-        z-index: 99;
-
-        img {
-          position: absolute;
-          left: 82px;
-          top: -112px;
-        }
-
+        width: 28%;
+        text-align: right;
+        padding-right: $mrg;
       }
-
-      @include media("<=md") {
-        padding-bottom: 0;
-      }
-
-    }
-    &.blue {
-      background: $blue;
-      @extend %stripe-padding-for-icons;
-
-      @include media(">md") {
-        padding: ($dmrg * 1.4) 0;
-        .alpha { @include span-columns(3); }
-        .beta { @include span-columns(8); @include omega(); }
-        .icon { margin: $mrg 0 0 ($dmrg); }
-      }
-    }
-    &.red {
-      background: $red;
-      @extend %stripe-padding-for-icons;
-
-      @include media(">md") {
-        padding: ($dmrg * 1.4) 0;
-        .alpha { @include span-columns(8); @include shift(1); }
-        .beta { @include span-columns(3); @include omega(); }
-        .icon {  margin: ($dmrg * 2) 0 0 ($dmrg * 1.5); }
-      }
-    }
-    &.green {
-      background: $green;
-      @extend %stripe-padding-for-icons;
-
-      @include media(">md") {
-        padding: ($dmrg * 1.4) 0;
-        .alpha { @include span-columns(3); /*@include shift(1);*/ }
-        .beta { @include span-columns(7); @include shift(1); }
-        .icon { margin: $dmrg 0 0 $dmrg; }
-      }
-    }
-    &.gray {
-      background: $gray-dark;
-      padding-bottom: ($mrg * 60);
-      padding-top:  ($mrg * 4);
-
-      hr { border-color: $gray-4; margin-top: 0; }
-
-      body.front & {
-        padding-bottom: ($mrg * 6);
-      }
-    }
-    &.last {
-      border-top: solid 1px $gray;
-      padding-bottom: 0;
-    }
-    &.team {
-      padding-top: 0;
-
-      @include media(">md") {
-        .alpha { @include span-columns(4); }
-        .beta { @include span-columns(8); }
-        .sprite { float: none; margin: 0 auto ($mrg * 3) auto; }
-      }
-
-      hr:last-child { margin-bottom: 0; }
-
-      @include media("<=md") {
-        .beta p:last-child { margin-bottom: $dmrg; }
-      }
-    }
-
-    .modal {
-
-      .white-label-flag {
-          height: 126px;
-          position: absolute;
-          width: 126px;
-          display: none;
-          overflow: hidden;
-      }
-
-      .flag {
-          @include rotate(-45deg);
-          background-color: #2b2b2b;
-          color: white;
-          font-size: 14px;
-          height: 36px;
-          left: -39px;
-          line-height: 36px;
-          position: absolute;
-          text-align: center;
-          text-transform: uppercase;
-          top: 31px;
-          width: 172px;
-      }
-
     }
   }
+}
 
-  header {
-    $height: ($mrg * 3);
+.overflow .icon { top: $mrg * 1.25; }
 
-    @include clearfix();
-    background: rgba($black, 0.7);
-    display: none;
-    position: fixed;
-    top: 0;
+.triage .icon { top: $dmrg * 2.15; }
+
+.problem-solving .icon {
+  left: $mrg * 1.5;
+  font-size: 7.5em !important;
+}
+
+
+.projects {
+  padding-top: 0;
+  padding-bottom: $dmrg*3;
+  position: relative;
+
+  #projects {
+    padding-top: $dmrg*3;
+  }
+
+  @include media('<=md') {
+    padding-bottom: $dmrg*2;
+
+    #projects {
+      padding-top: $dmrg*2;
+    }
+  }
+}
+
+
+.contact-us {
+  border-top: 1px solid $gray;
+  padding-bottom: $dmrg;
+
+  h2 { padding-top: $dmrg*2; }
+
+  .contact-form {
     width: 100%;
-    z-index: 100;
-
-    .stripe {
-      padding-top: $mrg;
-      padding-bottom: $mrg;
-
-      .columns-12 {
-        height: $height;
-        position: relative;
-      }
-    }
-
-    a {
-      color: $white;
-      &:hover { color: $white; }
-      display: block;
-      height: $height;
-      line-height: $height;
-      position: absolute;
-      bottom: 0;
-      margin: 0;
-      width: auto;
-
-      &.brand {
-        left: 0;
-        font-family: 'Ubuntu', sans-serif;
-        font-size: $base * 2.6;
-        font-weight: 400;
-        text-decoration: none;
-        width: 88%;
-
-        @include media("<=md") {
-          font-size: $base * 2.4;
-        }
-      }
-      &.logo {
-        right: 0;
-      }
-    }
-    span.tagline {
-      display: block;
-      font-size: $base;
-      font-weight: normal;
-      line-height: $height;
-      margin: 0 0 0 0;
-      text-align: center;
-      text-indent: 10%;
-      text-transform: lowercase;
-
-      body.front & { text-indent: 18%; }
-      @include media("<=md") {
-        display: none;
-      }
-    }
   }
 
-  main {
-    @include media("<=md") {
-      margin-top: 0;
-    }
+  .form-container {
+    width: 65%;
+    margin: 0 auto;
   }
 
-  footer {
-    @extend %full-width;
+  @include media('<=md') {
+    padding-bottom: 0;
 
-    .stripe.first {
-      border-top: solid 1px $gray;
+    h2 { padding-top: $dmrg; }
 
-      body.front & {
-        border: 0;
-        padding-top: 0;
+    .form-container { width: 100%; }
+  }
+}
+
+
+.team {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  .exec-summary { padding-bottom: 0; }
+
+  @include media('>md') {
+    .team-about {
+      padding: $dmrg 0;
+
+      .icon { position: relative; }
+
+      .alpha {
+        width: 28%;
+        text-align: left;
+        padding-left: $mrg;
+      }
+
+      .beta {
+        width: 72%;
+        text-align: left;
+        padding-left: $dmrg*2;
       }
     }
 
-    p {
-      color: #666;
-      line-height: 1.7;
-    }
+    .exec-summary { padding-bottom: $dmrg; }
   }
+}
+
+
+footer {
+  border-top: solid 1px $gray;
+
+  body.front & {
+    border: 0;
+    padding-top: 0;
+  }
+
+  p {
+    color: #666;
+    line-height: 1.7;
+  }
+}
 
 
 // Flourish elements.
-  img.logo {
-    /*@include border-radius();*/
-    display: block;
-    width: ($mrg * 3);
-    height: ($mrg * 3);
+img.logo {
+  display: block;
+  width: ($mrg * 3);
+  height: ($mrg * 3);
 
-    h1 & { float: right; }
-  }
+  h1 & { float: right; }
+}
 
-  .sprite {
-    display: block;
-    float: left;
-    margin: 0 $dmrg $dmrg 0;
-  }
+// .sprite {
+//   display: block;
+//   float: left;
+//   margin: 0 $dmrg $dmrg 0;
+// }

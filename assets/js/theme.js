@@ -86,7 +86,7 @@
     scrollFadeChildren: function(context, settings) {
 
       var $window = $(window);
-      if ($window.width() < settings.theme.breakpoints.md) {
+      if ($window.width() <= settings.theme.breakpoints.md) {
         return;
       }
 
@@ -328,7 +328,7 @@
 
       var $modal = $('#modal', context);
 
-      $('ul.projects a', context)
+      $('.projects-list a', context)
         .click(function(evt) {
           evt.preventDefault();
 
@@ -426,7 +426,7 @@
 
           if ($(window).width() > settings.theme.breakpoints.md) {
             $content
-              .height(!$content.hasClass('white-label') ? $modal.parents('.stripe').height() - (settings.theme.margin * 6) : 'auto');
+              .height(!$content.hasClass('white-label') ? $modal.parents('.projects').height() - (settings.theme.margin * 8) : 'auto');
           }
 
           $modal.fadeIn(settings.theme.animation.speed);
@@ -444,7 +444,7 @@
 
       // Sniff for #project-N request, trigger animation.
       if (document.location.hash) {
-        var $e = $('ul.projects a[href=' + document.location.hash + ']', context);
+        var $e = $('.projects-list a[href=' + document.location.hash + ']', context);
         if ($e.length) {
           $e.click();
         }
