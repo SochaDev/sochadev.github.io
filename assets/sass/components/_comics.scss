@@ -2,7 +2,6 @@
 .comic-banner {
   @include clearfix();
   background: url(../images/comics/comic-bg-00.png) repeat-x 0 0 transparent;
-
   display: block;
   text-align: center;
   margin: $dmrg 0 0 0;
@@ -20,7 +19,7 @@
       display: none;
     }
 
-    @include span-columns(2);
+    //@include span-columns(2);
     background: $gray-dark;
     border-right: solid 1px $gray-4;
     height: $height;
@@ -85,7 +84,8 @@
     font-weight: normal;
 
     @include media(">md") {
-      @include span-columns(10);
+      width: 90%;
+      margin: 0 auto;
       padding: ($dmrg * 2) 0;
     }
 
@@ -131,18 +131,8 @@ ol.comic {
   }
 
   > li {
-
-
-
-    @include media(">=md") {
-      @include span-columns(4);
-      @include omega(3n);
-      min-height: 300px;
-      margin-bottom: $dmrg;
-    }
-
     @include clearfix();
-    @include border-radius();
+    border-radius: $border-radius;
     background: url(../images/comics/comic-bg-02.png) repeat 0 0 $white;
     border: solid 1px $gray-light;
     position: relative;
@@ -150,20 +140,33 @@ ol.comic {
     padding: $mrg;
     list-style: none;
 
+    @include media(">=md") {
+      //@include span-columns(4);
+      //@include omega(3n);
+      min-height: 300px;
+      margin-bottom: $dmrg;
+    }
+
     // "Age the paper".
     &:nth-child(2n+1) {
       border-color: $gray-lighter;
 
       .narrator {
-        border-color: $gray-lighter; }
+        border-color: $gray-lighter;
+      }
     }
+
     &:nth-child(4n) {
       background: $white;
     }
+
     &:nth-child(6n) {
-      border: solid 1px lighten($gray, 30%); }
+      border: solid 1px lighten($gray, 30%);
+    }
+
     em, strong, .tooltip {
-      background: $white; }
+      background: $white;
+    }
   }
 
   ul {
@@ -172,7 +175,9 @@ ol.comic {
     list-style: none;
 
     &.bullets {
-      list-style: disc; }
+      list-style: disc;
+    }
+
     li {
       background: $white;
       margin: 0 0 $mrg 0;
@@ -182,10 +187,11 @@ ol.comic {
   }
 
   img.avatar {
-    @include border-radius($border-radius * 2);
+    border-radius: $border-radius * 2;
     width: ($mrg * 5);
     height: ($mrg * 5);
-    margin: 0 $mrg 0 0; }
+    margin: 0 $mrg 0 0;
+  }
 
   img.illustration {
     @include clearfix();
@@ -196,6 +202,7 @@ ol.comic {
     &.top {
       margin-top: 0;
     }
+
     &.bottom {
       @include media(">=md") {
         position: absolute;
@@ -204,24 +211,29 @@ ol.comic {
         width: auto;
         margin: 0 0 $mrg 0;
       }
+
       @include media("<md") {
         margin-bottom: 0;
       }
     }
   }
+
   .no-img img {
-    display: none; }
+    display: none;
+  }
 
   .tooltip {
     border-bottom-color: $gray-light;
 
     .tip {
       border-color: $gray;
-      text-transform: none; }
+      text-transform: none;
+    }
 
     &.no-img,
     &.project {
-      white-space: normal; }
+      white-space: normal;
+    }
   }
 
   .blue { color: darken($blue, 10%); }
@@ -232,16 +244,21 @@ ol.comic {
   .purple { color: darken($purple, 10%); }
 
   strong {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+  }
+
   .actor {
-    font-weight: normal; }
+    font-weight: normal;
+  }
+
   .brand {
     color: $gray-dark;
     font-weight: bold;
 
     &.actor {
       color: $black;
-      font-weight: normal; }
+      font-weight: normal;
+    }
   }
 
 
@@ -261,7 +278,7 @@ ol.comic {
   }
 
   .index {
-    @include border-radius($border-radius * 4);
+    border-radius: $border-radius * 4;
     display: block;
     width: $dmrg;
     height: $dmrg;

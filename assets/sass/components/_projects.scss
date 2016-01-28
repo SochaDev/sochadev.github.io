@@ -1,43 +1,51 @@
 
-ul.projects {
+.projects-list {
   @include clearfix();
-  margin: $dmrg 0 0 0;
+  margin: 0;
   padding: 0;
 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-end;
+
   li {
-    @include span-columns(3);
-    @include omega(4n);
-    background: $white;
-    margin-bottom: $dmrg;
-    border: solid 1px $gray-darker;
+    display: inline-block;
     overflow: hidden;
 
-    @include media("<=sm") {
-      @include span-columns(6);
-      @include omega(2n);
-      margin-bottom: $mrg;
-      min-width: 130px;
+    @include media('>md') {
+      width: 25%;
+      padding-right: $mrg;
+      padding-bottom: $mrg;
 
-      &:last-child { margin-bottom: $dmrg; }
+      &:nth-child(4) { padding-right: 0; }
+    }
+
+    @include media('<=md','>sm') {
+      width: 33.3333%;
+      padding-right: $mrg;
+      padding-bottom: $mrg;
+
+      &:nth-child(3) { padding-right: 0; }
+    }
+
+    @include media('<=sm') {
+      width: 180px;
+      margin: $hmrg auto;
     }
   }
 
   a {
     background: $gray-4;
     cursor: pointer;
-    display: block;
-    float: none;
-    margin: 0;
-    overflow: hidden;
-    padding: $dmrg * 2;
+    display: inline-block;
     text-indent: -9999px;
-    width: 180px;
-    height: 135px;
+    border: 1px solid $gray-darker;
     @include grayscale(100);
 
-    &:hover {
-      @include grayscale(0);
-    }
+    &:hover { @include grayscale(0); }
 
     &.socha-dev-white-label { @include sprite2x($socha-dev-white-label-orig, $socha-dev-white-label-orig-2x); }
     &.science { @include sprite2x($aaas-science, $aaas-science-2x); }
@@ -60,41 +68,95 @@ ul.projects {
   top: 0;
   bottom: 0;
   z-index: 10;
+}
 
-  .modal {
-    @include border-radius();
-    @include clearfix();
-    background: $white;
-    color: $bg;
-    font-size: $base;
-    margin: $dmrg auto;
-    padding: $dmrg;
-    max-width: #{map-get($breakpoints, 'lg')};
+.modal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 
-    h3 { text-transform: none; }
-    a { color: $blue; }
+  border-radius: $border-radius;
+  background: $white;
+  color: $bg;
+  font-size: $base;
+  margin: $dmrg auto;
+  padding: $dmrg;
+  max-width: #{map-get($breakpoints, 'lg')};
 
-    &.white-label {
-      @include media(">md") { width: 40%; height: auto; bottom: auto; }
+  h3 { text-transform: none; }
+  a { color: $blue; }
 
-      .alpha { display: none; }
-      .beta { @include span-columns(12); }
-    }
-
-    @include media(">md") {
-      .alpha { @include span-columns(8); @include shift(0); height: 100%; overflow: hidden; }
-      .beta { @include span-columns(4); @include omega(0); height: 100%; overflow: hidden; }
-      img { float: left; height: 100%; }
-    }
-
-    @include media("<=md") {
-      margin: $dmrg;
-      padding: $mrg;
-
-      .alpha { @include clearfix(); }
-      .beta { padding: $dmrg $mrg $mrg $mrg; }
-      img { height: auto; width: 100%; }
-    }
-
+  .white-label-flag {
+    height: 126px;
+    position: absolute;
+    width: 126px;
+    display: none;
+    overflow: hidden;
   }
+
+  .flag {
+    @include rotate(-45deg);
+    background-color: #2b2b2b;
+    color: white;
+    font-size: 14px;
+    height: 36px;
+    left: -39px;
+    line-height: 36px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 31px;
+    width: 172px;
+  }
+
+  &.white-label {
+    @include media(">md") {
+      width: 40%;
+      height: auto;
+      bottom: auto;
+    }
+
+    .alpha { display: none; }
+    .beta { width: 100%; }
+  }
+
+  @include media(">md") {
+    .alpha {
+      width: 66%;
+      height: 100%;
+      overflow: hidden;
+      margin: 0;
+      padding-right: 0;
+    }
+
+    .beta {
+      width: 34%;
+      height: 100%;
+      overflow: hidden;
+      margin: 0;
+      padding-left: $dmrg;
+    }
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  @include media('<=md') {
+    display: block;
+    margin: $mrg;
+    padding: $mrg;
+
+    .beta {
+      padding: $mrg 0 0 0;
+    }
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
 }

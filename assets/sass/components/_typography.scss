@@ -53,7 +53,7 @@
   em, i { font-style: italic; }
 
   pre {
-    @include border-radius($border-radius * 2);
+    border-radius: $border-radius * 2;
     background: $gray-4;
     clear: both;
     color: $text;
@@ -61,12 +61,14 @@
     padding: $dmrg $mrg;
     width: 100%;
   }
+
   code {
-    @include border-radius($border-radius * 2);
+    border-radius: $border-radius * 2;
     background: $gray-4;
     padding: $border-radius ($border-radius * 2);
     white-space: nowrap;
   }
+
   hr {
     border: solid 2px $gray-dark;
     clear: both;
@@ -74,10 +76,14 @@
     margin: $dmrg 0;
     width: 100%;
   }
-  img {
-    display: block; float: left;
-  }
+
+  // img {
+  //   display: block;
+  //   float: left;
+  // }
+
   small { font-size: $base * 0.8 }
+
   big { font-size: $base * 1.2 }
 
   a {
@@ -186,7 +192,7 @@
       margin-bottom: $mrg;
       margin-left: 0;
       width: ($mrg * 20);
-      @include border-radius($border-radius * 2);
+      border-radius: $border-radius * 2;
       background: $white;
       border: solid $border-radius $gray-darker;
       color: $gray-dark;
