@@ -20,13 +20,27 @@ If you think you might be a good fit here at Socha Dev &mdash; please <a href="/
     </div>
     <div class="beta">
       <h3 id="{{ person.name | downcase | replace: " ", "-" }}">{{ person.name }}</h3>
+
       <p>{{ person.description }}</p>
+
       <ul class="social">
-        <li><a href="https://github.com/{{ person.github }}" title="{{ person.github }}" target="_blank" class="orange"><i class="icon icon-github-circled"></i> GitHub</a></li>
-        {% if person.drupal %}<li><a href="https://www.drupal.org/u/{{ person.drupal }}" title="{{ person.drupal }}" target="_blank" class="blue"><i class="icon icon-drupal"></i> Drupal.org</a></li>{% endif %}
+        <li>
+          <a href="https://github.com/{{ person.github }}" title="{{ person.github }}" target="_blank" class="orange">
+            <i class="icon icon-github-circled"></i> GitHub
+          </a>
+        </li>
+        {% if person.drupal %}
+          <li>
+            <a href="https://www.drupal.org/u/{{ person.drupal }}" title="{{ person.drupal }}" target="_blank" class="blue">
+              <i class="icon icon-drupal"></i> Drupal.org
+            </a>
+          </li>
+        {% endif %}
       </ul>
     </div>
-  </div>{% endfor %}
+  </div>
+{% endfor %}
+
   <div class="container">
     <div class="alpha">
       <img src="https://avatars.githubusercontent.com/u/1489168?v=3&s=200" class="avatar" alt="Ro">
@@ -36,4 +50,5 @@ If you think you might be a good fit here at Socha Dev &mdash; please <a href="/
       <p>Ro is our wonderful Slack robot...she's been with us since our Campfire days. The team has created a fantastic plugin system for her using the Slim PHP framework. Ro's job is to make the rest of the team laugh &mdash; she's capable of all kindsa fun stuff like <code>bam</code>, <code>praise @user</code>, <code>shame @user</code> and <code>play :clip:</code></p>
     </div>
   </div>
+
 </div>

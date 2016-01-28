@@ -644,14 +644,24 @@ header {
   width: 100%; }
   .stripe.blue {
     background: #41a7bf; }
+    .stripe.blue hr {
+      border-color: #54b0c5; }
   .stripe.red {
     background: #b20b23; }
+    .stripe.red hr {
+      border-color: #ca0c28; }
   .stripe.green {
     background: #6b7e28; }
+    .stripe.green hr {
+      border-color: #7b912e; }
   .stripe.gray {
     background: #333; }
+    .stripe.gray hr {
+      border-color: #404040; }
   .stripe.darkgray {
     background: #2b2b2b; }
+    .stripe.darkgray hr {
+      border-color: #383838; }
 
 .title {
   margin-top: 30px; }
@@ -868,7 +878,7 @@ code {
   white-space: nowrap; }
 
 hr {
-  border: solid 2px #333;
+  border: solid 2px #383838;
   clear: both;
   height: 0px;
   margin: 24px 0;
@@ -1756,6 +1766,9 @@ fieldset {
     display: none; }
   .modal.white-label .beta {
     width: 100%; }
+  .modal .alpha img {
+    height: auto;
+    width: 100%; }
   @media (min-width: 769px) {
     .modal .alpha {
       width: 66%;
@@ -1768,52 +1781,53 @@ fieldset {
       height: 100%;
       overflow: hidden;
       margin: 0;
-      padding-left: 24px; }
-    .modal img {
-      height: auto;
-      width: 100%; } }
+      padding-left: 24px; } }
   @media (max-width: 768px) {
     .modal {
       display: block;
       margin: 12px;
       padding: 12px; }
       .modal .beta {
-        padding: 12px 0 0 0; }
-      .modal img {
-        height: auto;
-        width: 100%; } }
+        padding: 12px 0 0 0; } }
 
-@media (min-width: 768px) {
-  .bios {
-    width: 80%;
-    margin: 0 auto; } }
-
-.bios .container {
-  margin-top: 48px;
-  align-items: top; }
-
-.bios .alpha {
-  width: 16%; }
-
-.bios .beta {
-  width: 84%; }
-
-.bios img.avatar {
-  border-radius: 6px;
-  display: block;
-  width: 100%;
-  margin: 0 0 12px 0; }
-  @media (max-width: 767px) {
-    .bios img.avatar {
+.bios {
+  padding-bottom: 96px; }
+  .bios .container {
+    padding: 24px 0;
+    align-items: top;
+    align-items: flex-start; }
+  .bios .alpha {
+    width: 18%; }
+  .bios .beta {
+    width: 82%; }
+  .bios .avatar {
+    border-radius: 6px;
+    display: block;
+    width: 100%;
+    margin: 0 0 12px 0; }
+  .bios ul.social {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .bios ul.social li {
+      float: left;
+      margin: 0 12px 0 0; }
+  @media (max-width: 768px) {
+    .bios .container {
+      display: block;
+      padding-top: 36px; }
+    .bios .alpha {
+      width: 100%;
+      text-align: center; }
+    .bios .beta {
+      width: 100%; }
+      .bios .beta h3 {
+        text-align: center; }
+    .bios .avatar {
+      display: inline-block;
+      margin: 12px;
+      width: 144px;
       border-radius: 3px; } }
-
-.bios ul.social {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-  .bios ul.social li {
-    float: left;
-    margin: 0 12px 0 0; }
 
 .stripe.hero {
   padding: 0;
@@ -1846,20 +1860,33 @@ fieldset {
       .stripe.hero .hero-intro {
         margin: 24px; } }
 
+.workflow .container {
+  max-width: 1024px; }
+
+.workflow footer .container {
+  max-width: 768px; }
+
 .comic-banner {
-  background: url(../images/comics/comic-bg-00.png) repeat-x 0 0 transparent;
-  display: block;
+  background-image: url(../images/comics/comic-bg-00.png);
+  background-repeat: repeat-x;
+  background-color: transparent;
+  background-position: top left;
   text-align: center;
-  margin: 24px 0 0 0; }
-  .comic-banner::after {
-    clear: both;
-    content: "";
-    display: table; }
-  @media (min-width: 768px) {
+  margin: 24px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  align-items: top;
+  align-items: flex-start;
+  width: 100%; }
+  @media (min-width: 769px) {
     .comic-banner {
       margin: 48px 0 0 0;
       border: solid 1px #444; } }
   .comic-banner .issue {
+    width: 17%;
     background: #333;
     border-right: solid 1px #444;
     height: 250px;
@@ -1867,7 +1894,7 @@ fieldset {
     font-size: 16px;
     font-style: normal;
     text-align: center; }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       .comic-banner .issue {
         display: none; } }
     .comic-banner .issue .numbers, .comic-banner .issue .numbers .date, .comic-banner .issue .publisher {
@@ -1906,14 +1933,15 @@ fieldset {
       text-transform: uppercase;
       height: 65px; }
   .comic-banner .title {
+    display: block;
     position: relative;
-    font-size: 57.6px;
+    font-size: 32px;
     font-weight: normal; }
     @media (min-width: 769px) {
       .comic-banner .title {
-        width: 90%;
-        margin: 0 auto;
-        padding: 48px 0; } }
+        width: 83%;
+        padding: 48px 0;
+        font-size: 57.6px; } }
     .comic-banner .title .tooltip {
       border-bottom: 0;
       font-weight: bold;
@@ -1938,17 +1966,30 @@ ol.comic {
   line-height: 1.5;
   margin: 0;
   padding: 0;
-  background: url(../images/comics/comic-bg-01.png) repeat 0 0 #fff;
+  background-image: url(../images/comics/comic-bg-01.png);
+  background-repeat: repeat;
+  background-position: top left;
+  background-color: #fff;
   color: #2b2b2b;
-  padding: 12px; }
-  @media (min-width: 768px) {
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  width: 100%; }
+  @media (min-width: 769px) {
     ol.comic {
       border: solid 1px #444;
-      padding: 24px;
+      padding: 12px;
       padding-bottom: 0; } }
   ol.comic > li {
     border-radius: 3px;
-    background: url(../images/comics/comic-bg-02.png) repeat 0 0 #fff;
+    background-image: url(../images/comics/comic-bg-02.png);
+    background-repeat: repeat;
+    background-position: top left;
+    background-color: #fff;
     border: solid 1px #bbb;
     position: relative;
     margin-bottom: 12px;
@@ -1958,10 +1999,11 @@ ol.comic {
       clear: both;
       content: "";
       display: table; }
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       ol.comic > li {
+        width: calc(33.3333% - 12px*2);
         min-height: 300px;
-        margin-bottom: 24px; } }
+        margin: 12px; } }
     ol.comic > li:nth-child(2n+1) {
       border-color: #e4e4e4; }
       ol.comic > li:nth-child(2n+1) .narrator {
@@ -1970,7 +2012,9 @@ ol.comic {
       background: #fff; }
     ol.comic > li:nth-child(6n) {
       border: solid 1px #b3b3b3; }
-    ol.comic > li em, ol.comic > li strong, ol.comic > li .tooltip {
+    ol.comic > li em,
+    ol.comic > li strong,
+    ol.comic > li .tooltip {
       background: #fff; }
   ol.comic ul {
     margin: 24px 0 0 24px;
@@ -1983,6 +2027,9 @@ ol.comic {
       margin: 0 0 12px 0; }
       ol.comic ul li:last-child {
         margin: 0; }
+  ol.comic img {
+    display: block;
+    float: left; }
   ol.comic img.avatar {
     border-radius: 6px;
     width: 60px;
@@ -1998,14 +2045,14 @@ ol.comic {
       display: table; }
     ol.comic img.illustration.top {
       margin-top: 0; }
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       ol.comic img.illustration.bottom {
         position: absolute;
         bottom: 0;
         z-index: 0;
         width: auto;
         margin: 0 0 12px 0; } }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       ol.comic img.illustration.bottom {
         margin-bottom: 0; } }
   ol.comic .no-img img {
@@ -2042,7 +2089,7 @@ ol.comic {
   ol.comic .narrator {
     display: block;
     background: #fff; }
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       ol.comic .narrator {
         position: absolute;
         top: 0;
@@ -2066,6 +2113,6 @@ ol.comic {
     background: #fff;
     border: solid 1px #e4e4e4;
     color: #bbb; }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       ol.comic .index {
         display: none; } }

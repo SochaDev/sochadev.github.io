@@ -17,10 +17,12 @@
 <body{% if page.tags.size > 0 %} class="{{ page.tags.last }}"{% endif %}>
 
   <div class="mark">
-    <div class="sochadev-gray band"></div>
-    <div class="sochadev-blue band"></div>
-    <div class="sochadev-red band"></div>
-    <div class="sochadev-green band"></div>
+    <a href="/">
+      <div class="sochadev-gray band"></div>
+      <div class="sochadev-blue band"></div>
+      <div class="sochadev-red band"></div>
+      <div class="sochadev-green band"></div>
+    </a>
   </div>
 
   <header class="stripe">
@@ -50,12 +52,6 @@
               {{ page.title }}
             {% else %}
               {{ site.title }}
-            {% endif %}
-
-            {% if page.url != '/' %}
-              <a href="/" title="Home" class="logo">
-                <img src="{{ site.logoUrl }}" alt="{{ site.title }}" class="logo"/>
-              </a>
             {% endif %}
           </h1>
 

@@ -1,35 +1,23 @@
 
 .bios {
-  @include media(">=md") {
-    width: 80%;
-    margin: 0 auto;
-  }
+  padding-bottom: $dmrg*4;
 
   .container {
-    margin-top: ($dmrg * 2);
+    padding: $dmrg 0;
     align-items: top;
+    align-items: flex-start;
   }
 
-  .alpha {
-    width: 16%;
-  }
-  .beta {
-    width: 84%;
-  }
+  .alpha { width: 18%; }
+  .beta { width: 82%; }
 
-  p {
-    @extend %text-dense;
-  }
+  p { @extend %text-dense; }
 
-  img.avatar {
+  .avatar {
     border-radius: $border-radius * 2;
     display: block;
     width: 100%;
     margin: 0 0 $mrg 0;
-
-    @include media("<md") {
-      border-radius: $border-radius;
-    }
   }
 
   ul.social {
@@ -40,6 +28,31 @@
     li {
       float: left;
       margin: 0 $mrg 0 0;
+    }
+  }
+
+  @include media('<=md') {
+    .container {
+      display: block;
+      padding-top: $dmrg*1.5;
+    }
+
+    .alpha {
+      width: 100%;
+      text-align: center;
+    }
+
+    .beta {
+      width: 100%;
+
+      h3 { text-align: center; }
+    }
+
+    .avatar {
+      display: inline-block;
+      margin: $mrg;
+      width: 144px;
+      border-radius: $border-radius;
     }
   }
 }

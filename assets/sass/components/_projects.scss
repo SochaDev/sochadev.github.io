@@ -121,6 +121,14 @@
     .beta { width: 100%; }
   }
 
+  .alpha {
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+
   @include media(">md") {
     .alpha {
       width: 66%;
@@ -137,11 +145,6 @@
       margin: 0;
       padding-left: $dmrg;
     }
-
-    img {
-      height: auto;
-      width: 100%;
-    }
   }
 
   @include media('<=md') {
@@ -149,14 +152,7 @@
     margin: $mrg;
     padding: $mrg;
 
-    .beta {
-      padding: $mrg 0 0 0;
-    }
-
-    img {
-      height: auto;
-      width: 100%;
-    }
+    .beta { padding: $mrg 0 0 0; }
   }
 
 }

@@ -2,7 +2,8 @@
 
 // breakpoints map for include-media.
 $breakpoints: (sm: 490px, md: 768px, lg: 1024px);
-$max-width: 768px !global;
+$mid-width: 768px !global;
+$max-width: 1024px !global;
 
 // colors
 $black: #000;

@@ -70,7 +70,7 @@
   }
 
   hr {
-    border: solid 2px $gray-dark;
+    border: solid 2px lighten($gray-darker, 5%);
     clear: both;
     height: 0px;
     margin: $dmrg 0;

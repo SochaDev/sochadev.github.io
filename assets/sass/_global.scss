@@ -35,7 +35,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: $max-width;
+  max-width: $mid-width;
   margin: 0 auto;
 
   &.fullblock { display: block; }
@@ -184,17 +184,34 @@ header {
   padding: $dmrg;
   width: 100%;
 
-  &.blue { background: $blue; }
-  &.red { background: $red; }
-  &.green { background: $green; }
-  &.gray { background: $gray-dark; }
-  &.darkgray { background: $gray-darker; }
-}
+  &.blue {
+    background: $blue;
+    hr { border-color: lighten($blue, 5%); }
+  }
 
+  &.red {
+    background: $red;
+    hr { border-color: lighten($red, 5%); }
+  }
+
+  &.green {
+    background: $green;
+    hr { border-color: lighten($green, 5%); }
+  }
+
+  &.gray {
+    background: $gray-dark;
+    hr { border-color: lighten($gray-dark, 5%); }
+  }
+
+  &.darkgray {
+    background: $gray-darker;
+    hr { border-color: lighten($gray-darker, 5%); }
+  }
+}
 
 .title {
   margin-top: $dmrg*1.25;
-
   @include media('>md') { margin-top: 0; }
 }
 
