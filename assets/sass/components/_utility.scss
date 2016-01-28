@@ -9,5 +9,7 @@
 }
 
 .hide-mobile {
-  @include media('<=md') { display: none; }
+  @include media('<=md') {
+    display: none !important;
+  }
 }

@@ -1,18 +1,18 @@
 
 .stripe.hero {
-
-  @include media(">md") {
-    height: 500px;
-  }
-  @include media("<=md") {
-    background-size: auto 100%;
-  }
-
   padding: 0;
   background-repeat: no-repeat;
   background-position: center top;
   border-top: solid 1px $black;
   border-bottom: solid 1px $black;
+
+  @include media('>md') {
+    height: 500px;
+  }
+
+  @include media('<=md') {
+    background-size: auto 100%;
+  }
 
   body.front & {
     border-top: solid 1px $black;
@@ -21,21 +21,20 @@
     padding-top: $dmrg;
   }
 
-  .intro {
-    @include border-radius($border-radius * 2);
+  .hero-intro {
+    border-radius: $border-radius * 2;
     background: rgba(0, 0, 0, .60);
     margin-top: ($mrg * 6);
     padding: $mrg $dmrg;
 
-    @include media(">md") {
-      @include span-columns(7);
-      @include shift(1);
+    @include media('>md') {
+      width: 70%;
+      margin: 0 auto;
       font-size: $base * 1.8;
     }
-    @include media("<=md") {
+
+    @include media('<=md') {
       margin: $dmrg;
     }
-
   }
-
 }

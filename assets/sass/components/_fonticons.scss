@@ -20,15 +20,17 @@
 */
 
 // larger fa-x support
-.icon-2x { font-size: 2em; }
-.icon-3x { font-size: 3em; }
-.icon-4x { font-size: 4em; }
-.icon-5x { font-size: 5em; }
-.icon-6x { font-size: 6em; }
-.icon-7x { font-size: 7em; }
-.icon-8x { font-size: 8em; }
-.icon-9x { font-size: 9em; }
-.icon-10x { font-size: 10em; }
+.icon.icon-2x { font-size: 2em; }
+.icon.icon-3x { font-size: 3em; }
+.icon.icon-4x { font-size: 4em; }
+.icon.icon-5x { font-size: 5em; }
+.icon.icon-6x { font-size: 6em; }
+.icon.icon-7x { font-size: 7em; }
+.icon.icon-8x { font-size: 8em; }
+.icon.icon-9x { font-size: 9em; }
+.icon.icon-10x { font-size: 10em; }
+.icon.icon-11x { font-size: 11em; }
+.icon.icon-12x { font-size: 12em; }
 
 .icon-spin {
   -webkit-animation: icon-spin 2s infinite linear;
@@ -94,39 +96,21 @@
   filter: none;
 }
 
-[class^="icon-"]:before, [class*=" icon-"]:before {
+.icon {
   font-family: "sochadev";
   font-style: normal;
   font-weight: normal;
   speak: none;
-
   display: inline-block;
   text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
-
-  /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
-
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
-
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
-
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-
-  /* Font smoothing. That was taken from TWBS */
+  line-height: 1;
+  text-align: center;
+  font-size: 1em;
+  width: 1em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
 .icon-chat:before { content: '\e800'; } /* '' */

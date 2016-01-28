@@ -40,7 +40,7 @@ hr {
 }
 
 img.logo {
-  @include border-radius();
+  border-radius: $border-radius;
   display: block;
   float: right;
   margin: 0 0 $dmrg $dmrg;
