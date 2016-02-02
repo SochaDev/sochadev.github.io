@@ -715,16 +715,16 @@ header {
         text-align: left;
         padding-right: 48px;
         padding-top: 0;
-        padding-bottom: 96px; }
+        padding-bottom: 72px; }
         .icon-stripe .beta h2 {
-          padding-top: 96px; }
+          padding-top: 72px; }
       .icon-stripe:nth-child(even) .alpha {
         width: 72%;
         text-align: left;
         padding-left: 48px;
-        padding-bottom: 96px; }
+        padding-bottom: 72px; }
         .icon-stripe:nth-child(even) .alpha h2 {
-          padding-top: 96px; }
+          padding-top: 72px; }
       .icon-stripe:nth-child(even) .beta {
         width: 28%;
         text-align: right;
