@@ -276,9 +276,9 @@ header {
       text-align: left;
       padding-right: $dmrg*2;
       padding-top: 0;
-      padding-bottom: $dmrg*4;
+      padding-bottom: $dmrg*3;
 
-      h2 { padding-top: $dmrg*4; }
+      h2 { padding-top: $dmrg*3; }
     }
 
     &:nth-child(even) {
@@ -286,9 +286,9 @@ header {
         width: 72%;
         text-align: left;
         padding-left: $dmrg*2;
-        padding-bottom: $dmrg*4;
+        padding-bottom: $dmrg*3;
 
-        h2 { padding-top: $dmrg*4; }
+        h2 { padding-top: $dmrg*3; }
       }
 
       .beta {
