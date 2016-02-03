@@ -68,7 +68,7 @@ tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP,
   <div class="container fullblock">
     <div class="fullwidth">
       <h2 id="contact">Contact Us</h2>
-      <p><a href="{{ page.url }}" class="blue form-toggler">Ready to get started?</a> We'd love to learn more about your project.</p>
+      <p><a href="{{ page.url }}" class="blue form-toggler">Ready to get started?</a> We'd love to learn more about your project. If you need material for the boss or board: <a href="/executive-summary" target="_blank" class="red">here's an executive summary</a></p>
     </div>
 
     <div class="contact-form">
@@ -90,14 +90,9 @@ tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP,
     </div>
     <div class="beta">
       <h3 id="about">Our Team</h3>
-      <p><a href="/team" class="purple">Our team members</a> live and work happily all over the US &mdash; we use some neat apps to keep us connected to each other and to our clients. <!--<a href="/workflow" class="green">Our workflow</a>--> Our workflow is designed to incorporate great ideas throughout a project's life cycle.</p>
+      <p><a href="/team" class="purple">Our team members</a> live and work across the US &mdash; connected with some neat apps in a <!--<a href="/" class="green">Our workflow</a>-->workflow designed to incorporate great ideas throughout a project's life cycle.</p>
       <p>We love it when a plan comes together.</p>
-    </div>
-  </div>
-
-  <div class="container exec-summary">
-    <div class="fullwidth">
-      <p>If you need material for the boss or board, <a href="/executive-summary" target="_blank" class="red">here's an executive summary</a>.<br>Want to work here? <a href="#contact" class="blue form-toggler">We'd love to talk!</a> (include a link to your GitHub account)</p>
+      <p>Want to work here? <a href="#contact" class="blue form-toggler">We'd love to talk!</a> (include your GitHub profile name)</p>      
     </div>
   </div>
 

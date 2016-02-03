@@ -20,12 +20,16 @@
     a, a:hover { text-decoration: none; }
   }
   h1 {
-    font-size: $base * 5.2;
+    font-size: $base * 2.4;
     margin: 0;
-
-    div {
-      font-size: $base;
-      margin-bottom: ($dmrg/2);
+  }
+  .front {
+    h1 {
+      font-size: $base * 5.2;
+      div {
+        font-size: $base;
+        margin-bottom: ($dmrg/2);
+      }
     }
   }
   h2 {

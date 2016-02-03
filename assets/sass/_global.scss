@@ -25,6 +25,9 @@ body {
     h1 { font-size: $base * 2.4; }
     h2 { font-size: $base * 2; }
     h3 { font-size: $base * 1.6; }
+
+
+
   }
 }
 
@@ -254,9 +257,9 @@ header {
   @include media('<=md') {
     .beta,
     .alpha {
-      padding-bottom: $dmrg*2;
+      padding-bottom: $dmrg*1.7;
 
-      h2 { padding-top: $dmrg*2; }
+      h2 { padding-top: $dmrg*1.7; }
     }
   }
 
