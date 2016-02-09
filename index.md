@@ -19,7 +19,7 @@ tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP,
       We turn it all into a beautiful, fully functioning application.</p>
     </div>
     <div class="beta">
-      <img class="img-responsive hide-mobile" srcset="/assets/images/heroes/main-illust@2x.png" src="/assets/images/heroes/main-illust.png" />
+      <img class="img-responsive hide-mobile" srcset="/assets/images/heroes/main-illust@2x.png" src="/assets/images/heroes/main-illust.png" alt="Pixel-art illustration of an app factory" />
     </div>
   </div>
 </section>
@@ -70,7 +70,6 @@ tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP,
       <h2 id="contact">Contact Us</h2>
       <p><a href="{{ page.url }}" class="blue form-toggler">Ready to get started?</a> We'd love to learn more about your project. If you need material for the boss or board: <a href="/executive-summary" target="_blank" class="red">here's an executive summary</a></p>
     </div>
-
     <div class="contact-form">
       <div class="form-container">
         {% include contact.html %}
@@ -83,19 +82,17 @@ tags: [ web development, full-stack JavaScript, AngularJS, Node.js, Meteor, PHP,
   <div class="container fullblock">
     <hr>
   </div>
-
   <div class="container team-about">
     <div class="alpha hide-mobile">
       <span class="icon icon-letter-a icon-12x"></span>
     </div>
     <div class="beta">
-      <h3 id="about">Our Team</h3>
+      <h2 id="about">Our Team</h2>
       <p><a href="/team" class="purple">Our team members</a> live and work across the US &mdash; connected with some neat apps in a <!--<a href="/" class="green">Our workflow</a>-->workflow designed to incorporate great ideas throughout a project's life cycle.</p>
       <p>We love it when a plan comes together.</p>
       <p>Want to work here? <a href="#contact" class="blue form-toggler">We'd love to talk!</a> (include your GitHub profile name)</p>      
     </div>
   </div>
-
   <div class="container fullblock">
     <hr>
   </div>

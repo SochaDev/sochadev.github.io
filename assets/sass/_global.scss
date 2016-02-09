@@ -94,7 +94,7 @@ body {
   .sochadev-green { background-color: $sochadev-green; }
 
   @include media('<=md') {
-    right: $dmrg;
+    right: $dmrg/2;
     height: $dmrg*1.25;
     width: $dmrg * 6;
 
@@ -156,6 +156,7 @@ header {
 
       @include media("<=md") {
         font-size: $base * 2.4;
+        left: $dmrg/2;
       }
     }
 

@@ -46,26 +46,17 @@
     <section class="stripe title">
       <div class="container">
         <div class="fullwidth">
-
-          <h1>
-            {% if page.title %}
-              {{ page.title }}
-            {% else %}
-              {{ site.title }}
-            {% endif %}
-          </h1>
-
+          <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
           {% if page.url != '/' %}
             <p class="breadcrumb"><a href="/" class="blue">Home</a></p>
           {% endif %}
-
         </div>
       </div>
     </section>
 
-    {% if page.url == '/' %}
-      {{ content }}
-    {% else %}
+{% if page.url == '/' %}
+{{ content }}
+{% else %}
 
       {% if page.heroImage %}
         <section class="stripe hero {{ page.heroImage | replace: ".jpg", "" | replace: ".png", "" }}" style="background-image: url('/assets/images/heroes/{{ page.heroImage }}');">
@@ -113,13 +104,12 @@
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.0.1/lodash.min.js"></script>
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-sanitize.min.js"></script>
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-animate.min.js"></script>{% endif %}
-
-  {% if page.scripts %}
-    {% for script in page.scripts %}
-      <script type="text/javascript" src="{{ script }}"></script>
-    {% endfor %}
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-animate.min.js"></script>
   {% endif %}
+
+  {% if page.scripts %}{% for script in page.scripts %}
+      <script type="text/javascript" src="{{ script }}"></script>
+  {% endfor %}{% endif %}
 
   <script type="text/javascript">
     var settings = {

@@ -42,6 +42,7 @@ fieldset {
     textarea {
       color: $gray-dark;
       margin-bottom: 0;
+      font-size: $base * 1.15;
 
       @include media("<=md") {
         font-size: $base * 1.15;
