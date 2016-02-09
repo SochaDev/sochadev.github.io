@@ -1,0 +1,107 @@
+<html>
+<head>
+<style>
+html, body {
+  height: 100%;
+}
+body {
+  background-color: #262626;
+  font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
+}
+h1 {
+  font-size: 16px;
+  color: #838484;
+  font-weight: 300;
+  text-align: center;
+  color: #89c540;
+  position: absolute;
+  padding: 10px 20px;
+  border: 1px solid transparentize(white, .7);
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.box {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+}
+
+.boxBlack {
+  background-color: #333;
+  left: 20px;
+  top: 20px;
+}
+.boxCyan {
+  background-color: #41a7bf;
+  left: 40px;
+  top: 20px;
+}
+.boxRed {
+  background-color: #b20b23;
+  left: 20px;
+  top: 40px;
+}
+.boxGreen {
+  background-color: #6b7e28;
+  left: 40px;
+  top: 40px;
+}
+</style>
+</head>
+<body>
+
+<h1><strong>Socha Dev</strong> - Simple Animated Logo Proof of Concept</h1>
+
+<div id="logo">
+  <div class="box boxBlack"></div>
+  <div class="box boxCyan"></div>
+  <div class="box boxRed"></div>
+  <div class="box boxGreen"></div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenLite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/easing/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
+
+<script>
+
+var $box = $('#logo');
+var $boxblack = $('.boxBlack');
+var $boxblue = $('.boxCyan');
+var $boxred = $('.boxRed');
+var $boxgreen = $('.boxGreen');
+
+// set up initial anim
+swizz();
+
+//Repeater
+x = window.setInterval(swizz, 2200);
+
+function swizz() {
+  TweenLite.to($boxblack, 0.5, {rotation: 180, height: 80, x: '-=20', y: '-=20', ease:Power4.easeInOut});
+  TweenLite.to($boxblue, 0.5, {rotation: -180, height: 80, x: '-=20', y: '-=20', delay: 0.1, ease:Power4.easeInOut});
+  TweenLite.to($boxred, 0.2, {rotation: 180, x: '+=20', y: '-=40', height: 80, delay: 0.1});
+  TweenLite.to($boxgreen, 0.2, {rotation: -180, x: '+=20', y: '-=40', height: 80, delay: 0.2});
+
+  TweenLite.to($boxblack, 0.5, {rotation: 0, height: 20, x: '+=20', y: '+=20', delay: 1, ease:Power4.easeInOut});
+  TweenLite.to($boxblue, 0.5, {rotation: 0,  height: 20, x: '+=20', y: '+=20', delay: 1.1, ease:Power4.easeInOut});
+  TweenLite.to($boxred, 0.2, {rotation: 0, x: '-=20', y: '+=40', height: 20, delay: 1.1});
+  TweenLite.to($boxgreen, 0.2, {rotation: 0, x: '-=20', y: '+=40', height: 20, delay: 1.2});
+}
+
+
+</script>
+
+</body>
+</html>

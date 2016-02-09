@@ -74,8 +74,6 @@
       $('a.top', theme.header)
         .click(function(evt) {
           evt.preventDefault();
-          window.history.replaceState({}, document.title, settings.page.url);
-
           settings.theme.top = 0;
 
           $('#modal, fieldset.contact, .messages, .tooltip .tip', context)
@@ -88,7 +86,7 @@
     scrollFadeChildren: function(context, settings) {
 
       var $window = $(window);
-      if ($window.width() < settings.theme.breakpoints.md) {
+      if ($window.width() <= settings.theme.breakpoints.md) {
         return;
       }
 
@@ -330,7 +328,7 @@
 
       var $modal = $('#modal', context);
 
-      $('ul.projects a', context)
+      $('.projects-list a', context)
         .click(function(evt) {
           evt.preventDefault();
 
@@ -362,24 +360,38 @@
             .text(project.client)
             .attr('href', project.clientUrl)
             .show();
+
           $content
             .find('.partner')
             .toggle(project.client !== project.name);
+
           $content.find('.description')
-            .html('<p>' + project.description.replace(/\\n\\n/g, '</p><p>') + '</p>');
+            .html(project.description.replace(/\\n\\n/g, '</p><p>'));
+
           $content
             .removeClass('white-label');
 
           if (project.image) {
             $content
               .find('img')
-              .attr('src', (project.image.indexOf('http') !== 0 ? (settings.theme.images + '/projects/' + project.image + '.jpg') : project.image))
+              .attr('src', (project.image.indexOf('http') !== 0 ? (settings.theme.images + '/projects/' + project.image ) : project.image))
               .attr('alt', project.name);
           }
           else {
             $content
               .find('img')
               .attr('src', '');
+          }
+
+          if (project.image2x) {
+            $content
+              .find('img')
+              .attr('srcset', (project.image2x.indexOf('http') !== 0 ? (settings.theme.images + '/projects/' + project.image2x + ' 2x' ) : project.image2x + ' 2x'));
+          }
+          else {
+            $content
+              .find('img')
+              .attr('srcset', '');
           }
 
           if (project.whiteLabel) {
@@ -395,18 +407,26 @@
               .text(project.client)
               .show();
             $content
+              .find('.white-label-flag')
+              .show();
+            /* prevent hiding display image on modal
+            $content
               .addClass('white-label');
+            */
           }
           else {
             $content
               .find('.name-anon, .client-anon')
               .text('')
               .hide();
+            $content
+              .find('.white-label-flag')
+              .hide();
           }
 
           if ($(window).width() > settings.theme.breakpoints.md) {
             $content
-              .height(!$content.hasClass('white-label') ? $modal.parents('.stripe').height() - (settings.theme.margin * 6) : 'auto');
+              .height(!$content.hasClass('white-label') ? $modal.parents('.projects').height() - (settings.theme.margin * 8) : 'auto');
           }
 
           $modal.fadeIn(settings.theme.animation.speed);
@@ -424,7 +444,7 @@
 
       // Sniff for #project-N request, trigger animation.
       if (document.location.hash) {
-        var $e = $('ul.projects a[href=' + document.location.hash + ']', context);
+        var $e = $('.projects-list a[href=' + document.location.hash + ']', context);
         if ($e.length) {
           $e.click();
         }

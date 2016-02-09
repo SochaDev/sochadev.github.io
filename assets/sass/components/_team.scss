@@ -1,26 +1,23 @@
 
 .bios {
-  @include media(">=md") {
-    @include span-columns(10);
-    @include shift(1);
+  padding-bottom: $dmrg*4;
+
+  .container {
+    padding: $dmrg 0;
+    align-items: top;
+    align-items: flex-start;
   }
 
-  .container { margin-top: ($dmrg * 2); }
-  .alpha { @include span-columns(2);  }
-  .beta { @include span-columns(10); }
+  .alpha { width: 18%; }
+  .beta { width: 82%; }
 
-  p {
-    @extend %text-dense;
-  }
-  img.avatar {
-    @include border-radius($border-radius * 2);
+  p { @extend %text-dense; }
+
+  .avatar {
+    border-radius: $border-radius * 2;
     display: block;
     width: 100%;
     margin: 0 0 $mrg 0;
-
-    @include media("<md") {
-      @include border-radius();
-    }
   }
 
   ul.social {
@@ -31,6 +28,31 @@
     li {
       float: left;
       margin: 0 $mrg 0 0;
+    }
+  }
+
+  @include media('<=md') {
+    .container {
+      display: block;
+      padding-top: $dmrg*1.5;
+    }
+
+    .alpha {
+      width: 100%;
+      text-align: center;
+    }
+
+    .beta {
+      width: 100%;
+
+      h3 { text-align: center; }
+    }
+
+    .avatar {
+      display: inline-block;
+      margin: $mrg;
+      width: 144px;
+      border-radius: $border-radius;
     }
   }
 }

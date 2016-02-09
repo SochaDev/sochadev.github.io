@@ -20,17 +20,24 @@
     a, a:hover { text-decoration: none; }
   }
   h1 {
-    font-size: $base * 5.2;
+    font-size: $base * 2.7;
     margin: 0;
-
-    div { font-size: $base; }
+  }
+  .front {
+    h1 {
+      font-size: $base * 5.2;
+      div {
+        font-size: $base;
+        margin-bottom: ($dmrg/2);
+      }
+    }
   }
   h2 {
     font-size: $base * 2.4;
     text-transform: lowercase;
   }
   h3 {
-    font-size: $base * 2;
+    font-size: $base * 1.9;
     text-transform: lowercase;
   }
 
@@ -50,7 +57,7 @@
   em, i { font-style: italic; }
 
   pre {
-    @include border-radius($border-radius * 2);
+    border-radius: $border-radius * 2;
     background: $gray-4;
     clear: both;
     color: $text;
@@ -58,23 +65,29 @@
     padding: $dmrg $mrg;
     width: 100%;
   }
+
   code {
-    @include border-radius($border-radius * 2);
+    border-radius: $border-radius * 2;
     background: $gray-4;
     padding: $border-radius ($border-radius * 2);
     white-space: nowrap;
   }
+
   hr {
-    border: solid 2px $gray-dark;
+    border: solid 2px lighten($gray-darker, 5%);
     clear: both;
     height: 0px;
     margin: $dmrg 0;
     width: 100%;
   }
-  img {
-    display: block; float: left;
-  }
+
+  // img {
+  //   display: block;
+  //   float: left;
+  // }
+
   small { font-size: $base * 0.8 }
+
   big { font-size: $base * 1.2 }
 
   a {
@@ -98,8 +111,8 @@
 
   // Dense text elements.
   %text-dense {
-    font-size: $base * 1.15;
-    line-height: 1.5;
+    font-size: $base * 1.00;
+    line-height: 1.6;
   }
 
   // Text highlighting.
@@ -183,7 +196,7 @@
       margin-bottom: $mrg;
       margin-left: 0;
       width: ($mrg * 20);
-      @include border-radius($border-radius * 2);
+      border-radius: $border-radius * 2;
       background: $white;
       border: solid $border-radius $gray-darker;
       color: $gray-dark;
@@ -191,6 +204,6 @@
       font-size: $base - 3;
       font-style: normal;
       text-align: left;
+      line-height: 1.4;
     }
   }
-

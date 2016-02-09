@@ -2,8 +2,8 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import 'vendor/bourbon/bourbon';
 @import 'settings';
-@import 'mixins';
-@import 'normalize';
+@import 'components/mixins';
+@import 'vendor/normalize';
 
 body {
   font-size: $base;
@@ -40,7 +40,7 @@ hr {
 }
 
 img.logo {
-  @include border-radius();
+  border-radius: $border-radius;
   display: block;
   float: right;
   margin: 0 0 $dmrg $dmrg;
