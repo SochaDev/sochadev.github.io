@@ -35,12 +35,15 @@ function(require, config, bdd, expect, assert) {
       details: 'details'
     };
     
-    // Displayed text for assertions.
-    var text = {
-      nameRequired: "A name would be good.",
-      emailRequired: "An email would be good.",
-      humanCheckRequired: "Can haz human check?",
-      detailsRequired: "Maybe a few details?"
+    // Displayed text against which to assert.
+    var text = {};
+    
+    // Sample values to enter in form.
+    var formVals = {
+      name: 'Intern the Mighty',
+      email: 'intern@example.com',
+      company: 'InternJS',
+      details: 'I heard Socha Dev rocks!'
     };
     
     
@@ -143,6 +146,46 @@ function(require, config, bdd, expect, assert) {
           var displayedErrors = results[1];
           expect(displayedErrors, "Displayed error messages").to.deep.equal(intendedErrors);
         });
+    });
+    
+    bdd.it('should block submit if the human check is failed', function () {
+      var command = this.remote;
+      
+      // Fill in some proper values before we move on to another thing to check.
+      // This would be a good candidate for a page object method.
+      return command
+        .findByCssSelector(selectors.formWrap)
+          // Use Array.reduce() technique to loop the form values we want to
+          // enter and type() each into corresponding input.
+          // Thx: http://stackoverflow.com/a/28621267/630806
+          .then(function () {
+            return Object.keys(formVals).reduce(function (chain, key) {
+              console.log(formElNames[key] + ' => ' + formVals[key]);
+              return chain
+                .findByName(formElNames[key])
+                  .type(formVals[key])
+                .end();
+            }, command);
+          })
+          .findByName(formElNames.humanCheck)
+            // This expects a number; plug in something guaranteed wrong.
+            .type('hello')
+          .end()
+          .findByCssSelector(selectors.formSubmit)
+            .click()
+          .end()
+          // Check for the error message.
+          // Note we've populated all required fields this time, so it should be
+          // the only message - hence not findAll*().
+          .findByCssSelector(selectors.formErrors)
+            .getVisibleText()
+            .then(function (text) {
+              // @see theme.js - validate()
+              expect(text, "Human check invalid error text").to.contain("you don't seem to have a human thing to discuss with us");
+            })
+          .end()
+        .end();  
+        
     });
     
     /*
