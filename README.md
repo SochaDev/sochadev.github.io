@@ -19,6 +19,7 @@ for hosting, so we ported the whole thing over here to GitHub Pages. Enjoy!
 [Jekyll](https://jekyllrb.com/) stuff:
 
 * `bundle install` - initial setup.
+  * Note: Jekyll requires >= Ruby 2.0.0. If you don't already have it, install using your preferred system of managing Ruby versions. Remember to thereafter install the `bundler` gem itself for this new version.
 * `bundle exec jekyll build --watch` - watch and rebuild to local `_site` dir, as anything changes.
 * `bundle exec jekyll serve --host 127.0.0.1 --port 4000 --detach` - use Ruby WEBrick to serve `_site` build.
 
