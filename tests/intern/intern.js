@@ -27,6 +27,10 @@ define({
     verbose: false,
     url: 'http://selenium-release.storage.googleapis.com/2.48/selenium-server-standalone-2.48.2.jar'
   },
+  // Option to leave the remote (browser window, if local and not using an
+  // invisible browser) open after tests run.
+  // @see http://theintern.github.io/intern/#option-leaveRemoteOpen
+  leaveRemoteOpen: 'fail',
   maxConcurrency: 1,
   loaderOptions: {
     packages: [

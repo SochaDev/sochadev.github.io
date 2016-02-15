@@ -18,7 +18,8 @@ function(require, config, bdd, expect, assert) {
       formSubmit: 'input[type="submit"]',
       formMessagesWrap: '.messages',
       formErrors: '.messages.error ul li',
-      formRequiredInputs: '.required'
+      formRequiredInputs: '.required',
+      formSuccessMsg: '.messages.success ul li'
     };
     
     // 'name' attributes - for findByName(), findAllByName()
@@ -29,20 +30,24 @@ function(require, config, bdd, expect, assert) {
       title: 'title',
       company: 'company',
       humanCheck: 'human',
-      humanAdd1: 'human_valid_input1',
-      humanAdd2: 'human_valid_input2',
+      humanValid1: 'human_valid_input1',
+      humanValid2: 'human_valid_input2',
       humanValid: 'human_valid',
       details: 'details'
     };
     
-    // Displayed text against which to assert.
-    var text = {};
+    // Displayed text against which to compare for assertions.
+    var texts = {
+      // Actual response from api.sochadev.com -
+      // @see https://github.com/SochaDev/www-api/blob/master/index.php
+      ajaxSuccessEmailSent: "Your message has been sent."
+    };
     
     // Sample values to enter in form.
     var formVals = {
       name: 'Intern the Mighty',
       email: 'intern@example.com',
-      company: 'InternJS',
+      company: 'InternJS Testing',
       details: 'I heard Socha Dev rocks!'
     };
     
@@ -184,8 +189,61 @@ function(require, config, bdd, expect, assert) {
               expect(text, "Human check invalid error text").to.contain("you don't seem to have a human thing to discuss with us");
             })
           .end()
-        .end();  
-        
+        .end();
+    });
+    
+    bdd.it('should allow a legitimate form submit and successfully AJAX POST it', function () {
+      var command = this.remote;
+      
+      // Note: we already filled in at least the required fields in the prior
+      // test - these values are still present in the fields, even though
+      // validation failed because of incorrect human-check value.
+      // All we need to do this time is correctly fill in the human-check value.
+      return command
+        .findByCssSelector(selectors.formWrap)
+          // Grab the two values that we need to add together...
+          .then(function () {
+            return Promise.all([
+              command
+                .findByName(formElNames.humanValid1)
+                  .getAttribute('value'),
+              command
+                .findByName(formElNames.humanValid2)
+                  .getAttribute('value')
+            ]);
+          })
+          // Parse and add them, then clear our bad input from the previous
+          // test and input the correct value.
+          .then(function (humanValidOperands) {
+            // Important: if humanAnswer lived outside the chain, was updated
+            // during the chain, and then plugged in as arg to a method in the
+            // chain - i.e. type(humanAnswer) - that method call and arg are
+            // parsed BEFORE execution, meaning humanAnswer would still have its
+            // initial value.
+            // Doing this here within a then() avoids that scenario.
+            var humanAnswer = parseInt(humanValidOperands[0]) + parseInt(humanValidOperands[1]);
+            // The type() method must take a string.
+            humanAnswer = String(humanAnswer);
+            
+            return command
+              .findByName(formElNames.humanCheck)
+                .clearValue()
+                .type(humanAnswer)
+              .end();
+          })
+          // And submit!
+          .findByCssSelector(selectors.formSubmit)
+            .click()
+          .end()
+          // This should actually send the email, so we wait for the
+          // AJAX request and response by executing find*() on the expected
+          // sucess message element. The find timeout applies here.
+          .findByCssSelector(selectors.formSuccessMsg)
+            .getVisibleText()
+            .then(function (text) {
+              expect(text, "Success (email sent) message").to.equal(texts.ajaxSuccessEmailSent);
+            })
+          .end();
     });
     
     /*
