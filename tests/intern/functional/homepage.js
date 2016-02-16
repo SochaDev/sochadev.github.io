@@ -2,10 +2,9 @@ define([
   'require',
   'config',
   'intern!bdd',
-  'intern/chai!expect',
-  'intern/chai!assert'
+  'intern/chai!expect'
 ],
-function(require, config, bdd, expect, assert) {
+function(require, config, bdd, expect) {
 
   'use strict';
 
@@ -67,6 +66,14 @@ function(require, config, bdd, expect, assert) {
         .setFindTimeout(2000);
     });
     
+    // This runs before each test.
+    bdd.beforeEach(function () {
+      // Denote beginning of a test.
+      console.log('');
+      console.log('-----------------------');
+      console.log('');
+    });
+    
     
     // --- TESTS ---
     bdd.it('should not show the contact form on page load', function() {
@@ -100,14 +107,14 @@ function(require, config, bdd, expect, assert) {
         .end();
     });
     
-    bdd.it('should not display the form\'s messages container initially', function () {
+    bdd.it('should not display the form messages container initially', function () {
       var command = this.remote;
       
       return command
         .findByCssSelector(selectors.formWrap + ' ' + selectors.formMessagesWrap)
           .isDisplayed()
           .then(function (visible) {
-            expect(visible, "Error message container visibility").to.not.be.ok;
+            expect(visible, "Form messages container visibility").to.not.be.ok;
           })
         .end();
     });
@@ -117,6 +124,9 @@ function(require, config, bdd, expect, assert) {
       
       return command
         // Submit the form with nothing filled in.
+        .then(function () {
+          console.log("  Submitting form with all inputs empty.");
+        })
         .findByCssSelector(selectors.formWrap + ' ' + selectors.formSubmit)
          .click()
         .end()
@@ -156,16 +166,18 @@ function(require, config, bdd, expect, assert) {
     bdd.it('should block submit if the human check is failed', function () {
       var command = this.remote;
       
-      // Fill in some proper values before we move on to another thing to check.
-      // This would be a good candidate for a page object method.
       return command
         .findByCssSelector(selectors.formWrap)
+          // Fill in some proper values before we move on to another test.
+          // (This would be a good candidate for a page object method.)
+          // 
           // Use Array.reduce() technique to loop the form values we want to
           // enter and type() each into corresponding input.
           // Thx: http://stackoverflow.com/a/28621267/630806
           .then(function () {
+            console.log("  Populating form elements with valid values:");
             return Object.keys(formVals).reduce(function (chain, key) {
-              console.log(formElNames[key] + ' => ' + formVals[key]);
+              console.log("    " + formElNames[key] + ' => ' + formVals[key]);
               return chain
                 .findByName(formElNames[key])
                   .type(formVals[key])
@@ -173,6 +185,9 @@ function(require, config, bdd, expect, assert) {
             }, command);
           })
           .findByName(formElNames.humanCheck)
+            .then(function () {
+              console.log("  Populating human-check input with invalid value 'hello'.");
+            })
             // This expects a number; plug in something guaranteed wrong.
             .type('hello')
           .end()
@@ -215,6 +230,8 @@ function(require, config, bdd, expect, assert) {
           // Parse and add them, then clear our bad input from the previous
           // test and input the correct value.
           .then(function (humanValidOperands) {
+            console.log("  Extracted two integers to be summed for human check: " + humanValidOperands[0] + ", " + humanValidOperands[1]);
+            
             // Important: if humanAnswer lived outside the chain, was updated
             // during the chain, and then plugged in as arg to a method in the
             // chain - i.e. type(humanAnswer) - that method call and arg are
@@ -224,6 +241,7 @@ function(require, config, bdd, expect, assert) {
             var humanAnswer = parseInt(humanValidOperands[0]) + parseInt(humanValidOperands[1]);
             // The type() method must take a string.
             humanAnswer = String(humanAnswer);
+            console.log("  Populating human-check input with: " + humanAnswer);
             
             return command
               .findByName(formElNames.humanCheck)
@@ -245,66 +263,7 @@ function(require, config, bdd, expect, assert) {
             })
           .end();
     });
-    
-    /*
-    bdd.it('should have Contact Form validation', function() {
-      var command = this.remote;
 
-      var form = 'fieldset.contact';
-      var human_valid = 0;
-
-      // [ 'browser', 'driver', 'client', 'server' ]
-
-
-      return this.remote
-        .get(require.toUrl(config.appUrl + '/index.html'))
-        // Click a contact form toggler.
-        .findByCssSelector('a.form-toggler').click().end()
-        .setFindTimeout(2000)
-        // Get and sum the hidden inputs so we can pass the math check.
-        .findByCssSelector(form + ' input[name="human_valid_input1"]')
-        .getAttribute('value')
-        .then(function(value) {
-          human_valid += parseInt(value);
-        })
-        .end()
-        .findByCssSelector(form + ' input[name="human_valid_input2"]')
-        .then(function(value) {
-          human_valid += parseInt(value);
-        })
-        .end()
-        .findByCssSelector(form + ' input[name="human"]')
-        .click().type(human_valid.toString()).end()
-        .findByCssSelector(form + ' input[type=submit]').click().end()
-        .findByCssSelector(form + ' .messages')
-        .getVisibleText()
-        .then(function(text) {
-
-
-//          console.log('Name field validation:');
-//          expect(text).to.have.string('name would be good')
-//          //var obj = expect(text).to.contain('name would be good', 'Has name field validation');
-        })
-        .end();
-
-//
-//      return remote
-//        .findByCssSelector(form + ' input[name="name"]')
-//        .click().type('Nate').end()
-//        .findByCssSelector(form + ' input[name="email"]')
-//        .click().type('mow.nate@sochadev.com').end()
-//        .findByCssSelector(form + ' textarea[name="details"]')
-//        .click().type('Greetings from TravisCI! Please let Nate know if you got this one!').end()
-//        .findByCssSelector(form + ' input[type=submit]').click().end()
-//        .findByCssSelector(form + ' .messages')
-//        .isDisplayed()
-//        .then(function(p) {
-//          //console.log(p);
-//        })
-//        .end();
-
-    });
-    */
   });
 
 });
