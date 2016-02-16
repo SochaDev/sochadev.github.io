@@ -61,7 +61,7 @@ function(require, config, bdd, expect) {
         // best shot at triggering desktop styling (so we can depend on finding
         // and interacting with certain known elements).
         .maximizeWindow()
-        // Set how long find* commands will attempt to get an element.
+        // Set how long find*() commands will attempt to get a (single) element.
         // Setting this once persists through the suite.
         .setFindTimeout(2000);
     });
@@ -210,6 +210,11 @@ function(require, config, bdd, expect) {
     bdd.it('should allow a legitimate form submit and successfully AJAX POST it', function () {
       var command = this.remote;
       
+//      // TEMP
+//      console.log("TEMP - RETURN");
+//      return;
+//      //
+      
       // Note: we already filled in at least the required fields in the prior
       // test - these values are still present in the fields, even though
       // validation failed because of incorrect human-check value.
@@ -262,6 +267,47 @@ function(require, config, bdd, expect) {
               expect(text, "Success (email sent) message").to.equal(texts.ajaxSuccessEmailSent);
             })
           .end();
+    });
+    
+    bdd.it('should clear all form fields after successful submit', function () {
+      var command = this.remote;
+      
+      var namesNonBoolean = null;
+      var namesBoolean = null;
+      
+      return command
+        .findByCssSelector(selectors.formWrap)
+          .findAllByCssSelector('input:not([type="hidden"]):not([type="radio"]):not([type="checkbox"]):not([type="submit"]), textarea, select')
+            .getAttribute('name')
+            .then(function (names) {
+              namesNonBoolean = names;
+              console.log("  Checking that all visible non-boolean form inputs contain an empty string...");
+            })
+            .getProperty('value')
+            .then(function (vals) {
+              for (var i = 0; i < vals.length; i++) {
+                expect(vals[i], "Form input [name='" + namesNonBoolean[i] + "'] value").to.equal('');
+              }
+            })
+          .end()
+          // NOTE! When a find*() cannot find an element in the specified
+          // timeout, a `NoSuchElement` error is thrown.
+          // But, findAll*() commands that do not find any matching elements
+          // do NOT result in an error - an empty array is returned instead.
+          .findAllByCssSelector('input[type="radio"], input[type="checkbox"]')
+            .getProperty('name')
+            .then(function (names) {
+              namesBoolean = names;
+              console.log("  Checking that all boolean (radio and checkbox) form inputs are not checked...");
+            })
+            .getProperty('checked')
+            .then(function (checkeds) {
+              for (var i = 0; i < checkeds.length; i++) {
+                expect(checkeds[i], "Form input [name=" + namesBoolean[i] + "] 'checked' state").to.equal(false);
+              }
+            })
+          .end()
+        .end();
     });
 
   });
