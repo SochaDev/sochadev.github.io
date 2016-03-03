@@ -10,6 +10,11 @@ env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
+cache:
+  bundler: true
+  directories:
+    - node_modules
+
 before_script:
   # Start X Virtual Framebuffer (needed for headless GUI).
   - sh -e /etc/init.d/xvfb start;
