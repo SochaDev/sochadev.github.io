@@ -1,4 +1,14 @@
-// Custom app configuration module.
+/**
+ * Custom module to return environment-specific configuration for Intern testing.
+ * 
+ * This module is specified in `loaderOptions.packages` in intern.js. 
+ * Test suites should inject it as `config` to retrieve the appropriate object
+ * from `environment` var below.
+ * 
+ * The command-line call to run Intern tests may specify the environment via an
+ * argument, e.g. `environment=ci`.
+ */
+
 define([
   'intern'
 ], function(intern) {

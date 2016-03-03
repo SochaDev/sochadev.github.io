@@ -1,3 +1,7 @@
+/**
+ * Test suite for the sochadev.github.io homepage contact form.
+ */
+
 define([
   'require',
   'config',
@@ -37,6 +41,7 @@ function(require, config, bdd, expect) {
     
     // Displayed text against which to compare for assertions.
     var texts = {
+      humanCheckFailed: "you don't seem to have a human thing to discuss with us",
       // Actual response from api.sochadev.com -
       // @see https://github.com/SochaDev/www-api/blob/master/index.php
       ajaxSuccessEmailSent: "Your message has been sent."
@@ -119,7 +124,7 @@ function(require, config, bdd, expect) {
         .end();
     });
     
-    bdd.it('should show error messages when required fields are left empty', function () {
+    bdd.it('should show the configured error messages when required fields are left empty', function () {
       var command = this.remote;
       
       return command
@@ -201,7 +206,7 @@ function(require, config, bdd, expect) {
             .getVisibleText()
             .then(function (text) {
               // @see theme.js - validate()
-              expect(text, "Human check invalid error text").to.contain("you don't seem to have a human thing to discuss with us");
+              expect(text, "Human check invalid error text").to.contain(texts.humanCheckFailed);
             })
           .end()
         .end();
@@ -210,8 +215,8 @@ function(require, config, bdd, expect) {
     bdd.it('should allow a legitimate form submit and successfully AJAX POST it', function () {
       var command = this.remote;
       
-//      // TEMP
-//      console.log("TEMP - RETURN");
+//      // Enable this to avoid sending Jason test emails. :)
+//      console.log("(Skipping real form submit triggering an email");
 //      return;
 //      //
       

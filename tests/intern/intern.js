@@ -1,23 +1,15 @@
+/**
+ * Intern configuration options.
+ * 
+ * @see https://theintern.github.io/intern/#common-config
+ */
+
 define({
-
-  // Note the custom loaderOptions.packages.config module as well; any shared
-  // or environment-centric variables should be added there; suites themselves
-  // will then inject "config" and call config.getEnvironment() to fetch the
-  // appropriate config settings.
-
   capabilities: {
     'selenium-version': '2.48.2'
   },
   environments: [
     { browserName: 'firefox' }
-    /*
-    {browserName: 'internet explorer', version: '11', platform: 'WIN8'},
-    {browserName: 'internet explorer', version: '10', platform: 'WIN8'},
-    {browserName: 'internet explorer', version: '9', platform: 'WINDOWS'},
-    {browserName: 'firefox', version: '37', platform: ['WINDOWS', 'MAC']},
-    {browserName: 'chrome', version: '39', platform: ['WINDOWS', 'MAC']},
-    {browserName: 'safari', version: '8', platform: 'MAC'}
-    */
   ],
   tunnel: 'NullTunnel',
   tunnelOptions: {
@@ -34,6 +26,8 @@ define({
   maxConcurrency: 1,
   loaderOptions: {
     packages: [
+      // Our custom module to specify per-environment configuration.
+      // @see tests/intern/config/main.js
       { name: 'config', location: 'tests/intern/config' }
     ]
   },
