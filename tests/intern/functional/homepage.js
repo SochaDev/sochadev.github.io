@@ -68,7 +68,7 @@ function(require, config, bdd, expect) {
         .maximizeWindow()
         // Set how long find*() commands will attempt to get a (single) element.
         // Setting this once persists through the suite.
-        .setFindTimeout(2000);
+        .setFindTimeout(5000);
     });
     
     // This runs before each test.
