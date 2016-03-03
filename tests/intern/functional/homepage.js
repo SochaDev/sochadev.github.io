@@ -88,6 +88,13 @@ function(require, config, bdd, expect) {
           console.log("");
           console.log("Timeout for all command.find*() calls is set to: " + timeout + "ms.");
         })
+        // This timeout is used by waitForDeleted*() methods.
+        .setTimeout('implicit', 5000)
+        .getTimeout('implicit')
+        .then(function (timeout) {
+          console.log("");
+          console.log("Timeout of type 'implicit' is set to: " + timeout + "ms.");
+        })
         .then(function () {
           console.log("");
           console.log("=== TESTS ===");
