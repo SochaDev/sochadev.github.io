@@ -235,7 +235,7 @@
             msgs += '<li>' + messages[i] + '</li>';
           }
         }
-        msgs += '</li>';
+        msgs += '</ul>';
 
         $messages
           .html(msgs)
