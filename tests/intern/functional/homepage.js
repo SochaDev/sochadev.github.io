@@ -61,19 +61,43 @@ function(require, config, bdd, expect) {
     bdd.before(function () {
       var command = this.remote;
       
+      console.log("");
+      console.log("=== SETUP ===");
+      console.log("");
+      
       return command
+        .getWindowSize()
+        .then(function (size) {
+          console.log("Initial window size: " + size.width + " x " + size.height + " pixels");
+        })
         // Ensure the browser window is maximized for all tests. This is our
         // best shot at triggering desktop styling (so we can depend on finding
         // and interacting with certain known elements).
         .maximizeWindow()
+        // (Getting the new window size seems to need a moment)
+        .sleep(1000)
+        .getWindowSize()
+        .then(function (size) {
+          console.log("Window size after maximizing: " + size.width + " x " + size.height + " pixels");
+        })
         // Set how long find*() commands will attempt to get a (single) element.
         // Setting this once persists through the suite.
-        .setFindTimeout(5000);
+        .setFindTimeout(5000)
+        .getFindTimeout()
+        .then(function (timeout) {
+          console.log("");
+          console.log("Timeout for all command.find*() calls is set to: " + timeout + "ms.");
+        })
+        .then(function () {
+          console.log("");
+          console.log("=== TESTS ===");
+          console.log("");
+        });
     });
     
-    // This runs before each test.
-    bdd.beforeEach(function () {
-      // Denote beginning of a test.
+    // This runs after each test.
+    bdd.afterEach(function () {
+      // Visually break up output of each test.
       console.log('');
       console.log('-----------------------');
       console.log('');
