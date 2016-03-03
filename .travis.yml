@@ -6,9 +6,6 @@ language: ruby
 rvm:
   - 2.1
 
-node_js:
-  - "0.12.10"
-
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
@@ -19,6 +16,14 @@ cache:
     - node_modules
 
 before_script:
+  # Upgrade nodejs itself. Many of our modules are unhappy with the default on
+  # Travis - seems to be 0.10.x
+  - nvm install 0.12;
+  - node -v;
+  
+  # Install node_modules.
+  - npm install;
+  
   # Start X Virtual Framebuffer (needed for headless GUI).
   - sh -e /etc/init.d/xvfb start;
   - export DISPLAY=:99.0;
@@ -31,9 +36,6 @@ before_script:
   # Serve Jekyll site at http://127.0.0.1:4000. Note tests/config/main.js mirror of same.
   - bundle exec jekyll serve --host 127.0.0.1 --port 4000 --no-watch --detach;
   - sleep 3;
-
-  # Install node_modules.
-  - npm install;
 
 script:
   # Run Intern.js tests.
