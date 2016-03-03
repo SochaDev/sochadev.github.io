@@ -135,13 +135,13 @@ function(require, config, bdd, expect) {
         .findByCssSelector(selectors.formWrap + ' ' + selectors.formSubmit)
          .click()
         .end()
-        // Give it half a sec to validate with JS.
-        .sleep(500)
-        .findByCssSelector(selectors.formWrap + ' ' + selectors.formMessagesWrap)
-          .isDisplayed()
-          .then(function (visible) {
-            expect(visible, "Message container visibility").to.be.ok;
-          })
+        // JS validation happens here.
+        // Use findDisplayed*() to effectively wait for the messages container
+        // to become visible.
+        // So instead of making an expect() call on the container's visibility,
+        // the findDisplayed*() call will throw an error if the container is not
+        // found+visible within the find timeout.
+        .findDisplayedByCssSelector(selectors.formWrap + ' ' + selectors.formMessagesWrap)
           .getAttribute('class')
           .then(function (classesStr) {
             expect(classesStr, "Message container CSS classes").to.contain('error');
@@ -196,9 +196,21 @@ function(require, config, bdd, expect) {
             // This expects a number; plug in something guaranteed wrong.
             .type('hello')
           .end()
+          // Now we need to submit the form and wait for the new set of messages
+          // to be populated. The messages container is currently visible, so
+          // we cannot use findDisplayed*().
+          // Instead, a little trick: We know the HTML in messages container
+          // should be overwritten. First inject some markup in there:
+          // (execute() method runs a function in browser)
+          .execute(function (selectorMessages) {
+            jQuery(selectorMessages).append('<span id="intern-flag"></span>');
+          }, [selectors.formMessagesWrap])
+          // Submit the form again...
           .findByCssSelector(selectors.formSubmit)
             .click()
           .end()
+          // After validation, new messages HTML is written, removing our flag.
+          .waitForDeletedById('intern-flag')
           // Check for the error message.
           // Note we've populated all required fields this time, so it should be
           // the only message - hence not findAll*().
