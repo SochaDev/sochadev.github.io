@@ -25,8 +25,11 @@ before_script:
   - npm install;
   
   # Start X Virtual Framebuffer (needed for headless GUI).
+  # Use alternate start method to allow explicitly setting "screen" dimensions.
+  # https://docs.travis-ci.com/user/gui-and-headless-browsers/#sts=Using%20xvfb%20to%20Run%20Tests%20That%20Require%20a%20GUI
   - export DISPLAY=:99.0;
-  - sh -e /etc/init.d/xvfb start;
+  # - sh -e /etc/init.d/xvfb start;
+  - /sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16;
   - sleep 3;
 
   # Download and start Selenium standalone server; note the silencer.
