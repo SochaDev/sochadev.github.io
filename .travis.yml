@@ -25,8 +25,9 @@ before_script:
   - npm install;
   
   # Start X Virtual Framebuffer (needed for headless GUI).
-  - sh -e /etc/init.d/xvfb start;
   - export DISPLAY=:99.0;
+  - sh -e /etc/init.d/xvfb start;
+  - sleep 3;
 
   # Download and start Selenium standalone server; note the silencer.
   - wget http://selenium-release.storage.googleapis.com/2.48/selenium-server-standalone-2.48.2.jar;
