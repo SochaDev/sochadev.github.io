@@ -252,10 +252,15 @@ function(require, config, bdd, expect) {
 //              console.log('((find flag threw error as expected: ' + err.name + '))');
 //            })
 //          .end()
-          .sleep(2000)
+          .sleep(10000)
           // Check for the error message.
           // Note we've populated all required fields this time, so it should be
           // the only message - hence not findAll*().
+                  .findByCssSelector(selectors.formMessagesWrap)
+                  .getVisibleText()
+                  .then(function (text) {
+                    console.log("Messages: " + text);
+            })
           .findByCssSelector(selectors.formErrors)
             .getVisibleText()
             .then(function (text) {
