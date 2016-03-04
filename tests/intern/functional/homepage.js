@@ -6,9 +6,10 @@ define([
   'require',
   'config',
   'intern!bdd',
-  'intern/chai!expect'
+  'intern/chai!expect',
+  'intern/dojo/node!fs'
 ],
-function(require, config, bdd, expect) {
+function(require, config, bdd, expect, fs) {
 
   'use strict';
 
@@ -234,6 +235,10 @@ function(require, config, bdd, expect) {
             })
             // This expects a number; plug in something guaranteed wrong.
             .type('hello')
+            .getProperty('value')
+            .then(function (val) {
+              console.log("Value in human-check is: " + val);
+            })
           .end()
           // Now we need to submit the form and wait for the new set of messages
           // to be populated. The messages container is currently visible, so
@@ -261,6 +266,16 @@ function(require, config, bdd, expect) {
 //            })
 //          .end()
           .sleep(10000)
+          .takeScreenshot()
+          .then(function (data) {
+            fs.writeFileSync('tests/intern/screenshots/submit-bad-human-check.png', data, 'base64');
+            })
+          .findByName(formElNames.humanCheck)
+          .getProperty('value')
+            .then(function (val) {
+              console.log("Value in human-check is: " + val);
+            })
+                    .end()
           // ** TRAVIS DEBUG
           .execute(function () {
             return window.__internErrors;
@@ -285,6 +300,10 @@ function(require, config, bdd, expect) {
           // Note we've populated all required fields this time, so it should be
           // the only message - hence not findAll*().
           .findByCssSelector(selectors.formErrors)
+          .getProperty('innerHTML')
+          .then(function (prop) {
+            console.log("innerHTML: " + prop);
+          })
             .getVisibleText()
             .then(function (text) {
               // @see theme.js - validate()

@@ -11,4 +11,5 @@ Gemfile.lock
 
 # Test stuff.
 selenium-server-standalone*
+tests/intern/screenshots
 

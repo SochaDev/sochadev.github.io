@@ -43,6 +43,7 @@ before_script:
 
 script:
   # Run Intern.js tests.
+  - mkdir -p tests/intern/screenshots;
   - node_modules/intern/bin/intern-runner.js config=tests/intern/intern environment=ci;
   # Run HTML proofer tests.
   - bundle exec htmlproof ./_site --disable-external;
