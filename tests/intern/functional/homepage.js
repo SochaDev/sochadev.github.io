@@ -117,6 +117,14 @@ function(require, config, bdd, expect) {
       
       return command
         .get(require.toUrl(config.appUrl + '/index.html'))
+        // **
+        .execute(function () {
+          window.__internErrors = [];
+          window.onerror = function () {
+            __internErrors.push(Array.prototype.slice.call(arguments, 0));
+          };
+        })
+        // **
         .findByCssSelector(selectors.formWrap)
           .isDisplayed()
           .then(function (visible) {
@@ -253,14 +261,29 @@ function(require, config, bdd, expect) {
 //            })
 //          .end()
           .sleep(10000)
+          // ** TRAVIS DEBUG
+          .execute(function () {
+            return window.__internErrors;
+          })
+          .then(function (browserErrors) {
+            console.log("-----------------");
+            if (browserErrors.length) {
+              console.log("BROWSER ERRORZ:");
+              for (var i = 0; i < browserErrors.length; i++) {
+                console.log("");
+                console.log(browserErrors[i]);
+                console.log("");
+              }
+            }
+            else {
+              console.log("No errors tracked in browser");
+            }
+            console.log("-----------------");
+          })
+          // **
           // Check for the error message.
           // Note we've populated all required fields this time, so it should be
           // the only message - hence not findAll*().
-                  .findByCssSelector(selectors.formMessagesWrap)
-                  .getVisibleText()
-                  .then(function (text) {
-                    console.log("Messages: " + text);
-            })
           .findByCssSelector(selectors.formErrors)
             .getVisibleText()
             .then(function (text) {
