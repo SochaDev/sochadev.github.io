@@ -81,6 +81,12 @@ function(require, config, bdd, expect, fs) {
         .then(function (size) {
           console.log("Window size after maximizing: " + size.width + " x " + size.height + " pixels");
         })
+        .setWindowSize(1200, 1000)
+        .sleep(1000)
+        .getWindowSize()
+        .then(function (size) {
+          console.log("Window size after setting explicitly: " + size.width + " x " + size.height + " pixels");
+        })
         // Set how long find*() commands will attempt to get a (single) element.
         // Setting this once persists through the suite.
         .setFindTimeout(5000)
