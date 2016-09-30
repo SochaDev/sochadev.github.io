@@ -61,5 +61,5 @@ tell you about them!
 
 ![{{ site.title }} issue lifecycle](/assets/images/workflow.png "{{site.title }} issue lifecycle")
 
-_An illustration of the {{ site.title }} issue workflow, courtesy of Martyn Green._
+_An illustration of the {{ site.title }} issue lifecycle, courtesy of Martyn Green._
 
