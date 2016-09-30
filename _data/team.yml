@@ -32,23 +32,6 @@
     to Drupal.
   projects: []
 
-- name: Drew Deering
-  github: atdc98
-  drupal: spacepope
-  image: https://avatars.githubusercontent.com/u/4480350
-  description:
-    As a kid, Drew always loved computers. A hacker at heart, he wrote his first
-    computer program at the age of 12 - a simple text-based dungeon crawler, complete
-    with random monster encounters and fat loots. His true love for programming,
-    however, would not be realized until while attending the University of Missouri
-    he was invited to choose a major, or not come back the following semester. He
-    had just completed a course in C programming and liked it well enough to make
-    programming his profession. Eventually deciding to move to the D.C. area, Drew
-    held positions with National Journal, NPR, and Triple Canopy before coming to
-    Socha Dev in May of 2013, where he has been wowing everyone with his skills in
-    hybrid app development using technologies such as Node.js and Meteor.
-  projects: []
-
 - name: Nate Mow
   github: natemow
   drupal: natemow
@@ -116,3 +99,37 @@
     creative problem solver and strong team player. He thrives on doing excellent 
     work with excellent colleagues. He has a degree in Physics and Geophysics.
   projects: []
+
+- name: Mark Mahon
+  github: traverus
+  drupal: traverus
+  image: https://avatars.githubusercontent.com/u/22228444
+  description:
+    Mark Mahon is a web developer with 10 years of experience encompassing the full project
+    life cycle within multiple different disciplines including development, project management,
+    architecture and process improvement. Starting as a teenager with an innate interest in
+    HTML with the likes of Geocities he grew in to a PHP developer in his early twenties.
+    Mark began his love affair with Drupal in 2012 serving government clients including
+    HHS, CDC and the DoE at the American Institutes for Research. Since that time he has
+    become a seasoned Drupal expert participating both in community activities locally in
+    D.C. as well as contributing to issue queue management and grooming on drupal.org. He
+    also has strong interests in configuration management, well groomed documentation
+    and beer.
+  projects: []
+
+# - name: Drew Deering
+#  github: atdc98
+#  drupal: spacepope
+#  image: https://avatars.githubusercontent.com/u/4480350
+#  description:
+#    As a kid, Drew always loved computers. A hacker at heart, he wrote his first
+#    computer program at the age of 12 - a simple text-based dungeon crawler, complete
+#    with random monster encounters and fat loots. His true love for programming,
+#    however, would not be realized until while attending the University of Missouri
+#    he was invited to choose a major, or not come back the following semester. He
+#    had just completed a course in C programming and liked it well enough to make
+#    programming his profession. Eventually deciding to move to the D.C. area, Drew
+#    held positions with National Journal, NPR, and Triple Canopy before coming to
+#    Socha Dev in May of 2013, where he has been wowing everyone with his skills in
+#    hybrid app development using technologies such as Node.js and Meteor.
+#  projects: []

@@ -1,5 +1,6 @@
 # Build cruft.
 .DS_Store
+.idea
 nbproject
 node_modules
 npm-debug.log

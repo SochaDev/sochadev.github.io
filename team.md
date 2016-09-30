@@ -1,7 +1,7 @@
 ---
 title: Meet the team
 description: Here are the humans at Socha Dev that do all that awesome dev work for your team. They are all quite great.
-tags: [ Jason Socha, Matt West, Drew Deering, Nate Mow, Jeff Eoff, Tory Gobat, Martyn Green, team ]
+tags: [ Jason Socha, Matt West, Drew Deering, Nate Mow, Jeff Eoff, Tory Gobat, Martyn Green, Mark Mahon, team ]
 ---
 
 We're small, but we don't mind &mdash; we're pretty large and mighty when it comes to the business of developing effective and awesome websites and apps.
