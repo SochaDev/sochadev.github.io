@@ -59,4 +59,7 @@ tell you about them!
 {% endcapture %}
 {{ tools | strip_html | strip_newlines }}
 
-![{% site.title %} issue lifecycle](/assets/images/workflow.png "{% site.title %} issue lifecycle")
+![{{ site.title }} issue lifecycle](/assets/images/workflow.png "{{site.title }} issue lifecycle")
+
+_An illustration of the {{ site.title }} issue workflow, courtesy of Martyn Green._
+
