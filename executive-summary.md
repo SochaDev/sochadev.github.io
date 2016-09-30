@@ -58,3 +58,5 @@ tell you about them!
 {% include tools.html %}
 {% endcapture %}
 {{ tools | strip_html | strip_newlines }}
+
+![{% site.title %} issue lifecycle](/assets/images/workflow.png "{% site.title %} issue lifecycle")
