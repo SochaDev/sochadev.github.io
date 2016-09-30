@@ -71,6 +71,7 @@
 }
 
 .modal {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -88,8 +89,10 @@
   a { color: $blue; }
 
   .white-label-flag {
-    height: 126px;
     position: absolute;
+    top: 0;
+    left: 0;
+    height: 126px;
     width: 126px;
     display: none;
     overflow: hidden;
