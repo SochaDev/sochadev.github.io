@@ -12,7 +12,12 @@
     side of things mostly these days, but still gets his hands dirty often enough.
     Recent work includes leading development on such larger projects as fcc.gov and
     press.org (The Nat'l Press Club) (both Drupal), among many others.
-  projects: []
+  projects: [
+    "fcc.gov",
+    "press.org",
+    "channeldemocracy.com",
+    "siemensapp.discoveryeducation.com"
+  ]
 
 - name: Matt West
   github: mattdanger
@@ -30,7 +35,10 @@
     a small web development company that develops and hosts websites for newspapers
     from all over the U.S. Matt led the company's migration of 200 customer sites
     to Drupal.
-  projects: []
+  projects: [
+    "thetalentedproject.org",
+    "app.pwcfdnearnyourfuture.org"
+  ]
 
 - name: Nate Mow
   github: natemow
@@ -48,7 +56,13 @@
     also enjoys tinkering with front-end stack du jour and giving back to the open
     source community however possible - including helping to lead the 
     <a href="http://www.meetup.com/drupal-dc">DC Drupal Meetup group</a>.
-  projects: []
+  projects: [
+    "youngscientistchallenge.com",
+    "sochadev.github.io",
+    "teach.gov",
+    "letsmove.gov",
+    "usps.com"
+  ]
 
 - name: Jeff Eoff
   github: jeffeoff
@@ -65,7 +79,11 @@
     web apps for workforce management. In this role, Jeff developed a love for
     JavaScript and CSS, quickly becoming the go-to architect for other developers
     looking to improve their front-end designs and simplify user interactions.
-  projects: []
+  projects: [
+    "teendrive365inschool.com",
+    "dcabortionfund.org",
+    "lyric-ipsum.rocks"
+  ]
 
 - name: Tory Gobat
   github: tea-time
@@ -83,7 +101,13 @@
     Smithsonian National Air and Space Museum and the American Postal Workers
     Union. Tory is known for getting intimate with the Drupal core APIs and
     writing paragraph-length code comments.
-  projects: []
+  projects: [
+    "sciencemag.org",
+    "wwfscience.org",
+    "naco.org",
+    "monticello.org",
+    "scoutscoop.com"
+  ]
 
 - name: Martyn Green
   github: montysavage
@@ -99,7 +123,11 @@
     National Archives in London and Science Magazine in the US. He is a motivated, 
     creative problem solver and strong team player. He thrives on doing excellent 
     work with excellent colleagues. He has a degree in Physics and Geophysics.
-  projects: []
+  projects: [
+    "nationalarchives.gov.uk",
+    "ilovepickles.org",
+    "spark.sciencemag.org/piday"
+  ]
 
 - name: Mark Mahon
   github: traverus
@@ -116,7 +144,12 @@
     D.C. as well as contributing to issue queue management and grooming on drupal.org. He
     also has strong interests in configuration management, well groomed documentation
     and beer.
-  projects: []
+  projects: [
+    "youth.gov",
+    "ussc.gov",
+    "reit.com",
+    "aaaspolicyfellowships.org"
+  ]
 
 # - name: Drew Deering
 #  github: atdc98
