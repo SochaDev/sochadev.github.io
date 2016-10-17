@@ -40,7 +40,7 @@ If you think you might be a good fit here at Socha Dev &mdash; please <a href="/
 
       {% if person.projects %}
         <ul class="social">
-          <li>Past projects:</li>
+          <li>A few past projects:</li>
         {% for project in person.projects %}
           <li><a href="http://{{ project }}" title="{{ project }}" target="_blank">{{ project }}</a></li>
         {% endfor %}
