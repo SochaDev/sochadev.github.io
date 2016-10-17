@@ -22,15 +22,6 @@ If you think you might be a good fit here at Socha Dev &mdash; please <a href="/
       <h3 id="{{ person.name | downcase | replace: " ", "-" }}">{{ person.name }}</h3>
 
       <p>{{ person.description }}</p>
-      
-      {% if person.projects %}
-        <ul class="social">
-          <li>Past projects:</li>
-        {% for project in person.projects %}
-          <li><a href="http://{{ project }}" title="{{ project }}" target="_blank">{{ project }}</a></li>
-        {% endfor %}
-        </ul><br>
-      {% endif %}
 
       <ul class="social">
         <li>
@@ -46,6 +37,15 @@ If you think you might be a good fit here at Socha Dev &mdash; please <a href="/
           </li>
         {% endif %}
       </ul>
+
+      {% if person.projects %}
+        <ul class="social">
+          <li>Past projects:</li>
+        {% for project in person.projects %}
+          <li><a href="http://{{ project }}" title="{{ project }}" target="_blank">{{ project }}</a></li>
+        {% endfor %}
+        </ul>
+      {% endif %}
     </div>
   </div>
 {% endfor %}
