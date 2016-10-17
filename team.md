@@ -29,7 +29,7 @@ If you think you might be a good fit here at Socha Dev &mdash; please <a href="/
         {% for project in person.projects %}
           <li><a href="http://{{ project }}" title="{{ project }}" target="_blank">{{ project }}</a></li>
         {% endfor %}
-        </ul>
+        </ul><br>
       {% endif %}
 
       <ul class="social">
