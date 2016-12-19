@@ -1,0 +1,46 @@
+
+.announcement {
+  position: fixed;
+  z-index: 110;
+  left: 0;
+  right: 0;
+  top: 0;
+  min-height: 350px;
+  margin: 75px 0 0 0;
+  padding-bottom: 40px;
+  background: url('../images/paper.png') no-repeat 50% 0 transparent;
+  background-size: cover;
+  color: $gray-dark;
+
+  @include media('<=md') {
+    min-height: 420px;
+  }
+
+  .fullwidth {
+    padding-top: $mrg;
+  }
+
+  .taoti {
+    display: block;
+    width: 600px;
+    min-height: 93px;
+    background: url('../images/taoti.png') no-repeat 0 0 transparent;
+    background-size: 100% auto;
+    margin: 0 0 $dmrg 0;
+
+    @include media('<=md') {
+      width: 100%;
+      height: auto;
+      background-size: 100% auto;
+      margin: 0;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: $red;
+  }
+}
