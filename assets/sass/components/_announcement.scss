@@ -1,0 +1,57 @@
+
+.announcement {
+  position: fixed;
+  z-index: 110;
+  left: 0;
+  right: 0;
+  top: 0;
+  min-height: 350px;
+  margin: 145px 0 0 0;
+  padding-bottom: 40px;
+  background: url('../images/paper.png') no-repeat 50% 0 transparent;
+  background-size: cover;
+  color: $gray-dark;
+
+  @include media('<=md') {
+    min-height: 420px;
+  }
+
+  -webkit-transition: margin-top 600ms;
+  transition: margin-top 600ms;
+  &.sticky {
+    margin-top: 45px;
+  }
+
+  .fullwidth {
+    padding-top: $mrg;
+  }
+
+  .taoti {
+    display: block;
+    width: 600px;
+    min-height: 93px;
+    background: url('../images/taoti.png') no-repeat 0 0 transparent;
+    background-size: 100% auto;
+    margin: 0 0 $dmrg 0;
+
+    @include media('<=md') {
+      width: 100%;
+      height: auto;
+      min-height: 115px;
+      background-size: 100% auto;
+      margin: 1rem 0;
+    }
+
+    @include media('<=400px') {
+      min-height: 50px;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: $red;
+  }
+}

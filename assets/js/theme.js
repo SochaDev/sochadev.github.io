@@ -63,10 +63,16 @@
         .scroll(function() {
           var height = $(window).scrollTop();
           if (height > theme.header.outerHeight()) {
+
             theme.header.fadeIn(settings.theme.animation.speed);
+            $('.stripe.announcement', context).addClass('sticky');
+
           }
           else if (theme.header.css('opacity') == 1) {
+
             theme.header.fadeOut(settings.theme.animation.speed);
+            $('.stripe.announcement', context).removeClass('sticky');
+
           }
         });
 
